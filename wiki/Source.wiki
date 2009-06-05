@@ -23,9 +23,15 @@ To learn more about Git, see for example http://github.com/.
 
 ===Via github===
 
-Anybody can join in! And anybody can submit code through github!
+Anybody can join in!
 
-Go to http://github.com/jayway/maven-android-plugin and fork the project. Do your changes in your clone of the project, then click "pull request" on your repository to tell us there are changes to bring in.
+And anybody can submit code through github!
+
+1. Go to http://github.com/jayway/maven-android-plugin and fork the project. Forking a source code repository is sooo easy on github!
+
+2. Do your changes in your clone of the project,
+
+3. then click "pull request" on your repository to tell us there are changes to bring in.
 
 ===Sending patches===
 You may of course also send patches directly through the [http://code.google.com/p/maven-android-plugin/issues/list Issue tracker] or mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers].
