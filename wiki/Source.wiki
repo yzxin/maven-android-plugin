@@ -1,5 +1,5 @@
 =Source code management=
-Git is used instead of Subversion for managing the source code.
+Git is used instead of Subversion for managing the source code, [http://whygitisbetterthanx.com/ for several reasons].
 
 ==Read Access==
 
@@ -9,13 +9,23 @@ To check out a copy of the source code for yourself:
  git clone git://github.com/jayway/maven-android-plugin.git
 }}}
 
-...or head on over to [http://github.com/jayway/maven-android-plugin], where you can browse the source code and learn more about Git. You can also download a zip with the source code there.
+Or see this project's github page:
+
+ http://github.com/jayway/maven-android-plugin
+
+
+You can browse the source code there, and even download a zip with the source code.
+
+To learn more about Git, see for example http://github.com/.
 
 
 ==Commit Access==
 
 ===Via github===
-The preferred way to submit code is through github. Go to http://github.com/jayway/maven-android-plugin and fork the project. Do your changes in your clone of the project, then click "pull request" on your repository to tell us there are changes to bring in.
+
+Anybody can join in! And anybody can submit code through github!
+
+Go to http://github.com/jayway/maven-android-plugin and fork the project. Do your changes in your clone of the project, then click "pull request" on your repository to tell us there are changes to bring in.
 
 ===Sending patches===
 You may of course also send patches directly through the [http://code.google.com/p/maven-android-plugin/issues/list Issue tracker] or mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers].
