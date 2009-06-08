@@ -34,8 +34,4 @@ It will tell you about how to create your own Maven project for an Android appli
 
 You can see which versions of maven-android-plugin version 2.x are released in [http://code.google.com/p/maven-android-plugin-m2repo/source/browse/#svn/release/com/jayway/maven/plugins/android/generation2/maven-android-plugin our Maven Repository].
 
-Currently we're in alpha status. This does not imply "bad quality code" in any way :) but rather means we have not decided on all names of goals and parameters.
-
-When maven-android-plugin 2.0.0-beta1 is released, all names of goals and parameters are finalized for all versions 2.x.
-
-The latest released version of maven-android-plugin has its automatic plugin documentation published as a [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html maven site]. There you can see what the different goals mean.
+Currently we're in alpha status. This does not imply "bad quality code" in any way :) but rather means we have not decided on all names of goals and parameters. When maven-android-plugin 2.0.0-beta1 is released, all names of goals and parameters are finalized for all versions 2.x. Please help decide on good names for goals and parameters, by commenting on them on [http://groups.google.com/group/maven-android-developers Maven Android Developers]! There is some documentation of plugin goals and parameters on the [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html automatically generated maven site].
