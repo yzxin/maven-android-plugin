@@ -3,9 +3,9 @@
 
 = Introduction =
 
-If you are new to maven-android-plugin, or a current user of Masa who wants all the new features and even more bugfixes, then maven-android-plugin version 2 is for you. This is the place to start.
+If you are new to maven-android-plugin, or a current user of [http://code.google.com/p/masa Masa] who wants all the new features and even more bugfixes, then maven-android-plugin version 2 is for you. This is the place to start.
 
-If you are a current user of [http://code.google.com/p/masa Masa] and just want the latest (unreleased) bugfixes already in Masa trunk, see [http://github.com/jayway/maven-android-plugin/tree/maven-android-plugin-1.x maven-android-plugin 1.x README.txt]. (scroll to the bottom of that page to see the README.)
+If you are a current user of Masa and just want the latest (unreleased) bugfixes already in Masa trunk, see [http://github.com/jayway/maven-android-plugin/tree/maven-android-plugin-1.x maven-android-plugin 1.x README.txt]. (scroll to the bottom of that page to see the README.)
 
 
 = Details for version 2 =
