@@ -1,0 +1,41 @@
+#summary Get started using maven-android-plugin.
+#labels Featured
+
+= Introduction =
+
+If you are new to maven-android-plugin, or a current user of Masa who wants all the new features and even more bugfixes, then maven-android-plugin version 2 is for you. This is the place to start.
+
+If you are a current user of [http://code.google.com/p/masa Masa] and just want the latest (unreleased) bugfixes already in Masa trunk, see [http://github.com/jayway/maven-android-plugin/tree/maven-android-plugin-1.x maven-android-plugin 1.x README.txt]. (scroll to the bottom of that page to see the README.)
+
+
+= Details for version 2 =
+
+== Maven Repository ==
+
+Temporarily, until we have set up automatic deployment to Maven Central repository, you need to configure your pom.xml to use our Maven Repository:
+
+{{{
+  <pluginRepositories>
+    <pluginRepository>
+      <id>maven-android-plugin-m2repo.googlecode.com</id>
+      <name>Maven Android Plugin Release Repository</name>
+      <url>http://maven-android-plugin-m2repo.googlecode.com/svn/release</url>
+    </pluginRepository>
+  </pluginRepositories>
+}}}
+
+== version 2 README.txt ==
+
+See the [http://github.com/jayway/maven-android-plugin/tree/master maven-android-plugin 2.x README.txt]. (scroll to the bottom of that page to see the README.)
+
+It will tell you about how to create your own Maven project for an Android application. When it comes to the "samples" referenced in the README, you can get them by clicking the "download" button at the top of the README page.
+
+=== version 2 alpha/beta status ===
+
+You can see which versions of maven-android-plugin version 2.x are released in [http://maven-android-plugin-m2repo.googlecode.com/svn/release our Maven Repository].
+
+Currently we're in alpha status. This does not imply "bad quality code" in any way :) but rather means we have not decided on all names of goals and parameters.
+
+When maven-android-plugin 2.0.0-beta1 is released, all names of goals and parameters are finalized for all versions 2.x.
+
+The latest released version of maven-android-plugin has its automatic plugin documentation published as a [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html maven site]. There you can see what the different goals mean.
