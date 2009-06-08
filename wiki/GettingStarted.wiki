@@ -32,7 +32,7 @@ It will tell you about how to create your own Maven project for an Android appli
 
 === version 2 alpha/beta status ===
 
-You can see which versions of maven-android-plugin version 2.x are released in [http://maven-android-plugin-m2repo.googlecode.com/svn/release our Maven Repository].
+You can see which versions of maven-android-plugin version 2.x are released in [http://code.google.com/p/maven-android-plugin-m2repo/source/browse/#svn/release/com/jayway/maven/plugins/android/generation2/maven-android-plugin our Maven Repository].
 
 Currently we're in alpha status. This does not imply "bad quality code" in any way :) but rather means we have not decided on all names of goals and parameters.
 
