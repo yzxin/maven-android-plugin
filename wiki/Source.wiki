@@ -1,5 +1,5 @@
 =Source code management=
-Git is used instead of Subversion for managing the source code, [http://whygitisbetterthanx.com/ for several reasons].
+We use Git instead of Subversion for managing the source code, [http://whygitisbetterthanx.com/ for several reasons].
 
 ==Read Access==
 
@@ -7,14 +7,16 @@ To check out a copy of the source code for yourself:
 
 {{{
  git clone git://github.com/jayway/maven-android-plugin.git
+ git clone git://github.com/jayway/maven-android-plugin-samples.git
 }}}
 
-Or see this project's github page:
+Or see this project's github pages:
 
  http://github.com/jayway/maven-android-plugin
+ http://github.com/jayway/maven-android-plugin-samples
 
 
-You can browse the source code there, and even download a zip with the source code.
+You can browse the source code there, and even download a zip with the source code! As you can see, the plugin itself is split up from the samples. They are in separate git repositories for technical release reasons.
 
 To learn more about Git, see for example http://github.com/.
 
