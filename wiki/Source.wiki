@@ -12,7 +12,7 @@ To check out a copy of the source code for yourself:
 
 Or see this project's github pages:
 
- http://github.com/jayway/maven-android-plugin
+ http://github.com/jayway/maven-android-plugin<br/>
  http://github.com/jayway/maven-android-plugin-samples
 
 
