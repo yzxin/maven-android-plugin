@@ -28,7 +28,7 @@ Temporarily, until we have set up automatic deployment to Maven Central reposito
 
 == version 2 README.txt ==
 
-See the [http://github.com/jayway/maven-android-plugin/tree/master maven-android-plugin 2.x README.txt]. (scroll to the bottom of that page to see the README.)
+See the [http://github.com/jayway/maven-android-plugin-samples/tree/master maven-android-plugin 2.x samples README.txt]. (scroll to the bottom of that page to see the README.)
 
 It will tell you about how to create your own Maven project for an Android application. When it comes to the "samples" referenced in the README, you can get them by clicking the "download" button at the top of the README page.
 
