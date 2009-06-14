@@ -4,7 +4,7 @@
 <sup>This page refers to a new set of samples which will be released soon, as part of Maven Android Plugin's new Android SDK 1.5 support.</sup>
 ----
 
-== Where can I find them? ==
+== Where can I find the samples? ==
 
 Right now, you can download the samples directly from github.com, where we host the source code.
 
@@ -12,7 +12,7 @@ Right now, you can download the samples directly from github.com, where we host 
 
 If you want, you can download a zip file with all sample code, by following the above link and then clicking the "download" button at the top.
 
-== What are they? ==
+== What are the samples? ==
 
 !ApiDemos is a sample application that comes with the Android SDK.
 
@@ -30,7 +30,7 @@ In mavenizing the {{{apidemos-*}}} projects, we have done the following with eac
  * Created a {{{pom.xml}}} for {{{apidemos-NN-app}}} which uses maven-android-plugin to build the apk.
  * Created a {{{pom.xml}}} for {{{apidemos-NN-platformtests}}} which uses maven-android-plugin to build the platformtest apk, install it together with the app's apk to the device and run the tests on device.
 
-== How to build them ==
+== How to build the samples ==
 If you have set up your development environment according to GettingStarted, you can build for example the !ApiDemos sample from Android SDK 1.5 like this:
 
  {{{
