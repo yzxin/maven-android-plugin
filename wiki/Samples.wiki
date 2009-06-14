@@ -1,6 +1,5 @@
 #summary About the sample code.
 
-= Samples =
 ----
 <sup>This page refers to a new set of samples which will be released soon, as part of Maven Android Plugin's new Android SDK 1.5 support.</sup>
 ----
