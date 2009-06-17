@@ -8,7 +8,7 @@
 
 You can download the samples directly from github.com, where we host the source code.
 
---> [http://github.com/jayway/maven-android-plugin-samples/tree/featurebranch-1.5-support Browse samples]
+--> [http://github.com/jayway/maven-android-plugin-samples/tree/master Browse samples]
 
 If you want, you can download a zip file with all sample code, by following the above link and then clicking the "download" button at the top.<br/>
 _(If you prefer using git, go ahead, the clone url is behind the link above too.)_
