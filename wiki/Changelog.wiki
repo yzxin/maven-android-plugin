@@ -29,6 +29,7 @@
    </configuration>
    }}}
    * If you want, you can set it using an environment variable, as done in the [Samples], for example {{{${env.MY_ANDROID_SDK_LOCATION}}}}. Then you will have to set that environment variable to the location where you installed Android SDK 1.5r2.
+   * You also have the option of setting it in a parent pom instead, with {{{<pluginManagement>}}}. Then you can skip including the {{{<sdk><path>}}} in your project pom altogether, and use a different specific Android SDK for a different project!
    * This change was made to make the plugin feel like less magic. Now you know that any environment variables you set, are only for yourself. The plugin doesn't read them; just its configuration parameters.
  * Duplicated the sample {{{apidemos}}} application into {{{apidemos-11}}} with code from the Android SDK 1.1, and {{{apidemos-15}}} with code from the Android SDK 1.5. They use, and will work with, their corresponding Android SDK. Use {{{apidemos-15}}} for Android SDK 1.5r2.
  * More and updated documentation, both wiki and in code.
