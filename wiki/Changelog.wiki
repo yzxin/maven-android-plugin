@@ -13,7 +13,7 @@
 
 ----
 = Changelog =
-<sup>in reverse chronilogical order</sup>
+<sup>in reverse chronological order</sup>
 
 == Maven Android Plugin 2.0.0-alpha3 ==
  * Issue 1: Support for Android SDK 1.5!
