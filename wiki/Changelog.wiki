@@ -15,8 +15,22 @@
 = Changelog =
 <sup>in reverse chronilogical order</sup>
 
-== Maven Android Plugin 2.0.0-alpha3 (planned) ==
+== Maven Android Plugin 2.0.0-alpha3 ==
  * Issue 1: Support for Android SDK 1.5!
+ * No longer requires any magic environment variables!
+   * Instead, a mandatory configuration parameter was added:
+   {{{
+   <artifactId>maven-android-plugin</artifactId>
+   <version>2.0.0-alpha3</version>
+   <configuration>
+       <sdk>
+           <path>/opt/android-sdk-linux_x86-1.5_r2</path>
+       </sdk>
+   </configuration>
+   }}}
+   * If you want, you can set it using an environment variable, as done in the [Samples], for example {{{${env.MY_ANDROID_SDK_LOCATION}}}}. Then you will have to set that environment variable to the location where you installed Android SDK 1.5r2.
+   * This change was made to make the plugin feel like less magic. Now you know that any environment variables you set, are only for yourself. The plugin doesn't read them; just its configuration parameters.
+ * Duplicated the sample {{{apidemos}}} application into {{{apidemos-11}}} with code from the Android SDK 1.1, and {{{apidemos-15}}} with code from the Android SDK 1.5. They use, and will work with, their corresponding Android SDK. Use {{{apidemos-15}}} for Android SDK 1.5r2.
  * More and updated documentation, both wiki and in code.
  * More tests in code.
 
@@ -58,12 +72,12 @@ Some of the details implemented:
 == Maven Android Plugin 1.0.2 ==
 Released by this project (Maven Android Plugin), based on [http://code.google.com/p/masa/source/list Masa svn revision 63], which includes fixes for the following:
 
- * [http://code.google.com/p/masa/issues/detail?id=4 Masa Issue 4]: Not possible to set finalName
- * [http://code.google.com/p/masa/issues/detail?id=15 Masa Issue 15]: !NullPointerException when localRepository not set
- * [http://code.google.com/p/masa/issues/detail?id=15 Masa Issue 16]: IntelliJ IDEA does not pick up generated-sources
- * [http://code.google.com/p/masa/issues/detail?id=15 Masa Issue 17]: apk file not attached properly to build
- * [http://code.google.com/p/masa/issues/detail?id=15 Masa Issue 18]: assets not included                                          
- * [http://code.google.com/p/masa/issues/detail?id=15 Masa Issue 19]: Not possible to specify jvm parameters to dx
+ * ~~[http://code.google.com/p/masa/issues/detail?id=4 Masa Issue 4]~~: Not possible to set finalName
+ * ~~[http://code.google.com/p/masa/issues/detail?id=15 Masa Issue 15]~~: !NullPointerException when localRepository not set
+ * ~~[http://code.google.com/p/masa/issues/detail?id=15 Masa Issue 16]~~: IntelliJ IDEA does not pick up generated-sources
+ * ~~[http://code.google.com/p/masa/issues/detail?id=15 Masa Issue 17]~~: apk file not attached properly to build
+ * ~~[http://code.google.com/p/masa/issues/detail?id=15 Masa Issue 18]~~: assets not included                                          
+ * ~~[http://code.google.com/p/masa/issues/detail?id=15 Masa Issue 19]~~: Not possible to specify jvm parameters to dx
 
 == Masa plugins 1.0.0 ==
 Released by the Masa project, based on [http://code.google.com/p/masa/source/list Masa svn revision 56].
