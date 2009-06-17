@@ -1,9 +1,9 @@
-#summary Get started using Maven-Android-Plugin.
+#summary Get started using Maven Android Plugin
 #labels Featured
 
 = Introduction =
 
-If you are new to Maven-Android-Plugin, the easy-to-use version 2 is for you. This is the place to start!
+If you are new to Maven Android Plugin, the easy-to-use version 2 is for you. This is the place to start!
 
 If you are a current user of [http://code.google.com/p/masa Masa] who wants all the new features and even more bugfixes, then Maven-Android-Plugin version 2 is for you too! 
 
@@ -26,14 +26,61 @@ Temporarily, until we have set up automatic deployment to Maven Central reposito
   </pluginRepositories>
 }}}
 
-== version 2 samples README.txt ==
 
-See the [http://github.com/jayway/maven-android-plugin-samples/tree/master maven-android-plugin 2.x samples README.txt]. (scroll to the bottom of that page to see the README.)
+== Setup your development environment ==
+  # Install Sun JDK 1.5+
+  # Install Android SDK 1.5_r2:
+     http://developer.android.com/sdk/1.5_r2/
+  # Set environment variable ANDROID_SDK_15 to the path of your installed Android SDK.
+  # Run the install script install.sh or install.bat, supplied with this project.
 
-It will tell you about how to create your own Maven project for an Android application. When it comes to the "samples" referenced in the README, you can get them by clicking the "download" button at the top of the README page.
 
+== Test your development environment ==
+
+Download the [Samples], as described on the [Samples] page.
+
+Try building the mavenized apidemos sample:
+
+ # {{{cd apidemos-15}}}
+ # Connect an Android device via USB, or start an emulator.
+ # {{{mvn install}}}
+
+That should build an apk for the {{{apidemos-15-app}}} sub project and then an apk for the {{{apidemos-15-platformtests}}} sub project. As part of the {{{apidemos-15-platformtests}}}, it will deploy both apk files to the connected device or emulator and run the platform tests.
+
+
+== Create your own Android application (apk) ==
+  # Create a project using the {{{android}}} tool:
+     * http://developer.android.com/guide/developing/other-ide.html#CreatingAProject
+  # Create a {{{pom.xml}}} in your project, using the sample {{{apidemos-15/apidemos-15-app/pom.xml}}} as template.
+     * Make these changes:
+     * Remove the entire {{{<parent>}}} tag.
+     * Change {{{<groupId>}}}, {{{<artifactId>}}}, {{{<version>}}} and {{{<name>}}} to your own.
+  # Move the source directory to where Maven expects it:
+     {{{
+     mv src java
+     mkdir -p src/main
+     mv java src/main/
+     }}}
+  # You won't need these files/directories with maven-android-plugin, so remove them:
+     {{{
+     rm -r bin build.xml default.properties build.properties libs gen
+     }}}
+     _TODO: see what the {{{tests}}} folder contains and what we should recommend doing with it._
+  # To build your apk, simply:
+     {{{
+     mvn install
+     }}}
+  # To deploy your apk to the connected device:
+     {{{
+     mvn com.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy
+     }}}
+
+== Run platform tests on device ==
+  _Documentation is TODO, but do check out the apidemos-15-platformtests in [Samples] for now._
+  
+  _Please feel free to update this page with more details / corrections!_
 === version 2 alpha/beta status ===
 
-You can see which versions of maven-android-plugin version 2.x are released in [http://code.google.com/p/maven-android-plugin-m2repo/source/browse/#svn/release/com/jayway/maven/plugins/android/generation2/maven-android-plugin our Maven Repository].
+You can see which versions of maven-android-plugin version 2.x are released in [http://code.google.com/p/maven-android-plugin-m2repo/source/browse/#svn/release/com/jayway/maven/plugins/android/generation2/maven-android-plugin our Maven Repository]. Read about the news in each version in the [Changelog].
 
-Currently we're in alpha status. This does not imply "bad quality code" in any way :) but rather means we have not decided on all names of goals and parameters. When maven-android-plugin 2.0.0-beta1 is released, all names of goals and parameters are finalized for all versions 2.x. Please help decide on good names for goals and parameters, by commenting on them on [http://groups.google.com/group/maven-android-developers Maven Android Developers]! There is some documentation of plugin goals and parameters on the [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html automatically generated maven site].
+We're currently in alpha status. This does not imply "bad quality code" in any way :) but rather means we have not decided on all names of goals and parameters. When maven-android-plugin 2.0.0-beta1 is released, we must have all names of currently implemented goals and parameters finalized for all versions 2.x. Please help decide on good names for goals and parameters, by commenting on them on [http://groups.google.com/group/maven-android-developers Maven Android Developers]! There is some documentation of plugin goals and parameters on the [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html automatically generated maven site].
