@@ -1,9 +1,5 @@
 #summary About the sample code.
 
-----
-<sup>This page refers to a new set of samples which will be released soon, as part of Maven Android Plugin's new Android SDK 1.5 support.</sup>
-----
-
 == Where can I find the samples? ==
 
 You can download the samples directly from github.com, where we host the source code.
