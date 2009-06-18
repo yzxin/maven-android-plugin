@@ -32,8 +32,20 @@ Temporarily, until we have set up automatic deployment to Maven Central reposito
   # Install Android SDK 1.5_r2:
      http://developer.android.com/sdk/1.5_r2/
   # Set environment variable ANDROID_SDK_15 to the path of your installed Android SDK.
-  # Run the install script install.sh or install.bat, supplied with this project.
+  # If you look in the pom.xml of the samples project you will find the following dependency.
 
+{{{
+  <dependency>
+    <groupId>android</groupId>
+    <artifactId>android</artifactId>
+    <version>1.5_r2</version>
+    <scope>provided</scope>
+  </dependency>
+}}}
+
+  This corresponds to the android.jar file in the Android SDK which is needed to compile all Android applications. Deploy this file to you local repository with the following command.
+
+    {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r2 -Dpackaging=jar -Dfile=$ANDROID_SDK_15/platforms/android-1.5/android.jar}}}
 
 == Test your development environment ==
 
