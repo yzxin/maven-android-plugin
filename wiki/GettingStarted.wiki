@@ -47,32 +47,6 @@ Temporarily, until we have set up automatic deployment to Maven Central reposito
 
     {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r2 -Dpackaging=jar -Dfile=$ANDROID_SDK_15/platforms/android-1.5/android.jar}}}
 
-=== Optional: alias for commandline ===
-
-Without any special settings, you can run standalone goals from the commandline like this:
-
-  {{{
-  mvn om.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy-file -Dfile=myApp.apk
-  }}}
-
-With an extra setting, you can do it as easy as this instead:
-
-  {{{
-  mvn android:deploy-file -Dfile=myApp.apk
-  }}}
-
-The extra setting that you need, is in your {{{~/.m2/settings.xml}}} file. Create it if you don't already have it:
-
-  {{{
-  <settings xmlns="http://maven.apache.org/POM/4.0.0"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                        http://maven.apache.org/xsd/settings-1.0.0.xsd">
-      <pluginGroups>
-          <pluginGroup>com.jayway.maven.plugins.android.generation2</pluginGroup>
-      </pluginGroups>
-  </settings>
-  }}}
 
 == Test your development environment ==
 
@@ -118,8 +92,43 @@ That should build an apk for the {{{apidemos-15-app}}} sub project and then an a
   _Documentation is TODO, but do check out the apidemos-15-platformtests in [Samples] for now._
   
   _Please feel free to update this page with more details / corrections!_
+
+
+----
+== More documentation ==
+
+There is some documentation of plugin goals and parameters on the [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html automatically generated maven site].
+
+
+=== Optional: alias for commandline ===
+
+Without any special settings, you can run standalone goals from the commandline like this:
+
+  {{{
+  mvn om.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy-file -Dfile=myApp.apk
+  }}}
+
+With an extra setting, you can do it as easy as this instead:
+
+  {{{
+  mvn android:deploy-file -Dfile=myApp.apk
+  }}}
+
+The extra setting that you need, is in your {{{~/.m2/settings.xml}}} file. Create it if you don't already have it:
+
+  {{{
+  <settings xmlns="http://maven.apache.org/POM/4.0.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                        http://maven.apache.org/xsd/settings-1.0.0.xsd">
+      <pluginGroups>
+          <pluginGroup>com.jayway.maven.plugins.android.generation2</pluginGroup>
+      </pluginGroups>
+  </settings>
+  }}}
+
 === version 2 alpha/beta status ===
 
 You can see which versions of maven-android-plugin version 2.x are released in [http://code.google.com/p/maven-android-plugin-m2repo/source/browse/#svn/release/com/jayway/maven/plugins/android/generation2/maven-android-plugin our Maven Repository]. Read about the news in each version in the [Changelog].
 
-We're currently in alpha status. This does not imply "bad quality code" in any way :) but rather means we have not decided on all names of goals and parameters. When maven-android-plugin 2.0.0-beta1 is released, we must have all names of currently implemented goals and parameters finalized for all versions 2.x. Please help decide on good names for goals and parameters, by commenting on them on [http://groups.google.com/group/maven-android-developers Maven Android Developers]! There is some documentation of plugin goals and parameters on the [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html automatically generated maven site].
+We're currently in alpha status. This does not imply "bad quality code" in any way :) but rather means we have not decided on all names of goals and parameters. When maven-android-plugin 2.0.0-beta1 is released, we must have all names of currently implemented goals and parameters finalized for all versions 2.x. Please help decide on good names for goals and parameters, by commenting on them on [http://groups.google.com/group/maven-android-developers Maven Android Developers]!
