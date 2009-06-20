@@ -7,6 +7,10 @@ This should be of no iterest to developers of Android applications. This is for 
 
 = Setup environment =
 
+== Building environment ==
+
+Set up the normal coding environment according to instructions on the [Building] page.
+
 == m2repo and m2site via svn ==
 
 Checkout the m2repo and m2site as described in their respective checkout instructions (for project members):
@@ -31,10 +35,6 @@ To automatically set correct mime-types on anything you {{{svn add}}}, put this 
   *.jpeg = svn:mime-type=image/jpeg
   *.gif = svn:mime-type=image/gif
   }}}
-
-== Clone the git repos ==
-
-Clone the git repos according to [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 Source].
 
 == GPG ==
 
@@ -212,7 +212,7 @@ Commit the updates to git.
 Perform "half" a release. We can't sync the samples to Maven Central because they have dependencies to things not already on Central (the android jar). Therefore we don't deploy them to our m2repo at all. We do however want a release tag in git, so do it like this:
 
   {{{
-  mvn clean && ANDROID_SDK_11=/opt/android-sdk-linux_x86-1.1_r1 ANDROID_SDK_15=/opt/android-sdk-linux_x86-1.5_r2 mvn install release:prepare
+  mvn clean && mvn install release:prepare
   }}}
 
 That should test everything and create a release tag in git.
