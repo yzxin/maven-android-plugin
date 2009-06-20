@@ -16,12 +16,12 @@ There are other projects which also do similar things as Maven Android Plugin. T
 
 
 == mvndroid ==
-|| *Home page*                     || http://code.google.com/p/mvndroid                               ||
-|| *Mailing list*                  || n/a                                                             ||
-|| *License*                       || Apache License  2.0                                             ||
-|| *Last known release*            || 2009-03-18 mvndroid-0.9.0                                       ||
-|| *Last known source code commit* || [http://code.google.com/p/mvndroid/source/list 2009-04-11]      ||
-|| *Last checked*                  || 2009-06-20                                                      ||
+|| *Home page*                     || http://code.google.com/p/mvndroid                                                                        ||
+|| *Mailing list*                  || n/a                                                                                                      ||
+|| *License*                       || Apache License  2.0                                                                                      ||
+|| *Last known release*            || [http://mvndroid.googlecode.com/svn/maven/2/com/googlecode/mvndroid/mvndroid/ 2009-03-18] mvndroid-0.9.0 ||
+|| *Last known source code commit* || [http://code.google.com/p/mvndroid/source/list 2009-04-11]                                               ||
+|| *Last checked*                  || 2009-06-20                                                                                               ||
 || *Interesting because*           || They are doing {{{<packaging>apk</packaging>}}} instead of {{{<packaging>android:apk</packaging>}}}, which is probably better. ||
 
 
