@@ -186,9 +186,36 @@ Go ahead and commit the updated m2repo.
   svn ci -m 'Deployed maven-android-plugin 2.0.1.'
   }}}
 
+== Update samples poms ==
+
+Update the samples' {{{pom.xml}}} files to use the newly released version of the plugin, instead of the previous one.
+
+Try the updated samples with an emulator or usb device.
+
+Commit the updates to git.
+
+== "Half" release samples ==
+Perform "half" a release. We can't sync the samples to Maven Central because they have dependencies to things not already on Central (the android jar). Therefore we don't deploy them to our m2repo at all. We do however want a release tag in git, so do it like this:
+
+  {{{
+  mvn clean && ANDROID_SDK_11=/opt/android-sdk-linux_x86-1.1_r1 ANDROID_SDK_15=/opt/android-sdk-linux_x86-1.5_r2 mvn install release:prepare
+  }}}
+
+That should test everything and create a release tag in git.
+
+Afterwards, you should clean up the residue release files:
+
+  {{{
+  mvn release:clean
+  }}}
+
+== Update Samples wiki page ==
+
+Update the [Samples] wiki page. For example set the link to the release tag you just created.
+
 == Update Changelog ==
 
-Update [Changelog] with all interesting information, such as:
+Update [Changelog] with all interesting information about the plugin release, such as:
 
   * Fixed Issues - link to them.
   * New features - link to any related Issues.
