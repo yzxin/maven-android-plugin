@@ -32,6 +32,10 @@ To automatically set correct mime-types on anything you {{{svn add}}}, put this 
   *.gif = svn:mime-type=image/gif
   }}}
 
+== Clone the git repos ==
+
+Clone the git repos according to [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 Source].
+
 == GPG ==
 
 In Ubuntu, you should use [apt:seahorse seahorse]. It makes these things easier. I think
@@ -66,6 +70,7 @@ If not, delete it and check it out according to the setup instructions above.
 To perform the SNAPSHOT release:
 
   {{{
+  cd ~/maven-android-plugin
   mvn clean && mvn install && mvn deploy -P official-release
   }}}
 
@@ -119,6 +124,7 @@ Check the status of your m2site workingcopy. It should show nothing:
   {{{
   cd ~/maven-android-plugin-m2site
   svn st
+  svn up
   }}}
 
 If not, delete it and check it out according to the setup instructions above.
@@ -128,6 +134,7 @@ If not, delete it and check it out according to the setup instructions above.
 To perform the release:
 
   {{{
+  cd ~/maven-android-plugin
   mvn clean && mvn install && mvn release:prepare release:perform
   }}}
 
@@ -189,6 +196,11 @@ Go ahead and commit the updated m2repo.
   }}}
 
 == Update samples poms ==
+
+
+  {{{
+  cd ~/maven-android-plugin-samples
+  }}}
 
 Update the samples' {{{pom.xml}}} files to use the newly released version of the plugin, instead of the previous one.
 
