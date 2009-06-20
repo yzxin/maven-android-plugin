@@ -1,0 +1,199 @@
+#summary Instructions for deployment.
+#labels Phase-Deploy
+
+= Introduction =
+
+This should be of no iterest to developers of Android applications. This is for those developers of the Maven Android Plugin who perform releases of the plugin.
+
+= Setup environment =
+
+== m2repo and m2site via svn ==
+
+Checkout the m2repo and m2site as described in their respective checkout instructions (for project members):
+
+  
+  * http://code.google.com/p/maven-android-plugin-m2repo/source/checkout
+  * http://code.google.com/p/maven-android-plugin-m2site/source/checkout
+  
+For simplicity, the rest of this page will assume you have checked them out to your home directory, {{{~}}}.
+
+== Configure subversion ==
+To automatically set correct mime-types on anything you {{{svn add}}}, put this in your {{{~/.subversion/config}}}:
+
+  {{{
+  enable-auto-props = yes
+  [auto-props]
+  *.txt = svn:mime-type=text/plain
+  *.html = svn:mime-type=text/html
+  *.css = svn:mime-type=text/css
+  *.png = svn:mime-type=image/png
+  *.jpg = svn:mime-type=image/jpeg
+  *.jpeg = svn:mime-type=image/jpeg
+  *.gif = svn:mime-type=image/gif
+  }}}
+
+== GPG ==
+
+In Ubuntu, you should use [apt:seahorse seahorse]. It makes these things easier. I think
+it includes the required gpg-agent too.
+
+  * Make sure you have a gpg key. Maven Central requires it.
+    * Here are some instructions: http://maven.apache.org/developers/release/pmc-gpg-keys.html
+    * You should upload it to http://pgp.mit.edu/
+  * Run some kind of gpg-agent. Our {{{pom.xml}}} requires it.
+
+
+= Deploy a SNAPSHOT version =
+
+If you want to make available a binary version of Maven Android Plugin for someone to test, before making a proper release, deploy a SNAPSHOT version.
+
+Don't worry, it will sit in a separate directory structure from the proper releases. It won't end up on Maven Central.
+
+
+== Check the m2repo ==
+Check the status of your m2repo workingcopy. It should show nothing:
+
+  {{{
+  cd ~/maven-android-plugin-m2repo
+  svn st
+  }}}
+
+If not, delete it and check it out according to the setup instructions above.
+
+== Do it! ==
+
+To perform the SNAPSHOT release:
+
+  {{{
+  mvn clean && mvn install && mvn deploy -P official-release
+  }}}
+
+That should deploy the artifacts into {{{~/maven-android-plugin-m2repo/snapshot/}}}.
+
+== Upload the m2repo ==
+Check if there is anything you need to {{{svn add}}}:
+
+  {{{
+  cd ~/maven-android-plugin-m2repo
+  svn st
+  }}}
+
+...and possibly add whatever is not added yet, for example:
+
+  {{{
+  svn add *
+  }}}
+
+...or to automatically add all non-added files:
+
+  {{{
+  svn st | grep '^\?' | sed -r 's/^\? +//' | xargs svn add
+  }}}
+
+Go ahead and commit the updated m2repo.
+
+  {{{
+  svn ci -m 'Deployed maven-android-plugin 2.0.1-SNAPSHOT.'
+  }}}
+
+
+= Perform a RELEASE =
+
+This is the real deal. A release will be synced to Maven Central after a few hours, and then there is NO way to have it removed. Make sure it passes all tests!
+
+== Check the m2repo ==
+Check the status of your m2repo workingcopy. It should show nothing:
+
+  {{{
+  cd ~/maven-android-plugin-m2repo
+  svn st
+  }}}
+
+If not, delete it and check it out according to the setup instructions above.
+
+== Check the m2site ==
+Check the status of your m2site workingcopy. It should show nothing:
+
+  {{{
+  cd ~/maven-android-plugin-m2site
+  svn st
+  }}}
+
+If not, delete it and check it out according to the setup instructions above.
+
+== Do it! ==
+
+To perform the release:
+
+  {{{
+  mvn clean && mvn install && mvn release:prepare release:perform
+  }}}
+
+That should perform the entire release, including deploying the site into {{{~/maven-android-plugin-m2site/}}} and deploying the plugin into {{{~/maven-android-plugin-m2repo/release/}}}.
+
+== Upload the m2site ==
+Check if there is anything you need to {{{svn add}}}:
+
+  {{{
+  cd ~/maven-android-plugin-m2site
+  svn st
+  }}}
+
+...and possibly add whatever is not added yet, for example:
+
+  {{{
+  svn add *
+  }}}
+
+...or to automatically add all non-added files:
+
+  {{{
+  svn st | grep '^\?' | sed -r 's/^\? +//' | xargs svn add
+  }}}
+
+Go ahead and commit the updated site.
+
+  {{{
+  svn ci -m 'Generated maven site for maven-android-plugin 2.0.1.'
+  }}}
+
+Mime-types should hopefully be correct. Check at http://maven-android-plugin-m2site.googlecode.com/svn/index.html
+
+
+== Upload the m2repo ==
+Check if there is anything you need to {{{svn add}}}:
+
+  {{{
+  cd ~/maven-android-plugin-m2repo
+  svn st
+  }}}
+
+...and possibly add whatever is not added yet, for example:
+
+  {{{
+  svn add *
+  }}}
+
+...or to automatically add all non-added files:
+
+  {{{
+  svn st | grep '^\?' | sed -r 's/^\? +//' | xargs svn add
+  }}}
+
+Go ahead and commit the updated m2repo.
+
+  {{{
+  svn ci -m 'Deployed maven-android-plugin 2.0.1.'
+  }}}
+
+== Update Changelog ==
+
+Update [Changelog] with all interesting information, such as:
+
+  * Fixed Issues - link to them.
+  * New features - link to any related Issues.
+  * Any changes that break backwards compatibility - tell users exactly what they must do to upgrade their projects.
+
+== Announce ==
+
+Announce on [http://groups.google.com/group/maven-android-developers Maven Android Developers]!
