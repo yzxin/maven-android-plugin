@@ -11,3 +11,15 @@ For normal use, when you develop Android applications using maven-android-plugin
 
  * Check out the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 source code] for maven-android-plugin.
  * mvn clean install
+
+
+= How to build maven-android-plugin-samples =
+
+ * Install Android SDK 1.5.
+ * Set environment variable ANDROID_SDK_15 to the path where you installed it.
+
+ * Install Android SDK 1.1.
+ * Set environment variable ANDROID_SDK_11 to the path where you installed it.
+
+ * Check out the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 source code] for maven-android-plugin-source.
+ * mvn clean && mvn install
