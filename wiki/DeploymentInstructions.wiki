@@ -213,12 +213,16 @@ Go ahead and commit the updated m2repo.
 
 Update the samples' {{{pom.xml}}} files to use the newly released version of the plugin, instead of the previous one. See for example [http://github.com/jayway/maven-android-plugin-samples/commit/186454c216d7b469da30407cd42d089b355ca5eb this commit].
 
-Try the updated samples with an emulator or usb device.
+Try the updated samples with an emulator or usb device:
+  {{{
+  mvn clean && mvn install
+  }}}
 
 Commit the updates to git:
 
   {{{
   git commit -m 'Use the most recently released version of maven-android-plugin.'
+  }}}
 
 == "Half" release samples ==
 Perform "half" a release. We can't sync the samples to Maven Central because they have dependencies to things not already on Central (the android jar). Therefore we don't deploy them to our m2repo at all. We do however want a release tag in git, so do it like this:
