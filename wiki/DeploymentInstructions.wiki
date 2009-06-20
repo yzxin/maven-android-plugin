@@ -21,6 +21,15 @@ Checkout the m2repo and m2site as described in their respective checkout instruc
   
 For simplicity, the rest of this page will assume you have checked them out to your home directory, {{{~}}}.
 
+== More environment variables ==
+
+Apart from the environment variable(s) you set up in [Building], you also need to set up these:
+
+  {{{
+  export MAVEN_ANDROID_PLUGIN_M2REPO_SVN_WORKINGCOPY=~/maven-android-plugin-m2repo
+  export MAVEN_ANDROID_PLUGIN_M2SITE_SVN_WORKINGCOPY=~/maven-android-plugin-m2site
+  }}}
+
 == Configure subversion ==
 To automatically set correct mime-types on anything you {{{svn add}}}, put this in your {{{~/.subversion/config}}}:
 
