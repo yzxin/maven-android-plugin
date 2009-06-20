@@ -20,6 +20,7 @@
    * It is now possible to run standalone goals (such as {{{android:undeploy-file}}}) directly from commandline, without having a pom with the required config parameter {{{<sdk><path>...}}} in it. It can instead be set on commandline with the {{{-Dandroid.sdk.path}}} parameter.
  * Improved error messages for missing sdk path: added suggestions for configuration options.
  * Issue 19: Created DeploymentInstructions wiki page
+ * Issue 16: Add site, source:jar, javadoc:jar to release configuration	
 
 == Maven Android Plugin 2.0.0-alpha3 ==
  * Issue 1: Support for Android SDK 1.5!
