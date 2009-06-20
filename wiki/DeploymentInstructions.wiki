@@ -56,6 +56,7 @@ Check the status of your m2repo workingcopy. It should show nothing:
   {{{
   cd ~/maven-android-plugin-m2repo
   svn st
+  svn up
   }}}
 
 If not, delete it and check it out according to the setup instructions above.
@@ -107,6 +108,7 @@ Check the status of your m2repo workingcopy. It should show nothing:
   {{{
   cd ~/maven-android-plugin-m2repo
   svn st
+  svn up
   }}}
 
 If not, delete it and check it out according to the setup instructions above.
