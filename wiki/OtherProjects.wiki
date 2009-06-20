@@ -6,13 +6,13 @@ There are other projects which also do similar things as Maven Android Plugin. T
 
 
 == Masa ==
-|| *Home page*                     || http://code.google.com/p/masa                          ||
-|| *Mailing list*                  || http://groups.google.com/group/masa-developers         ||
-|| *License*                       || Apache License  2.0                                    ||
-|| *Last known release*            || 2009-02-14 masa-project-1.0.0                          ||
-|| *Last known source code commit* || [http://code.google.com/p/masa/source/list 2009-03-13] ||
-|| *Last checked*                  || 2009-06-20                                             ||
-|| *Interesting because*           || Maven Android Plugin was based on Masa: [Changelog]    ||
+|| *Home page*                     || http://code.google.com/p/masa                                                                             ||
+|| *Mailing list*                  || http://groups.google.com/group/masa-developers                                                            ||
+|| *License*                       || Apache License  2.0                                                                                       ||
+|| *Last known release*            || [http://m2-repo.googlecode.com/svn/release/org/jvending/masa/masa-project/ 2009-02-14] masa-project-1.0.0 ||
+|| *Last known source code commit* || [http://code.google.com/p/masa/source/list 2009-03-13]                                                    ||
+|| *Last checked*                  || 2009-06-20                                                                                                ||
+|| *Interesting because*           || Maven Android Plugin was based on Masa: [Changelog]                                                       ||
 
 
 == mvndroid ==
