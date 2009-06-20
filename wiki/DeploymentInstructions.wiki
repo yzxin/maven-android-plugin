@@ -38,7 +38,7 @@ To automatically set correct mime-types on anything you {{{svn add}}}, put this 
 
 == GPG ==
 
-In Ubuntu, you should use [apt://seahorse seahorse]. It makes these things easier. I think
+In Ubuntu, you should use Seahorse ({{{sudo aptitude install seahorse}}}). It makes these things easier. I think
 it includes the required gpg-agent too.
 
   * Make sure you have a gpg key. Maven Central requires it.
