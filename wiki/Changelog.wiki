@@ -15,6 +15,16 @@
 = Changelog =
 <sup>in reverse chronological order</sup>
 
+== Maven Android Plugin 2.0.0-alpha6 (planned) ==
+ * Issue 24: mvn install fails on Windows for {{{<packaging>android:apk:platformTest</packaging>}}}
+   * MAJOR CHANGE: Solving this had to result in a major change in how poms are defined. It really was necessary for fixing this issue. Can't be done without changing the {{{<packaging>}}} to something without ":", so it's best to do it all at once now while we're still in alpha.
+   * The change is that all Android application poms and all Android platformTest poms will have to have {{{<packaging>apk</packaging>}}} instead of the separate {{{<packaging>android:apk</packaging>}}} and {{{<packaging>android:apk:platformTest</packaging>}}} which they've had before. Also, of course, if the platformTest pom has a dependency to another apk, that {{{<dependency>}}} will now have to be {{{<type>apk</type>}}} instead of {{{<type>android:apk</type>}}}.
+   * {{{<packaging>apk</packaging>}}} also makes more sense, especially when comparing to other packaging types such as jar, war and so on...
+ * Updated [Samples] to reflect the fixed Issue 24.
+ * Because both application and platformTest poms have the same {{{<packaging>}}} now, Maven Android Plugin autodetects whether to enable integration test goals when going through the {{{integration-test}}} phase. The autodetection is based on whether it finds any test classes (those which extend {{{junit.framework.*}}} or {{{android.test.*}}}) in your application. It looks in both the project's source directory and any jar dependencies brought in, which will be included in the apk.
+ * Test class autodetection can be overridden with the config parameter {{{<enableIntegrationTest>true|false|auto</enableIntegrationTest>}}}.
+
+
 == Maven Android Plugin 2.0.0-alpha5 ==
  * Issue 23: !PlatformTestMojo requires PATH
    * Doesn't expect PATH to be set. Uses tools in the configured sdk instead. (fixed in one more place)
