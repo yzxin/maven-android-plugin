@@ -15,6 +15,10 @@
 = Changelog =
 <sup>in reverse chronological order</sup>
 
+== Maven Android Plugin 2.0.0-alpha5 (planned) ==
+ * Issue 23: !PlatformTestMojo requires PATH
+   * Doesn't expect PATH to be set. Uses tools in the configured sdk instead. (fixed in one more place)
+
 == Maven Android Plugin 2.0.0-alpha4 ==
  * Issue 21: Run standalone goals (without pom)
    * It is now possible to run standalone goals (such as {{{android:undeploy-file}}}) directly from commandline, without having a pom with the required config parameter {{{<sdk><path>...}}} in it. It can instead be set on commandline with the {{{-Dandroid.sdk.path}}} parameter.
