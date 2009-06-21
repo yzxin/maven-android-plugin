@@ -71,7 +71,8 @@ That should build an apk for the {{{apidemos-15-app}}} sub project and then an a
   # Create a {{{pom.xml}}} in your project, using the sample {{{apidemos-15/apidemos-15-app/pom.xml}}} as template.
      * Make these changes:
      * Remove the entire {{{<parent>}}} tag.
-     * Change {{{<groupId>}}}, {{{<artifactId>}}}, {{{<version>}}} and {{{<name>}}} to your own.
+     * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own.
+     * Change {{{<version>}}} to {{{0.1.0-SNAPSHOT}}} or some other {{{-SNAPSHOT}}} version you feel is appropriate for your project.
   # Move the source directory to where Maven expects it:
      {{{
      mv src java
