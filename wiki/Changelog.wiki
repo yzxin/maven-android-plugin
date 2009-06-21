@@ -15,7 +15,7 @@
 = Changelog =
 <sup>in reverse chronological order</sup>
 
-== Maven Android Plugin 2.0.0-alpha5 (planned) ==
+== Maven Android Plugin 2.0.0-alpha5 ==
  * Issue 23: !PlatformTestMojo requires PATH
    * Doesn't expect PATH to be set. Uses tools in the configured sdk instead. (fixed in one more place)
 
