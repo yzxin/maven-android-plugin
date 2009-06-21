@@ -47,6 +47,10 @@ Temporarily, until we have set up automatic deployment to Maven Central reposito
 
     {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r2 -Dpackaging=jar -Dfile=$ANDROID_SDK_15/platforms/android-1.5/android.jar}}}
 
+On Windows, that would be:
+
+    {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r2 -Dpackaging=jar -Dfile=%ANDROID_SDK_15%/platforms/android-1.5/android.jar}}}
+
 
 == Test your development environment ==
 
