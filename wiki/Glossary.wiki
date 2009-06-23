@@ -2,9 +2,12 @@
 
 == General ==
 
-The rule of thumb for names of things in Maven Android Plugin, is that they should reflect the way other things in Maven-world are named. In second hand, when there is no appropriate name for it in Maven-world, use whatever it is called in Android-world.
+The rule(s) of thumb for naming things in Maven Android Plugin, are:
+ * they should reflect the way other things in Maven-world are named.
+ * In second hand, when there is no appropriate name for it in Maven-world, use whatever it is called in Android-world.
 
-*Above all: it should be very clear what all names mean.*
+*Above all:*
+ * *it should be very clear what all names mean.*
 
 == Terms and their meanings ==
 
