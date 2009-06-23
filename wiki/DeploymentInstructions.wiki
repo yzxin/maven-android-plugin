@@ -228,7 +228,7 @@ Commit the updates to git:
 Perform "half" a release. We can't sync the samples to Maven Central because they have dependencies to things not already on Central (the android jar). Therefore we don't deploy them to our m2repo at all. We do however want a release tag in git, so do it like this:
 
   {{{
-  mvn clean && mvn install release:prepare
+  mvn clean && mvn release:prepare
   }}}
 
 That should test everything and create a release tag in git.
