@@ -1,0 +1,15 @@
+#summary Glossary of terms used in Maven Android Plugin.
+
+== General ==
+
+The rule of thumb for names of things in Maven Android Plugin, is that they should reflect the way other things in Maven-world are named. In second hand, when there is no appropriate name for it in Maven-world, use whatever it is called in Android-world.
+
+*Above all: it should be very clear what all names mean.*
+
+== Terms and their meanings ==
+
+|| *Term*  || *Meaning*                                                                                                                                               || *Origin*                                                                            ||
+|| deploy  || Deploy an apk to a running emulator or a USB connected device.                                                                                          || Maven, [http://cargo.codehaus.org/Maven2+plugin Cargo Maven2 Plugin]                ||
+|| install || Install an artifact (jar, pom, war, apk) to ~/.m2/repository                                                                                            || Maven, [http://maven.apache.org/plugins/maven-install-plugin/ Maven Install Plugin] ||
+|| instrument(ation) || One Android application (apk) does things (fires Intents, presses buttons on) to another Android app (apk) running in a device or emulator.   || Android, [http://developer.android.com/guide/topics/manifest/instrumentation-element.html <instrumentation>]                                                                            || TODO: s/platformTest/instrumentation/g ||
+|| integration-test || The Maven phase where all integration test actions are performed. In a {{{<packaging>apk</packaging>}}} project, that includes deploying apk's and instrumenting them. || Maven, [http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html Maven Lifecycles] ||
