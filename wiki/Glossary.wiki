@@ -1,13 +1,18 @@
 #summary Glossary of terms used in Maven Android Plugin.
 
+----
+<sup>This page is related to [http://code.google.com/p/maven-android-plugin/issues/detail?id=6 Issue 6].<br/>
+Anything marked _TODO_  on this page is of course not implemented yet.</sup>
+----
+
 == General ==
 
 The rule(s) of thumb for naming things in Maven Android Plugin, are:
- * they should reflect the way other things in Maven-world are named.
+ * They should reflect the way other things in Maven-world are named.
  * In second hand, when there is no appropriate name for it in Maven-world, use whatever it is called in Android-world.
 
 *Above all:*
- * *it should be very clear what all names mean.*
+ * *It should be very clear what all names mean.*
 
 == Terms and their meanings ==
 
