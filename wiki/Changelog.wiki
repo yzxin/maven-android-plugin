@@ -18,7 +18,7 @@
 == Maven Android Plugin 2.0.0-alpha8 (planned) ==
  * Issue 6: look over parameter names and expressions
    * [Glossary] contains the updated names, and motivations.
-   * Changed platformtest to instrument(ation).
+   * Changed _platformtest_ to _instrument(ation)_.
    * 
 
 == Maven Android Plugin 2.0.0-alpha7 ==
