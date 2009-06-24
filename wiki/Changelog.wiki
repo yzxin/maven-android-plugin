@@ -22,9 +22,11 @@
    * Renamed goal {{{android:adbPull}}} to {{{android:pull}}}.
      * Renamed config param {{{<destinationFileOrDirectory>}}} to {{{<destination>}}}.
      * Renamed config param {{{<sourceFileOrDirectory>}}} to {{{<source>}}}.
+     * Improved error handling.
    * Renamed goal {{{android:adbPush}}} to {{{android:push}}}.
      * Renamed config param {{{<destinationFileOrDirectory>}}} to {{{<destination>}}}.
      * Renamed config param {{{<sourceFileOrDirectory>}}} to {{{<source>}}}.
+     * Improved error handling.
    * Renamed goal {{{android:undeploy-packageName}}} to {{{android:undeploy-package}}}.
      * Renamed config param {{{<packageName>}}} to {{{<package>}}}.
    * Renamed goal {{{android:deployDependencies}}} to {{{android:deploy-dependencies}}}.
