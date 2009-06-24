@@ -15,6 +15,10 @@
 = Changelog =
 <sup>in reverse chronological order</sup>
 
+== Maven Android Plugin 2.0.0-alpha7 (planned) ==
+ * Issue 25: {{{mvn android:deploy}}} doesn't work
+   * Now it does :)
+
 == Maven Android Plugin 2.0.0-alpha6 ==
  * Issue 24: mvn install fails on Windows for {{{<packaging>android:apk:platformTest</packaging>}}}
    * MAJOR CHANGE: Solving this had to result in a major change in how poms are defined. It really was necessary for fixing this issue. Can't be done without changing the {{{<packaging>}}} to something without ":", so it's best to do it all at once now while we're still in alpha.
