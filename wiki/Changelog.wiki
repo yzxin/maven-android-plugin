@@ -20,12 +20,17 @@
    * [Glossary] contains the updated names, and motivations.
    * Renamed anything like _platformtest_ to _instrument(ation)_.
    * Renamed goal {{{android:adbPull}}} to {{{android:pull}}}.
+     * Renamed config param {{{<destinationFileOrDirectory>}}} to {{{<destination>}}}.
+     * Renamed config param {{{<sourceFileOrDirectory>}}} to {{{<source>}}}.
    * Renamed goal {{{android:adbPush}}} to {{{android:push}}}.
-   * Renamed goal {{{android:deployDependencies}}} to {{{android:deploy-dependencies}}}.
+     * Renamed config param {{{<destinationFileOrDirectory>}}} to {{{<destination>}}}.
+     * Renamed config param {{{<sourceFileOrDirectory>}}} to {{{<source>}}}.
    * Renamed goal {{{android:undeploy-packageName}}} to {{{android:undeploy-package}}}.
-   * Renamed config param {{{<>}}} to {{{<>}}}.
-   * Renamed config param {{{<>}}} to {{{<>}}}.
-   * Renamed config param {{{<>}}} to {{{<>}}}.
+     * Renamed config param {{{<packageName>}}} to {{{<package>}}}.
+   * Renamed goal {{{android:deployDependencies}}} to {{{android:deploy-dependencies}}}.
+     * Renamed config param {{{<undeployApkBeforeDeploying>}}} to {{{<undeployBeforeDeploy>}}}.
+   * Renamed goal {{{android:platformTest}}} to {{{android:instrument}}}.
+     * Renamed config param {{{<testsPackage>}}} to {{{<testPackage>}}}.
 
 
 
