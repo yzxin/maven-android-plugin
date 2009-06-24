@@ -18,7 +18,6 @@
 == Maven Android Plugin 2.0.0-alpha8 (planned) ==
  * Issue 6: look over parameter names and expressions
    * [Glossary] contains the updated names, and motivations.
-   * Renamed anything like _platformtest_ to _instrument(ation)_.
    * Renamed goal {{{android:adbPull}}} to {{{android:pull}}}.
      * Renamed config param {{{<destinationFileOrDirectory>}}} to {{{<destination>}}}.
      * Renamed config param {{{<sourceFileOrDirectory>}}} to {{{<source>}}}.
