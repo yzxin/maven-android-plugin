@@ -15,6 +15,12 @@
 = Changelog =
 <sup>in reverse chronological order</sup>
 
+== Maven Android Plugin 2.0.0-alpha8 (planned) ==
+ * Issue 6: look over parameter names and expressions
+   * [Glossary] contains the updated names, and motivations.
+   * Changed platformtest to instrument(ation).
+   * 
+
 == Maven Android Plugin 2.0.0-alpha7 ==
  * Issue 25: {{{mvn android:deploy}}} doesn't work
    * Now it does :)
