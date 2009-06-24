@@ -17,8 +17,8 @@
 
 == Maven Android Plugin 2.0.0-alpha8 (planned) ==
  * Issue 6: look over parameter names and expressions
-   * [Glossary] contains the updated names, and motivations.
    * [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html mvn site] is updated with new goal names, and their config params.
+   * [Glossary] is updated.
    * Renamed goal {{{android:adbPull}}} to {{{android:pull}}}.
      * Renamed config param {{{<destinationFileOrDirectory>}}} to {{{<destination>}}}.
      * Renamed config param {{{<sourceFileOrDirectory>}}} to {{{<source>}}}.
