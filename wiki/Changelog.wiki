@@ -15,7 +15,7 @@
 = Changelog =
 <sup>in reverse chronological order</sup>
 
-== Maven Android Plugin 2.0.0-alpha7 (planned) ==
+== Maven Android Plugin 2.0.0-alpha7 ==
  * Issue 25: {{{mvn android:deploy}}} doesn't work
    * Now it does :)
 
