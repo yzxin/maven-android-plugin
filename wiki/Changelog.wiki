@@ -40,6 +40,7 @@
      * Renamed config param {{{-Dandroid.test.testPackage}}} to {{{-Dandroid.instrumentationPackage}}}.
      * Renamed config param {{{-Dandroid.test.testRunner}}} to {{{-Dandroid.instrumentationRunner}}}.
      * Renamed config param {{{<>}}} to {{{<>}}}.
+   * Samples: Renamed apidemos-*-platformtests to apidemos-*-instrumentationtest.
 
 
 
