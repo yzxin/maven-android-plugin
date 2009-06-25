@@ -29,10 +29,17 @@
      * Improved error handling.
    * Renamed goal {{{android:undeploy-packageName}}} to {{{android:undeploy-package}}}.
      * Renamed config param {{{<packageName>}}} to {{{<package>}}}.
+     * Renamed config param {{{-Dpackage}}} to {{{-Dandroid.package}}}.
+     * Resolve config param {{{<package>}}}/{{{-Dandroid.package}}} from {{{AndroidManifest.xml}}} if not defined.
    * Renamed goal {{{android:deployDependencies}}} to {{{android:deploy-dependencies}}}.
      * Renamed config param {{{<undeployApkBeforeDeploying>}}} to {{{<undeployBeforeDeploy>}}}.
    * Renamed goal {{{android:platformTest}}} to {{{android:instrument}}}.
      * Renamed config param {{{<testsPackage>}}} to {{{<testPackage>}}}.
+     * Renamed config param {{{<testPackage>}}} to {{{<instrumentationPackage>}}}.
+     * Renamed config param {{{<testRunner>}}} to {{{<instrumentationRunner>}}}.
+     * Renamed config param {{{-Dandroid.test.testPackage}}} to {{{-Dandroid.instrumentationPackage}}}.
+     * Renamed config param {{{-Dandroid.test.testRunner}}} to {{{-Dandroid.instrumentationRunner}}}.
+     * Renamed config param {{{<>}}} to {{{<>}}}.
 
 
 
