@@ -5,7 +5,7 @@
 
 You can download the samples directly from github.com, where we host the source code.
 
---> [http://github.com/jayway/maven-android-plugin-samples/tree/samples-2.0.0-alpha7 Browse samples-2.0.0-alpha7]
+--> [http://github.com/jayway/maven-android-plugin-samples/tree/samples-2.0.0-alpha8 Browse samples-2.0.0-alpha8]
 
 If you want, you can download a zip file with all sample code, by following the above link and then clicking the "download" button at the top.<br/>
 _(If you prefer using git, go ahead, the clone url is behind the link above too.)_
@@ -24,9 +24,9 @@ There are two sets of samples:
 
 In mavenizing the {{{apidemos-*}}} projects, we have done the following with each of them:
  * Restructured subdirectories to fit the default Maven structure.
- * Split it into two projects: the app, and the platformtests.
+ * Split it into two projects: the app, and the instrumentationtest.
  * Created a {{{pom.xml}}} for {{{apidemos-NN-app}}} which uses maven-android-plugin to build the apk.
- * Created a {{{pom.xml}}} for {{{apidemos-NN-platformtests}}} which uses maven-android-plugin to build the platformtest apk, install it together with the app's apk to the device and run the tests on device.
+ * Created a {{{pom.xml}}} for {{{apidemos-NN-instrumentationtest}}} which uses maven-android-plugin to build the instrumentationtest apk, install it together with the app's apk to the device and run the tests on device.
 
 == How to build the samples ==
 If you have set up your development environment according to GettingStarted, you can build for example the !ApiDemos sample from Android SDK 1.5 like this:
@@ -38,6 +38,6 @@ If you have set up your development environment according to GettingStarted, you
 
 
 That should build an apk for the {{{apidemos-15-app}}} project and then an apk for the
-{{{apidemos-15-platformtests}}} project. As part of the {{{apidemos-15-platformtests}}}
+{{{apidemos-15-instrumentationtest}}} project. As part of the {{{apidemos-15-instrumentationtest}}}
 project, it will deploy both apk files to the connected device or emulator and
-run the platform tests.
+run the instrumentation tests.
