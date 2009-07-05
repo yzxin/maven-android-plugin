@@ -204,14 +204,14 @@ Go ahead and commit the updated m2repo.
   svn ci -m 'Deployed maven-android-plugin 2.0.1.'
   }}}
 
-== Update samples poms ==
+== Update samples poms (to release) ==
 
 
   {{{
   cd ~/maven-android-plugin-samples
   }}}
 
-Update the samples' {{{pom.xml}}} files to use the newly released version of the plugin, instead of the previous one. See for example [http://github.com/jayway/maven-android-plugin-samples/commit/186454c216d7b469da30407cd42d089b355ca5eb this commit].
+Update the samples' {{{pom.xml}}} files to use the newly released version of the plugin, instead of the previous one. See for example [http://github.com/jayway/maven-android-plugin-samples/commit/b7bb66790495002e3456d50727987954cc84f100 this commit].
 
 Try the updated samples with an emulator or usb device:
   {{{
@@ -239,9 +239,24 @@ Afterwards, you should clean up the residue release files:
   mvn release:clean
   }}}
 
+== Update samples poms (to snapshot) ==
+
+
+  {{{
+  cd ~/maven-android-plugin-samples
+  }}}
+
+Update the samples' {{{pom.xml}}} files to use the next SNAPSHOT version of the plugin, so that any rebuilds of samples on master branch will use the latest plugin code. See for example [http://github.com/jayway/maven-android-plugin-samples/commit/b56c635f0ae9179700c678244ea35be3f3e42d8b this commit].
+
+Commit the updates to git:
+
+  {{{
+  git commit -m 'Use the next SNAPSHOT version of maven-android-plugin.'
+  }}}
+
 == Update Samples wiki page ==
 
-Update the [Samples] wiki page. For example set the link to the release tag you just created.
+Update the [Samples] wiki page. For example set the link to the release tag you just created when releasing.
 
 == Update Changelog ==
 
