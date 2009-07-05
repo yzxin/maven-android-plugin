@@ -62,7 +62,7 @@ Try building the mavenized apidemos sample:
  # Connect an Android device via USB, or start an emulator.
  # {{{mvn install}}}
 
-That should build an apk for the {{{apidemos-15-app}}} sub project and then an apk for the {{{apidemos-15-platformtests}}} sub project. As part of the {{{apidemos-15-platformtests}}}, it will deploy both apk files to the connected device or emulator and run the platform tests.
+That should build an apk for the {{{apidemos-15-app}}} sub project and then an apk for the {{{apidemos-15-instrumentationtest}}} sub project. As part of the {{{apidemos-15-instrumentationtest}}}, it will deploy both apk files to the connected device or emulator and run the instrumentation tests.
 
 
 == Create your own Android application (apk) ==
@@ -93,8 +93,8 @@ That should build an apk for the {{{apidemos-15-app}}} sub project and then an a
      mvn com.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy
      }}}
 
-== Run platform tests on device ==
-  _Documentation is TODO, but do check out the apidemos-15-platformtests in [Samples] for now._
+== Run instrumentation tests on device ==
+  _Documentation is TODO, but do check out the apidemos-15-instrumentationtest in [Samples] for now._
   
   _Please feel free to update this page with more details / corrections!_
 
