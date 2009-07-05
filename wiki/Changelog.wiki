@@ -39,7 +39,6 @@
      * Renamed config param {{{<testRunner>}}} to {{{<instrumentationRunner>}}}.
      * Renamed config param {{{-Dandroid.test.testPackage}}} to {{{-Dandroid.instrumentationPackage}}}.
      * Renamed config param {{{-Dandroid.test.testRunner}}} to {{{-Dandroid.instrumentationRunner}}}.
-     * Renamed config param {{{<>}}} to {{{<>}}}.
    * In goal {{{android:generate-sources}}}:
      * Removed parameter {{{createPackageDirectories}}} for clarity, and because we currently have no known use case for setting it to {{{false}}}.
    * Samples: Renamed apidemos-`*`-platformtests to apidemos-`*`-instrumentationtest.
