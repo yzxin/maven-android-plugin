@@ -19,6 +19,8 @@
  * Issue 6: look over parameter names and expressions
    * [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html mvn site] is updated with new goal names, and their config params.
    * [Glossary] is updated.
+   * Renamed goal {{{android:deployDependencies}}} to {{{android:deploy-dependencies}}}.
+     * *Renamed config param {{{<undeployApkBeforeDeploying>}}} to {{{<undeployBeforeDeploy>}}}.*
    * Renamed goal {{{android:adbPull}}} to {{{android:pull}}}.
      * Renamed config param {{{<destinationFileOrDirectory>}}} to {{{<destination>}}}.
      * Renamed config param {{{<sourceFileOrDirectory>}}} to {{{<source>}}}.
@@ -31,8 +33,6 @@
      * Renamed config param {{{<packageName>}}} to {{{<package>}}}.
      * Renamed config param {{{-Dpackage}}} to {{{-Dandroid.package}}}.
      * Resolve config param {{{<package>}}}/{{{-Dandroid.package}}} from {{{AndroidManifest.xml}}} if not defined.
-   * Renamed goal {{{android:deployDependencies}}} to {{{android:deploy-dependencies}}}.
-     * Renamed config param {{{<undeployApkBeforeDeploying>}}} to {{{<undeployBeforeDeploy>}}}.
    * Renamed goal {{{android:platformTest}}} to {{{android:instrument}}}.
      * Renamed config param {{{<testsPackage>}}} to {{{<testPackage>}}}.
      * Renamed config param {{{<testPackage>}}} to {{{<instrumentationPackage>}}}.
