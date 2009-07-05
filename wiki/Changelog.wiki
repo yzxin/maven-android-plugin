@@ -87,6 +87,7 @@
    * You also have the option of setting it in a parent pom instead, with {{{<pluginManagement>}}}. Then you can skip including the {{{<sdk><path>}}} in your project pom altogether!
    * This also means you can use different specific Android SDK's for different projects.
    * This change was made to make the plugin feel like less magic. Now you know that any environment variables you set, are only for yourself. The plugin doesn't read them; it only reads its configuration parameters.
+   * This fixes [http://code.google.com/p/masa/issues/detail?id=26 Masa Issue 26], but in this project.
  * Duplicated the sample {{{apidemos}}} application into {{{apidemos-11}}} with code from the Android SDK 1.1, and {{{apidemos-15}}} with code from the Android SDK 1.5. They use, and will work with, their corresponding Android SDK. Use {{{apidemos-15}}} for Android SDK 1.5r2.
  * More and updated documentation, both wiki and in code.
  * More tests in code.
@@ -104,17 +105,17 @@ Implemented all changes listed in [http://groups.google.com/group/masa-developer
 Some of the details implemented:
  * Collected all plugins into one, for clarity and maintainability.
  * Refactored *a lot* of code for maintainability and clarity.
- * Separate the act of deploying an apk into a goal of its own ({{{mvn android:deploy}}}).
- * When running the {{{integration-test}}} phase for a {{{<packaging>android:apk:platformTest</packaging>}}} pom, automatically deploy the platform test apk, as well as the apk to test, onto the device before.
+ * Separate the act of deploying an apk into a goal of its own ({{{mvn android:deploy}}}). This fixes [http://code.google.com/p/masa/issues/detail?id=20 Masa Issue 20], but in this project.
+ * When running the {{{integration-test}}} phase for a {{{<packaging>android:apk:platformTest</packaging>}}} pom, automatically deploy the platform test apk, as well as the apk to test, onto the device before. This fixes [http://code.google.com/p/masa/issues/detail?id=21 Masa Issue 21], but in this project.
  * Optionally undeploy each apk from the device before deploying it. This helps the issue where different developers with different debug keys use the same device and try to install an apk with the same package id. They would collide if the first one is not undeployed before the other is deployed on top of it.
  * Make as much as possible automatically configured, if possible. For example reading the package id from inside an apk file or !AndroidManifest.xml (whichever is available), instead of the user having to define it when for example undeploying an apk.
- * Added a sample Maven application (!ApiDemos) as an example of using Maven Android Plugin, and as a test for the plugin.
+ * Added a sample Maven application (!ApiDemos) as an example of using Maven Android Plugin, and as a test for the plugin. This fixes [http://code.google.com/p/masa/issues/detail?id=11 Masa Issue 11], but in this project.
  * Improved documentation.
  * Added unit testing.
  * Added error messages.
  * Updated dependencies' versions.
  * Removed the PAR plugin. It can be added again if requested.
- * Fine-tuned phases and made lifecycle more like the default lifecycle for {{{<packaging>jar</packaging>}}}.
+ * Fine-tuned phases and made lifecycle more like the default lifecycle for {{{<packaging>jar</packaging>}}}. This fixes [http://code.google.com/p/masa/issues/detail?id=14 Masa Issue 14], but in this project.
  * Renamed many things to names which say what they do.
  * Renamed {{{install}}} to {{{deploy}}}, because that's what it's usually called in Maven-world, and because {{{install}}} has a very specific (other) meaning.
  * Also delete {{{Manifest.java}}} when deleting {{{R.java}}}.
