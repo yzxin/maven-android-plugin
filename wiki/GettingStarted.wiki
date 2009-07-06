@@ -14,7 +14,7 @@ If you are a current user of [http://code.google.com/p/masa Masa] who wants all 
 
 == Maven Repository ==
 
-Temporarily, until we have set up automatic deployment to Maven Central repository, you need to configure your pom.xml to use our Maven Repository:
+Temporarily, [http://code.google.com/p/maven-android-plugin/issues/detail?id=10 until we have set up automatic deployment to Maven Central repository], you need to configure your pom.xml to use our Maven Repository:
 
 {{{
   <pluginRepositories>
