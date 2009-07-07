@@ -5,6 +5,8 @@
 
 This should be of no iterest to developers of Android applications. This is for those developers of the Maven Android Plugin who perform releases of the plugin.
 
+_TODO: Since we have Maven Central sync activated through http://oss.sonatype.org, this guide needs to be adapted to upload there instead. The pom.xml(s) of course also need to be updated._
+
 = Setup environment =
 
 == Building environment ==
