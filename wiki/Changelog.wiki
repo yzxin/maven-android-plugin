@@ -29,6 +29,10 @@
      * *{{{<sign>}}}*
      * *{{{    <debug>true|false|auto</debug>}}}*
      * *{{{</sign>}}}*
+   * Removed config param {{{<sourceDirectory>}}} for clarity, because it should be configured outside the plugin, like this:
+     * {{{<build>}}}
+     * {{{    <sourceDirectory>src/main/java</sourceDirectory>}}}
+     * {{{</build>}}}
 
 == Maven Android Plugin 2.0.0-alpha8 ==
  * Issue 6: look over parameter names and expressions
