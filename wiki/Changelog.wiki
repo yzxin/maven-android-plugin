@@ -15,6 +15,17 @@
 = Changelog =
 <sup>in reverse chronological order</sup>
 
+== Maven Android Plugin 2.0.0-alpha9 (planned) ==
+ * Issue 6: look over parameter names and expressions
+   * [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html mvn site] is updated with new goal names, and their config params.
+   * Simplified goals {{{android:deploy}}} and {{{android:deploy-file}}} into the same goal, {{{android:deploy}}}.
+   * Simplified goals {{{android:undeploy-file}}} and {{{android:undeploy-package}}} into the same goal, {{{android:undeploy}}}.
+   * In goals {{{android:deploy}}} and {{{android:undeploy}}}:
+     * Renamed command-line parameter {{{-Dfile}}} to {{{-Dandroid.file}}}, for consistency.
+   * In goals {{{android:pull}}} and {{{android:push}}}:
+     * Renamed command-line parameter {{{-Dsource}}} to {{{-Dandroid.source}}}, for consistency.
+     * Renamed command-line parameter {{{-Ddestination}}} to {{{-Dandroid.destination}}}, for consistency.
+
 == Maven Android Plugin 2.0.0-alpha8 ==
  * Issue 6: look over parameter names and expressions
    * [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html mvn site] is updated with new goal names, and their config params.
