@@ -1,8 +1,7 @@
 #summary Glossary of terms used in Maven Android Plugin.
 
 ----
-<sup>This page is related to [http://code.google.com/p/maven-android-plugin/issues/detail?id=6 Issue 6].<br/>
-Anything marked _TODO_  on this page is of course not implemented yet.</sup>
+<sup>This page is related to [http://code.google.com/p/maven-android-plugin/issues/detail?id=6 Issue 6].</sup>
 ----
 
 == General ==
@@ -19,5 +18,5 @@ The rule(s) of thumb for naming things in Maven Android Plugin, are:
 || *Term*  || *Meaning*                                                                                                                                               || *Origin*                                                                            ||
 || deploy  || Deploy an apk to a running emulator or a USB connected device.                                                                                          || Maven, [http://cargo.codehaus.org/Maven2+plugin Cargo Maven2 Plugin]                ||
 || install || Install an artifact (jar, pom, war, apk) to ~/.m2/repository                                                                                            || Maven, [http://maven.apache.org/plugins/maven-install-plugin/ Maven Install Plugin] ||
-|| instrument(ation) || One Android application (apk) does things (fires Intents, presses buttons on) to another Android app (apk) running in a device or emulator.   || Android, [http://developer.android.com/guide/topics/manifest/instrumentation-element.html <instrumentation>]                                                                            || TODO: s/platformTest/instrumentation/g ||
+|| instrument(ation) || One Android application (apk) does things (fires Intents, presses buttons on) to another Android app (apk) running in a device or emulator.   || Android, [http://developer.android.com/guide/topics/manifest/instrumentation-element.html <instrumentation>]                                                                            ||
 || integration-test || The Maven phase where all integration test actions are performed. In a {{{<packaging>apk</packaging>}}} project, that includes deploying apk's and instrumenting them. || Maven, [http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html Maven Lifecycles] ||
