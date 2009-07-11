@@ -25,6 +25,10 @@
    * In goals {{{android:pull}}} and {{{android:push}}}:
      * Renamed command-line parameter {{{-Dsource}}} to {{{-Dandroid.source}}}, for consistency.
      * Renamed command-line parameter {{{-Ddestination}}} to {{{-Dandroid.destination}}}, for consistency.
+   * *Renamed config param {{{<signWithDebugKeystore>true|false</signWithDebugKeystore>}}} to*
+     * *{{{<sign>}}}*
+     * *{{{    <debug>true|false|auto</debug>}}}*
+     * *{{{</sign>}}}*
 
 == Maven Android Plugin 2.0.0-alpha8 ==
  * Issue 6: look over parameter names and expressions
