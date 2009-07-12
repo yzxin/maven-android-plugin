@@ -5,7 +5,7 @@
 
 You can download the samples directly from github.com, where we host the source code.
 
---> [http://github.com/jayway/maven-android-plugin-samples/tree/samples-2.0.0-alpha8 Browse samples-2.0.0-alpha8]
+--> [http://github.com/jayway/maven-android-plugin-samples/tree/samples-2.0.0-alpha9 Browse samples-2.0.0-alpha9]
 
 If you want, you can download a zip file with all sample code, by following the above link and then clicking the "download" button at the top.<br/>
 _(If you prefer using git, go ahead, the clone url is behind the link above too.)_
