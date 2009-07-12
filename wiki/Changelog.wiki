@@ -15,7 +15,7 @@
 = Changelog =
 <sup>in reverse chronological order</sup>
 
-== Maven Android Plugin 2.0.0-alpha9 (planned) ==
+== Maven Android Plugin 2.0.0-alpha9 ==
  * Issue 6: look over parameter names and expressions
    * [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html mvn site] is updated with new goal names, and their config params.
    * Simplified goals {{{android:deploy}}} and {{{android:deploy-file}}} into the same goal, {{{android:deploy}}}.
