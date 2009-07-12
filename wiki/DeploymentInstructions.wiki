@@ -3,9 +3,8 @@
 
 = Introduction =
 
-This should be of no iterest to developers of Android applications. This is for those developers of the Maven Android Plugin who perform releases of the plugin.
+This should be of no interest to developers of Android applications. This is for those developers of the Maven Android Plugin who perform releases of the plugin.
 
-_TODO: Since we have Maven Central sync activated through http://oss.sonatype.org, this guide needs to be adapted to upload there instead. The pom.xml(s) of course also need to be updated._
 
 = Setup environment =
 
@@ -13,22 +12,19 @@ _TODO: Since we have Maven Central sync activated through http://oss.sonatype.or
 
 Set up the normal coding environment according to instructions on the [Building] page.
 
-== m2repo and m2site via svn ==
+== m2site via svn ==
 
-Checkout the m2repo and m2site as described in their respective checkout instructions (for project members):
-
+Checkout the m2site as described in its checkout instructions (for project members):
   
-  * http://code.google.com/p/maven-android-plugin-m2repo/source/checkout
   * http://code.google.com/p/maven-android-plugin-m2site/source/checkout
   
-For simplicity, the rest of this page will assume you have checked them out to your home directory, {{{~}}}.
+For simplicity, the rest of this page will assume you have checked it out to your home directory, {{{~}}}.
 
 == More environment variables ==
 
-Apart from the environment variable(s) you set up in [Building], you also need to set up these:
+Apart from the environment variable(s) you set up in [Building], you also need to set up this:
 
   {{{
-  export MAVEN_ANDROID_PLUGIN_M2REPO_SVN_WORKINGCOPY=file://$HOME/maven-android-plugin-m2repo
   export MAVEN_ANDROID_PLUGIN_M2SITE_SVN_WORKINGCOPY=file://$HOME/maven-android-plugin-m2site
   }}}
 
@@ -64,18 +60,6 @@ If you want to make available a binary version of Maven Android Plugin for someo
 
 Don't worry, it will sit in a separate directory structure from the proper releases. It won't end up on Maven Central.
 
-
-== Check the m2repo ==
-Check the status of your m2repo workingcopy. It should show nothing:
-
-  {{{
-  cd ~/maven-android-plugin-m2repo
-  svn st
-  svn up
-  }}}
-
-If not, delete it and check it out according to the setup instructions above.
-
 == Do it! ==
 
 To perform the SNAPSHOT release:
@@ -85,49 +69,12 @@ To perform the SNAPSHOT release:
   mvn clean && mvn install && mvn deploy -P official-release
   }}}
 
-That should deploy the artifacts into {{{~/maven-android-plugin-m2repo/snapshot/}}}.
-
-== Upload the m2repo ==
-Check if there is anything you need to {{{svn add}}}:
-
-  {{{
-  cd ~/maven-android-plugin-m2repo
-  svn st
-  }}}
-
-...and possibly add whatever is not added yet, for example:
-
-  {{{
-  svn add *
-  }}}
-
-...or to automatically add all non-added files:
-
-  {{{
-  svn st | grep '^\?' | sed -r 's/^\? +//' | xargs svn add
-  }}}
-
-Go ahead and commit the updated m2repo.
-
-  {{{
-  svn ci -m 'Deployed maven-android-plugin 2.0.1-SNAPSHOT.'
-  }}}
+That should deploy the artifacts directly to our SNAPSHOT repo on [http://oss.sonatype.org]. Daring users can use repo url http://oss.sonatype.org/content/groups/jayway-with-staging/ to access them.
 
 
 = Perform a RELEASE =
 
 This is the real deal. A release will be synced to Maven Central after a few hours, and then there is NO way to have it removed. Make sure it passes all tests!
-
-== Check the m2repo ==
-Check the status of your m2repo workingcopy. It should show nothing:
-
-  {{{
-  cd ~/maven-android-plugin-m2repo
-  svn st
-  svn up
-  }}}
-
-If not, delete it and check it out according to the setup instructions above.
 
 == Check the m2site ==
 Check the status of your m2site workingcopy. It should show nothing:
@@ -149,7 +96,7 @@ To perform the release:
   mvn clean && mvn install && mvn release:prepare release:perform
   }}}
 
-That should perform the entire release, including deploying the site into {{{~/maven-android-plugin-m2site/}}} and deploying the plugin into {{{~/maven-android-plugin-m2repo/release/}}}.
+That should perform the entire release, including deploying the site into {{{~/maven-android-plugin-m2site/}}} and deploying the plugin directly to our deployment repo at [http://oss.sonatype.org/].
 
 == Upload the m2site ==
 Check if there is anything you need to {{{svn add}}}:
@@ -179,32 +126,6 @@ Go ahead and commit the updated site.
 
 Mime-types should hopefully be correct. Check at http://maven-android-plugin-m2site.googlecode.com/svn/index.html
 
-
-== Upload the m2repo ==
-Check if there is anything you need to {{{svn add}}}:
-
-  {{{
-  cd ~/maven-android-plugin-m2repo
-  svn st
-  }}}
-
-...and possibly add whatever is not added yet, for example:
-
-  {{{
-  svn add *
-  }}}
-
-...or to automatically add all non-added files:
-
-  {{{
-  svn st | grep '^\?' | sed -r 's/^\? +//' | xargs svn add
-  }}}
-
-Go ahead and commit the updated m2repo.
-
-  {{{
-  svn ci -m 'Deployed maven-android-plugin 2.0.1.'
-  }}}
 
 == Update samples poms (to release) ==
 
