@@ -91,6 +91,7 @@
 
 == Maven Android Plugin 2.0.0-alpha3 ==
  * Issue 1: Support for Android SDK 1.5!
+   * Thank you to Andreas Ronge for the initial patch.
  * No longer requires any magic environment variables!
    * Instead, a mandatory configuration parameter was added:
    {{{
