@@ -100,13 +100,13 @@ There is some documentation of plugin goals and parameters on the [http://maven-
 Without any special settings, you can run standalone goals from the commandline like this:
 
   {{{
-  mvn com.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy-file -Dfile=myApp.apk
+  mvn com.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy -Dandroid.file=myApp.apk
   }}}
 
 With an extra setting, you can do it as easy as this instead:
 
   {{{
-  mvn android:deploy-file -Dfile=myApp.apk
+  mvn android:deploy -Dandroid.file=myApp.apk
   }}}
 
 The extra setting that you need, is in your {{{~/.m2/settings.xml}}} file. Create it if you don't already have it:
