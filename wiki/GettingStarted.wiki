@@ -121,9 +121,3 @@ The extra setting that you need, is in your {{{~/.m2/settings.xml}}} file. Creat
       </pluginGroups>
   </settings>
   }}}
-
-=== version 2 alpha/beta status ===
-
-You can see which versions of maven-android-plugin version 2.x are released in [http://code.google.com/p/maven-android-plugin-m2repo/source/browse/#svn/release/com/jayway/maven/plugins/android/generation2/maven-android-plugin our Maven Repository]. Read about the news in each version in the [Changelog].
-
-We're currently in alpha status. This does not imply "bad quality code" in any way :) but rather means we have not decided on all names of goals and parameters. When maven-android-plugin 2.0.0-beta1 is released, we must have all names of currently implemented goals and parameters finalized for all versions 2.x. Please help decide on good names for goals and parameters, by commenting on them on [http://groups.google.com/group/maven-android-developers Maven Android Developers]!
