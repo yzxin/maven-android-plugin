@@ -96,7 +96,16 @@ To perform the release:
   mvn clean && mvn install && mvn release:prepare release:perform
   }}}
 
-That should perform the entire release, including deploying the site into {{{~/maven-android-plugin-m2site/}}} and deploying the plugin directly to our deployment repo at [http://oss.sonatype.org/].
+That should perform the entire release, including deploying the site into {{{~/maven-android-plugin-m2site/}}} and deploying the plugin to our staging repo at [http://oss.sonatype.org/].
+
+Now you need to promote the staged release, for it to be moved to the release repo where it's synced to Central from.
+
+  #. Browse to [http://oss.sonatype.org/] and log in.
+  #. Click "Staging".
+  #. At the top, select the staging repo.
+  #. In the middle frame, right click on the repo and choose "Close".
+  #. Then right click again and choose "Promote".
+  #. Select to promote it into "Jayway Releases".
 
 == Upload the m2site ==
 Check if there is anything you need to {{{svn add}}}:
