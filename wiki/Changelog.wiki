@@ -13,7 +13,7 @@
 
 ----
 = Changelog =
-<sup>in reverse chronological order == start reading at the bottom...</sup>
+<sup>(start reading at the bottom)</sup>
 
 == Maven Android Plugin 2.0.0-rc1 ==
  * Closes input/output streams.
