@@ -68,10 +68,15 @@ If you want to test your environment, download and run the [Samples].
 <sup><i>Do you think that last Maven command was long? It was. Check out [TipsAndTricks].</i></sup>
 
 == Run instrumentation tests on device ==
-  _Documentation is TODO, but do check out the apidemos-15-instrumentationtest in [Samples] for now._
+Check out the {{{apidemos-15-instrumentationtest}}} project in [Samples].
+
+You can create a project like that, by moving your "test" folder out and renaming it to for example "myproject-instrumentationtest". Then rearrange the folders within it like above, and use the {{{pom.xml}}} from {{{apidemos-15-instrumentationtest}}} as template.
   
-  _Please feel free to update this page with more details / corrections! (Just ask hugo@josefson.org for edit permissions, and you will get it.)_
 
 == More documentation ==
 
 There is some more documentation on the [Documentation] page.
+<br/>
+<br/>
+----
+_Please feel free to update this page with more details / corrections! (Just ask hugo@josefson.org for edit permissions, and you will get it.)_
