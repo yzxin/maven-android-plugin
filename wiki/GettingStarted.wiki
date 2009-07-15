@@ -45,7 +45,7 @@ If you want to test your environment, download and run the [Samples].
      * Make these changes:
      * Remove the entire {{{<parent>}}} tag.
      * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own. (Some tips: [http://maven.apache.org/guides/mini/guide-naming-conventions.html Maven - Guide to Naming Conventions])
-  # Move the source directory to where Maven expects it:
+  # Rename, and move the source directory to where Maven expects it:
      {{{
      mv src java
      mkdir -p src/main
