@@ -20,14 +20,27 @@ We have mavenized both the one from Android SDK 1.1 and Android SDK 1.5.
 The samples are meant to show you how to create a {{{pom.xml}}} and structure your project to work with Maven Android Plugin.
 
 There are two sets of samples:
- * !ApiDemos from Android SDK 1.1 -- the directory {{{apidemos-11}}}
- * !ApiDemos from Android SDK 1.5 -- the directory {{{apidemos-15}}}
+{{{
+|
++-- apidemos-11
+| \
+| +--- apidemos-11-app
+| |
+| \--- apidemos-11-instrumentationtest
+|
+\-- apidemos-15
+  \
+  +--- apidemos-15-app
+  |
+  \--- apidemos-15-instrumentationtest
 
-In mavenizing the {{{apidemos-*}}} projects, we have done the following with each of them:
- * Restructured subdirectories to fit the default Maven structure.
- * Split it into two projects: the app, and the instrumentationtest.
- * Created a {{{pom.xml}}} for {{{apidemos-NN-app}}} which uses maven-android-plugin to build the apk.
- * Created a {{{pom.xml}}} for {{{apidemos-NN-instrumentationtest}}} which uses maven-android-plugin to build the instrumentationtest apk, install it together with the app's apk to the device and run the tests on device.
+}}}
+ * The directory {{{apidemos-11}}} contains !ApiDemos from Android SDK 1.1
+ * The directory {{{apidemos-15}}} contains !ApiDemos from Android SDK 1.5
+
+ * Beneath each of those, are two directories:
+   * {{{apidemos-NN-app}}}, which contains a {{{pom.xml}}} and source code for the application apk.
+   * {{{apidemos-NN-instrumentationtest}}}, which contains a {{{pom.xml}}} and source code for instrumentation tests of the app.
 
 == How to build the samples ==
 If you have set up your development environment according to GettingStarted, you can build for example the !ApiDemos sample from Android SDK 1.5 like this:
