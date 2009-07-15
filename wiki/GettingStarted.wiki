@@ -35,7 +35,7 @@ On Windows, that would be:
 
 == Test your development environment ==
 
-Download the [Samples], as described on the [Samples] page.
+Download the samples, as described on the [Samples] page.
 
 Try building the mavenized apidemos sample:
 
@@ -43,7 +43,10 @@ Try building the mavenized apidemos sample:
  # Connect an Android device via USB, or start an emulator.
  # {{{mvn install}}}
 
-That should build an apk for the {{{apidemos-15-app}}} sub project and then an apk for the {{{apidemos-15-instrumentationtest}}} sub project. As part of the {{{apidemos-15-instrumentationtest}}}, it will deploy both apk files to the connected device or emulator and run the instrumentation tests.
+When you build from that directory, you will build both the application project and instrumentation test project. They both generate an apk each.
+
+As part of the {{{apidemos-15-instrumentationtest}}} project, Maven Android Plugin will deploy both apk files to the connected device or emulator and
+run the instrumentation tests inside the device.
 
 
 == Create your own Android application (apk) ==
