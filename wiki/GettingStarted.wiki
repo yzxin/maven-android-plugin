@@ -24,7 +24,7 @@
   </dependency>
 }}}
 
-  This corresponds to the android.jar file in the Android SDK which is needed to compile all Android applications. Deploy this file to you local repository with the following command.
+  This corresponds to the android.jar file in the Android SDK which is needed to compile all Android applications. Install this file to your local repository with the following command.
 
     {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r2 -Dpackaging=jar -Dfile=$ANDROID_SDK_15/platforms/android-1.5/android.jar}}}
 
