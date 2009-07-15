@@ -1,0 +1,30 @@
+#summary Some tips and tricks
+
+= Tips and Tricks =
+
+=== shorter commandline ===
+
+Without any special settings, you can run standalone goals from the commandline like this:
+
+  {{{
+  mvn com.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy -Dandroid.file=myApp.apk
+  }}}
+
+With an extra setting, you can do it as easy as this instead:
+
+  {{{
+  mvn android:deploy -Dandroid.file=myApp.apk
+  }}}
+
+The extra setting you need, goes in your {{{~/.m2/settings.xml}}} file. Create it if you don't already have it:
+
+  {{{
+  <settings xmlns="http://maven.apache.org/POM/4.0.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                        http://maven.apache.org/xsd/settings-1.0.0.xsd">
+      <pluginGroups>
+          <pluginGroup>com.jayway.maven.plugins.android.generation2</pluginGroup>
+      </pluginGroups>
+  </settings>
+  }}}
