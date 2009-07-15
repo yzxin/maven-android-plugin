@@ -19,6 +19,11 @@
 
 <sup>changes which require action are marked as *bold*.</sup>
 
+== Maven Android Plugin 2.0.0 ==
+ * No changes needed since 2.0.0-rc1, just re-releasing as version 2.0.0.
+ * The most stable, bug-free, easy-to-use release of any Maven plugin for Android app developers [OtherProjects we know about]!
+
+
 == Maven Android Plugin 2.0.0-rc1 ==
  * Closes input/output streams.
    * Thank you to Martin Vyšný for the patch.
