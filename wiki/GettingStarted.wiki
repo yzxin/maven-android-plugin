@@ -44,7 +44,7 @@ If you want to test your environment, download and run the [Samples].
   # Create a {{{pom.xml}}} in your project, using the sample {{{apidemos-15/apidemos-15-app/pom.xml}}} as template. (See [Samples].)
      * Make these changes:
      * Remove the entire {{{<parent>}}} tag.
-     * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own.
+     * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own. (Some tips: [http://maven.apache.org/guides/mini/guide-naming-conventions.html Maven - Guide to Naming Conventions])
   # Move the source directory to where Maven expects it:
      {{{
      mv src java
