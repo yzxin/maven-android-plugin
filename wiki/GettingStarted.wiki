@@ -45,7 +45,6 @@ If you want to test your environment, download and run the [Samples].
      * Make these changes:
      * Remove the entire {{{<parent>}}} tag.
      * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own.
-     * Change {{{<version>}}} to {{{0.1.0-SNAPSHOT}}} or some other {{{-SNAPSHOT}}} version you feel is appropriate for your project.
   # Move the source directory to where Maven expects it:
      {{{
      mv src java
