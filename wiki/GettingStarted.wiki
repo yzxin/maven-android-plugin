@@ -67,7 +67,7 @@ run the instrumentation tests inside the device.
      {{{
      rm -r bin build.xml default.properties build.properties libs gen
      }}}
-     _TODO: see what the {{{tests}}} folder contains and what we should recommend doing with it._
+     _(Leave the "test" folder for now. You can later move it out to its own project. If you want, you can then look at the {{{apidemos-15-instrumentationtest}}} sample project.)_
   # To build your apk, simply:
      {{{
      mvn install
@@ -76,6 +76,8 @@ run the instrumentation tests inside the device.
      {{{
      mvn com.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy
      }}}
+
+<sup><i>Do you think that last Maven command was long? It was. Check out [TipsAndTricks].</i></sup>
 
 == Run instrumentation tests on device ==
   _Documentation is TODO, but do check out the apidemos-15-instrumentationtest in [Samples] for now._
