@@ -15,7 +15,7 @@ _(If you prefer using git, go ahead, the clone url is behind the link above too.
 
 !ApiDemos is a sample application that comes with the Android SDK.
 
-We have mavenized both the one from Android SDK 1.1 and Android SDK 1.5.
+We have mavenized both !ApiDemos from Android SDK 1.1 and !ApiDemos from Android SDK 1.5.
 
 The samples are meant to show you how to create a {{{pom.xml}}} and structure your project to work with Maven Android Plugin.
 
