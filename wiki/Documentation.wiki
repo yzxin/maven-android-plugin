@@ -1,0 +1,11 @@
+#summary Documentation collection for Maven Android Plugin
+#labels Featured
+
+= Documentation =
+
+ * [GettingStarted] quickly!
+ * See some [Samples] of how to use Maven Android Plugin
+ * [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html Plugin goals reference]
+
+=== See also ===
+ * Take part in the mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers], for everyone!
