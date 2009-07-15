@@ -38,7 +38,7 @@ There are two sets of samples:
  * The directory {{{apidemos-11}}} contains !ApiDemos from Android SDK 1.1
  * The directory {{{apidemos-15}}} contains !ApiDemos from Android SDK 1.5
 
- * Beneath each of those, are two directories:
+ * Each of those, are split up into two Maven projects:
    * {{{apidemos-NN-app}}}, which contains a {{{pom.xml}}} and source code for the application apk.
    * {{{apidemos-NN-instrumentationtest}}}, which contains a {{{pom.xml}}} and source code for instrumentation tests of the app.
 
