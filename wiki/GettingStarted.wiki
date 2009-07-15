@@ -33,20 +33,9 @@ On Windows, that would be:
     {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r2 -Dpackaging=jar -Dfile=%ANDROID_SDK_15%/platforms/android-1.5/android.jar}}}
 
 
-== Test your development environment ==
+== Optional: Test your development environment ==
 
-Download the samples, as described on the [Samples] page.
-
-Try building the mavenized apidemos sample:
-
- # {{{cd apidemos-15}}}
- # Connect an Android device via USB, or start an emulator.
- # {{{mvn install}}}
-
-When you build from that directory, you will build both the application project and instrumentation test project. They both generate an apk each.
-
-As part of the {{{apidemos-15-instrumentationtest}}} project, Maven Android Plugin will deploy both apk files to the connected device or emulator and
-run the instrumentation tests inside the device.
+If you want to test your environment, download and run the [Samples].
 
 
 == Create your own Android application (apk) ==
