@@ -50,8 +50,7 @@ If you have set up your development environment according to GettingStarted, you
  mvn install
  }}}
 
+When you build from that directory, you will build both the application project and instrumentation test project. They both generate an apk each.
 
-That should build an apk for the {{{apidemos-15-app}}} project and then an apk for the
-{{{apidemos-15-instrumentationtest}}} project. As part of the {{{apidemos-15-instrumentationtest}}}
-project, it will deploy both apk files to the connected device or emulator and
-run the instrumentation tests.
+As part of the {{{apidemos-15-instrumentationtest}}} project, Maven Android Plugin will deploy both apk files to the connected device or emulator and
+run the instrumentation tests inside the device.
