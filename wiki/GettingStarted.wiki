@@ -51,11 +51,12 @@ If you want to test your environment, download and run the [Samples].
      mkdir -p src/main
      mv java src/main/
      }}}
-  # You won't need these files/directories with maven-android-plugin, so remove them:
+  # You won't need these files/directories with Maven Android Plugin, so you can remove them:
      {{{
-     rm -r bin build.xml default.properties build.properties libs gen
+     rm -r bin build.xml build.properties libs
      }}}
-     _(Leave the "test" folder for now. You can later move it out to its own project. If you want, you can then look at the {{{apidemos-15-instrumentationtest}}} sample project.)_
+     _The {{{default.properties}}} file is currently not used by Maven Android Plugin, but will be, so leave that in place for now. {{{default.properties}}} and the {{{gen}}} folder are used by the ADT plugin in Eclipse, if you use that._<br/>
+     _(Also leave the "test" folder for now. You can later move it out to its own project. If you want, you can then look at the {{{apidemos-15-instrumentationtest}}} sample project.)_
   # To build your apk, simply:
      {{{
      mvn install
