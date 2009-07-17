@@ -1,0 +1,19 @@
+#summary Have some good/bad luck using maven-android-plugin with an Eclipse project? Let us know here.
+
+= Introduction =
+
+Android's official development effort provides solid support for Eclipse integration, and we'd like to make sure maven-android-plugin helps bridge Maven, Android, and Eclipse. This page will help us collect information on what works and doesn't work
+
+
+= First Glimpse =
+== Specs ==
+* Eclipse 3.4
+* maven-android-plugin 2.0
+* android sdk 1.5
+* m2eclipse plugin
+== Experience ==
+I imported my project from SVN into eclipse using m2eclipse's checkout from SCM tool. It was not recognized as an android project, so I clicked "convert to android project". My R.java file was never generated, leaving me with errors in my source code.
+
+I then added the default.properties to SVN and tried again. This time, my R.java file was populated and I had no source code errors.
+
+The old way of using Eclipse's Run => As Android Project pushed the .apk without the necessary dependencies, and I have not found a method that works inside Eclipse.
