@@ -10,3 +10,4 @@
 === See also ===
  * Take part in the mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers], for everyone!
  * [TipsAndTricks Tips and tricks] for using the plugin even easier!
+ * [EclipseIntegration] - help collecting experiences around what works, and doesn't, with Eclipse, Maven and Android.
