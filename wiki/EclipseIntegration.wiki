@@ -1,4 +1,5 @@
 #summary Have some good/bad luck using maven-android-plugin with an Eclipse project? Let us know here.
+#labels Featured
 
 = Introduction =
 
