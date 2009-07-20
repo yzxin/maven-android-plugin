@@ -100,7 +100,7 @@ Two source classpath entries:
 
 One classpath entry for each dependency (the additionnal jars you would will use in your project)
 
-Most of these can be achieved with the standard Maven Eclipse Plugin and a bit of configuration. The additional dependencies must be added as a standard Maven dependencies. The two source folders (gen and src) needs to be defined.
+Most of these can be achieved with the standard Maven Eclipse Plugin and a bit of configuration. The additional dependencies must be added as standard Maven dependencies. The two source folders (gen and src) needs to be defined.
 
 Two problems remains : I could only get the Maven Eclipse Plugin to work with a "jar" packaging. And I couldn't find any way to specify a unique classpath container different from the default one.
 
