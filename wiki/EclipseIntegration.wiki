@@ -100,3 +100,36 @@ Two source classpath entries:
 
 One classpath entry for each dependency (the additionnal jars you would will use in your project)
 
+Most of these can be achieved with the standard Maven Eclipse Plugin and a bit of configuration. The additional dependencies must be added as a standard Maven dependencies. The two source folders (gen and src) needs to be defined.
+
+Two problems remains : I could only get the Maven Eclipse Plugin to work with a "jar" packaging. And I couldn't find any way to specify a unique classpath container different from the default one.
+
+{{{
+<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-eclipse-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+                <downloadSources>true</downloadSources>
+                <downloadJavadocs>false</downloadJavadocs>
+                <additionalProjectnatures>
+                        <projectnature>com.android.ide.eclipse.adt.AndroidNature</projectnature>
+                </additionalProjectnatures>
+                <additionalBuildcommands>
+                        <buildcommand>com.android.ide.eclipse.adt.ResourceManagerBuilder</buildcommand>
+                        <buildcommand>com.android.ide.eclipse.adt.PreCompilerBuilder</buildcommand>
+                        <buildcommand>com.android.ide.eclipse.adt.ApkBuilder</buildcommand>
+                </additionalBuildcommands>
+                <!--
+                        This is a workaround : we do not want JRE_CONTAINER, however if
+                        we remove it, it will be automatically added, and placed first.
+                        So we add it in the second position, so that the project is
+                        recognized as an Android project.
+                -->
+                <classpathContainers>
+                        <classpathContainer>com.android.ide.eclipse.adt.ANDROID_FRAMEWORK</classpathContainer>
+                        <classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
+                </classpathContainers>
+        </configuration>
+</plugin>
+}}}
