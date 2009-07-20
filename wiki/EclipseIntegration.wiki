@@ -18,3 +18,87 @@ I imported my project from SVN into eclipse using m2eclipse's checkout from SCM 
 I then added the default.properties to SVN and tried again. This time, my R.java file was populated and I had no source code errors.
 
 The old way of using Eclipse's Run => As Android Project pushed the .apk without the necessary dependencies, and I have not found a method that works inside Eclipse.
+
+
+
+---- 
+
+So we need to configure the Maven Eclipse Plugin to create the good eclipse project files.
+
+We need a few things (to find out, just create a new app with Eclipse and read the .project and .classpath files).
+
+.project file example (yasdic is an external jar dependency):
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="lib" path="lib/yasdic-1.0.jar" sourcepath="lib/yasdic-1.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/yasdic-1.0-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
+}}}
+
+.classpath file example:
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>MyProject</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ResourceManagerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.PreCompilerBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.android.ide.eclipse.adt.ApkBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>
+}}}
+
+== In *.project* file ==
+
+2 natures:
+  * com.android.ide.eclipse.adt.AndroidNature
+  * org.eclipse.jdt.core.javanature
+
+4 build commands :
+  * com.android.ide.eclipse.adt.ResourceManagerBuilder
+  * com.android.ide.eclipse.adt.PreCompilerBuilder
+  * org.eclipse.jdt.core.javabuilder
+  * com.android.ide.eclipse.adt.ApkBuilder
+
+== In *.classpath* file
+
+A unique classpath container:
+  * com.android.ide.eclipse.adt.ANDROID_FRAMEWORK
+
+Two source classpath entries:
+ * src
+ * gen
+
+One classpath entry for each dependency (the additionnal jars you would will use in your project)
+
+
+
