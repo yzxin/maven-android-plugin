@@ -19,9 +19,9 @@ I then added the default.properties to SVN and tried again. This time, my R.java
 
 The old way of using Eclipse's Run => As Android Project pushed the .apk without the necessary dependencies, and I have not found a method that works inside Eclipse.
 
+----
 
-
----- 
+== Technical details ==
 
 So we need to configure the Maven Eclipse Plugin to create the good eclipse project files.
 
@@ -89,7 +89,7 @@ We need a few things (to find out, just create a new app with Eclipse and read t
   * org.eclipse.jdt.core.javabuilder
   * com.android.ide.eclipse.adt.ApkBuilder
 
-== In *.classpath* file
+== In *.classpath* file ==
 
 A unique classpath container:
   * com.android.ide.eclipse.adt.ANDROID_FRAMEWORK
@@ -99,6 +99,4 @@ Two source classpath entries:
  * gen
 
 One classpath entry for each dependency (the additionnal jars you would will use in your project)
-
-
 
