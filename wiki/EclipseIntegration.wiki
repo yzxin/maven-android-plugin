@@ -150,3 +150,5 @@ The solution should be to simply add `<language>java</language>` to the `<config
          </configuration>
       </component>
 }}}
+
+However, I am not sure of which ArtifactHandler should have this "language" element. I may be totally wrong. I guessed that solution from a bit of googling, see here: http://www.mail-archive.com/andromda-devel@lists.sourceforge.net/msg09211.html
