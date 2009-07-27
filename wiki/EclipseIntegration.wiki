@@ -1,4 +1,4 @@
-#summary Have some good/bad luck using maven-android-plugin with an Eclipse project? Let us know here.
+#summary Have some good/bad luck using maven-android-plugin with an Eclipse project? Let us know here. Tell hugo@josefson.org that you want to edit the page, and he'll grant you permissions.
 #labels Featured
 
 = Introduction =
@@ -159,4 +159,3 @@ About the classpath container: this default behavior does not seem to be configu
 See [http://maven.apache.org/plugins/maven-eclipse-plugin/apidocs/org/apache/maven/plugin/eclipse/EclipsePlugin.html javadoc here] and [http://svn.apache.org/viewvc/maven/plugins/tags/maven-eclipse-plugin-2.7/src/main/java/org/apache/maven/plugin/eclipse/EclipsePlugin.java?view=co source here].
 
 Maybe we could get some help from the maven-eclipse-plugin guys, and have a new option created to disable default jre container.
-
