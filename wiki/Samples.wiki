@@ -7,9 +7,11 @@ Download the samples directly from github.com, where we host the source code.
 
 --> [http://github.com/jayway/maven-android-plugin-samples/tree/samples-2.1.0 Browse samples-2.1.0]
 
-You can download a zip file with all sample code, by following the above link and then clicking the "download" button at the top. Make sure to choose a location with a short path to unzip the package, it has deeply nested structures and you want to stay within the path length limits of your OS.
+You can download a zip file with all sample code, by following the above link and then clicking the "download" button at the top.
 
 _(If you prefer using git, go ahead, the clone url is behind the link above too.)_
+
+Make sure to choose a location with a short path to unzip the package; it has deeply nested structures and you want to stay within the path length limits of your OS. Windows is known to skip some deeply located files when the complete directory path becomes too long.
 
 == What are the samples? ==
 
