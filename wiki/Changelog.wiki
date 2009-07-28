@@ -19,6 +19,13 @@
 
 <sup>changes which require action are marked as *bold*.</sup>
 
+== Maven Android Plugin 2.1.0 ==
+ * New feature, fixes Issue 27: RFE: Add posibility to specify the device to deploy to
+   * Can be configured with configuration parameter {{{<device>emulator-5554</device>}}}
+   * Can be configured from command line: {{{mvn -Dandroid.device=emulator-5554}}}
+   * Special values {{{usb}}} and {{{emulator}}} can be used instead of serial number, for automatic device detection on USB cable or among started emulators.
+
+
 == Maven Android Plugin 2.0.0 ==
  * No changes needed since 2.0.0-rc1, just re-releasing as version 2.0.0.
  * The most stable, bug-free, easy-to-use release of any Maven plugin for Android app developers we know about!
