@@ -166,7 +166,7 @@ http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/maven
 Perform "half" a release. We can't sync the samples to Maven Central because they have dependencies to things not already on Central (the android jar). Therefore we don't deploy them to our m2repo at all. We do however want a release tag in git, so do it like this:
 
   {{{
-  mvn clean && mvn release:prepare
+  mvn clean && mvn install release:prepare
   }}}
 
 That should test everything and create a release tag in git.
