@@ -53,12 +53,12 @@ If you want to test your environment, download and run the [Samples].
      }}}
 
      or if you don't want to change the directory structure, just add "sourceDirectory
-     {{{
-          <build>
-          ......
-          <sourceDirectory>src</sourceDirectory> 
-          </build>
-     }}} 
+{{{
+    <build>
+    ......
+    <sourceDirectory>src</sourceDirectory> 
+    </build>
+}}} 
 
      to pom.xml.
 
