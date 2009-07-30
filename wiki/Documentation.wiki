@@ -6,6 +6,7 @@
  * [GettingStarted] quickly!
  * See some [Samples] of how to use Maven Android Plugin
  * [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html Plugin goals reference]
+ * See [AddOns] for Building for Android Add-Ons
 
 === See also ===
  * Take part in the mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers], for everyone!
