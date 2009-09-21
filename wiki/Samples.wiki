@@ -11,7 +11,10 @@ You can download a zip file with all sample code, by following the above link an
 
 _(If you prefer using git, go ahead, the clone url is behind the link above too.)_
 
-Make sure to choose a location with a short path to unzip the package; it has deeply nested structures and you want to stay within the path length limits of your OS. Windows is known to skip some deeply located files when the complete directory path becomes too long.
+=== Important notes: ===
+
+ #. Use the above link to get the correct version of the samples! Then you will automatically use a proper released version of maven-android-plugin. If you would use the very latest "master" version of the samples, they will require that you compile the plugin by yourself first. 
+ #. Make sure to choose a location with a short path to unzip the package; it has deeply nested structures and you want to stay within the path length limits of your OS. Windows is known to skip some deeply located files when the complete directory path becomes too long.
 
 == What are the samples? ==
 
