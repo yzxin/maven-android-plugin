@@ -20,6 +20,14 @@ You can browse the source code there, and even download a zip with the source co
 
 To learn more about Git, see for example http://github.com/.
 
+=== Correct version? ===
+
+These source code links are only useful for developers of the maven-android-plugin and developers of the samples. For users of the plugin (i.e. Android application developers), please go to the [Samples] page instead, where you will get a version of the samples which use a released version of the maven-android-plugin.
+
+The code on this page (Source) refers to the "master" version, which in git lingo means the very latest code (a.k.a. "trunk"). The "master" samples version requires the "master" version of the plugin.
+
+So if you are looking to use the samples' configuration as an example of how to set up an Android Maven application, don't use the "master" version which you will get by clicking the links here. Instead, see the [Samples] page.
+
 
 ==Commit Access==
 
