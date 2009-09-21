@@ -13,7 +13,7 @@
   # Install Android SDK 1.5_r2:
      http://developer.android.com/sdk/1.5_r2/
   # Set environment variable ANDROID_SDK_15 to the path of your installed Android SDK.
-  # If you look in the pom.xml of the samples project you will find the following dependency.
+  # If you look in the pom.xml of the samples`*` project you will find the following dependency.
 
 {{{
   <dependency>
@@ -35,13 +35,13 @@ On Windows, that would be:
 
 == Optional: Test your development environment ==
 
-If you want to test your environment, download and run the [Samples].
+If you want to test your environment, download and run the [Samples]`*`.
 
 
 == Create your own Android application (apk) ==
   # Create a project using the {{{android}}} tool:
      * http://developer.android.com/guide/developing/other-ide.html#CreatingAProject
-  # Create a {{{pom.xml}}} in your project, using the sample {{{apidemos-15/apidemos-15-app/pom.xml}}} as template. (See [Samples].)
+  # Create a {{{pom.xml}}} in your project, using the sample {{{apidemos-15/apidemos-15-app/pom.xml}}} as template. (See [Samples]`*`.)
      * Make these changes:
      * Remove the entire {{{<parent>}}} tag.
      * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own. (Some tips: [http://maven.apache.org/guides/mini/guide-naming-conventions.html Maven - Guide to Naming Conventions])
@@ -80,7 +80,7 @@ If you want to test your environment, download and run the [Samples].
 <sup><i>Do you think that last Maven command was long? It was. Check out [TipsAndTricks].</i></sup>
 
 == Run instrumentation tests on device ==
-Check out the {{{apidemos-15-instrumentationtest}}} project in [Samples].
+Check out the {{{apidemos-15-instrumentationtest}}} project in [Samples]`*`.
 
 You can create a project like that, by moving your "test" folder out and renaming it to for example "myproject-instrumentationtest". Then rearrange the folders within it like above, and use the {{{pom.xml}}} from {{{apidemos-15-instrumentationtest}}} as template.
   
@@ -88,6 +88,9 @@ You can create a project like that, by moving your "test" folder out and renamin
 == More documentation ==
 
 There is some more documentation on the [Documentation] page.
+<br/>
+=== (`*`) Samples===
+Always use the version of samples linked from the [Samples] page, so that you get a usable version of its configuration.
 <br/>
 <br/>
 ----
