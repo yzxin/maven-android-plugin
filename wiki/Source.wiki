@@ -1,5 +1,79 @@
-=Source code management=
+==Samples are not here==
+
+ * Looking for samples?
+ * Want to create Android applications with Maven?
+ ** This "Source" page is *not* the place.
+
+Go to --> [Samples] page instead :)
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+=What is this?=
+
+This source code page is only useful for developers of the maven-android-plugin, and for those who develop and maintain the samples.
+
+All Android application developers (who want to copy and *use* the samples), please go to the [Samples] page instead, where you will get a version of the samples source code which use a released version of the maven-android-plugin.
+
+--> [Samples] <-- go there now
+
+<br/>
+<br/>
+
+==This source code==
+
 We use Git instead of Subversion for managing the source code, [http://whygitisbetterthanx.com/ for several reasons].
+
+The code on this page (Source) refers to the "master" version, which in git lingo means the very latest code (a.k.a. "trunk"). The "master" samples version requires the "master" version of the plugin.
+
+So if you are looking to use the samples' configuration as an example of how to set up an Android Maven application, don't use the "master" version which you will get by clicking the links here. Instead, see the [Samples] page.
+
 
 ==Read Access==
 
@@ -20,14 +94,6 @@ You can browse the source code there, and even download a zip with the source co
 
 To learn more about Git, see for example http://github.com/.
 
-=== Correct version? ===
-
-These source code links are only useful for developers of the maven-android-plugin and developers of the samples. For users of the plugin (i.e. Android application developers), please go to the [Samples] page instead, where you will get a version of the samples which use a released version of the maven-android-plugin.
-
-The code on this page (Source) refers to the "master" version, which in git lingo means the very latest code (a.k.a. "trunk"). The "master" samples version requires the "master" version of the plugin.
-
-So if you are looking to use the samples' configuration as an example of how to set up an Android Maven application, don't use the "master" version which you will get by clicking the links here. Instead, see the [Samples] page.
-
 
 ==Commit Access==
 
@@ -41,7 +107,7 @@ And anybody can submit code through github!
 
 2. Do your changes in your clone of the project,
 
-3. then click "pull request" on your repository to tell us there are changes to bring in.
+3. then click "pull request" on your repository to tell "jayway" there are changes to bring in.
 
 ===Sending patches===
 You may of course also send patches directly through the [http://code.google.com/p/maven-android-plugin/issues/list Issue tracker] or mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers].
