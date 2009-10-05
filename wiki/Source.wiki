@@ -18,6 +18,7 @@ Go to --> [Samples] page instead :)
 <br/>
 <br/>
 <br/>
+<sup>(for plugin source code, scroll further down...)</sup>
 <br/>
 <br/>
 <br/>
