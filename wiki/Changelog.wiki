@@ -19,6 +19,27 @@
 
 <sup>changes which require action are marked as *bold*.</sup>
 
+== Maven Android Plugin 2.2.0 ==
+
+ * Improved EclipseIntegration support. Thank you to Dietrich Schulten for the patch!
+   * Eclipse should now better understand that {{{<packaging>apk</packaging>}}} projects are Java projects.
+ * Improved EclipseIntegration support. Thank you to Erik Hjortsberg for the patch!
+   * When using {{{<deleteConflictingFiles>true</deleteConflictingFiles>}}}, only delete those .aidl files which will result in a .java file being auto created.
+ * New feature: Possible to set up inter-project dependencies on source code and resources.
+   * It lets you target different devices easier, without having to duplicate code.
+   * Useful for when apk's for different devices need to share some code, Android resources and assets, while still having some code/resources/assets different.
+   * See ApkSourcesDependency for details and instructions.
+ * (Hopefully) Fixes Issue 31: android:dex should work with packaging=jar
+   * Added config parameter {{{<attachJar>true|false</attachJar>}}} which is {{{true}}} by default. It can be disabled if the jar is not desired in the build. Alternatively configured from commandline: {{{-Dandroid.attachJar=false}}}
+ * (Hopefully) Fixes Issue 30: Generated sources and duplicate attachment in a "mavenized" Eclipse project
+   * No longer attaches the jar artifact twice. Attaching the jar can also be disabled 
+ * (Hopefully) Fixes Issue 28: NoClassDefFoundError, but class exists in target/android-classes
+   * Adding java classpath resources from project and dependencies to the apk file.
+ * (Hopefully) Fixes Issue 33: Dealing with META-INF in 3rd party jars
+   * Adding java classpath resources from project and dependencies to the apk file.
+ * Fixed and added more error messages.
+
+
 == Maven Android Plugin 2.1.0 ==
  * New feature, fixes Issue 27: RFE: Add posibility to specify the device to deploy to
    * Can be configured with configuration parameter {{{<device>emulator-5554</device>}}}
