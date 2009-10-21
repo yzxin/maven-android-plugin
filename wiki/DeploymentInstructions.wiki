@@ -80,7 +80,7 @@ This is the real deal. A release will be synced to Maven Central after a few hou
 Check the status of your m2site workingcopy. It should show nothing:
 
   {{{
-  cd ~/maven-android-plugin-m2site
+  cd $MAVEN_ANDROID_PLUGIN_M2SITE_SVN_WORKINGCOPY
   svn st
   svn up
   }}}
