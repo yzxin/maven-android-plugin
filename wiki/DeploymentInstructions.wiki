@@ -93,7 +93,7 @@ To perform the release:
 
   {{{
   cd ~/maven-android-plugin
-  mvn clean && mvn install && mvn release:prepare release:perform
+  mvn clean && mvn install && MAVEN_OPTS='-Xmx256m' mvn release:prepare release:perform
   }}}
 
 That should perform the entire release, including deploying the site into {{{~/maven-android-plugin-m2site/}}} and deploying the plugin to our staging repo at [http://oss.sonatype.org/].
