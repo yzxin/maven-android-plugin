@@ -1,0 +1,35 @@
+#summary Pulling in Java source code, Android resources and assets as Maven dependencies.
+
+= Introduction =
+
+This is useful if you develop apk's which share some code, but still have some different content.
+
+
+= Details =
+
+== Project with common src, res and assets ==
+In the apk project you wish to make available to other project as sources, add this to the plugin {{{<configuration>}}} tag:
+
+{{{
+ <attachSources>true</attachSources>
+}}}
+
+When you do {{{mvn install}}} on that project, its source code, res and assets directories will be collected and stored in your local Maven repo. 
+
+== Specific project ==
+Then, in the apk projects where you wish to use the src/main/java, res and assets directories of the dependency project, add this to the {{{<dependencies>}}} tag of the pom:
+
+{{{
+ <dependency>
+     <groupId>enter.groupid.here</groupId>
+     <artifactId>artifactid-goes-here</artifactId>
+     <type>apksources</type>
+ </dependency>
+}}}
+
+Both projects must be {{{<packaging>apk</packaging>}}}. When you build the second project, it will pull in the sources from the first project, and include them. A new R.java and new .java files from .aidl files will be built, based on the entire codebase and the entire collection of *res*ources.
+
+
+== General ==
+
+Be aware of the names you give to res files, for example {{{strings.xml}}}. Make sure they don't collide, because then they will be overwritten. Use for example {{{commonStrings.xml}}} in the project with common code and resources, and other specific names in each project.
