@@ -13,12 +13,12 @@ It might look like this:
 
   myapp-for-phoneA
     - depends on myapp-common-stuff.
-    - also contains UI elements, and perhaps code, specific to phoneA.
+    - contains extra UI elements, and perhaps code, specific to phoneA.
     - 'mvn install' in this project generates myapp-for-phoneA.apk, for deployment on phoneA devices.
 
   myapp-for-tabletB
     - depends on myapp-common-stuff.
-    - also contains UI elements, and perhaps code, specific to tabletB.
+    - contains extra UI elements, and perhaps code, specific to tabletB.
     - 'mvn install' in this project generates myapp-for-tabletB.apk, for deployment on tabletB devices.
 }}}
 
