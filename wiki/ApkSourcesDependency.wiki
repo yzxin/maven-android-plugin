@@ -26,7 +26,7 @@ Note: It is of course recommended (as far as possible) to keep everything in the
 
 = Details =
 
-== Project with common src, res and assets ==
+== {{{myapp-common-stuff}}} ==
 In the apk project you wish to make available to other project as sources, declare the {{{pom.xml}}} as:
 
 {{{
@@ -39,20 +39,20 @@ Also, add this to the maven-android-plugin's {{{<configuration>}}} tag:
  <attachSources>true</attachSources>
 }}}
 
-Then do {{{mvn install}}} on that project. Its source code, res and assets directories will be collected and stored in your local Maven repo. 
+Then do {{{mvn install}}} in that project. Its source code, res and assets directories will be collected and stored in your local Maven repo. 
 
-== Specific project ==
+== {{{myapp-for-phoneA}}} and {{{myapp-for-tabletB}}} ==
 Then, in the apk projects where you wish to use the src/main/java, res and assets directories of the dependency project, add this to the {{{<dependencies>}}} tag of the pom:
 
 {{{
  <dependency>
      <groupId>enter.groupid.here</groupId>
-     <artifactId>artifactid-goes-here</artifactId>
+     <artifactId>myapp-common-stuff</artifactId>
      <type>apksources</type>
  </dependency>
 }}}
 
-Both projects must be {{{<packaging>apk</packaging>}}}. Note the use of {{{<type>apksources</type>}}} when declaring how you depend on the common source project.
+All projects must be {{{<packaging>apk</packaging>}}}. Note the use of {{{<type>apksources</type>}}} when declaring how you depend on the common source project.
 
 When you build the second project, it will pull in the sources from the first project, and include them. A new R.java and new .java files from .aidl files will be built, based on the entire codebase and the entire collection of <b>res</b>ources.
 
