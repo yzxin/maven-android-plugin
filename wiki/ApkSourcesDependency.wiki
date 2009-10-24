@@ -2,8 +2,27 @@
 
 = Introduction =
 
-This is useful if you develop apk's which share some code, but still have some different content.
+This is useful if you develop apk's which share some code, but still have some different content. The purpose is to share identical code through a "common-stuff" project, instead of copy/pasting it between two projects.
 
+It might look like this:
+
+{{{
+  myapp-common-stuff
+    - contains common java source, res resources, assets and aidl files. typically all domain objects, business logic, common strings and common UI elements.
+    - 'mvn install' in this project generates myapp-common-stuff.apksources, which is used by the other specific projects.
+
+  myapp-for-phoneA
+    - depends on myapp-common-stuff.
+    - also contains UI elements, and perhaps code, specific to phoneA.
+    - 'mvn install' in this project generates myapp-for-phoneA.apk, for deployment on phoneA devices.
+
+  myapp-for-tabletB
+    - depends on myapp-common-stuff.
+    - also contains UI elements, and perhaps code, specific to tabletB.
+    - 'mvn install' in this project generates myapp-for-tabletB.apk, for deployment on tabletB devices.
+}}}
+
+Note: It is of course recommended (as far as possible) to keep everything in the same apk and just make it work dynamically on every device. When that's not possible, for example when the functionality and UI differs too much, this kind of dependency setup can be nice to do.
 
 = Details =
 
@@ -35,7 +54,7 @@ Then, in the apk projects where you wish to use the src/main/java, res and asset
 
 Both projects must be {{{<packaging>apk</packaging>}}}. Note the use of {{{<type>apksources</type>}}} when declaring how you depend on the common source project.
 
-When you build the second project, it will pull in the sources from the first project, and include them. A new R.java and new .java files from .aidl files will be built, based on the entire codebase and the entire collection of *res*ources.
+When you build the second project, it will pull in the sources from the first project, and include them. A new R.java and new .java files from .aidl files will be built, based on the entire codebase and the entire collection of <b>res</b>ources.
 
 
 == General ==
