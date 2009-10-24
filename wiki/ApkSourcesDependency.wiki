@@ -1,4 +1,4 @@
-#summary Pulling in Java source code, Android resources and assets as Maven dependencies.
+#summary Pulling Java source code, Android resources and assets, in to your apk project as Maven dependencies.
 
 = Introduction =
 
