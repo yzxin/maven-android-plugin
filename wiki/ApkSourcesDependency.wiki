@@ -42,7 +42,7 @@ Also, add this to the maven-android-plugin's {{{<configuration>}}} tag:
 Then do {{{mvn install}}} in that project. Its source code, res and assets directories will be collected and stored in your local Maven repo. 
 
 == {{{myapp-for-phoneA}}} and {{{myapp-for-tabletB}}} ==
-Then, in the apk projects where you wish to use the src/main/java, res and assets directories of the dependency project, add this to the {{{<dependencies>}}} tag of the pom:
+In the apk projects where you wish to use the src/main/java, res and assets directories of the dependency project, add this to the {{{<dependencies>}}} tag of the pom:
 
 {{{
  <dependency>
@@ -54,7 +54,7 @@ Then, in the apk projects where you wish to use the src/main/java, res and asset
 
 All projects must be {{{<packaging>apk</packaging>}}}. Note the use of {{{<type>apksources</type>}}} when declaring how you depend on the common source project.
 
-When you build the second project, it will pull in the sources from the first project, and include them. A new R.java and new .java files from .aidl files will be built, based on the entire codebase and the entire collection of <b>res</b>ources.
+When you build these projects, they will pull in the sources from the first project, and include them. A new R.java and new .java files from .aidl files will be built, based on the entire codebase and the entire collection of <b>res</b>ources.
 
 
 == General ==
