@@ -1,7 +1,5 @@
 #labels Phase-Implementation
-#Projects using the Maven Android Plugin.
-
-= References =
+= Projects using the Maven Android Plugin =
 Sometimes we need a helping hand in seeing how other people are using software. Here is a list of people willing to share their maven files with you so you can see how they have successfully used the Maven Android plugin. 
 
 
