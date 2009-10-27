@@ -1,0 +1,11 @@
+#labels Phase-Implementation
+#Projects using the Maven Android Plugin.
+
+= References =
+Sometimes we need a helping hand in seeing how other people are using software. Here is a list of people willing to share their maven files with you so you can see how they have successfully used the Maven Android plugin. 
+
+
+===O-Auth for Android=== 
+An OAuth dashboard and provider framework for Android
+  * Developer: Novoda
+  * [http://github.com/novoda/oauth_for_android]
