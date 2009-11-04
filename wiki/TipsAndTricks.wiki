@@ -2,6 +2,14 @@
 
 = Tips and Tricks =
 
+
+=== View all available goals ===
+
+  {{{
+  mvn help:describe -Dplugin=com.jayway.maven.plugins.android.generation2:maven-android-plugin
+  }}}
+
+
 === shorter commandline ===
 
 Without any special settings, you can run standalone goals from the commandline like this:
