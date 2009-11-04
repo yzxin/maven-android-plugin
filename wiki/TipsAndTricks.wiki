@@ -10,7 +10,7 @@
   }}}
 
 
-=== shorter commandline ===
+=== Shorter commandline ===
 
 Without any special settings, you can run standalone goals from the commandline like this:
 
