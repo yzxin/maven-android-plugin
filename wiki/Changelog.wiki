@@ -32,7 +32,7 @@
    * No longer attaches the jar artifact twice. Attaching the jar can also be disabled 
  * (Hopefully) Fixes Issue 28: !NoClassDefFoundError, but class exists in target/android-classes
    * Adding java classpath resources from project and dependencies to the apk file.
- * (Hopefully) Fixes Issue 33: Dealing with META-INF in 3rd party jars
+ * Fixes Issue 33: Dealing with META-INF in 3rd party jars
    * Adding java classpath resources from project and dependencies to the apk file.
  * Fixed and added more error messages.
 
