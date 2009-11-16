@@ -57,6 +57,10 @@ All projects must be {{{<packaging>apk</packaging>}}}. Note the use of {{{<type>
 When you build these projects, they will pull in the sources from the first project, and include them. A new R.java and new .java files from .aidl files will be built, based on the entire codebase and the entire collection of <b>res</b>ources.
 
 
-== General ==
+== Overwrite vs. Overlay ==
 
 Be aware of the names you give to res files, for example {{{strings.xml}}}. Make sure they don't collide, because then they will be overwritten when copied on top of each other. Use for example {{{commonStrings.xml}}} in the project with common code and resources, and other specific names in each project.
+
+=== {{{res-overlay}}} ===
+
+If you don't want a certain resource file to overwrite a dependency resource file with the same name, you can put it in a {{{res-overlay}}} directory instead of the {{{res}}} directory. That way, only the specific XML tags you specify in the overlay resource file, will overwrite those specific xml tags in its dependency resource counterpart.
