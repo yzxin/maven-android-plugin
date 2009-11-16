@@ -143,7 +143,7 @@ Mime-types should hopefully be correct. Check at http://maven-android-plugin-m2s
   cd ~/maven-android-plugin-samples
   }}}
 
-Update the samples' {{{pom.xml}}} files to use the newly released version of the plugin, instead of the previous one. See for example [http://github.com/jayway/maven-android-plugin-samples/commit/b7bb66790495002e3456d50727987954cc84f100 this commit].
+Update the samples' root {{{pom.xml}}} file to use the newly released version of the plugin, instead of the previous one. See for example [http://github.com/jayway/maven-android-plugin-samples/commit/5bf5fede578eb97feea0ccbb9440bd2bb6f2dd8e this commit].
 
 Try the updated samples with an emulator or usb device:
   {{{
@@ -184,7 +184,7 @@ Afterwards, you should clean up the residue release files:
   cd ~/maven-android-plugin-samples
   }}}
 
-Update the samples' {{{pom.xml}}} files to use the next SNAPSHOT version of the plugin, so that any rebuilds of samples on master branch will use the latest plugin code. See for example [http://github.com/jayway/maven-android-plugin-samples/commit/b56c635f0ae9179700c678244ea35be3f3e42d8b this commit].
+Update the samples' root {{{pom.xml}}} file to use the next SNAPSHOT version of the plugin, so that any rebuilds of samples on master branch will use the latest plugin code. See for example [http://github.com/jayway/maven-android-plugin-samples/commit/285bfbdb8d72c6e9fd6146b5d310f01b387630f9 this commit].
 
 Commit the updates to git:
 
