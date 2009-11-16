@@ -20,11 +20,11 @@
 
  * Bugfixes for features introduced in Maven Android Plugin 2.2.0. Thank you Erik Hjortsberg for your patches!
    * Combine both the local resources and any dependency resources in a combined directory.
-   * Added the ability to provide overlay resources. These will need to be put in a directory named "res-overlay".
+   * Added the ability to provide overlay resources. These will need to be put in a directory named "res-overlay". See ApkSourcesDependency.
    * When using the eclipse maven plugin, the {{{apksources}}} artifact will point towards a directory (which isn't the correct one). Therefore, when extracting the {{{apksources}}} artifact we'll first try to get a jar from the local repository.
    * Fixed bug where the dependency files overwrote the local files (should be the other way around).
- * Require latest Maven release 2.2.1 (coincidental version number!), because of incompatible org.codehaus.plexus.logging.console.!ConsoleLogger class problems when using Maven 2.0.9 and building !TestOverlayImage.zip in Issue 38.
- * Pom cleanup. Thank you Manfred Moser for the patch!
+ * Require latest Maven release 2.2.1 (coincidental version number!) in fixing Issue 38.
+ * Pom cleanup. Thank you Manfred Moser for the patch.
 
 === Maven Android Plugin 2.2.0 ===
 
