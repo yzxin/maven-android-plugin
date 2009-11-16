@@ -10,8 +10,8 @@
 
 == Setup your development environment ==
   # Install Sun JDK 1.5+
-  # Install Android SDK 1.5_r2:
-     http://developer.android.com/sdk/1.5_r2/
+  # Install Android SDK 1.5_r3:
+     http://developer.android.com/sdk/1.5_r3/
   # Set environment variable ANDROID_SDK_15 to the path of your installed Android SDK.
   # If you look in the pom.xml of the samples`*` project you will find the following dependency.
 
@@ -19,18 +19,18 @@
   <dependency>
     <groupId>android</groupId>
     <artifactId>android</artifactId>
-    <version>1.5_r2</version>
+    <version>1.5_r3</version>
     <scope>provided</scope>
   </dependency>
 }}}
 
   This corresponds to the android.jar file in the Android SDK which is needed to compile all Android applications. Install this file to your local repository with the following command.
 
-    {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r2 -Dpackaging=jar -Dfile=$ANDROID_SDK_15/platforms/android-1.5/android.jar}}}
+    {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r3 -Dpackaging=jar -Dfile=$ANDROID_SDK_15/platforms/android-1.5/android.jar}}}
 
 On Windows, that would be:
 
-    {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r2 -Dpackaging=jar -Dfile=%ANDROID_SDK_15%/platforms/android-1.5/android.jar}}}
+    {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r3 -Dpackaging=jar -Dfile=%ANDROID_SDK_15%/platforms/android-1.5/android.jar}}}
 
 
 == Optional: Test your development environment ==
