@@ -16,6 +16,24 @@
 
 == Maven Android Plugin 2.x release series ==
 
+=== Maven Android Plugin 2.2.2 (under development) ===
+
+  _(Want to try 2.2.2-SNAPSHOT with these changes in it? Use the SnapshotRepo.)_
+
+ * Increased configuration possibilities for ApkSourcesDependency. Thank you Albin Theander for the patch!
+   * Added the possibility to use several overlay directories instead of just one. This makes it possible to config which ones to use with profiles. To use this feature, just add the following to the plugin configuration:
+     * *{{{<resourceOverlayDirectories>}}}*
+     * *{{{    <dir>res-overlay-1</dir>}}}*
+     * *{{{    <dir>res-overlay-2</dir>}}}*
+     * *{{{</resourceOverlayDirectories>}}}*
+   * If the feature is not used, the old resourceOverlayDirectory parameter is used as before, keeping everything backwards compatible.
+
+ * Issue 39 (awaiting verification from bug submitter)
+   * Improved detection for which projects are instrumentation test projects. Now considers projects without {{{<instrumentation.../>}}} tag in them, as non-instrumentationtest projects, and doesn't try to run them as tests.
+ * Issue 41 (awaiting verification from bug submitter)
+   * Exclude any {{{<scope>provided</scope>}}} dependencies from the built apk file. The android.jar dependencies are/should be such dependencies.
+
+
 === Maven Android Plugin 2.2.1 ===
 
  * Bugfixes for features introduced in Maven Android Plugin 2.2.0. Thank you Erik Hjortsberg for your patches!
