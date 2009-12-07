@@ -8,8 +8,8 @@
   # Install latest Android SDK (currently 2.0.1)
      http://developer.android.com/
   # Download the maven-android-sdk-deployer from http://github.com/mosabua/maven-android-sdk-deployer/archives/master , extract the file to any folder and follow the instructions in the README file
-  # Set environment variable ANDROID_SDK_xx to the path of your installed Android SDK, 
-where xx is replaced with 
+  # Set environment variable ANDROID_SDK to the path of your installed Android SDK and add $ANDROID_SDK/tools to your $PATH.
+
   # If you look in the pom.xml of the samples`*` project you will find the following dependency.
 
 {{{
