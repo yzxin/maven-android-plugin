@@ -5,7 +5,7 @@
 
 == Maven Repository ==
 
-  Download the maven-android-sdk-deployer from http://github.com/mosabua/maven-android-sdk-deployer/archives/master and follow the instructions in the README file
+  Download the maven-android-sdk-deployer from http://github.com/mosabua/maven-android-sdk-deployer/archives/master , extract the file to any folder and follow the instructions in the README file
 
 
 == Setup your development environment ==
