@@ -5,14 +5,15 @@
 
 == Maven Repository ==
 
-  Download the maven-android-sdk-deployer from http://github.com/mosabua/maven-android-sdk-deployer/archives/master , extract the file to any folder and follow the instructions in the README file
 
 
 == Setup your development environment ==
   # Install Sun JDK 1.5+
-  # Install Android SDK 1.5_r3:
-     http://developer.android.com/sdk/1.5_r3/
-  # Set environment variable ANDROID_SDK_15 to the path of your installed Android SDK.
+  # Install latest Android SDK (currently 2.0.1)
+     http://developer.android.com/
+  # Download the maven-android-sdk-deployer from http://github.com/mosabua/maven-android-sdk-deployer/archives/master , extract the file to any folder and follow the instructions in the README file
+  # Set environment variable ANDROID_SDK_xx to the path of your installed Android SDK, 
+where xx is replaced with 
   # If you look in the pom.xml of the samples`*` project you will find the following dependency.
 
 {{{
@@ -24,19 +25,49 @@
   </dependency>
 }}}
 
-  This corresponds to the android.jar file in the Android SDK which is needed to compile all Android applications. Install this file to your local repository with the following command.
+The currently valid dependencies are:
 
-    {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r3 -Dpackaging=jar -Dfile=$ANDROID_SDK_15/platforms/android-1.5/android.jar}}}
+{{{
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>1.1_r1</version>
+              <scope>provided</scope>
+          </dependency>
 
-On Windows, that would be:
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>1.5_r3</version>
+              <scope>provided</scope>
+          </dependency>
 
-    {{{ mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.5_r3 -Dpackaging=jar -Dfile=%ANDROID_SDK_15%/platforms/android-1.5/android.jar}}}
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>1.6_r2</version>
+              <scope>provided</scope>
+          </dependency>
 
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>2.0_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>2.0.1_r1</version>
+              <scope>provided</scope>
+}}}
+
+Use one these depending on the platform version you are developing against.
 
 == Optional: Test your development environment ==
 
 If you want to test your environment, download and run the [Samples]`*`.
-
 
 == Create your own Android application (apk) ==
   # Create a project using the {{{android}}} tool:
