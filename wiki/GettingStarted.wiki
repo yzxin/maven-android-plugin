@@ -3,10 +3,6 @@
 
 = Getting Started =
 
-== Maven Repository ==
-
-
-
 == Setup your development environment ==
   # Install Sun JDK 1.5+
   # Install latest Android SDK (currently 2.0.1)
