@@ -6,7 +6,7 @@ To Build your android projects which are dependent on Add-Ons such as Google Map
 
 == Additional development setup ==
 
-   # Add one of the following dependency to your project pom.xml .
+   # Add one of the following dependency to your project pom.xml depending on which SDK version you are using.
 
 {{{
            <dependency>
