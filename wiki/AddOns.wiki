@@ -2,29 +2,44 @@
 
 = Introduction =
 
-To Build your android projects which are dependent on Add-Ons such as Google Maps, you need to configure Maven. 
+To Build your android projects which are dependent on Add-Ons such as Google Maps, you need to configure have the maps artifact deployer to your local repository or a repository server you can access (as done by the maven-android-sdk-deployer).
 
 == Additional development setup ==
 
-   # Add the following dependency to your project pom.xml .
+   # Add one of the following dependency to your project pom.xml .
 
 {{{
-  <dependency>
-    <groupId>add-ons</groupId>
-    <artifactId>maps</artifactId>
-    <version>3</version>
-    <scope>provided</scope>
-  </dependency>
+           <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>3_r3</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>4_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>5_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>6_r1</version>
+              <scope>provided</scope>
+          </dependency>
 }}}
-
-  This corresponds to the maps.jar file in the $ANDROID_SDK_15/add-ons/google_apis-3/libs which is needed to compile all Android applications using Maps. Install this file to your local repository with the following command.
-
-    {{{ mvn install:install-file -DgroupId=add-ons -DartifactId=maps -Dversion=3 -Dpackaging=jar -Dfile=$ANDROID_SDK_15/add-ons/google_apis-3/libs/maps.jar}}}
 
 == Issues ==
 
   Future version of the plugin will automatically take care of the Add-Ons. Please refer the following issue for the details and star it to bump it up the issue stack:
 
      * http://code.google.com/p/maven-android-plugin/issues/detail?id=20
-<br/>
-<br/>
