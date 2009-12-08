@@ -3,10 +3,13 @@
 
 = Getting Started =
 
+== Prerequisites ==
+
+# JDK 1.5+ installed as required for Android development
+# Android SDK (2.0.1) installed, preferably with all platforms, see http://developer.android.com/sdk/index.html
+# Maven 2.2.1+ installed , see http://maven.apache.org/download.html
+
 == Setup your development environment ==
-  # Install Sun JDK 1.5+
-  # Install latest Android SDK (currently 2.0.1)
-     http://developer.android.com/
   # Download the maven-android-sdk-deployer from http://github.com/mosabua/maven-android-sdk-deployer/archives/master , extract the file to any folder and follow the instructions in the README file
   # Set environment variable ANDROID_SDK to the path of your installed Android SDK and add $ANDROID_SDK/tools to your $PATH.
 
