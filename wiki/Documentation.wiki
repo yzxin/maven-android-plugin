@@ -8,6 +8,7 @@
  * [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html Plugin goals reference] - All {{{mvn android:...}}} goals and their configuration parameters.
  * See [AddOns] for Building for Android Add-Ons
  * See ApkSourcesDependency for how to bring in other apk projects' sources, resources and assets as Maven {{{<dependencies>}}}.
+ * [QuickStartForEclipseProject]
 
 === See also ===
  * Take part in the mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers], for everyone!
