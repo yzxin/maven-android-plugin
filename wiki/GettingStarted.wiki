@@ -5,9 +5,9 @@
 
 == Prerequisites ==
 
-# JDK 1.5+ installed as required for Android development
-# Android SDK (2.0.1) installed, preferably with all platforms, see http://developer.android.com/sdk/index.html
-# Maven 2.2.1+ installed , see http://maven.apache.org/download.html
+ # JDK 1.5+ installed as required for Android development
+ # Android SDK (2.0.1) installed, preferably with all platforms, see http://developer.android.com/sdk/index.html
+ # Maven 2.2.1+ installed , see http://maven.apache.org/download.html
 
 == Setup your development environment ==
   # Download the maven-android-sdk-deployer from http://github.com/mosabua/maven-android-sdk-deployer/archives/master , extract the file to any folder and follow the instructions in the README file
