@@ -1,4 +1,4 @@
-#Explains how to set up Maven to automatically build and execute an Android test project.
+#summary Explains how to set up Maven to automatically build and execute an Android test project.
 
 = Automating Android test projects with Maven =
 
