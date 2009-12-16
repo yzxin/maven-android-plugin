@@ -52,7 +52,7 @@ Now a pom.xml needs to be created that holds information which is similar for bo
             <dependency>
                 <groupId>android</groupId>
                 <artifactId>android</artifactId>
-                <version>1.6</version>
+                <version>1.6_r2</version>
                 <scope>provided</scope>
             </dependency>
         </dependencies>
