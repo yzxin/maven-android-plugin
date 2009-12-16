@@ -1,0 +1,84 @@
+#summary How to merge an application project and a test project into one maven project using hierarchical maven projects.
+
+This article will explain how to merge an android application project and an android test project into one unified hierarchical maven project. It is assumed that the steps laid out in the articles QuickStartForEclipseProject and AutomateAndroidTestProject have been followed previously to this.
+
+In order to create a maven project hierarchy we first need to create the directory structure. To achieve this a new directory needs to be created. Then the application and test project should be moved to the new directory. Ensure that the names of the directories matches that of the artifact name specified in the pom for each project.
+
+Now a pom.xml needs to be created that holds information which is similar for both project and also reference the two projects. Following on from previous articles this pom will look like this:
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	
+    <groupId>com.yourcompany</groupId>
+    <artifactId>your-parent-project-artifact-id</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Your Android project parent</name>
+
+    <modules>
+        <module>your-artifact-id</module>
+        <module>your-test-artifact-id</module>
+    </modules>
+
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>maven-android-plugin</artifactId>
+                <configuration>
+                    <sdk>
+                        <path>${env.ANDROID_HOME}</path>
+                        <platform>1.6</platform>
+                    </sdk>
+                    <deleteConflictingFiles>true</deleteConflictingFiles>
+                </configuration>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>android</groupId>
+                <artifactId>android</artifactId>
+                <version>1.6</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
+}}}
+
+It is important to note what the names in the modules section are. They need to correspond with the directory names of the two modules, and the directory names should in turn match the artifact id's of each of the modules.
+
+Next we will need to change the application and test pom files. The following needs to change:
+ * The build section can be removed. It will be inherited from the parent.
+ * The child projects need to know it's parent. This is done by adding the following to the top of each pom:
+{{{
+<parent>
+    <groupId>com.yourcompany</groupId>
+    <artifactId>your-parent-project-artifact-id</artifactId>
+    <version>0.0.1</version>
+</parent>
+}}}
+
+ * In the dependencyManagement section in the parent pom the version number and scope for the android jar file is specified. That makes this information redundant in the child poms. So removing it will ensure cleaner build files.
+
+Once this is done you can go to the directory where your parent project is and run the command:
+{{{
+mvn install
+}}}
+This will trigger the build and test of your Android project.
+
+Having done this it is very simple to add your Android project to your favorite CI server. What you need to keep in mind is that in order for the tests to work you need to have either a connected device or a running emulator.
