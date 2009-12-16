@@ -30,7 +30,8 @@ To enable your Android project to be built with Maven you need to add a pom look
         <dependency>
             <groupId>android</groupId>
             <artifactId>android</artifactId>
-            <version>1.6<version>
+            <version>1.6_r2</version>
+           <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -65,7 +66,7 @@ To enable your Android project to be built with Maven you need to add a pom look
 
 In order for Maven to find the android.jar file specified as a dependency in the pom it has to be installed into the local repository. Use the command below:
 {{{
-mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.6 -Dpackaging=jar -Dfile=$ANDROID_HOME/platforms/android-1.6/android.jar
+mvn install:install-file -DgroupId=android -DartifactId=android -Dversion=1.6_r2 -Dpackaging=jar -Dfile=$ANDROID_HOME/platforms/android-1.6/android.jar
 }}}
 _Replace $ANDROID_HOME with %ANDROID_HOME% on Windows systems._<br/>
 This will set up you project to compile against Android 1.6. If your project is built against 1.5 or 2.0 you just replace the references to 1.6 with your preferred version.
