@@ -12,7 +12,7 @@ To enable maven builds in your test project you need to create the following pom
     <groupId>com.yourcompany</groupId>
     <artifactId>your-test-artifact-id</artifactId>
     <packaging>apk</packaging>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>Your Test Android project Maven Enabled</name>
 
     <dependencies>
@@ -25,13 +25,13 @@ To enable maven builds in your test project you need to create the following pom
 	    <groupId>com.yourcompany</groupId>
 	    <artifactId>your-artifact-id</artifactId>
 	    <packaging>apk</packaging>
-	    <version>0.0.1</version>
+	    <version>0.0.1-SNAPSHOT</version>
 	 </dependency>
         <dependency>
 	    <groupId>com.yourcompany</groupId>
 	    <artifactId>your-artifact-id</artifactId>
 	    <packaging>jar</packaging>
-	    <version>0.0.1</version>
+	    <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
     
