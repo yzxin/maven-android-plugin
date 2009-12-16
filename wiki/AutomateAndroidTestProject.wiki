@@ -19,7 +19,7 @@ To enable maven builds in your test project you need to create the following pom
         <dependency>
             <groupId>android</groupId>
             <artifactId>android</artifactId>
-            <version>1.6<version>
+            <version>1.6_r2<version>
         </dependency>
         <dependency>
 	    <groupId>com.yourcompany</groupId>
