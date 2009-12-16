@@ -23,7 +23,7 @@ To enable your Android project to be built with Maven you need to add a pom look
     <groupId>com.yourcompany</groupId>
     <artifactId>your-artifact-id</artifactId>
     <packaging>apk</packaging>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>Your Android project Maven Enabled</name>
 	
     <dependencies>
