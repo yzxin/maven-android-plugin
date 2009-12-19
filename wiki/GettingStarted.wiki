@@ -111,12 +111,17 @@ If you want to test your environment, download and run the [Samples]`*`.
 
 </ol>
 
+Notes:
+
+ # Do not put tests in {{{src/test/java}}} that you want to be run by the Maven Android plugin. If you put your tests there, Maven runs them as normal JUnit tests in the JVM, with the JAR files that are accessible on the classpath, which includes the android.jar. Because the android.jar only contains empty methods that throw exceptions, you get exceptions of the form {{{java.lang.RuntimeException: Stub!}}}. Instead, the tests need to go in {{{src/main/java}}}, where they will not be run by Maven as tests during compilation, but will be included in the apk and deployed and run on the device (where the android.jar has method implementations instead of stubs).
+ # If you have JUnit tests that don't call any Android APIs (directly or transitively), put them in {{{src/test/java}}} so JUnit runs them locally and more quickly than if run on the device.
+ # Make sure the Maven Android goal is set to {{{<goal>jar-no-fork</goal>}}} instead of {{{<goal>test-jar-no-fork</goal>}}}. Do this even for projects that only contain tests.
+
 == Run instrumentation tests on device ==
 Check out the {{{apidemos-15-instrumentationtest}}} project in [Samples]`*`.
 
 You can create a project like that, by moving your "test" folder out and renaming it to for example "myproject-instrumentationtest". Then rearrange the folders within it like above, and use the {{{pom.xml}}} from {{{apidemos-15-instrumentationtest}}} as template.
   
-
 == More documentation ==
 
 There is some more documentation on the [Documentation] page.
