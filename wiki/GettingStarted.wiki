@@ -12,7 +12,6 @@
 == Setup your development environment ==
   # Download the maven-android-sdk-deployer from http://github.com/mosabua/maven-android-sdk-deployer/archives/master , extract the file to any folder and follow the instructions in the README file
   # Set environment variable ANDROID_SDK to the path of your installed Android SDK and add $ANDROID_SDK/tools to your $PATH.
-
   # If you look in the pom.xml of the samples`*` project you will find the following dependency.
 
 {{{
@@ -69,13 +68,14 @@ Use one these depending on the platform version you are developing against.
 If you want to test your environment, download and run the [Samples]`*`.
 
 == Create your own Android application (apk) ==
-  # Create a project using the {{{android}}} tool:
+<ol>
+  <li>Create a project using the {{{android}}} tool:</li>
      * http://developer.android.com/guide/developing/other-ide.html#CreatingAProject
-  # Create a {{{pom.xml}}} in your project, using the sample {{{apidemos-15/apidemos-15-app/pom.xml}}} as template. (See [Samples]`*`.)
+  <li>Create a {{{pom.xml}}} in your project, using the sample {{{apidemos-15/apidemos-15-app/pom.xml}}} as template. (See [Samples]`*`.)</li>
      * Make these changes:
      * Remove the entire {{{<parent>}}} tag.
      * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own. (Some tips: [http://maven.apache.org/guides/mini/guide-naming-conventions.html Maven - Guide to Naming Conventions])
-  # Rename, and move the source directory to where Maven expects it:
+  <li>Rename, and move the source directory to where Maven expects it:</li>
      {{{
      mv src java
      mkdir -p src/main
@@ -92,22 +92,24 @@ If you want to test your environment, download and run the [Samples]`*`.
 
      to pom.xml.
 
-  # You won't need these files/directories with Maven Android Plugin, so you can remove them:
+  <li>You won't need these files/directories with Maven Android Plugin, so you can remove them:</li>
      {{{
      rm -r bin build.xml build.properties libs
      }}}
      _The {{{default.properties}}} file is currently not used by Maven Android Plugin, but will be, so leave that in place for now. {{{default.properties}}} and the {{{gen}}} folder are used by the ADT plugin in Eclipse, if you use that._<br/>
      _(Also leave the "test" folder for now. You can later move it out to its own project. If you want, you can then look at the {{{apidemos-15-instrumentationtest}}} sample project.)_
-  # To build your apk, simply:
+  <li>To build your apk, simply:</li>
      {{{
      mvn install
      }}}
-  # To deploy your apk to the connected device:
+  <li>To deploy your apk to the connected device:</li>
      {{{
      mvn com.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy
      }}}
 
 <sup><i>Do you think that last Maven command was long? It was. Check out [TipsAndTricks].</i></sup>
+
+</ol>
 
 == Run instrumentation tests on device ==
 Check out the {{{apidemos-15-instrumentationtest}}} project in [Samples]`*`.
