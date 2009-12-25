@@ -16,9 +16,7 @@
 
 == Maven Android Plugin 2.x release series ==
 
-=== Maven Android Plugin 2.2.2 (under development) ===
-
-  _(Want to try 2.2.2-SNAPSHOT with these changes in it? Use the SnapshotRepo.)_
+=== Maven Android Plugin 2.2.2 ===
 
  * Increased configuration possibilities for ApkSourcesDependency. Thank you Albin Theander for the patch!
    * Added the possibility to use several overlay directories instead of just one. This makes it possible to config which ones to use with profiles. To use this feature, just add the following to the plugin configuration:
