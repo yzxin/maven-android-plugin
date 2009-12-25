@@ -30,7 +30,7 @@
 
  * Issue 39
    * Improved detection for which projects are instrumentation test projects. Now considers projects without {{{<instrumentation.../>}}} tag in them, as non-instrumentationtest projects, and doesn't try to run them as tests.
- * Issue 41 (awaiting verification from bug submitter)
+ * Issue 41
    * Exclude any {{{<scope>provided</scope>}}} dependencies from the built apk file. The android.jar dependencies are/should be such dependencies.
 
 
