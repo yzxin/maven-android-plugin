@@ -36,6 +36,13 @@ To Build your android projects which are dependent on Add-Ons such as Google Map
               <version>6_r1</version>
               <scope>provided</scope>
           </dependency>
+
+          <dependency>
+              <groupId>com.google.android.maps</groupId>
+              <artifactId>maps</artifactId>
+              <version>7_r1</version>
+              <scope>provided</scope>
+          </dependency>
 }}}
 
 == Issues ==
