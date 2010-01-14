@@ -59,6 +59,15 @@ The currently valid dependencies are:
               <artifactId>android</artifactId>
               <version>2.0.1_r1</version>
               <scope>provided</scope>
+          </dependency>
+
+          <dependency>
+              <groupId>android</groupId>
+              <artifactId>android</artifactId>
+              <version>2.1_r1</version>
+              <scope>provided</scope>
+          </dependency>
+
 }}}
 
 Use one these depending on the platform version you are developing against.
