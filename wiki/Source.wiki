@@ -25,13 +25,15 @@ Go to --> [Samples] page instead :)
 <br/>
 <br/>
 
-=What is this?=
+=What is this not?=
 
 This source code page is only useful for developers of the maven-android-plugin, and for those who develop and maintain the samples.
 
-All Android application developers (who want to copy and *use* the samples), please go to the [Samples] page instead, where you will get a version of the samples source code which use a released version of the maven-android-plugin.
+All Android *application developers* (who want to copy and *use* the samples), please go to the [Samples] page instead, where you will get a version of the samples source code which use a released version of the maven-android-plugin.
 
---> [Samples] <-- go there now
+--> [Samples] <-- Application developers, go there now
+
+Plugin developers, continue reading...
 
 <br/>
 <br/>
