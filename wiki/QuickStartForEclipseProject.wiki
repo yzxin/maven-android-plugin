@@ -13,7 +13,7 @@ export ANDROID_HOME=/path/to/android/sdk
 
 For Windows this is done by adding an environment variable in the advanced section of the system properties.
 
-It is important that this point to the root of the SDK and not to one of the platforms within. This document will refer to this variable as ANDROID_HOME instead of ANDROID_SDK_15 being used in most other documentation in the wiki.
+It is important that this point to the root of the SDK and not to one of the platforms within. 
 
 To enable your Android project to be built with Maven you need to add a pom looking like this to the project root:
 {{{
