@@ -7,3 +7,8 @@ Sometimes we need a helping hand in seeing how other people are using software. 
 An OAuth dashboard and provider framework for Android
   * Developer: Novoda
   * [http://github.com/novoda/oauth_for_android]
+
+===Mashmobile===
+Mashmobile are developing a system that will allow mobile phones to get a URL. We are using the maven-android-plugin to build the mobile phone component for Android.
+  * Developer: Tomas Malmsten (tomas.malmsten at mashmobile.com)
+If you have questions on how we have configured the maven for a more corporate environment feel free to ask.
