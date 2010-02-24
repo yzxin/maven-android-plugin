@@ -16,7 +16,7 @@
 
 == Maven Android Plugin 2.x release series ==
 
-=== Maven Android Plugin 2.3.0 (deployed, awaiting automatic sync to Maven Central...) ===
+=== Maven Android Plugin 2.3.0 ===
 
  * New support for starting and stopping an emulator. Thank you Manfred Moser for this functionality! Documented in the [http://www.sonatype.com/books/mvnref-book/reference/android-dev-sect-goals.html Maven Android Plugin Goals] section of the book _Maven: The Complete Reference_.
  * Defaulting {{{<sdk><path>...</path></sdk>}}} to environment variable {{{ANDROID_HOME}}} so that the config parameter is not needed by default. Thank you Manfred Moser for the patch!
