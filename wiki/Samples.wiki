@@ -3,9 +3,9 @@
 
 == Where can I find the samples? ==
 
-*UPDATE!* This link should take you to the correct version:
+This link will take you to the correct version:
 
---> [http://github.com/jayway/maven-android-plugin-samples/archives/samples-2.2.2 Download samples-2.2.2]
+--> [http://github.com/jayway/maven-android-plugin-samples/archives/samples-2.3.0 Download samples-2.3.0]
 
 
 === Important notes: ===
@@ -15,7 +15,7 @@
 
 == What are the samples? ==
 
-!ApiDemos is a sample application that comes with the Android SDK.
+!ApiDemos is a sample application that comes with the Android SDK. !HelloFlashlight is the sample application mentioned in the [http://www.sonatype.com/books/mvnref-book/reference/android-dev.html Android chapter] of the book _Maven: The Complete Reference_.
 
 We have mavenized both !ApiDemos from Android SDK 1.1 and !ApiDemos from Android SDK 1.5.
 
