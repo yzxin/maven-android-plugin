@@ -1,7 +1,13 @@
 #summary Documentation collection for Maven Android Plugin
 #labels Featured
 
-= Documentation =
+= Maven: The Complete Reference - Android chapter =
+
+Documentation in book form is available with the Android chapter of the free book
+Maven: The complete Reference in HTML and PDF format:
+http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
+
+= Wiki Documentation =
 
 == Start here ==
  * [GettingStarted] quickly!
