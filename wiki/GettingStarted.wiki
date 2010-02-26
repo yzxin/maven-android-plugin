@@ -1,6 +1,10 @@
 #summary Get started using Maven Android Plugin
 #labels Featured
 
+Documentation in book form is available with the Android chapter of the free book
+Maven: The complete Reference available in HTML and PDF:
+http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
+
 = Getting Started =
 
 == Prerequisites ==
