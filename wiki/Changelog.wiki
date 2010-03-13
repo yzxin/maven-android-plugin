@@ -21,7 +21,7 @@
  * Issue 4
    * New support for stopping an emulator on Windows. Thank you Manfred Moser for the patch.
      * *We still need someone on Windows to test it!*
-     * See Issue 4.
+     * See Issue 4, and scroll down to "INSTRUCTIONS FOR ANYONE TO TEST ON WINDOWS".
    * Improved support for starting an emulator on Mac in IntelliJ IDEA.
  * Using newer plugins.
 
