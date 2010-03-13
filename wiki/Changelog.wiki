@@ -16,13 +16,14 @@
 
 == Maven Android Plugin 2.x release series ==
 
-=== Maven Android Plugin 2.3.2 (in progress) ===
+=== Maven Android Plugin 2.3.2 ===
 
  * Issue 4
-   * New support for stopping an emulator on Windows. Thank you Manfred Moser for the patch.
+   * New support for stopping an emulator on Windows.
      * *We still need someone on Windows to test it!*
      * See Issue 4, and scroll down to "INSTRUCTIONS FOR ANYONE TO TEST ON WINDOWS".
    * Improved support for starting an emulator on Mac in IntelliJ IDEA.
+   * Thank you Manfred Moser for the patches!
  * Using newer plugins.
 
 === Maven Android Plugin 2.3.0 ===
