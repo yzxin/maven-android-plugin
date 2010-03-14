@@ -35,7 +35,7 @@ That should work! If not, please [http://code.google.com/p/maven-android-plugin/
 <br/>
 
 ----
-_The rest of this page contains the discussions and research which lead up to the solution. Everything below this line will be deleted in a while. If you want any of it to stay, edit it to suit its purpose and then move it to a suitable location on this page or to a new page._
+_The rest of this page contains the discussions and research which lead up to the solution. Everything below this line should be considered archived, but will be kept for a while. Feel free to edit it to suit a specific purpose, and then move it to a suitable location on this page or to a new page._
 ----
 
 = First Glimpse =
