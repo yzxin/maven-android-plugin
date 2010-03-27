@@ -16,7 +16,7 @@
 
 == Maven Android Plugin 2.x release series ==
 
-=== Maven Android Plugin 2.3.3 (under development) ===
+=== Maven Android Plugin 2.3.3 ===
 
  * Basic NDK support: include compiled native libraries to the apk
    * Thank you to Sergey Rudchenko for the patch!
