@@ -16,6 +16,16 @@
 
 == Maven Android Plugin 2.x release series ==
 
+=== Maven Android Plugin 2.3.3 / 2.4.0(?) (under development) ===
+
+ * Basic NDK support: include compiled native libraries to the apk
+   * Thank you to Sergey Rudchenko for the patch!
+ * Fixed Issue 50: maven dependency ksoap2-android reference error
+   * This issue also affects command-line builds with Maven 3.
+   * Thank you to Ricardo Gladwell for the patch!
+ * Updated unit tests to pass for new version of Android SDK: convention for platforms directory structure has changed (android-1.1 -> android-2. android-1.5 -> android-3, etc.)
+   * Thank you to Ricardo Gladwell for the patch!
+
 === Maven Android Plugin 2.3.2 ===
 
  * Issue 4
