@@ -23,8 +23,10 @@
  * Fixed Issue 57 / Issue 50: Dependencies do not get included in apk / maven dependency ksoap2-android reference error
    * This issue affected both EclipseIntegration and command-line builds with Maven 3.
    * Thank you to Ricardo Gladwell for the patch!
- * Updated unit tests to pass for new version of Android SDK: convention for platforms directory structure has changed (android-1.1 -> android-2. android-1.5 -> android-3, etc.)
-   * Thank you to Ricardo Gladwell for the patch!
+ * Google changed how platform directories are named. android-1.1 -> android-2; android-1.5 -> android-3, etc.:
+   * Updated unit tests to pass for new version of Android SDK: convention for platforms directory structure has changed. Thank you to Ricardo Gladwell for the patch.
+   * Updated pom.xml files in [Samples] to use the new platform directory names too.
+   * *Users should edit their pom.xml files, and change the {{{<sdk><platform>}}} tags accordingly, if they install the new Android SDK.*
 
 === Maven Android Plugin 2.3.2 ===
 
