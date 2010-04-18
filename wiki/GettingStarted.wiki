@@ -10,7 +10,7 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
 == Prerequisites ==
 
  # JDK 1.5+ installed as required for Android development
- # Android SDK (r05) installed, preferably with all platforms, see http://developer.android.com/sdk/index.html
+ # Android SDK ({{{r05}}}) installed, preferably with all platforms, see http://developer.android.com/sdk/index.html
  # Maven 2.2.1+ installed , see http://maven.apache.org/download.html
 
 == Setup your development environment ==
