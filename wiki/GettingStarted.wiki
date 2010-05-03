@@ -88,6 +88,9 @@ If you want to test your environment, download and run the [Samples]`*`.
      * Make these changes:
      * Remove the entire {{{<parent>}}} tag.
      * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own. (Some tips: [http://maven.apache.org/guides/mini/guide-naming-conventions.html Maven - Guide to Naming Conventions])
+     * Set a {{{<version>}}} tag for your project, for example {{{<version>0.1.0-SNAPSHOT</version>}}}.
+     * Declare versions for dependencies: for example {{{<version>2.1_r1</version>}}} for android, and {{{<version>4.8.1</version>}}} for junit.
+     * In the maven-android-plugin configuration, set the correct platform number which corresponds to the version you declared for the android dependency, for example: {{{<platform>7</platform>}}}
   <li>Rename, and move the source directory to where Maven expects it:</li>
      {{{
      mv src java
