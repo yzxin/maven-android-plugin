@@ -12,3 +12,6 @@ An OAuth dashboard and provider framework for Android
 [http://www.mashmobile.com Mashmobile] builds a system that will enable a phone to be accessed using a URL. The Maven Android plugin is used to enable continuous integration, configuration management and cross IDE support.
 
 If you want to see how we have configured Maven then please contact me. Our code base is not open source so I cannot provide it freely on the internet. You can reach me by email: tomas.malmsten at mashmobile.com.
+
+===Simpligility Technologies===
+[http://www.simpligity.com Simpligility Technologies] is using the Maven Android plugin for an Android application for a top5 electronics reseller client.
