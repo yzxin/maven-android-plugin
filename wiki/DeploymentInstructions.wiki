@@ -206,4 +206,5 @@ Update [Changelog] with all interesting information about the plugin release, su
 
 == Announce ==
 
-Announce on [http://groups.google.com/group/maven-android-developers Maven Android Developers]!
+Announce on [http://groups.google.com/group/maven-android-developers Maven Android Developers]
+and ideally also on the [http://maven.apache.org/mail-lists.html Maven developers and users mailing lists] 
