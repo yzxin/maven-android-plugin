@@ -9,7 +9,7 @@ Android's official development effort provides solid support for Eclipse integra
 
 To make maven-android-plugin work well in Eclipse with ADT, this is what you need:
 
- # Go to the [http://code.google.com/p/m2eclipse-android-integration/ M2Eclipse Android Integration project page] and install the tools listed under *Requirements*.
+ # Go to the [http://code.google.com/a/eclipselabs.org/p/m2eclipse-android-integration/ M2Eclipse Android Integration project page] and install the tools listed under *Requirements*.
  # Of course, set up update-site url and install the !M2Eclipse Android Integration plugin in Eclipse.
   * Get version 0.2.2 or later. It should be under the category 'Maven Integration for Android Development Tools'.
  # In Eclipse, to bring in your Maven Android projects, choose File -> Import... -> Maven -> Existing Maven Projects.
