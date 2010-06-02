@@ -16,6 +16,10 @@
 
 == Maven Android Plugin 2.x release series ==
 
+=== Maven Android Plugin 2.5.0 (will be released soon) ===
+
+ * Zipalign
+
 === Maven Android Plugin 2.4.0 ===
 
  * New feature: [http://maven-android-plugin-m2site.googlecode.com/svn/apk-mojo.html#configurations apk configurations]
