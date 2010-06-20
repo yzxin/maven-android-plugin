@@ -4,6 +4,7 @@
 Documentation in book form is available with the Android chapter of the free book
 Maven: The complete Reference in HTML and PDF format:
 http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
+The chapter is currently in need of update to reflect the newly available Android jar artifacts in Maven central.
 
 = Getting Started =
 
@@ -15,14 +16,13 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
 
 == Setup your development environment ==
   # Set environment variable ANDROID_HOME to the path of your installed Android SDK and add $ANDROID_HOME/tools to your $PATH.
-  # Download the maven-android-sdk-deployer from http://github.com/mosabua/maven-android-sdk-deployer/archives/master , extract the file to any folder and follow the instructions in the README file.
   # If you look in the pom.xml of the samples`*` project you will find the following dependency.
 
 {{{
   <dependency>
-    <groupId>android</groupId>
+    <groupId>com.google.android</groupId>
     <artifactId>android</artifactId>
-    <version>1.5_r3</version>
+    <version>1.5_r4</version>
     <scope>provided</scope>
   </dependency>
 }}}
@@ -30,43 +30,23 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
 The currently valid dependencies are:
 
 {{{
+
           <dependency>
-              <groupId>android</groupId>
+              <groupId>com.google.android</groupId>
               <artifactId>android</artifactId>
-              <version>1.1_r1</version>
+              <version>1.5_r4</version>
               <scope>provided</scope>
           </dependency>
 
           <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>1.5_r3</version>
-              <scope>provided</scope>
-          </dependency>
-
-          <dependency>
-              <groupId>android</groupId>
+              <groupId>com.google.android</groupId>
               <artifactId>android</artifactId>
               <version>1.6_r2</version>
               <scope>provided</scope>
           </dependency>
 
           <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>2.0_r1</version>
-              <scope>provided</scope>
-          </dependency>
-
-          <dependency>
-              <groupId>android</groupId>
-              <artifactId>android</artifactId>
-              <version>2.0.1_r1</version>
-              <scope>provided</scope>
-          </dependency>
-
-          <dependency>
-              <groupId>android</groupId>
+              <groupId>com.google.android</groupId>
               <artifactId>android</artifactId>
               <version>2.1_r1</version>
               <scope>provided</scope>
