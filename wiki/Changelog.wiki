@@ -19,6 +19,7 @@
 === Maven Android Plugin 2.5.0 (will be released soon) ===
 
  * Zipalign
+ * Samples updated to use android.jar from Maven Central, and not requiring Maven Android SDK Deployer.
 
 === Maven Android Plugin 2.4.0 ===
 
