@@ -5,7 +5,7 @@
 
 This link will take you to the correct version:
 
---> [http://github.com/jayway/maven-android-plugin-samples/archives/samples-2.4.0 Download samples-2.4.0]
+--> [http://github.com/jayway/maven-android-plugin-samples/archives/samples-2.5.0 Download samples-2.5.0]
 
 
 === Important notes: ===
@@ -17,18 +17,10 @@ This link will take you to the correct version:
 
 !ApiDemos is a sample application that comes with the Android SDK. !HelloFlashlight is the sample application mentioned in the [http://www.sonatype.com/books/mvnref-book/reference/android-dev.html Android chapter] of the book _Maven: The Complete Reference_.
 
-We have mavenized both !ApiDemos from Android SDK 1.1 and !ApiDemos from Android SDK 1.5.
-
 The samples are meant to show you how to create a {{{pom.xml}}} and structure your project to work with Maven Android Plugin.
 
-There are two sets of samples:
+For example, the apidemos sample has this structure:
 {{{
-|
-+-- apidemos-11
-| \
-| +--- apidemos-11-app
-| |
-| \--- apidemos-11-instrumentationtest
 |
 \-- apidemos-15
   \
@@ -37,12 +29,11 @@ There are two sets of samples:
   \--- apidemos-15-instrumentationtest
 
 }}}
- * The directory {{{apidemos-11}}} contains !ApiDemos from Android SDK 1.1
- * The directory {{{apidemos-15}}} contains !ApiDemos from Android SDK 1.5
+ * The directory name {{{apidemos-15}}} means it contains !ApiDemos from Android SDK 1.5
 
- * Each of those, are split up into two Maven projects:
-   * {{{apidemos-NN-app}}}, which contains a {{{pom.xml}}} and source code for the application apk.
-   * {{{apidemos-NN-instrumentationtest}}}, which contains a {{{pom.xml}}} and source code for instrumentation tests of the app.
+ * It is split up into two Maven projects:
+   * {{{apidemos-15-app}}}, which contains a {{{pom.xml}}} and source code for the application apk.
+   * {{{apidemos-15-instrumentationtest}}}, which contains a {{{pom.xml}}} and source code for instrumentation tests of the app.
 
 == How to build the samples ==
 If you have set up your development environment according to GettingStarted, you can build for example the !ApiDemos sample from Android SDK 1.5 like this:
