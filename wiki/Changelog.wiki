@@ -18,8 +18,11 @@
 
 === Maven Android Plugin 2.5.0 (will be released soon) ===
 
- * Zipalign
+ * Issue 51: Zipalign goal (new feature)
+ * Issue 4: Fixes for starting/stopping emulator on Windows.
  * Samples updated to use android.jar from Maven Central, and not requiring Maven Android SDK Deployer.
+
+Thank you to Manfred Moser for these patches!
 
 === Maven Android Plugin 2.4.0 ===
 
