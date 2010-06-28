@@ -4,8 +4,11 @@
 
 Before shipping an APK it should be zip aligned. This is a procedure that aligns the application archive so that it is optimised for the Android phone. This article shows how to add this function as a profile in the pom of an Android Maven project.
 
-
 = Details =
+
+As of the release 2.5.0 of the Maven Android Plugin the zipalign goal is part of the plugin. To activate simply add the goal zipalign as an execution e.g. to the install phase. More details are at <a href=""http://www.simpligility.com/2010/06/maven-android-plugin-with-zipalign-and-improved-verification/">the simpligility web site.</a>
+
+= Old Details using the exec plugin=
 
 To add the functionality for zip aligning to your build use the code below. Please note that this profile has to be added to the pom for the actual APK. You can't add it to a parent pom. The reason for this is that it uses the Maven property that defines the artefact name (project.build.finalName).
 
