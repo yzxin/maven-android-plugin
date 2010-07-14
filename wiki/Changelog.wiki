@@ -20,8 +20,8 @@
 
  * Fixed Issue 74: Dependencies are now processed in the order they stand in the pom.
    * Thank you to Albin Theander for the patch!
- * Updated documentation for zipalign.
- * Fixed misspelled command-line argument, corrected to -Dandroid.zipalign.inputApk=...
+ * Updated [http://maven-android-plugin-m2site.googlecode.com/svn/zipalign-mojo.html plugin documentation for zipalign].
+ * Fixed misspelled command-line argument, corrected to {{{-Dandroid.zipalign.inputApk=...}}}
    * Thank you to Manfred Moser for the patch!
 
 === Maven Android Plugin 2.5.0 ===
