@@ -16,6 +16,14 @@
 
 == Maven Android Plugin 2.x release series ==
 
+=== Maven Android Plugin 2.5.1 ([http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/maven-android-plugin/ being uploaded to Maven Central...]) ===
+
+ * Fixed Issue 74: Dependencies are now processed in the order they stand in the pom.
+   * Thank you to Albin Theander for the patch!
+ * Updated documentation for zipalign.
+ * Fixed misspelled command-line argument, corrected to -Dandroid.zipalign.inputApk=...
+   * Thank you to Manfred Moser for the patch!
+
 === Maven Android Plugin 2.5.0 ===
 
  * New feature: Zipalign goal (Issue 51).
