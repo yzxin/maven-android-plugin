@@ -16,7 +16,7 @@
 
 == Maven Android Plugin 2.x release series ==
 
-=== Maven Android Plugin 2.5.2 (not yet released) ===
+=== <font color="grey">Maven Android Plugin 2.5.2</font> (not yet released) ===
 
  * Fixed Issue 78: Platform folder names must be android-x, where x is a number.
    * Thank you to Albin Theander for the patch!
