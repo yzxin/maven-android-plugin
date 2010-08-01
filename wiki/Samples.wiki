@@ -5,7 +5,7 @@
 
 This link will take you to the correct version:
 
---> [http://github.com/jayway/maven-android-plugin-samples/archives/samples-2.5.1 Download samples-2.5.1]
+--> [http://github.com/jayway/maven-android-plugin-samples/archives/samples-2.5.2 Download samples-2.5.2]
 
 
 === Important notes: ===
