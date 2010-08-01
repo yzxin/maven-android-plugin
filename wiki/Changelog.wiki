@@ -16,7 +16,7 @@
 
 == Maven Android Plugin 2.x release series ==
 
-=== >Maven Android Plugin 2.5.2 ===
+=== Maven Android Plugin 2.5.2 ===
 
  * Fixed Issue 78: Platform folder names must be android-x, where x is a number.
    * Now, all subfolders of {{{<sdk-path>/platforms}}} with names starting with "{{{android-}}}" are valid platform folders. There is no implicit connection between the name of the directories and the platform versions. (The name of the platform version and the api level number are taken from the {{{source.properties}}} file.)
