@@ -24,13 +24,13 @@ To enable maven builds in your test project you need to create the following pom
         <dependency>
 	    <groupId>com.yourcompany</groupId>
 	    <artifactId>your-artifact-id</artifactId>
-	    <packaging>apk</packaging>
+	    <type>apk</type>
 	    <version>0.0.1-SNAPSHOT</version>
 	 </dependency>
         <dependency>
 	    <groupId>com.yourcompany</groupId>
 	    <artifactId>your-artifact-id</artifactId>
-	    <packaging>jar</packaging>
+	    <type>jar</type>
 	    <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
