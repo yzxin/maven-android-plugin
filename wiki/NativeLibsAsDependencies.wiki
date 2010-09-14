@@ -1,0 +1,77 @@
+#summary A quick guide on how to use native dependencies (of type .so) when creating an APK for Android
+
+= Native Libraries as Dependencies =
+
+In an attempt reduce build times for projects involving a lot of native code, it might be useful to deploy the native libraries (.so) into the Maven Repository & only refer to them from the Maven pom (of the Android application).  
+
+The following attempts to summarize what is needed in order to get the native library into the correct location within the APK, using the standard tools available within maven.
+
+= Summary of Steps =
+
+== Add the required dependency ==
+
+This defines the actual dependency on the native library.  The library will be placed in the `lib/armeabi` directory within the APK.
+
+{{{
+  <!-- Declare the dependency on a native library, already deployed in the Maven repository -->
+  <dependency>
+    <groupId>com.acme.android</groupId>
+    <artifactId>libsample_jni</artifactId>
+    <version>0.1</version>
+    <scope>runtime</scope>
+    <type>so</type>
+  </dependency>
+}}}
+
+*Note*: The artifact id of the dependency will be the final name of the library when packaged in the APK.  Code loading the library in this particular case would use:
+
+{{{
+  System.loadLibrary("sample_jni");
+}}}
+
+== Add the Maven Dependency plugin ==
+
+Next step is to add the configuration for the Maven Dependency plugin.  It is used to copy all the dependencies of type 'so' into the target directory. 
+
+*Important*: Make sure the Maven Dependency Plugin is configured _before_ the Maven Android plugin
+
+{{{
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-dependency-plugin</artifactId>
+    <executions>
+      <execution>
+        <id>copy-dependencies</id>
+        <phase>package</phase>
+        <goals>
+          <goal>copy-dependencies</goal>
+        </goals>
+        <configuration>
+          <includeTypes>so</includeTypes>
+          <outputDirectory>${project.build.directory}/target/libs/arm</outputDirectory>
+          <stripVersion>true</stripVersion>
+        </configuration>
+      </execution>
+    </executions>
+  </plugin>
+}}}
+
+== Re-configure the Android Maven Plugin to use the correct libraries ==
+
+The last step is to re-configure the Maven Android plugin to use the libs directory defined above.
+
+{{{
+  <plugin>
+    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+    <artifactId>maven-android-plugin</artifactId>
+    <version>2.5.2</version>
+    <configuration>
+      <sdk>
+        <platform>2.1</platform>
+      </sdk>
+      <deleteConflictingFiles>true</deleteConflictingFiles>
+      <nativeLibrariesDirectory>${project.build.directory}/target/libs</nativeLibrariesDirectory>
+    </configuration>
+    <extensions>true</extensions>
+  </plugin>
+}}}
