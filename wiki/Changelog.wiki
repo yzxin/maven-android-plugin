@@ -2,16 +2,6 @@
 #labels Featured
 
 
-----
-    ==== _About the Maven Android Plugin versions_ ====
-
-    _Maven Android Plugin was originally based on the Masa plugins 1.0.0. Thank you to Shane Isbell for creating Masa ([http://code.google.com/p/masa http://code.google.com/p/masa])! Maven Android Plugin 1.x was a direct clone of Masa's trunk. It was meant as an easy way for any current user of Masa 1.0.0 to get access to the latest unreleased bug fixes in Masa's trunk.
-
-    Maven Android Plugin 2.x has since been reworked and greatly improved in terms of bugfixing, features and ease-of-use, compared to version 1.
-
-    <b>Versions 2.x are recommended for all users.</b>_
-
-----
 = Changelog =
 
 == Maven Android Plugin 2.x release series ==
@@ -281,6 +271,15 @@ Some of the details implemented:
  * Set up release management procedures to enable frequent releases.
  * Started preparing for syncing to Maven Central, so we won't need to specify {{{<pluginRepository>}}} in the pom.xml when it's set up.
 
+
+----
+    ==== _About the Maven Android Plugin versions history_ ====
+
+    _Maven Android Plugin was originally based on the Masa plugins 1.0.0. Thank you to Shane Isbell for creating Masa ([http://code.google.com/p/masa http://code.google.com/p/masa])! Maven Android Plugin 1.x was a direct clone of Masa's trunk. It was meant as an easy way for any current user of Masa 1.0.0 to get access to the latest unreleased bug fixes in Masa's trunk.
+
+    Maven Android Plugin 2.x has since been reworked and greatly improved in terms of bugfixing, features and ease-of-use, compared to version 1.
+
+    <b>Versions 2.x are recommended for all users.</b>_
 
 ----
 
