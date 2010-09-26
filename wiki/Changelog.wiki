@@ -6,6 +6,29 @@
 
 == Maven Android Plugin 2.x release series ==
 
+=== Maven Android Plugin 2.6.0 ===
+
+ * Split dex into unpack/dex so something like ProGuard can be inserted.
+    * Thank you to Zang !MingJie for this patch.
+ * Fixed Issue 72: Allows modification of the gen folder.
+    * Thank you to Mathieu Carbou for this patch.
+ * Obey the {{{-Dandroid.device=...}}} and {{{<device>...</device>}}} parameters for all adb commands.
+    * Hugo Josefson
+ * Fixed Issue 68: Added boolean flag {{{coreLibrary}}} to DexMojo to allow for passing the {{{--core-library}}} flag to dx.
+  * Thank you to Kelsey Francis for the patch.
+ * Fix for Issue 4: emulator cannot be stopped on windows because of command params not set correctly in the stop command, also makes sure to start the emulator when the device is connected to the usb, by passing the {{{-e}}} option to adb when getting the serial number.
+   * Thank you to Chander Pechetty for this patch.
+ * Dirty Fix for Issue 82.
+    * Better that current situation! Thank you to Mirko Friedenhagen for this patch.
+ * Paths on the device or emulator during Pull and Push may be Strings only instead of File as absolutePath is OS-dependant, e.g. on Windows Drive Letters will be added and Backslashes will be used as path separator.
+    * Thank you to Mirko Friedenhagen for this patch.
+ * Excluded old plexus:plexus-utils
+    * Looks like maven-dependency-plugin indirectly depends on some really old version of plexus:plexus-utils, which had groupId different from current org.codehaus.plexus and thus was included together with the new version. The order of dependencies has changed in 3.0-beta-3, and the old/stale plexus-utils causes problems both during the build and at runtime.
+    * Thank you to Igor Fedorenko for this patch.
+ * Various cleanup and improvements.
+    * Thank you to Mirko Friedenhagen and Manfred Moser for these.
+
+
 === Maven Android Plugin 2.5.2 ===
 
  * Fixed Issue 78: Platform folder names must be android-x, where x is a number.
