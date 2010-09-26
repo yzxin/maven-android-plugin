@@ -14,7 +14,7 @@
     * Thank you to Mathieu Carbou for this patch.
  * Obey the {{{-Dandroid.device=...}}} and {{{<device>...</device>}}} parameters for all adb commands.
     * Hugo Josefson
- * Fixed Issue 68: Added boolean flag {{{coreLibrary}}} to DexMojo to allow for passing the {{{--core-library}}} flag to dx.
+ * Fixed Issue 68: Added boolean flag {{{coreLibrary}}} to !DexMojo to allow for passing the {{{--core-library}}} flag to dx.
   * Thank you to Kelsey Francis for the patch.
  * Fix for Issue 4: emulator cannot be stopped on windows because of command params not set correctly in the stop command, also makes sure to start the emulator when the device is connected to the usb, by passing the {{{-e}}} option to adb when getting the serial number.
    * Thank you to Chander Pechetty for this patch.
