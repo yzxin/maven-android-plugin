@@ -1,0 +1,12 @@
+#summary How to use ProGuard with maven-android-plugin
+
+= Introduction =
+
+This page is a placeholder with a link until someone steps up and fills it with more content :) Please do.
+
+
+= Details =
+
+The possibility to use !ProGuard together with maven-android-plugin was introduced in maven-android-plugin 2.6.0, with this patch:
+
+http://github.com/jayway/maven-android-plugin/pull/2 
