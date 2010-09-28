@@ -2,7 +2,7 @@
 
 = Introduction =
 
-When packaging an apk, all classes of all libraries the program used will be included, this makes the apk very huge, even exceed [http://code.google.com/p/android/issues/detail?id=7147#c6 dex's max capacity]. !ProGuard can strip unused classes and methods, makes apk as small as possible.
+When packaging an apk, all classes of all libraries used by the program will be included, this makes the apk very huge, even exceeds [http://code.google.com/p/android/issues/detail?id=7147#c6 the capacity of dex]. !ProGuard can strip unused classes and methods, make it as small as possible.
 
 = Details =
 
