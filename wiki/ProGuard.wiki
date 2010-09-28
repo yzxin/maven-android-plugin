@@ -2,11 +2,61 @@
 
 = Introduction =
 
-This page is a placeholder with a link until someone steps up and fills it with more content :) Please do.
-
+When packaging an apk, all classes of all libraries the program used will be included, this makes the apk very huge, even exceed [http://code.google.com/p/android/issues/detail?id=7147#c6 dex's max capacity]. !ProGuard can strip unused classes and methods, makes apk as small as possible.
 
 = Details =
 
 The possibility to use !ProGuard together with maven-android-plugin was introduced in maven-android-plugin 2.6.0, with this patch:
 
 http://github.com/jayway/maven-android-plugin/pull/2 
+
+To let !ProGuard process the project, add proguard-maven-plugin
+
+{{{
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.pyx4me</groupId>
+        <artifactId>proguard-maven-plugin</artifactId>
+        <version>2.0.4</version>
+        <executions>
+          <execution>
+            <phase>process-classes</phase>
+            <goals>
+              <goal>proguard</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <injar>android-classes</injar>
+          <libs>
+            <lib>${java.home}/lib/rt.jar</lib>
+          </libs>
+          <obfuscate>false</obfuscate>
+          <options>
+            <option> -keep public class * extends android.app.Activity</option>
+            <option>-keep public class * extends android.app.Application</option>
+            <option>-keep public class * extends android.app.Service</option>
+            <option>-keep public class * extends
+              android.content.BroadcastReceiver</option>
+            <option>-keep public class * extends
+              android.content.ContentProvider</option>
+            <option>-dontskipnonpubliclibraryclasses</option>
+            <option>-dontoptimize</option>
+            <option>-printmapping map.txt</option>
+            <option>-printseeds seed.txt</option>
+            <option>-ignorewarnings</option>
+          </options>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+}}}
+
+for options please refer to [http://pyx4me.com/pyx4me-maven-plugins/proguard-maven-plugin/ proguard-maven-plugin] and [http://proguard.sourceforge.net/ ProGuard]
+
+= Example =
+
+Use maven-android-plugin with scala and !ProGuard
+
+http://github.com/kghost/android-maven-example
