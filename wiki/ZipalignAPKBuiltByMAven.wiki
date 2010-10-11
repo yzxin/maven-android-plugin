@@ -6,7 +6,17 @@ Before shipping an APK it should be zip aligned. This is a procedure that aligns
 
 = Details =
 
-As of the release 2.5.0 of the Maven Android Plugin the zipalign goal is part of the plugin. To activate simply add the goal zipalign as an execution e.g. to the install phase. More details are at <a href=""http://www.simpligility.com/2010/06/maven-android-plugin-with-zipalign-and-improved-verification/">the simpligility web site.</a>
+As of the release 2.5.0 of the Maven Android Plugin the zipalign goal is part of the plugin. To activate simply add the goal zipalign as an execution e.g. to the package phase. More details are at <a href="http://www.simpligility.com/2010/06/maven-android-plugin-with-zipalign-and-improved-verification/">the simpligility web site.</a>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 = Old Details using the exec plugin=
 
@@ -28,7 +38,7 @@ To add the functionality for zip aligning to your build use the code below. Plea
                                 <goals>
                                     <goal>exec</goal>
                                 </goals>
-                                <phase>package</phase>
+                                <phase>install</phase>
                                 <configuration>
                                     <executable>${ANDROID_HOME}/tools/zipalign</executable>
                                      <arguments>
