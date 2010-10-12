@@ -13,7 +13,7 @@ This is how you debug the app anyway.
 
 (See TipsAndTricks for how to enable the {{{android:}}} alias.)
 
-You may wish to specify which one, in case you have more than one connected:
+You may wish to specify which device, in case you have more than one connected:
  * {{{mvn install android:deploy -Dandroid.device=usb    }}} ...or...
  * {{{mvn install android:deploy -Dandroid.device=emulator}}}
 
