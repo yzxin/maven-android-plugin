@@ -37,7 +37,7 @@ For example, the apidemos sample has this structure:
 
 The MorseFlash example has a similar structure for a simpler project, which also shows the usage of a release profile to sign and zipalign the Android package.
 
-The scala examples show you how to build an Android application written with the Scala language and how to use Proguard to reduce the size of the resulting package.
+The Scala example show you how to build an Android application written with the Scala language and how to use Proguard to reduce the size of the resulting package.
 
 == How to build the samples ==
 
@@ -51,8 +51,7 @@ in the samples root folder. As a prerequisite you have to have an emulator of AP
 
 You can also run each example separately with the same command. Sample specific documentation can be found in the README.txt file in each project folder.
 
-
-If you have set up your development environment according to GettingStarted, you can build for example the !ApiDemos sample from Android SDK 1.5 like this:
+For example if you have set up your development environment according to GettingStarted, you can build for example the !ApiDemos sample from Android SDK 1.5 like this:
 
  {{{
  cd apidemos-15
