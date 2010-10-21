@@ -3,9 +3,9 @@
 
 == Where can I find the samples? ==
 
-This link will take you to the correct version:
+This link will take you to the latest stable samples:
 
---> [http://github.com/jayway/maven-android-plugin-samples/archives/samples-2.6.0 Download samples-2.6.0]
+--> [http://github.com/jayway/maven-android-plugin-samples/archives/stable Download samples from the stable branch]
 
 
 === Important notes: ===
