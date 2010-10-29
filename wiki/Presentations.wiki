@@ -1,0 +1,16 @@
+#summary List of presentations performed on the subject of Maven+Android
+
+= List of presentations =
+(in reverse chronological order)
+
+== !DroidCon UK 2010-10-28 ==
+[http://www.slideshare.net/hugojosefson/continuous-integration-with-maven-for-android-apps Continuous Integration with Maven for Android apps]
+
+== AndroidTO 2010-10-26 ==
+[http://www.simpligility.com/2010/10/hands-on-lab-about-maven-and-android-development-at-androidto/ Hands on lab about Maven and Android development at AndroidTO]
+
+
+<br/>
+
+<br/>
+_please add more if you know of any_
