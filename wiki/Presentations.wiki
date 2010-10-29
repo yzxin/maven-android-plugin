@@ -11,11 +11,11 @@ Install script: http://github.com/hugojosefson/hudson-with-android
 == AndroidTO 2010-10-26 ==
 Blog with further links: [http://www.simpligility.com/2010/10/hands-on-lab-about-maven-and-android-development-at-androidto/ Hands on lab about Maven and Android development at AndroidTO]
 
-== Barcelona GTUG == 
+== Barcelona GTUG 2010-09-10 == 
 
 Blog post with recap and link to presentation file [http://www.simpligility.com/2010/08/maven-and-android-in-barcelona/]
 
-== Vancouver Android Developers Group ==t
+== Vancouver Android Developers Group 2010-04-29 ==
 
 Blog post with recap and link to presentation file [http://www.simpligility.com/2010/04/recap-presentation-about-maven-and-android/]
 
