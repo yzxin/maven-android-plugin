@@ -4,10 +4,12 @@
 (in reverse chronological order)
 
 == !DroidCon UK 2010-10-28 ==
-[http://www.slideshare.net/hugojosefson/continuous-integration-with-maven-for-android-apps Continuous Integration with Maven for Android apps]
+Slides: [http://www.slideshare.net/hugojosefson/continuous-integration-with-maven-for-android-apps Continuous Integration with Maven for Android apps]
+
+Install script: http://github.com/hugojosefson/hudson-with-android
 
 == AndroidTO 2010-10-26 ==
-[http://www.simpligility.com/2010/10/hands-on-lab-about-maven-and-android-development-at-androidto/ Hands on lab about Maven and Android development at AndroidTO]
+Blog with further links: [http://www.simpligility.com/2010/10/hands-on-lab-about-maven-and-android-development-at-androidto/ Hands on lab about Maven and Android development at AndroidTO]
 
 
 <br/>
