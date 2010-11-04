@@ -55,6 +55,8 @@ To let !ProGuard process the project, add proguard-maven-plugin
 
 for options please refer to [http://pyx4me.com/pyx4me-maven-plugins/proguard-maven-plugin/ proguard-maven-plugin] and [http://proguard.sourceforge.net/ ProGuard]
 
+For running this on MacOSX you might have to create a symlink for rt.jar. See instructions here                                [http://bruehlicke.blogspot.com/2009/11/missing-rtjar-mac-os-x-using-proguard.html]
+ 
 = Samples =
 
 Use maven-android-plugin with scala and !ProGuard
