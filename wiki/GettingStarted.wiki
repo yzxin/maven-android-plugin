@@ -11,7 +11,7 @@ The chapter is currently in need of update to reflect the newly available Androi
 == Prerequisites ==
 
  # JDK 1.5+ installed as required for Android development
- # Android SDK ({{{r05}}}) installed, preferably with all platforms, see http://developer.android.com/sdk/index.html
+ # Android SDK ({{{r07}}}) installed, preferably with all platforms, see http://developer.android.com/sdk/index.html
  # Maven 2.2.1+ installed , see http://maven.apache.org/download.html
 
 == Setup your development environment ==
@@ -25,7 +25,7 @@ The chapter is currently in need of update to reflect the newly available Androi
     <version>1.5_r4</version>
     <scope>provided</scope>
   </dependency>
-}}}
+}}}t
 
 The currently valid dependencies are:
 
@@ -66,7 +66,6 @@ If you want to test your environment, download and run the [Samples]`*`.
      * http://developer.android.com/guide/developing/other-ide.html#CreatingAProject
   <li>Create a {{{pom.xml}}} in your project, using the sample {{{apidemos-15/apidemos-15-app/pom.xml}}} as template. (See [Samples]`*`.)</li>
      * Make these changes:
-     * Remove the entire {{{<parent>}}} tag.
      * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own. (Some tips: [http://maven.apache.org/guides/mini/guide-naming-conventions.html Maven - Guide to Naming Conventions])
      * Set a {{{<version>}}} tag for your project, for example {{{<version>0.1.0-SNAPSHOT</version>}}}.
      * Declare versions for dependencies: for example {{{<version>2.1_r1</version>}}} for android, and {{{<version>4.8.1</version>}}} for junit.
@@ -100,10 +99,10 @@ If you want to test your environment, download and run the [Samples]`*`.
      }}}
   <li>To deploy your apk to the connected device:</li>
      {{{
-     mvn com.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy
+     mvn android:deploy
      }}}
 
-<sup><i>Do you think that last Maven command was long? It was. Check out [TipsAndTricks].</i></sup>
+<sup><i>See [TipsAndTricks] for instruction on how to use the android plugin name even when not in a android project directory.</i></sup>
 
 </ol>
 
