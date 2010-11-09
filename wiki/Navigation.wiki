@@ -1,7 +1,3 @@
-*General*
-
-  * [Changelog]
-
 *Beginner*
 
   * [GettingStarted Getting Started]
@@ -28,6 +24,7 @@
   * [Documentation]
   * [Presentations]
   * [PeopleUsingThis People Using This]
+  * [Changelog]
 
 *Contributors, Developers..*
   
