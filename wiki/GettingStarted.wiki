@@ -22,7 +22,7 @@ If you want to test your environment, download and run the [Samples]`*`.
 <ol>
   <li>Create a project using the {{{android}}} tool:</li>
      * http://developer.android.com/guide/developing/other-ide.html#CreatingAProject
-  <li>Create a {{{pom.xml}}} in your project, using the sample {{{helloflashligh/pom.xml}}} as template. (See [Samples]`*`.)</li>
+  <li>Create a {{{pom.xml}}} in your project, using the sample {{{helloflashlight/pom.xml}}} as template. (See [Samples]`*`.)</li>
      * Make these changes:
      * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own. (Some tips: [http://maven.apache.org/guides/mini/guide-naming-conventions.html Maven - Guide to Naming Conventions])
      * Set a {{{<version>}}} tag for your project, for example {{{<version>0.1.0-SNAPSHOT</version>}}}.
