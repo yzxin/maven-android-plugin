@@ -24,7 +24,7 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
     <version>1.5_r4</version>
     <scope>provided</scope>
   </dependency>
-}}}t
+}}}
 
 The currently valid dependencies are:
 
