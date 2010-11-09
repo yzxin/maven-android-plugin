@@ -26,34 +26,8 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
   </dependency>
 }}}
 
-The currently valid dependencies are:
-
-{{{
-
-          <dependency>
-              <groupId>com.google.android</groupId>
-              <artifactId>android</artifactId>
-              <version>1.5_r4</version>
-              <scope>provided</scope>
-          </dependency>
-
-          <dependency>
-              <groupId>com.google.android</groupId>
-              <artifactId>android</artifactId>
-              <version>1.6_r2</version>
-              <scope>provided</scope>
-          </dependency>
-
-          <dependency>
-              <groupId>com.google.android</groupId>
-              <artifactId>android</artifactId>
-              <version>2.1_r1</version>
-              <scope>provided</scope>
-          </dependency>
-
-}}}
-
-Use one these depending on the platform version you are developing against.
+The currently valid dependencies versions are  1.5_r4, 1.6_r2, 2.1.2 and 2.2.1. 
+Use one of these depending on the platform version you are developing against.
 
 == Optional: Test your development environment ==
 
