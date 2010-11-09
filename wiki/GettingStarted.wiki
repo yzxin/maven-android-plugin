@@ -4,7 +4,6 @@
 Documentation in book form is available with the Android chapter of the free book
 Maven: The complete Reference in HTML and PDF format:
 http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
-The chapter is currently in need of update to reflect the newly available Android jar artifacts in Maven central.
 
 = Getting Started =
 
