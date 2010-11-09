@@ -15,7 +15,20 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
 
 == Setup your development environment ==
   # Set environment variable ANDROID_HOME to the path of your installed Android SDK and add $ANDROID_HOME/tools to your $PATH.
-  # If you look in the pom.xml of the samples`*` project you will find the following dependency.
+
+== Optional: Test your development environment ==
+
+If you want to test your environment, download and run the [Samples]`*`.
+
+== Create your own Android application (apk) ==
+<ol>
+  <li>Create a project using the {{{android}}} tool:</li>
+     * http://developer.android.com/guide/developing/other-ide.html#CreatingAProject
+  <li>Create a {{{pom.xml}}} in your project, using the sample {{{helloflashligh/pom.xml}}} as template. (See [Samples]`*`.)</li>
+     * Make these changes:
+     * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own. (Some tips: [http://maven.apache.org/guides/mini/guide-naming-conventions.html Maven - Guide to Naming Conventions])
+     * Set a {{{<version>}}} tag for your project, for example {{{<version>0.1.0-SNAPSHOT</version>}}}.
+     * Update the Android dependency to the platform version you want to be compatible with as a minimum:
 
 {{{
   <dependency>
@@ -29,37 +42,7 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
 The currently valid dependencies versions are  1.5_r4, 1.6_r2, 2.1.2 and 2.2.1. 
 Use one of these depending on the platform version you are developing against.
 
-== Optional: Test your development environment ==
-
-If you want to test your environment, download and run the [Samples]`*`.
-
-== Create your own Android application (apk) ==
-<ol>
-  <li>Create a project using the {{{android}}} tool:</li>
-     * http://developer.android.com/guide/developing/other-ide.html#CreatingAProject
-  <li>Create a {{{pom.xml}}} in your project, using the sample {{{apidemos-15/apidemos-15-app/pom.xml}}} as template. (See [Samples]`*`.)</li>
-     * Make these changes:
-     * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own. (Some tips: [http://maven.apache.org/guides/mini/guide-naming-conventions.html Maven - Guide to Naming Conventions])
-     * Set a {{{<version>}}} tag for your project, for example {{{<version>0.1.0-SNAPSHOT</version>}}}.
-     * Declare versions for dependencies: for example {{{<version>2.1_r1</version>}}} for android, and {{{<version>4.8.1</version>}}} for junit.
-     * In the maven-android-plugin configuration, set the correct platform number which corresponds to the version you declared for the android dependency, for example: {{{<platform>7</platform>}}}
-  <li>Rename, and move the source directory to where Maven expects it:</li>
-     {{{
-     mv src java
-     mkdir -p src/main
-     mv java src/main/
-     }}}
-
-     or if you don't want to change the directory structure, just add "sourceDirectory
-{{{
-    <build>
-    ......
-    <sourceDirectory>src</sourceDirectory> 
-    </build>
-}}} 
-
-     to pom.xml.
-
+     * In the maven-android-plugin configuration, set the correct platform number which corresponds to the version you declared for the android dependency, for example: {{{<platform>7</platform>}}}. You can use API level (e.g. 7) or platform version (e.g. 2.1)
   <li>You won't need these files/directories with Maven Android Plugin, so you can remove them:</li>
      {{{
      rm -r bin build.xml build.properties libs
@@ -89,7 +72,9 @@ Notes:
 Check out the {{{apidemos-15-instrumentationtest}}} project in [Samples]`*`.
 
 You can create a project like that, by moving your "test" folder out and renaming it to for example "myproject-instrumentationtest". Then rearrange the folders within it like above, and use the {{{pom.xml}}} from {{{apidemos-15-instrumentationtest}}} as template.
-  
+
+For a sample project with more feature features like jarsigning, zipaligin, release profile and proguard look at the morseflash example.
+
 == More documentation ==
 
 There is some more documentation on the [Documentation] page.
