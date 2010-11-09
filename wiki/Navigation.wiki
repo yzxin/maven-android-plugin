@@ -8,18 +8,30 @@
   * [Samples]
   * [TipsAndTricks Tips and Tricks]
   * [Debug Debugging] 
+  * [EclipseIntegration Eclipse Integration]
+  * [QuickStartForEclipseProject]
+  * [Glossary]
 
 *Advanced*
   * [NativeLibsAsDependencies Native Libraries as Dependencies]
+  * [AddOns Google Add Ons (Maps)]
   * [ProGuard Shrink, Obfuscate and Optimize with Proguard]
-  * [ZipalignAPKBuiltByMAven Zipalign and Sign your APK]
+  * [SigningAPKWithMavenJarsigner Signing the APK]
+  * [ZipalignAPKBuiltByMAven Zipalign the APK]
   * [AutomateAndroidTestProject Automated Android Tests]
+  * [CombiningApplicationAndTestProjectToOne]
+  * [ApkSourcesDependency]
 
 
 *Reference*
 
+  * [Documentation]
   * [Presentations]
+  * [PeopleUsingThis People Using This]
 
 *Contributors, Developers..*
-
+  
+  * [Building Building the plugin from source]
+  * [SnapshotRepo]
   * [DeploymentInstructions]
+  * [OtherProjects]
