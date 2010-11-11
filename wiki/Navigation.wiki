@@ -17,6 +17,7 @@
   * [AutomateAndroidTestProject Automated Android Tests]
   * [CombiningApplicationAndTestProjectToOne]
   * [ApkSourcesDependency]
+  * [SynchronisingVersionWithGmaven]
 
 
 *Reference*
