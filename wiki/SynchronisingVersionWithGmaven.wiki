@@ -6,8 +6,9 @@ If you want to automate your release process with Maven you will want to have th
 
 = Details =
 
-In order to achieve this you can use a bit of groovy code in your pom.xml file using the gmaven plugin in your <build><plugins> section.
+In order to achieve this you can use a bit of groovy code in your pom.xml file using the gmaven plugin in your {{{<build><plugins>}}} section.
 
+{{{
   <plugin>
             	<!-- Sets the AndroidManifest.xml Version Name to the projects version number -->
                 <groupId>org.codehaus.groovy.maven</groupId>
@@ -48,6 +49,7 @@ In order to achieve this you can use a bit of groovy code in your pom.xml file u
                     </execution>
                 </executions>
             </plugin>
+}}}
 
 = Footnote =
 
