@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This page tries to link to blog posts and other documentation about using the Maven Android Plugin and associated tooling.
+This page tries to link to blog posts and other documentation about using the Maven Android Plugin and associated tooling. Please either add to the page yourself or add a comment and some wiki maintainer will add to the list.
 
 
 = Blog posts in reverse chronological order =
