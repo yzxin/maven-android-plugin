@@ -7,6 +7,8 @@ This page tries to link to blog posts and other documentation about using the Ma
 
 = Blog posts in reverse chronological order =
 
+Attention .. this list is in reverse chronological order since older posts tend to have content that is not up to date and in some cases has been succeeded with better ways of doing the task at hand.
+
 || Date || Author || Title & Link ||
 || 2010-11-12 || Manfred Moser || [http://www.simpligility.com/2010/11/release-version-management-for-your-android-application/ Release version management for your Android application] ||
 || 2010-11-01 || John Ferguson Smart || [http://www.wakaleo.com/blog/302-android-development-with-maven Android Development with Maven - a primer] ||
@@ -16,4 +18,4 @@ This page tries to link to blog posts and other documentation about using the Ma
 || 2010-06-19 || Manfred Moser || [http://www.simpligility.com/2010/06/android-artifacts-hit-maven-central/ Android Artifacts hit Maven Central] || 
 || 2010-05-31 || Manfred Moser || [http://www.simpligility.com/2010/05/automatically-starting-the-emulator-in-your-android-build/ Automatically starting the emulator in your Android build] ||
 || 2010-04-29 || Tomas Malmsten || [http://www.tomasmalmsten.com/2010/04/robotium-testing-for-android/ Robotium Testing for Android] ||
-|| 2010-02-05 || Tomas Malmsten || [http://www.tomasmalmsten.com/2010/02/how-to-modify-the-versoin-code-and-version-name-in-the-androidmanifest-using-gmaven/ How to modify the version code and version name in the AndroidManifest using GMaven]
+|| 2010-02-05 || Tomas Malmsten || [http://www.tomasmalmsten.com/2010/02/how-to-modify-the-versoin-code-and-version-name-in-the-androidmanifest-using-gmaven/ How to modify the version code and version name in the AndroidManifest using GMaven] ||
