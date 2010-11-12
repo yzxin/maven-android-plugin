@@ -9,3 +9,8 @@ This page tries to link to blog posts and other documentation about using the Ma
 
 || Date || Author || Title & Link ||
 || 2010-11-12 || Manfred Moser || [http://www.simpligility.com/2010/11/release-version-management-for-your-android-application/ Release version management for your Android application] ||
+|| 2010-07-31 || Manfred Moser || [http://www.simpligility.com/2010/07/sign-zipalign-and-to-market-to-market-with-maven/ Sign, zipalign and to market, to market with Maven] ||
+|| 2010-07-08 || Manfred Moser || [http://www.simpligility.com/2010/07/multi-module-android-project-in-eclipse/ Multi Module Android project in Eclipse] ||
+|| 2010-06-27 || Manfred Moser || [http://www.simpligility.com/2010/06/maven-android-plugin-with-zipalign-and-improved-verification/ Maven Android Plugin with zipalign and improved verification]
+|| 2010-06-19 || Manfred Moser || [http://www.simpligility.com/2010/06/android-artifacts-hit-maven-central/ Android Artifacts hit Maven Central] || 
+|| 2010-05-31 || Manfred Moser || [http://www.simpligility.com/2010/05/automatically-starting-the-emulator-in-your-android-build/ Automatically starting the emulator in your Android build]
