@@ -6,7 +6,12 @@
 
 == Maven Android Plugin 2.x release series ==
 
-=== Maven Android Plugin 2.7.0-SNAPSHOT (yet unreleased) ===
+=== Maven Android Plugin 2.8.0-SNAPSHOT (yet unreleased) ===
+
+ * TODO
+
+
+=== Maven Android Plugin 2.7.0 ===
 
  * New feature: Native library copying support
     * Includes native libraries in the project's {{{libs/}}} directory. Can be changed with parameter {{{nativeLibrariesDirectory}}}.
