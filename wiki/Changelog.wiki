@@ -8,11 +8,19 @@
 
 === Maven Android Plugin 2.8.0-SNAPSHOT (yet unreleased) ===
 
- * Fix for Issue 48
- * Fix for Issue 49
- * Fix for Issue 69
- * Fix for Issue 85
- * Fix for Issue 98
+ * Fix for Issue 48: "`*`.apksources file contains .svn files"
+   * Thank you to Clement Escoffier.
+ * Fix for Issue 49: "'assets' files are not included when including one android project as 'apksources' type dependency of another"
+   * Thank you to Clement Escoffier.
+ * New feature - Issue 69: "Add android:redeploy Goal"
+   * {{{mvn android:redeploy}}} can now be used as a shortcut for {{{mvn android:undeploy android:deploy}}}.
+   * Thank you to Clement Escoffier.
+ * Fix for Issue 85: "apkbuilder:  THIS TOOL IS DEPRECATED. See --help for more information."
+   * Now automatically loads {{{sdklib.jar}}} from the Android SDK.
+   * Thank you to Clement Escoffier.
+ * New feature - Issue 98: "package should produce the signed as well as the unsigned apk"
+   * Set {{{-Dandroid.sign.debug=both}}} or {{{<sign><debug>both</debug></sign>}}} to get both a debug signed and an unsigned apk.
+   * Thank you to Mirko Friedenhagen.
 
 
 === Maven Android Plugin 2.7.0 ===
