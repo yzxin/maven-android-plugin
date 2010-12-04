@@ -8,7 +8,11 @@
 
 === Maven Android Plugin 2.8.0-SNAPSHOT (yet unreleased) ===
 
- * _merging in progress_
+ * Fix for Issue 48
+ * Fix for Issue 49
+ * Fix for Issue 69
+ * Fix for Issue 85
+ * Fix for Issue 98
 
 
 === Maven Android Plugin 2.7.0 ===
