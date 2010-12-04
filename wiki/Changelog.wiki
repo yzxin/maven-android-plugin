@@ -6,6 +6,19 @@
 
 == Maven Android Plugin 2.x release series ==
 
+=== Maven Android Plugin 2.7.0-SNAPSHOT (yet unreleased) ===
+
+ * New feature: Native library copying support
+    * Includes native libraries in the project's {{{libs/}}} directory. Can be changed with parameter {{{nativeLibrariesDirectory}}}.
+    * Includes native libraries from Maven dependencies, if they are {{{<type>so</type>}}}.
+    * Hardware architecture is picked up from the {{{so}}} artifact's classifier. If none is set, it defaults to {{{armebi}}}. (The default hw architecture when no classifier is set, can also be changed with parameter {{{nativeLibrariesDependenciesHardwareArchitectureDefault}}}.)
+    * Thank you to Johan Lindquist.
+ * Fix for Issue 87: zipalign should be skipped on non APK projects
+    * Thank you to Clement Escoffier.
+ * Fix: Do not get confused by trailing slashes.
+    * Thank you to Mirko Friedenhagen.
+
+
 === Maven Android Plugin 2.6.0 ===
 
  * Split dex into unpack/dex so something like ProGuard can be inserted.
@@ -13,7 +26,7 @@
  * Fixed Issue 72: Allows modification of the gen folder.
     * Thank you to Mathieu Carbou for this patch.
  * Obey the {{{-Dandroid.device=...}}} and {{{<device>...</device>}}} parameters for all adb commands.
-    * Hugo Josefson
+    * By Hugo Josefson
  * Fixed Issue 68: Added boolean flag {{{coreLibrary}}} to !DexMojo to allow for passing the {{{--core-library}}} flag to dx.
   * Thank you to Kelsey Francis for the patch.
  * Fix for Issue 4: emulator cannot be stopped on windows because of command params not set correctly in the stop command, also makes sure to start the emulator when the device is connected to the usb, by passing the {{{-e}}} option to adb when getting the serial number.
