@@ -8,7 +8,7 @@
 
 === Maven Android Plugin 2.8.0-SNAPSHOT (yet unreleased) ===
 
- * TODO
+ * _merging in progress_
 
 
 === Maven Android Plugin 2.7.0 ===
