@@ -6,7 +6,7 @@
 
 == Maven Android Plugin 2.x release series ==
 
-=== Maven Android Plugin 2.8.1 (syncing to Maven Central repo...) ===
+=== Maven Android Plugin 2.8.1 ===
 
  * Fix for Issue 103: "Use `platform-tools` instead of `platforms/*/tools`"
    * This makes all commands automatically work also with the latest Android SDK `r08` (for Android 2.3 / Gingerbread).
