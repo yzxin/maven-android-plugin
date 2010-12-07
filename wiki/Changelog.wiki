@@ -6,7 +6,7 @@
 
 == Maven Android Plugin 2.x release series ==
 
-=== Maven Android Plugin 2.8.2 (syncing to Maven Central...) ===
+=== Maven Android Plugin 2.8.2 ===
 
  * Fix for Issue 104: "Can't find SDK tools on Windows"
    * Issue introduced in version 2.8.1, now fixed.
