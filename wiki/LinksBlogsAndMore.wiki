@@ -10,6 +10,8 @@ This page tries to link to blog posts and other documentation about using the Ma
 Attention .. this list is in reverse chronological order since older posts tend to have content that is not up to date and in some cases has been succeeded with better ways of doing the task at hand.
 
 || Date || Author || Title & Link ||
+|| 2010-12-17 || Roy Clarkson || [http://blog.springsource.com/2010/12/17/spring-android-and-maven-part-1/ Spring Android and Maven (Part 1)] || 
+|| 2010-12-17 || Manfred Moser || [http://www.simpligility.com/2010/12/hints-for-using-proguard-on-your-android-app/ Hints for using Proguard on your Android app] ||
 || 2010-12-11 || Manfred Moser || [http://www.simpligility.com/2010/12/proguard-for-android-with-maven-without-shooting-yourself-in-the-foot/ Proguard for Android with Maven without shooting yourself in the foot] || 
 || 2010-11-12 || Manfred Moser || [http://www.simpligility.com/2010/11/release-version-management-for-your-android-application/ Release version management for your Android application] ||
 || 2010-11-01 || John Ferguson Smart || [http://www.wakaleo.com/blog/302-android-development-with-maven Android Development with Maven - a primer] ||
