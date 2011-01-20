@@ -6,7 +6,7 @@
 
 == Maven Android Plugin 2.x release series ==
 
-=== Maven Android Plugin 2.8.4-SNAPSHOT (not yet released) ===
+=== Maven Android Plugin 2.8.4 ===
 
  * Fix for Issue 119: "aapt: /lib/libz.so.1: no version information available"
    * Should now work in Amazon's own Linux dist.
