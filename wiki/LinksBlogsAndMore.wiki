@@ -10,6 +10,7 @@ This page tries to link to blog posts and other documentation about using the Ma
 Attention .. this list is in reverse chronological order since older posts tend to have content that is not up to date and in some cases has been succeeded with better ways of doing the task at hand.
 
 || Date || Author || Title & Link ||
+|| 2011-01-24 || ?? || [http://www.makeurownrules.com/rest-spring-maven-android RESTFul client using Spring+Maven on Android] ||
 || 2011-01-14 || Clement Escoffier || [http://blog.akquinet.de/2011/01/14/starting-android-application-development-with-apache-maven/ Starting Android application development with Apache Maven] ||
 || 2010-12-17 || Roy Clarkson || [http://blog.springsource.com/2010/12/17/spring-android-and-maven-part-1/ Spring Android and Maven (Part 1)] || 
 || 2010-12-17 || Manfred Moser || [http://www.simpligility.com/2010/12/hints-for-using-proguard-on-your-android-app/ Hints for using Proguard on your Android app] ||
