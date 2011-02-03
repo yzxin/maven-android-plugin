@@ -55,9 +55,13 @@ To let !ProGuard process the project, add proguard-maven-plugin
 
 For options please refer to [http://pyx4me.com/pyx4me-maven-plugins/proguard-maven-plugin/ proguard-maven-plugin] and [http://proguard.sourceforge.net/ ProGuard]. Depending on libraries you include in your application your proguard configuration might have to change.
 
-For running this on MacOSX you might have to create a symlink for rt.jar. See instructions here                                [http://bruehlicke.blogspot.com/2009/11/missing-rtjar-mac-os-x-using-proguard.html]
+For running this on MacOSX you might have to create a symlink for rt.jar. See instructions here                                [http://bruehlicke.blogspot.com/2009/11/missing-rtjar-mac-os-x-using-proguard.html]. A more generic approach for the different path name is using profiles and an example can be found in the MorseFlash sample.
  
 = Samples =
+
+Complete setup with more options and operating system switch for different rt.jar and so on
+
+https://github.com/jayway/maven-android-plugin-samples/blob/stable/morseflash/morseflash-app/pom.xml
 
 Use maven-android-plugin with scala and !ProGuard
 
