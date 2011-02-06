@@ -10,7 +10,7 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
 == Prerequisites ==
 
  # JDK 1.5+ installed as required for Android development
- # Android SDK ({{{r07}}}) installed, preferably with all platforms, see http://developer.android.com/sdk/index.html
+ # Android SDK ({{{r07}}} or later) installed, preferably with all platforms, see http://developer.android.com/sdk/index.html
  # Maven 2.2.1+ installed , see http://maven.apache.org/download.html
   # Set environment variable ANDROID_HOME to the path of your installed Android SDK and add $ANDROID_HOME/tools to your $PATH. (or on Windows %ANBDROID_HOME%/tools) 
 
