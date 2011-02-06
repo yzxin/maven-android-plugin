@@ -18,7 +18,15 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
 
 If you want to test your environment, download and run the [Samples]`*`.
 
-== Create your own Android application (apk) ==
+== Create your own Android application (apk) easily ==
+
+The easiest way to create you own Android application project for Maven, is to use these Maven Archetypes:
+
+https://github.com/akquinet/android-archetypes/wiki
+
+== Create your own Android application (apk) manually ==
+
+Alternatively, these are the steps to create an Android project manually:
 <ol>
   <li>Create a project using the {{{android}}} tool:</li>
      * http://developer.android.com/guide/developing/other-ide.html#CreatingAProject
