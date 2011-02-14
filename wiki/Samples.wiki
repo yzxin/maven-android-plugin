@@ -15,6 +15,26 @@ This link will take you to the latest stable samples:
 
 == What are the samples? ==
 
+=== HelloFlashlight ===
+
+The HelloFlashlight example represent the simplest setup. It has one module that can be built and deployed with the plugin.
+ 
+=== MorseFlash ===
+
+The MorseFlash is the most comprehensive example available. It has a plain java library module, the application module and a instrumentation test module. Among other things it features 
+
+  * different profiles for development vs release build including setup for signing, zipaligning and proguard usage
+  * resource filtering setup
+  * automatic emulator start
+  * unit tests in library and apk module
+  * instrumentation tests running emulator
+  * profiles for auotmatically correct behaviour under different build operating systems
+
+=== Scala ===
+
+The Scala example show you how to build an Android application written with the Scala language and how to use Proguard to reduce the size of the resulting package.
+
+=== ApiDemos ===
 !ApiDemos is a sample application that comes with the Android SDK. !HelloFlashlight is the sample application mentioned in the [http://www.sonatype.com/books/mvnref-book/reference/android-dev.html Android chapter] of the book _Maven: The Complete Reference_.
 
 The samples are meant to show you how to create a {{{pom.xml}}} and structure your project to work with Maven Android Plugin.
@@ -35,9 +55,6 @@ For example, the apidemos sample has this structure:
    * {{{apidemos-15-app}}}, which contains a {{{pom.xml}}} and source code for the application apk.
    * {{{apidemos-15-instrumentationtest}}}, which contains a {{{pom.xml}}} and source code for instrumentation tests of the app.
 
-The MorseFlash example has a similar structure for a simpler project, which also shows the usage of a release profile to sign and zipalign the Android package.
-
-The Scala example show you how to build an Android application written with the Scala language and how to use Proguard to reduce the size of the resulting package.
 
 == How to build the samples ==
 
