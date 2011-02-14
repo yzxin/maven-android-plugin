@@ -26,5 +26,3 @@ This defines the actual dependency on the native library.  The library will be p
 {{{
   System.loadLibrary("sample_jni");
 }}}
-
-== 
