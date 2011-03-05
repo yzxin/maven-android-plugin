@@ -1,0 +1,22 @@
+#summary Android Library Project with apklib packaging type
+
+= Introduction =
+
+Support for Android library projects has been the number 1 most starred issue (Issue 96) for a long time. There is support for it in maven-android-plugin version 2.9.0-beta-1. It's beta because we want to test it more before official release.
+
+Please try it out:
+
+{{{
+<plugin>
+    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+    <artifactId>maven-android-plugin</artifactId>
+    <version>2.9.0-beta-1</version>
+</plugin>
+
+}}}
+
+File any issues in the issue tracker.
+
+= Details =
+
+TODO
