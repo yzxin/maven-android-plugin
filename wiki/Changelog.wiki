@@ -6,6 +6,19 @@
 
 == Maven Android Plugin 2.x release series ==
 
+=== Maven Android Plugin 2.9.0-beta-1 ===
+
+ * New feature - Issue 96: Support for library projects
+   * Use {{{<packaging>apklib</packaging>}}} for the library project, and {{{<type>apklib</type>}}} in the {{{<dependency>}}} tag in the app when depending on it.
+   * See ApkLib for documentation and samples.
+   * Thank you to Nick Maiorana. Some extra patches by Eric Bowman and Hugo Josefson.
+ * Made maven-android-plugin easier to build from source for new developers.
+   * Removed tests for obsolete Android SDK versions, which are hard to find and install.
+ * Fix for Issue 123: Packaging failed when embedded dependencies have duplicate resources
+    * Disabled by default, enable with {{{<extractDuplicates>true</extractDuplicates>}}}
+    * See Issue 123 and linked pull request for more information.
+    * Thank you to Clement Escoffier.
+
 === Maven Android Plugin 2.8.4 ===
 
  * Fix for Issue 119: "aapt: /lib/libz.so.1: no version information available"
