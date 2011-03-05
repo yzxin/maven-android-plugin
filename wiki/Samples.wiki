@@ -7,10 +7,14 @@ This link will take you to the latest stable samples:
 
 --> [http://github.com/jayway/maven-android-plugin-samples/archives/stable Download samples from the stable branch]
 
+This link will take you to samples for testing the latest beta of maven-android-plugin:
+
+--> [http://github.com/jayway/maven-android-plugin-samples/archives/beta Download samples from the beta branch]
+
 
 === Important notes: ===
 
- #. Use the above link to get the correct version of the samples! Then you will automatically use a proper released version of maven-android-plugin. If you would use the very latest "master" version of the samples, they will require that you compile the plugin by yourself first. (Full explanation about correct version is on the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 Source] tab.)
+ #. Use the above links to get a correct version of the samples! Then you will automatically use a proper released version of maven-android-plugin. If you would use the very latest "master" version of the samples, they will require that you compile the plugin by yourself first. (Full explanation about correct version is on the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 Source] tab.)
  #. Make sure to choose a location with a short path to unzip the package; it has deeply nested structures and you want to stay within the path length limits of your OS. Windows is known to skip some deeply located files when the complete directory path becomes too long.
 
 == What are the samples? ==
@@ -33,6 +37,12 @@ The !MorseFlash is the most comprehensive example available. It has a plain java
 === Scala ===
 
 The Scala example show you how to build an Android application written with the Scala language and how to use Proguard to reduce the size of the resulting package.
+
+=== !LibraryProjects (beta) ===
+
+The !LibraryProjects example in the _beta_ link above, shows how to set up Android Library Projects. An app project called {{{libraryprojects-mainapp}}} has dependencies to two libraries of type {{{apklib}}}. There are also instrumentation tests to verify that all different kind of resources from the libraries are reachable from the main app.
+
+More documentation: ApkLib.
 
 === !ApiDemos ===
 !ApiDemos is a sample application that comes with the Android SDK converted to use a Maven Android Plugin based build. 
