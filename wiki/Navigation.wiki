@@ -16,6 +16,7 @@
   * [ZipalignAPKBuiltByMAven Zipalign the APK]
   * [AutomateAndroidTestProject Automated Android Tests]
   * [CombiningApplicationAndTestProjectToOne]
+  * [ApkLib]
   * [ApkSourcesDependency]
   * [SynchronisingVersionWithGmaven]
 
