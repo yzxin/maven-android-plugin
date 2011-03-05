@@ -27,8 +27,7 @@ File any issues in the [http://code.google.com/p/maven-android-plugin/issues/lis
 
 == Samples ==
 
-In the maven-android-plugin-samples branch named 'beta', there are also some new samples which use the beta version of the plugin:
-https://github.com/jayway/maven-android-plugin-samples/tree/beta/libraryprojects
+The [Samples] page has a link to beta samples, which use the latest beta version of Maven Android Plugin. The beta samples contain specific sample projects for testing the Android Library Project functionality.
 
 Those samples do not include any aidl testing, so please test aidl files and report both issues and any success.
 
