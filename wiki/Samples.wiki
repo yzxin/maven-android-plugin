@@ -15,13 +15,13 @@ This link will take you to the latest stable samples:
 
 == What are the samples? ==
 
-=== HelloFlashlight ===
+=== !HelloFlashlight ===
 
-The HelloFlashlight example represent the simplest setup. It has one module that can be built and deployed with the plugin.
+The !HelloFlashlight example represent the simplest setup. It has one module that can be built and deployed with the plugin.
  
-=== MorseFlash ===
+=== !MorseFlash ===
 
-The MorseFlash is the most comprehensive example available. It has a plain java library module, the application module and a instrumentation test module. Among other things it features 
+The !MorseFlash is the most comprehensive example available. It has a plain java library module, the application module and a instrumentation test module. Among other things it features 
 
   * different profiles for development vs release build including setup for signing, zipaligning and proguard usage
   * resource filtering setup
@@ -34,7 +34,7 @@ The MorseFlash is the most comprehensive example available. It has a plain java 
 
 The Scala example show you how to build an Android application written with the Scala language and how to use Proguard to reduce the size of the resulting package.
 
-=== ApiDemos ===
+=== !ApiDemos ===
 !ApiDemos is a sample application that comes with the Android SDK converted to use a Maven Android Plugin based build. 
 
 The samples are meant to show you how to create a {{{pom.xml}}} and structure your project to work with Maven Android Plugin.
