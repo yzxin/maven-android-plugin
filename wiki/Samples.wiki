@@ -42,7 +42,7 @@ The Scala example show you how to build an Android application written with the 
 
 The !LibraryProjects example in the _beta_ link above, shows how to set up Android Library Projects. An app project called {{{libraryprojects-mainapp}}} has dependencies to two libraries of type {{{apklib}}}. There are also instrumentation tests to verify that all different kind of resources from the libraries are reachable from the main app.
 
-More documentation: ApkLib.
+More documentation on Android Library Projects: ApkLib.
 
 === !ApiDemos ===
 !ApiDemos is a sample application that comes with the Android SDK converted to use a Maven Android Plugin based build. 
