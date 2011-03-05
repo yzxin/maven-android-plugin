@@ -1,5 +1,11 @@
 #summary Pulling Java source code, Android resources and assets, in to your apk project as Maven dependencies.
 
+= _Deprecation_ =
+
+_You should probably use Android Library Projects (ApkLib) instead._
+
+_!ApkSourcesDependency was introduced in Maven Android Plugin long before Google supplied a way to use libraries in Android development. Now that both the official Android tools and Maven Android Plugin support proper Android Library Projects, use will probably want to use that instead: ApkLib_
+
 = Introduction =
 
 This is useful if you develop apk's which share some code, but still have some different content. The purpose is to share identical code through a "common-stuff" project, instead of copy/pasting it between two projects.
