@@ -2,7 +2,12 @@
 
 = Introduction =
 
-Support for Android library projects has been the number 1 most starred issue (Issue 96) for a long time. There is support for it in maven-android-plugin version 2.9.0-beta-1. It's beta because we want to test it more before official release.
+An Android Library Project is a project intended for inclusion in other Android applications, rather than being run on its own. It is documented more in detail in the official Android developers guide:
+ * [http://developer.android.com/guide/developing/projects/projects-cmdline.html#SettingUpLibraryProject Android Library Projects on command line]
+ * [http://developer.android.com/guide/developing/projects/projects-eclipse.html#SettingUpLibraryProject Android Library Projects in Eclipse]
+
+= Help test this =
+Support for Android library projects in Maven Android Plugin has been our number 1 most starred issue (Issue 96) for a long time. There is now support for it in maven-android-plugin version 2.9.0-beta-1. It's beta because we want to test it more before official release. Specifically aidl files have not been tested, so please test that and report your findings!
 
 Please try it out:
 
@@ -15,15 +20,22 @@ Please try it out:
 
 }}}
 
-File any issues in the issue tracker.
-
-= Details =
-
 This beta release can be used just like any other release on Maven Central, without compiling maven-android-plugin from source.
+
+File any issues in the [http://code.google.com/p/maven-android-plugin/issues/list issue tracker].
+
+== Samples ==
 
 In the maven-android-plugin-samples branch named 'beta', there are also some new samples which use the beta version of the plugin:
 https://github.com/jayway/maven-android-plugin-samples/tree/beta/libraryprojects
 
 Those samples do not include any aidl testing, so please test aidl files and report both issues and any success.
 
-The generated {{{.apklib}}} file will have the layout of a standard Android/Eclipse library project. This means that regardless of your Maven layout, the layout inside the {{{.apklib}}} file will be that source code is in "src/" instead of "src/main/java/". This is to be compatible with non-Maven developers' library projects, which is important to grow the Android developer community. It also means we can take any external Android library project zip file (from non-Maven developers) and do {{{mvn install:install-file ...}}} on it and simply start using it as a dependency.
+== Compatible with non-Maven Android Library Projects! ==
+The generated {{{.apklib}}} file will have the layout of a standard Android/Eclipse library project. This means that regardless of your Maven layout, the layout inside the {{{.apklib}}} file will be that source code is in "src/" instead of "src/main/java/", but still interpreted correctly when used in an Android/Maven application project. This is to be compatible with non-Maven developers' library projects, which is important to grow the Android developer community.
+
+=== Use other non-Maven developers' libraries ===
+It also means we can take any external Android library project zip file (from non-Maven developers) and do {{{mvn install:install-file ...}}} on it and simply start using it as a dependency.
+
+=== Share your {{{.apklib}}} with non-Maven developers ===
+To share your {{{.apklib}}} file with a non-Maven developer, they will probably feel more comfortable if you rename it to {{{.zip}}}. They can then simply unpack it in a directory and use it from there.
