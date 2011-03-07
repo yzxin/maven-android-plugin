@@ -12,7 +12,7 @@
 
 === Shorter commandline ===
 
-_If you only execute {{{mvn android:...}}} commands from the root of a Maven project where the {{{pom.xml}}} is configured for the maven-android-plugin, you don't need this configuration. It helps when you want to execute commandfrom other directories though._
+_If you only execute {{{mvn android:...}}} commands from the root of a Maven project where the {{{pom.xml}}} is configured for the maven-android-plugin, you don't need this configuration. It helps when you want to execute commands from other directories though._
 
 Without any special settings, you can run standalone goals *from root directory of a Maven/Android project* like this: 
 
