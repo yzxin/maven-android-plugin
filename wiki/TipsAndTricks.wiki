@@ -12,13 +12,21 @@
 
 === Shorter commandline ===
 
-Without any special settings, you can run standalone goals from the commandline in any directory like this:
+_If you only execute {{{mvn android:...}}} commands from the root of a Maven project where the {{{pom.xml}}} is configured for the maven-android-plugin, you don't need this configuration. It helps when you want to execute commandfrom other directories though._
+
+Without any special settings, you can run standalone goals *from root directory of a Maven/Android project* like this: 
+
+  {{{
+  mvn android:deploy -Dandroid.file=myApp.apk
+  }}}
+
+... and from *any other directory* like this:
 
   {{{
   mvn com.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy -Dandroid.file=myApp.apk
   }}}
 
-With an extra setting, you can do it as easy as this instead:
+With an extra setting, you can do it *in any directory* as easy as this:
 
   {{{
   mvn android:deploy -Dandroid.file=myApp.apk
@@ -38,5 +46,3 @@ The extra setting you need, goes in your {{{~/.m2/settings.xml}}} file. Create i
 
   </settings>
   }}}
-
-If you only execute {{{mvn android:...}}} commands from the root of a Maven project where the {{{pom.xml}}} is configured for the maven-android-plugin, you don't need this configuration. It helps when you want to execute commandfrom other directories though.
