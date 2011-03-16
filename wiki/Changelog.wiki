@@ -6,6 +6,25 @@
 
 == Maven Android Plugin 2.x release series ==
 
+=== Maven Android Plugin 2.9.0-beta-2 ===
+
+ * New feature: Issue 113: Patch for advanced instrumentation settings
+   * Allows you to specify which tests to run, via configuration.
+   * See description in Issue 113 for usage instructions.
+   * Thank you to Marcus.
+ * New feature: Added option for using {{{aapt --custom-package}}}.
+   * For those who know you need it, add {{{<customPackage>...</customPackage>}}} to the plugin configuration or {{{-Dandroid.customPackage=...}}} to the command line.
+   * Thank you to Stéphane Jacquemain.
+ * Fix for Issue 112 - The deploy, undeploy and redeploy goals must have no effect on non-APK project
+   * Running {{{mvn android:deploy}}}/{{{redeploy}}}/{{{undeploy}}} on a project which is not an APK, now does nothing instead of giving an error.
+   * Thank you to Clement Escoffier.
+ * Fix for Issue 115 - Build Fails if command path has a space in it
+   * Running {{{mvn install}}} from a project directory with spaces in it now works.
+   * Thank you to David.
+ * Fix for resource collisions in apklib projects.
+   * Eric Bowman's example should work now, using current release of the plugin: https://github.com/hugojosefson/maven-android-multimodule-example 
+   * By Hugo Josefson.
+
 === Maven Android Plugin 2.9.0-beta-1 ===
 
  * New feature - Issue 96: Support for library projects
