@@ -74,7 +74,7 @@ You can build all samples in one go by running
 mvn clean install 
 }}}
 
-in the samples root folder. As a prerequisite you have to have an emulator of API level 4 (platform 1.6) or higher running or equivalent device connected. Otherwise the build will try to start an emulator named "16" for you. An Android Virtual Device of that name has to exist for the build to succeed.
+in the samples root folder. As a prerequisite you have to have an emulator of API level 4 (platform 1.6) or higher running or equivalent device connected. Otherwise the build will try to start an emulator named "23" for you. An Android Virtual Device of that name has to exist for the build to succeed.
 
 You can also run each example separately with the same command. Sample specific documentation can be found in the README.txt file in each project folder.
 
