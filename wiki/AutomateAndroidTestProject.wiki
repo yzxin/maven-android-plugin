@@ -5,74 +5,94 @@
 This guide will show how an android test project created using Eclipse can be set up to build and execute using the maven android plugin. This article assumes you have already performed the steps in the QuickStartForEclipseProject article.
 
 To enable maven builds in your test project you need to create the following pom file in the project root.
+
 {{{
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.yourcompany</groupId>
-    <artifactId>your-test-artifact-id</artifactId>
-    <packaging>apk</packaging>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>Your Test Android project Maven Enabled</name>
 
-    <dependencies>
-            <dependency>
-                <groupId>com.google.android</groupId>
-                <artifactId>android</artifactId>
-                <version>1.6_r2</version>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.google.android</groupId>
-                <artifactId>android-test</artifactId>
-                <version>1.6_r2</version>
-                <scope>provided</scope>
-            </dependency>
-         <dependency>
-	    <groupId>com.yourcompany</groupId>
-	    <artifactId>your-artifact-id</artifactId>
-	    <type>apk</type>
-	    <version>0.0.1-SNAPSHOT</version>
-	 </dependency>
-        <dependency>
-	    <groupId>com.yourcompany</groupId>
-	    <artifactId>your-artifact-id</artifactId>
-	    <type>jar</type>
-	    <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
-    
-    <build>
-        <sourceDirectory>src</sourceDirectory>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                <artifactId>maven-android-plugin</artifactId>
-                <configuration>
-                    <sdk>
-                        <path>${env.ANDROID_HOME}</path>
-                        <platform>1.6</platform>
-                    </sdk>
-                    <deleteConflictingFiles>true</deleteConflictingFiles>
-                </configuration>
-                <extensions>true</extensions>
-            </plugin>
-        </plugins>
-    </build>
-    
+<project
+  xmlns='http://maven.apache.org/POM/4.0.0'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd'
+>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.yourcompany</groupId>
+  <artifactId>your-test-artifact-id</artifactId>
+  <packaging>apk</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Your Test Android project Maven Enabled</name>
+  <dependencies>
+    <dependency>
+      <groupId>com.google.android</groupId>
+      <artifactId>android</artifactId>
+      <version>2.3.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.android</groupId>
+      <artifactId>android-test</artifactId>
+      <version>2.3.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.yourcompany</groupId>
+      <artifactId>your-artifact-id</artifactId>
+      <type>apk</type>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.yourcompany</groupId>
+      <artifactId>your-artifact-id</artifactId>
+      <scope>provided</scope>
+      <type>jar</type>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.9.0-beta-2</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+        <artifactId>maven-android-plugin</artifactId>
+        <configuration>
+          <sdk>
+            <path>${env.ANDROID_HOME}</path>
+            <platform>1.6</platform>
+          </sdk>
+          <deleteConflictingFiles>true</deleteConflictingFiles>
+        </configuration>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
 }}}
 
-This pom is similar to the pom in the main project but has two more dependencies. They are both pointing to the main project, one to the apk and one to the jar file. The dependency to the jar file is to enable the compiler to find your java classes from the main project. The dependency to the apk is to enable the android maven plugin to find the apk that it will run the tests against on the device or emulator when executing.
+This pom is similar to the pom in the main project but has two more dependencies. They are both pointing to the main project, one to the apk and one to the jar file.
 
-The android maven plugin can now run the tests using instrumentation, just like Eclipse does, as long as an emulator or Android device is connected. It uses the same underlying tools.
+The dependency to the jar file is to enable the compiler to find your java classes from the main project. For this you use the provided scope so the classes are not actually included into your test project.
 
-In order to execute the tests the main project needs to be built and installed into the local Maven repository. This is done with the mvn install command in the main projects root folder. When the main project have been installed the same command, mvn install, will build and execute the tests when executed from within the test projects root.
+The dependency to the apk is to enable the android maven plugin to find the apk that it will run the tests against on the device or emulator when executing.
+
+The android maven plugin will now run tests automatically on `mvn install` using instrumentation, just like Eclipse does. It uses the same underlying tools.
+
+The automatic execution will work only as long as exactly one an emulator or Android device is connected. If you have more then one device or emulator running you will need to specify which device to use, with either of these on command-line options:
+
+ * -Dandroid.device=usb
+ * -Dandroid.device=emulator
+ * -Dandroid.device=_specificdeviceid_
+
+You can also disable instrumentation tests, with either of these on command-line or in the pom, respectively:
+
+   * -Dandroid.enableIntegrationTest=false
+   * `<enableIntegrationTest>false</enableIntegrationTest>`
+
+In order to execute the tests the main project needs to be built and installed into the local Maven repository. This is done with the `mvn install` command in the main projects root folder. When the main project have been installed the same command, `mvn install`, will build and execute the tests when executed from within the test projects root.
