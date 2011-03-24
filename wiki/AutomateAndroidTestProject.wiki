@@ -1,4 +1,5 @@
 #summary Explains how to set up Maven to automatically build and execute an Android test project.
+#labels HowTo
 
 = Automating Android test projects with Maven =
 
@@ -90,9 +91,20 @@ The automatic execution will work only as long as exactly one an emulator or And
  * -Dandroid.device=emulator
  * -Dandroid.device=_specificdeviceid_
 
-You can also disable instrumentation tests, with either of these on command-line or in the pom, respectively:
+You can also disable instrumentation tests, these on command-line options:
 
    * -Dandroid.enableIntegrationTest=false
-   * `<enableIntegrationTest>false</enableIntegrationTest>`
+
+Defaults for both `android.enableIntegrationTest` and `android.device` can be set in the pom. For example:
+
+{{{
+<project>
+  …
+  <properties>
+    <android.device>emulator</android.device>
+  </properties>
+  …
+</project>
+}}}
 
 In order to execute the tests the main project needs to be built and installed into the local Maven repository. This is done with the `mvn install` command in the main projects root folder. When the main project have been installed the same command, `mvn install`, will build and execute the tests when executed from within the test projects root.
