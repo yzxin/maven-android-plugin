@@ -108,3 +108,30 @@ Defaults for both `android.enableIntegrationTest` and `android.device` can be se
 }}}
 
 In order to execute the tests the main project needs to be built and installed into the local Maven repository. This is done with the `mvn install` command in the main projects root folder. When the main project have been installed the same command, `mvn install`, will build and execute the tests when executed from within the test projects root.
+
+= Libraries =
+
+If your project set-up contains libraries then those too need to be added as `<scope>provided</scope>` otherwise they will be added to the test which will result in a duplication the error «Class ref in pre-verified class resolved to unexpected implementation».
+
+{{{
+    <dependency>
+      <groupId>com.yourcompany</groupId>
+      <artifactId>your-library-artifact-id</artifactId>
+      <scope>provided</scope>
+      <type>jar</type>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+}}}
+
+= Proguard =
+
+If you use pro-guard then  there is the danger that the code you want to test as well as the code you use to do the testing is optimized away. You have to provide appropiate ´-keep´ options to prevent this:
+
+{{{
+   <option>-keep class com.yourcompany.test.R*</option>
+   <option>-keep class com.yourcompany.**.Test_* { public void test_* (); }</option>
+}}}
+
+= Scala =
+
+The Author made good experience with using Scala for instrumentation test. There was nothing special to observe apart from the need to use Proguard.
