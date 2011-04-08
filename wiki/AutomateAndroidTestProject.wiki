@@ -1,5 +1,5 @@
 #summary Explains how to set up Maven to automatically build and execute an Android test project.
-#labels HowTo,Proguard,Scala,InstrumentationTest
+#labels HowTo,ProGuard,Scala,InstrumentationTest
 
 = Automating Android test projects with Maven =
 
