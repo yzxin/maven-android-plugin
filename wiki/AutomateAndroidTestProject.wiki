@@ -123,6 +123,8 @@ If your project set-up contains libraries then those too need to be added as `<s
     </dependency>
 }}}
 
+Note Bug # 142, only Libraries with `<packaging>jar</packaging>` will work at this point.
+
 = Proguard =
 
 If you use pro-guard then  there is the danger that the code you want to test as well as the code you use to do the testing is optimized away. You have to provide appropiate ´-keep´ options to prevent this:
@@ -133,6 +135,12 @@ If you use pro-guard then  there is the danger that the code you want to test as
 }}}
 
 This is of course only an example. For it to work  all test classes need to start with `Test_` and all test methods with `test_`.
+
+For the classes to be tested the following keep option might be (temporary) helpful:
+
+-keepclassmembers public class com.mycompany.myclass {
+    public *;
+}
 
 = Scala =
 
