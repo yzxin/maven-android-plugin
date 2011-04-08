@@ -1,5 +1,5 @@
 #summary Explains how to set up Maven to automatically build and execute an Android test project.
-#labels HowTo
+#labels HowTo,Proguard,Scala,InstrumentationTest
 
 = Automating Android test projects with Maven =
 
@@ -131,6 +131,8 @@ If you use pro-guard then  there is the danger that the code you want to test as
    <option>-keep class com.yourcompany.test.R*</option>
    <option>-keep class com.yourcompany.**.Test_* { public void test_* (); }</option>
 }}}
+
+This is of course only an example. For it to work  all test classes need to start with `Test_` and all test methods with `test_`.
 
 = Scala =
 
