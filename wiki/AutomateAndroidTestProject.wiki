@@ -138,9 +138,11 @@ This is of course only an example. For it to work  all test classes need to star
 
 For the classes to be tested the following keep option might be (temporary) helpful:
 
+{{{
 -keepclassmembers public class com.mycompany.myclass {
     public *;
 }
+}}}
 
 = Scala =
 
