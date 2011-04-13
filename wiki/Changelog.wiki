@@ -8,7 +8,7 @@
 
 === Maven Android Plugin 2.9.0-beta-3 ===
 
- * Fix for Issue 137 - Specifying jvmArguments results in "error: no command specified"
+ * Fix for Issue 137: Specifying jvmArguments results in "error: no command specified"
    * {{{jvmArguments}}} now work again.
    * Thank you to Roberto Tyley.
  * Fix for Issue 145: Can't release multi-module with apklib
