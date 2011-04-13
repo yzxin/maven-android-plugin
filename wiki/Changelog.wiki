@@ -12,8 +12,8 @@
    * {{{jvmArguments}}} now work again.
    * Thank you to Roberto Tyley.
  * Fix for Issue 145: Can't release multi-module with apklib
-   * When one of your multi-module project's modules is {{{<packaging>apklib</apklib>}}}, you had to {{{mvn install}}} before, for the other modules to be able to find it. Now {{{mvn package}}} works too.
-   * Especially important when performing a Maven release of such a multi-module project :) 
+   * When one of your multi-module project's modules is {{{<packaging>apklib</apklib>}}}, you had to {{{mvn install}}} before, for the other modules to be able to find it. Now {{{mvn package}}} works too, even when your local repo is empty.
+   * Especially important when performing a Maven release of a multi-module project like that :) 
    * By Hugo Josefson.
 
 === Maven Android Plugin 2.9.0-beta-2 ===
