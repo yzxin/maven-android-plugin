@@ -10,6 +10,13 @@ For normal use, when you develop Android applications using maven-android-plugin
  * Check out the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 source code] for maven-android-plugin.
  * mvn clean install
 
+= How to use a custom build of the plugin
+
+ * If you use the plugin within a project, just update the version to  
+the version of the codebase you just built
+ * If you invoke the plugin outside a Maven project specify the version like so e.g.
+
+{{{mvn undeploy com.jayway.maven.plugins.android.generation2:maven-android-plugin:3.0.0-SNAPSHOT:undeploy -Pandroid.package=com.simplgility.android.helloflashlight}}}
 
 = How to build maven-android-plugin-samples =
 
