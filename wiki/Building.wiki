@@ -16,7 +16,7 @@ For normal use, when you develop Android applications using maven-android-plugin
 the version of the codebase you just built
  * If you invoke the plugin outside a Maven project specify the version like so e.g.
 
-{{{mvn undeploy com.jayway.maven.plugins.android.generation2:maven-android-plugin:3.0.0-SNAPSHOT:undeploy -Pandroid.package=com.simplgility.android.helloflashlight}}}
+{{{mvn undeploy com.jayway.maven.plugins.android.generation2:maven-android-plugin:3.0.0-SNAPSHOT:undeploy -Dandroid.package=com.simplgility.android.helloflashlight}}}
 
 = How to build maven-android-plugin-samples =
 
