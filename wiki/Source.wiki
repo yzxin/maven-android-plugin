@@ -48,20 +48,8 @@ The code on this page (Source) refers to the latest unreleased version. So if yo
 
 === Branches in the maven-android-plugin repo ===
 
-==== maven-android-plugin-2.x ====
-Active integration branch for versions in the 2.x series of maven-android-plugin.
-
-Base your feature and bugfix branches off of this one, if you want your code to end up in version 2.9.0, 2.10.0 etc...
-
-maven-android-plugin 2.x series uses Maven 2.
-
-==== master ====
-Active integration branch for versions in the 3.x series of maven-android-plugin.
-
-Base your feature and bugfix branches off of this one, if your code changes the way anything existing works, so that existing builds may be affected. This includes for example renamed or removed parameters, or changing the behavior of an existing configuration parameter.
-
-Since maven-android-plugin 3.0.0 will require Maven 3, any patches to maven-android-plugin which require Maven 3 should go here as well.
-
+|| *maven-android-plugin-2.x* || *master* ||
+|| Active integration branch for versions in the 2.x series of maven-android-plugin.<br/>Base your feature and bugfix branches off of this one, if you want your code to end up in version 2.9.0, 2.10.0 etc...<br/>Uses Maven 2.||Active integration branch for versions in the 3.x series of maven-android-plugin.<br/>Base your feature and bugfix branches off of this one, if your code changes the way anything existing works, so that existing builds may be affected. This includes for example renamed or removed parameters, or changing the behavior of an existing configuration parameter.<br/>Will require Maven 3, so any patches which require Maven 3 should go here as well.||
 
 === Branches in the maven-android-plugin-samples repo ===
 ==== stable ====
