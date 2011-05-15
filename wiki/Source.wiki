@@ -44,7 +44,20 @@ We use Git instead of Subversion for managing the source code, [http://whygitisb
 
 The code on this page (Source) refers to the latest unreleased version. So if you are looking to use the samples' configuration as an example of how to set up an Android Maven application, don't use the version which you will get by clicking the links here. Instead, see the [Samples] page.
 
-==Branches==
+==Get the code!==
+
+See this project's github pages:
+
+ http://github.com/jayway/maven-android-plugin<br/>
+ http://github.com/jayway/maven-android-plugin-samples
+
+You can browse the source code there, and even download a zip with the source code! As you can see, the plugin itself is split up from the samples. They are in separate git repositories for technical release reasons.
+
+To learn more about Git, see for example http://github.com/.
+
+If you think you will want to edit something, fork the project on Github, and clone your own fork to your development machine, instead of cloning directly from the readonly jayway/maven-android-plugin repo.
+
+==Work on the right branch!==
 
 Work happens on separate branches, which are branched off of the following listed ones.
 
@@ -66,27 +79,8 @@ This is especially important to be able to create good Pull Requests (see below)
 || *stable* || *beta* || *2.x-snapshot* || *master* ||
 || Samples in this branch use the latest non-beta release of maven-android-plugin.<br/>It is meant to be suitable for any user. || Samples in this branch use the latest release of maven-android-plugin, even if that version happens to be a beta version.<br/>It it meant to be used by users comfortable with running beta software. || Samples in this branch use the SNAPSHOT version in the maven-android-plugin-2.x branch of maven-android-plugin.<br/>This is mainly for testing the state of that branch. || Samples in this branch use the SNAPSHOT version in the master branch of maven-android-plugin.<br/>This is mainly for testing the state of that branch. ||
 
-==Read Access==
 
-To check out a copy of the plugin's source code for yourself:
-
-{{{
- git clone git://github.com/jayway/maven-android-plugin.git
- git clone git://github.com/jayway/maven-android-plugin-samples.git
-}}}
-
-Or see this project's github pages:
-
- http://github.com/jayway/maven-android-plugin<br/>
- http://github.com/jayway/maven-android-plugin-samples
-
-
-You can browse the source code there, and even download a zip with the source code! As you can see, the plugin itself is split up from the samples. They are in separate git repositories for technical release reasons.
-
-To learn more about Git, see for example http://github.com/.
-
-
-==Commit Access==
+==Submit!==
 
 ===Via github===
 
