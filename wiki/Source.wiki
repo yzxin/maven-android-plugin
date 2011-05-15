@@ -49,21 +49,11 @@ The code on this page (Source) refers to the latest unreleased version. So if yo
 === Branches in the maven-android-plugin repo ===
 
 || *maven-android-plugin-2.x* || *master* ||
-|| Active integration branch for versions in the 2.x series of maven-android-plugin.<br/>Base your feature and bugfix branches off of this one, if you want your code to end up in version 2.9.0, 2.10.0 etc...<br/>Uses Maven 2.||Active integration branch for versions in the 3.x series of maven-android-plugin.<br/>Base your feature and bugfix branches off of this one, if your code changes the way anything existing works, so that existing builds may be affected. This includes for example renamed or removed parameters, or changing the behavior of an existing configuration parameter.<br/>Will require Maven 3, so any patches which require Maven 3 should go here as well.||
+|| Active integration branch for versions in the 2.x series of maven-android-plugin.<br/>Base your feature and bugfix branches off of this one, if you want your code to end up in version 2.9.0, 2.10.0 etc...<br/>Uses Maven 2.||Active integration branch for versions in the 3.x series of maven-android-plugin.<br/>Base your feature and bugfix branches off of this one, if your code changes the way anything existing works, so that existing builds may be affected. This includes for example renamed or removed parameters, or changing the behavior of an existing configuration parameter.<br/>Will require Maven 3, so any patches which require Maven 3 should go here as well.||	
 
 === Branches in the maven-android-plugin-samples repo ===
-==== stable ====
-Samples in this branch use the latest non-beta release of maven-android-plugin. It is meant to be suitable for any user.
-
-==== beta ====
-Samples in this branch use the latest release of maven-android-plugin, even if that version happens to be a beta version. It it meant to be used by users comfortable with running beta software.
-
-==== 2.x-snapshot ====
-Samples in this branch use the SNAPSHOT version in the maven-android-plugin-2.x branch of maven-android-plugin. This is mainly for testing the state of that branch.
-
-==== master ====
-Samples in this branch use the SNAPSHOT version in the master branch of maven-android-plugin. This is mainly for testing the state of that branch.
-
+|| *stable* || *beta* || *2.x-snapshot* || *master* ||
+|| Samples in this branch use the latest non-beta release of maven-android-plugin.<br/>It is meant to be suitable for any user. || Samples in this branch use the latest release of maven-android-plugin, even if that version happens to be a beta version.<br/>It it meant to be used by users comfortable with running beta software. || Samples in this branch use the SNAPSHOT version in the maven-android-plugin-2.x branch of maven-android-plugin.<br/>This is mainly for testing the state of that branch. || Samples in this branch use the SNAPSHOT version in the master branch of maven-android-plugin.<br/>This is mainly for testing the state of that branch. ||
 
 ==Read Access==
 
