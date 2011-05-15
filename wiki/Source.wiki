@@ -46,6 +46,17 @@ The code on this page (Source) refers to the latest unreleased version. So if yo
 
 ==Branches==
 
+Work happens on separate branches, which are branched off of the following listed ones.
+
+For example, if you are fixing Issue 140, which applies to maven-android-plugin 2.9.0, create a separate branch for that, based on the maven-android-plugin-2.x branch. Like this:
+
+{{{
+git checkout maven-android-plugin-2.x
+git checkout -b issue-140
+}}}
+
+This is especially important to be able to create good Pull Requests (see below).
+
 ===maven-android-plugin===
 
 || *maven-android-plugin-2.x* || *master* ||
@@ -85,9 +96,9 @@ And anybody can submit code through github!
 
 1. Go to http://github.com/jayway/maven-android-plugin and fork the project. Forking a source code repository is sooo easy on github!
 
-2. Do your changes in your clone of the project,
+2. Do your changes in your fork of the project, on a separate branch (see above), otherwise things may get screwed up,
 
-3. then click "pull request" on your repository to tell "jayway" there are changes to bring in.
+3. then click "Pull Request" on your repository to tell us there are changes to bring in.
 
 ===Sending patches===
 You may of course also send patches directly through the [http://code.google.com/p/maven-android-plugin/issues/list Issue tracker] or mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers].
