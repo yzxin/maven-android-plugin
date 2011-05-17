@@ -8,6 +8,7 @@
 
  * Fix for Issue 153: jvmArguments missing dash, contributed by Manfred Moser
  * Fix for Issue 148: correct help documentation for sdk path, contributed by Pierre-Yves Ricau
+ * New feature: The plugin now detect all attached devices and emulators  will deploy and undeploy to all of them. It also honours the usb and emulator parameters as prior support and will respectively deploy to all emulators or all devices. The old behaviour of being stuck in a loop by adb with "Waiting for device" is now gone and replaced with a deployment to all attached devices/emulators. Contributed by Manfred Moser
 
 
 == Maven Android Plugin 2.x release series ==
