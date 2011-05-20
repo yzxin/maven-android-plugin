@@ -6,8 +6,10 @@
 
 == Upcoming!! Maven Android Plugin 3.0 release notes ==
 
- * Fix for Issue 153: jvmArguments missing dash, contributed by Manfred Moser
- * Fix for Issue 148: correct help documentation for sdk path, contributed by Pierre-Yves Ricau
+ * Fix for Issue 153: jvmArguments missing dash
+   * contributed by Manfred Moser
+ * Fix for Issue 148: correct help documentation for sdk path
+   *contributed by Pierre-Yves Ricau
  * New feature: The plugin now detect all attached devices and emulators  will deploy and undeploy to all of them. It also honours the usb and emulator parameters as prior support and will respectively deploy to all emulators or all devices. The old behaviour of being stuck in a loop by adb with "Waiting for device" is now gone and replaced with a deployment to all attached devices/emulators. Including for issue 158. Contributed by Manfred Moser
  * Improved project website including test coverage, static analysis and more. See [https://github.com/jayway/maven-android-plugin/pull/24] Contributed by Mirko Friedenhagen
  * New standalone plugin  goal "version-update" for updating versionCode and versioNumber in the AndroidManifest.xml. Contributed by Joakim Erdfelt
