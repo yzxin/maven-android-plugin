@@ -35,9 +35,12 @@
 
 === Upcoming!! Maven Android Plugin 2.9.0-beta-5  ===
 
- * Fix for Issue 153: jvmArguments missing dash, contributed by Manfred Moser
- * Fix for Issue 148: correct help documentation for sdk path, contributed by Pierre-Yves Ricau
- * Support for lazy library unpacking to speed up build. Contributed by shivawu. See issue 120
+ * Fix for Issue 153: jvmArguments missing dash, 
+   * contributed by Manfred Moser
+ * Fix for Issue 148: correct help documentation for sdk path, 
+   * contributed by Pierre-Yves Ricau
+ * Support for lazy library unpacking to speed up build. See issue 120
+   * contributed by shivawu. 
 
 === Maven Android Plugin 2.9.0-beta-4 ===
 
