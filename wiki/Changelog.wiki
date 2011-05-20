@@ -14,7 +14,8 @@
  * Improved detection of Android related packaging types. See [https://github.com/jayway/maven-android-plugin/pull/29] Contributed by Jake Wharton 
  * New NDK support. See [https://github.com/jayway/maven-android-plugin/pull/19] Contributed by Johan Lindquist
  * Classifier support for apk mojo. See [https://github.com/jayway/maven-android-plugin/pull/20] Contributed by Johan Lindquist
-
+ * Fixed usage of coreLibrary in dex command. See [https://github.com/jayway/maven-android-plugin/pull/34] Contributed by kevinpotgieter 
+ 
 == Maven Android Plugin 2.x release series ==
 
 === Upcoming!! Maven Android Plugin 2.9.0-beta-5  ===
@@ -28,6 +29,7 @@
  * Fix for Issue 147: apklib modules aren't deployed
    * ApkLib modules are now deployed to Maven repository when running {{{mvn deploy}}} or when performing a Maven release.
    * By Hugo Josefson.
+ * Fixed usage of coreLibrary in dex command. See [https://github.com/jayway/maven-android-plugin/pull/34] Contributed by kevinpotgieter 
 
 === Maven Android Plugin 2.9.0-beta-3 ===
 
