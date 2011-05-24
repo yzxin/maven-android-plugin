@@ -54,7 +54,6 @@ To enable maven builds in your test project you need to create the following pom
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.9.0-beta-2</version>
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
