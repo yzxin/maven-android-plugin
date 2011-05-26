@@ -31,6 +31,10 @@
  * Fixed usage of coreLibrary in dex command. 
    * see [https://github.com/jayway/maven-android-plugin/pull/34] 
    * contributed by kevinpotgieter 
+ * Additional config option for apk allowing additional source directories
+   * see [https://github.com/jayway/maven-android-plugin/pull/23]
+   * contributed by Lars Poeschel
+ 
  
 == Maven Android Plugin 2.x release series ==
 
@@ -42,6 +46,9 @@
    * contributed by Pierre-Yves Ricau
  * Support for lazy library unpacking to speed up build. See issue 120
    * contributed by shivawu. 
+ * Fix for issue 118 and issue 143
+   * see [https://github.com/jayway/maven-android-plugin/pull/32]
+   * contributed by alecplumb
 
 === Maven Android Plugin 2.9.0-beta-4 ===
 
