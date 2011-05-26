@@ -23,6 +23,7 @@
    * Contributed by Jake Wharton 
  * New NDK support.
    * see [https://github.com/jayway/maven-android-plugin/pull/19]
+   * also merged in the provided samples for NDK projects, see [https://github.com/jayway/maven-android-plugin-samples/pull/5]
    * contributed by Johan Lindquist
  * Classifier support for apk mojo. 
    * see [https://github.com/jayway/maven-android-plugin/pull/20] 
