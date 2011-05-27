@@ -4,7 +4,7 @@
 
 = Changelog =
 
-== Upcoming!! Maven Android Plugin 3.0-beta-1 release notes ==
+== Upcoming!! Maven Android Plugin 3.0.0-beta-1 release notes ==
 
  * Fix for Issue 153: jvmArguments missing dash
    * contributed by Manfred Moser
