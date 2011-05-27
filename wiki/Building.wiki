@@ -10,7 +10,7 @@ For normal use, when you develop Android applications using maven-android-plugin
  * Check out the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 source code] for maven-android-plugin.
  * mvn clean install
 
-= How to use a custom build of the plugin
+= How to use a custom build of the plugin =
 
  * If you use the plugin within a project, just update the version to  
 the version of the codebase you just built
