@@ -23,4 +23,5 @@ the version of the codebase you just built
  * Install Android SDK 
 
  * Check out the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 source code] for maven-android-plugin-samples.
- * mvn clean && mvn install
+ * attach a emulator or devices optionally
+ * mvn clean install
