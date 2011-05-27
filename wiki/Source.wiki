@@ -92,7 +92,9 @@ And anybody can submit code through github!
 
 2. Do your changes in your fork of the project, on a separate branch (see above), otherwise things may get screwed up,
 
-3. then click "Pull Request" on your repository to tell us there are changes to bring in.
+3. Ensure that your changes do not break existing functionality by running the samples project build.
+
+4. then click "Pull Request" on your repository to tell us there are changes to bring in.
 
 ===Sending patches===
 You may of course also send patches directly through the [http://code.google.com/p/maven-android-plugin/issues/list Issue tracker] or mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers].
