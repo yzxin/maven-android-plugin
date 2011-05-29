@@ -16,7 +16,7 @@
  * Improved project website including test coverage, static analysis and more. 
    * see [https://github.com/jayway/maven-android-plugin/pull/24]
    * contributed by Mirko Friedenhagen
- * New standalone plugin  goal "version-update" for updating versionCode and versioNumber in the AndroidManifest.xml. 
+ * New standalone plugin  goal "version-update" for updating versionCode and versionNumber in the !AndroidManifest.xml. 
    * contributed by Joakim Erdfelt
  * Improved detection of Android related packaging types. 
    * see [https://github.com/jayway/maven-android-plugin/pull/29]
