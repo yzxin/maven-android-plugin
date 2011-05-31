@@ -34,7 +34,10 @@
  * Additional config option for apk allowing additional source directories
    * see [https://github.com/jayway/maven-android-plugin/pull/23]
    * contributed by Lars Poeschel
- 
+ * Remove jar goal from process resources phase
+   * see [https://github.com/jayway/maven-android-plugin/pull/36]
+   * required for M2 Eclipse Android Integration 
+   * contributed by Ricardo Gladwell
  
 == Maven Android Plugin 2.x release series ==
 
