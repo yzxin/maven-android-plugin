@@ -39,6 +39,9 @@
    * see [https://github.com/jayway/maven-android-plugin/pull/36]
    * required for M2 Eclipse Android Integration 
    * contributed by Ricardo Gladwell
+ * Support for extra arguments for aapt (Issue 165)
+   * see [https://github.com/jayway/maven-android-plugin/pull/35]
+   * contributed by Fabrizio Giudici
  * Removed support for Android 1.1 SDK tools (NOT platform/API) 
    * contributed by Manfred Moser
  
@@ -65,10 +68,7 @@
    * ApkLib modules are now deployed to Maven repository when running {{{mvn deploy}}} or when performing a Maven release.
    * By Hugo Josefson.
  * Fixed usage of coreLibrary in dex command. See [https://github.com/jayway/maven-android-plugin/pull/34] Contributed by kevinpotgieter 
- * Support for extra arguments for aapt (Issue 165)
-   * see [https://github.com/jayway/maven-android-plugin/pull/35]
-   * contributed by Fabrizio Giudici
-
+\
 === Maven Android Plugin 2.9.0-beta-3 ===
 
  * Fix for Issue 137: Specifying jvmArguments results in "error: no command specified"
