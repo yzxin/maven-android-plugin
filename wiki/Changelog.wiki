@@ -53,6 +53,9 @@
  * Fix for issue 118 and issue 143
    * see [https://github.com/jayway/maven-android-plugin/pull/32]
    * contributed by alecplumb
+ * Support for extra arguments for aapt (Issue 165)
+   * see [https://github.com/jayway/maven-android-plugin/pull/35]
+   * contributed by Fabrizio Giudici
 
 === Maven Android Plugin 2.9.0-beta-4 ===
 
@@ -60,6 +63,9 @@
    * ApkLib modules are now deployed to Maven repository when running {{{mvn deploy}}} or when performing a Maven release.
    * By Hugo Josefson.
  * Fixed usage of coreLibrary in dex command. See [https://github.com/jayway/maven-android-plugin/pull/34] Contributed by kevinpotgieter 
+ * Support for extra arguments for aapt (Issue 165)
+   * see [https://github.com/jayway/maven-android-plugin/pull/35]
+   * contributed by Fabrizio Giudici
 
 === Maven Android Plugin 2.9.0-beta-3 ===
 
