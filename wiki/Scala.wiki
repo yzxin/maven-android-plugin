@@ -153,4 +153,6 @@ Scala is a very nice alternative to Java for developing Android Applications. Th
 
 Now here things get a little painful because the Scala library must only be included once in the Applications. In the instrumentation test you must set the Scala library to provided.
 
-And this leaves us with a little problem: 
+And this leaves us with a little problem: Any Scala class or method only used in test but not in the application will be removed by proguard. The only way to prevent this is to painfully add them to the proguard.cfg.
+
+*Hint:* Use a 2nd proguard.cfg for release / market compiles to keep you apk size down.
