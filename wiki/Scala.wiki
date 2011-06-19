@@ -1,0 +1,125 @@
+#labels Scala,InstrumentationTest,HowTo
+#Developing Android Application with Scala
+
+= Introduction =
+
+Scala is a very nice alternative to Java for developing Android Applications. The most important  thing to remember: You must use ProGuard.
+
+{{{
+…
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-library</artifactId>
+        <version>2.9.0-1</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+…
+  <repositories>
+    <repository>
+      <id>scala-tools.org</id>
+      <name>Scala-tools Maven2 Repository</name>
+      <url>http://www.scala-tools.org/repo-releases</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>scala-tools.org</id>
+      <name>Scala-tools Maven2 Repository</name>
+      <url>http://www.scala-tools.org/repo-releases</url>
+    </pluginRepository>
+  </pluginRepositories>
+…
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.tiobe.jacobe</groupId>
+          <artifactId>maven-jacobe-plugin</artifactId>
+          <version>1.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.scala-tools</groupId>
+          <artifactId>maven-scala-plugin</artifactId>
+          <version>2.15.2</version>
+          <configuration>
+            <scalaVersion>${scala.version}</scalaVersion>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+…
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.scala-tools</groupId>
+        <artifactId>maven-scala-plugin</artifactId>
+        <version>2.15.2</version>
+        <configuration>
+          <scalaVersion>${scala.version}</scalaVersion>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+…
+}}}
+= Using Scala for the Application =
+
+{{{
+…
+  <dependencies>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+      <type>jar</type>
+    </dependency>
+  </dependencies>
+…
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.scala-tools</groupId>
+        <artifactId>maven-scala-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+…
+}}}
+
+= Using Scala for the Instrumentation Test =
+
+{{{
+…
+  <dependencies>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+      <type>jar</type>
+    </dependency>
+  </dependencies>
+…
+  <repositories>
+    <repository>
+      <id>scala-tools.org</id>
+      <name>Scala-tools Maven2 Repository</name>
+      <url>http://www.scala-tools.org/repo-releases</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>scala-tools.org</id>
+      <name>Scala-tools Maven2 Repository</name>
+      <url>http://www.scala-tools.org/repo-releases</url>
+    </pluginRepository>
+  </pluginRepositories>
+…
+}}}
+
+= Using Scala for the Both =
+
+Now here things get a little painful because the Scala library must only be included once in the Applications. In the instrumentation test you must set the Scala library to provided.
+
+And this leaves us with a little problem: 
