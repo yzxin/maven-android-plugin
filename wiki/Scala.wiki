@@ -1,9 +1,9 @@
+#summary Developing Android Application with Scala
 #labels Scala,InstrumentationTest,HowTo
-#Developing Android Application with Scala
 
 = Introduction =
 
-Scala is a very nice alternative to Java for developing Android Applications. The most important  thing to remember: You must use ProGuard.
+Scala is a very nice alternative to Java for developing Android Applications. The most important  thing to remember: You must use ProGuard. Here the basic configuration you need:
 
 {{{
 …
@@ -65,7 +65,12 @@ Scala is a very nice alternative to Java for developing Android Applications. Th
     </plugins>
   </reporting>
 …
+  <properties>
+    <scala.version>2.9.0</scala.version>
+  </properties>
+…
 }}}
+
 = Using Scala for the Application =
 
 {{{
@@ -115,6 +120,32 @@ Scala is a very nice alternative to Java for developing Android Applications. Th
       <url>http://www.scala-tools.org/repo-releases</url>
     </pluginRepository>
   </pluginRepositories>
+…
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.scala-tools</groupId>
+        <artifactId>maven-scala-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>scala-compile-first</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>add-source</goal>
+              <goal>compile</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>scala-test-compile</id>
+            <phase>process-test-resources</phase>
+            <goals>
+              <goal>testCompile</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  <build>
 …
 }}}
 
