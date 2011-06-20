@@ -99,6 +99,24 @@ Scala is a very nice alternative to Java for developing Android Applications. Th
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>add-source</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>add-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>src/main/scala</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 …
@@ -115,21 +133,6 @@ Scala is a very nice alternative to Java for developing Android Applications. Th
       <type>jar</type>
     </dependency>
   </dependencies>
-…
-  <repositories>
-    <repository>
-      <id>scala-tools.org</id>
-      <name>Scala-tools Maven2 Repository</name>
-      <url>http://www.scala-tools.org/repo-releases</url>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>scala-tools.org</id>
-      <name>Scala-tools Maven2 Repository</name>
-      <url>http://www.scala-tools.org/repo-releases</url>
-    </pluginRepository>
-  </pluginRepositories>
 …
   <build>
     <plugins>
