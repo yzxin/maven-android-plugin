@@ -44,6 +44,10 @@
    * contributed by Fabrizio Giudici
  * Removed support for Android 1.1 SDK tools (NOT platform/API) 
    * contributed by Manfred Moser
+
+API/Configuration Changes: 
+
+  * noLocals (default false), pass --no-locals to dx command
  
 == Maven Android Plugin 2.x release series ==
 
@@ -61,6 +65,17 @@
  * Support for extra arguments for aapt (Issue 165)
    * see [https://github.com/jayway/maven-android-plugin/pull/35]
    * contributed by Fabrizio Giudici
+
+
+API/Configuration Changes: 
+
+  * noLocals (default false), pass --no-locals to dx command
+  * lazyLibraryUnpack (default false) only unpack library after a clean build and not when output directory already exists
+  * aaptExtraArgs array of string extra arguments to be passed to aapt
+  * renameManifestPackage - pass the --rename-manifest-package to the apkbuilder
+  
+
+
 
 === Maven Android Plugin 2.9.0-beta-4 ===
 
