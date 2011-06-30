@@ -1,6 +1,7 @@
 #summary Changes from version to version.
 #labels Featured
 
+In order to see correct documentation for your plugin version you need can build the version from source and then build the site with "mvn site"
 
 = Changelog =
 
@@ -48,7 +49,18 @@
 API/Configuration Changes: 
 
   * noLocals (default false), pass --no-locals to dx command
- 
+  * lazyLibraryUnpack (default false) only unpack library after a clean build and not when output directory already exists
+  * aaptExtraArgs array of string extra arguments to be passed to aapt
+  * renameManifestPackage - pass the --rename-manifest-package to the apkbuildern
+  * new standalone goal "version-update" with parameters "versionname.update" and "versioncode.autoincrement"
+  * "ndk.path" parameter for Android NDK support, supports environment variable ANDROID_NDK_HOME
+  * new goal ndk-build
+  * "ndk.build.native-classifier" parameter
+  * "ndk.build.command-line" parameter
+  * "ndk.build.clear-native-artifacts" parameter
+
+
+
 == Maven Android Plugin 2.x release series ==
 
 === Upcoming!! Maven Android Plugin 2.9.0-beta-5  ===
