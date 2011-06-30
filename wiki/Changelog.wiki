@@ -73,9 +73,7 @@ API/Configuration Changes:
   * lazyLibraryUnpack (default false) only unpack library after a clean build and not when output directory already exists
   * aaptExtraArgs array of string extra arguments to be passed to aapt
   * renameManifestPackage - pass the --rename-manifest-package to the apkbuilder
-  
-
-
+ 
 
 === Maven Android Plugin 2.9.0-beta-4 ===
 
@@ -83,7 +81,7 @@ API/Configuration Changes:
    * ApkLib modules are now deployed to Maven repository when running {{{mvn deploy}}} or when performing a Maven release.
    * By Hugo Josefson.
  * Fixed usage of coreLibrary in dex command. See [https://github.com/jayway/maven-android-plugin/pull/34] Contributed by kevinpotgieter 
-\
+
 === Maven Android Plugin 2.9.0-beta-3 ===
 
  * Fix for Issue 137: Specifying jvmArguments results in "error: no command specified"
