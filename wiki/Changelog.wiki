@@ -45,6 +45,10 @@ In order to see correct documentation for your plugin version you need can build
    * contributed by Fabrizio Giudici
  * Removed support for Android 1.1 SDK tools (NOT platform/API) 
    * contributed by Manfred Moser
+ * Added multi-device support for push, pull and instrumentation test runs
+   * see [https://github.com/jayway/maven-android-plugin/commit/33e52c75edea2f7d579b3d2517c33356bf77ddca]
+   * contributed by Hugo Josefson
+
 
 API/Configuration Changes: 
 
@@ -63,6 +67,7 @@ API/Configuration Changes:
      * "nativeLibrariesDirectory" parameter
      * "ndk.build.architecture" parameter, default armeabi
   * "classifier" parameter, when given cause the apk to get a classifier and be an attached build artifact
+  * removed parameter "deleteDataAndCacheDirectoriesOnDevice" since it is no longer needed
 
 == Maven Android Plugin 2.x release series ==
 
