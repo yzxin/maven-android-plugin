@@ -47,8 +47,9 @@ In order to see correct documentation for your plugin version you need can build
    * contributed by Manfred Moser
  * Added multi-device support for push, pull and instrumentation test runs
    * see [https://github.com/jayway/maven-android-plugin/commit/33e52c75edea2f7d579b3d2517c33356bf77ddca]
-   * contributed by Hugo Josefson
-
+   * contributed by Hugo Josefson 
+ * Run instrumentation tests via ddmlib directly rather than adb command
+   * contributed by Manfred Moser
 
 API/Configuration Changes: 
 
