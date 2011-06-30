@@ -51,6 +51,8 @@ In order to see correct documentation for your plugin version you need can build
  * Run instrumentation tests via ddmlib directly rather than adb command
     * aww [https://github.com/jayway/maven-android-plugin/commit/ecccb4a558e81255c705a5f4053bfbe7e2e06c84]
     * contributed by Manfred Moser
+  * Support for various parameters for instrumentation test runs
+    * contributed by Manfred Moser
 
 API/Configuration Changes: 
 
@@ -70,6 +72,14 @@ API/Configuration Changes:
      * "ndk.build.architecture" parameter, default armeabi
   * "classifier" parameter, when given cause the apk to get a classifier and be an attached build artifact
   * removed parameter "deleteDataAndCacheDirectoriesOnDevice" since it is no longer needed
+
+  * new instrumentation test related parameters
+     * "test.debug" 
+     * "test.coverage"
+     * "test.logonly"
+     * "test.testsize"
+
+
 
 == Maven Android Plugin 2.x release series ==
 
