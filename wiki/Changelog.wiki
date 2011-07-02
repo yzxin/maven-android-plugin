@@ -53,6 +53,10 @@ In order to see correct documentation for your plugin version you need can build
     * contributed by Manfred Moser
   * Support for various parameters for instrumentation test runs
     * contributed by Manfred Moser
+  * Added apk parameters support "renameInstrumentationTargetPackage"
+    * see [https://github.com/jayway/maven-android-plugin/pull/38]
+    * contributed by Rodrigo Munoz
+
 
 API/Configuration Changes: 
 
@@ -80,7 +84,7 @@ API/Configuration Changes:
      * "test.testsize"
      * changed "instrumentationRunner" to "test.instrumentationRunner"
      * changed "instrumentationPackage" to "test.instrumentationPackage"
-
+  * new apk generation parameters "renameInstrumentationTargetPackage"
 
 
 == Maven Android Plugin 2.x release series ==
