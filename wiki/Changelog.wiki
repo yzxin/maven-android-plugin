@@ -65,7 +65,6 @@ API/Configuration Changes:
   * aaptExtraArgs array of string extra arguments to be passed to aapt
   * renameManifestPackage - pass the --rename-manifest-package to the apkbuildern
   * new standalone goal "version-update" with parameters "versionname.update" and "versioncode.autoincrement"
-  
   * new goal ndk-build
      * "ndk.path" parameter for Android NDK support, supports environment variable ANDROID_NDK_HOME
      * "ndk.build.native-classifier" parameter
