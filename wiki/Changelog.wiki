@@ -88,7 +88,7 @@ API/Configuration Changes:
 
 == Maven Android Plugin 2.x release series ==
 
-=== Upcoming!! Maven Android Plugin 2.9.0-beta-5  ===
+=== Maven Android Plugin 2.9.0-beta-5  ===
 
  * Fix for Issue 153: jvmArguments missing dash, 
    * contributed by Manfred Moser
