@@ -1,13 +1,17 @@
 #summary Changes from version to version.
 #labels Featured
 
-In order to see correct documentation for your plugin version you need can build the version from source and then build the site with "mvn site"
+In order to see correct documentation for your plugin version you can build the version from source and then build the site with "mvn site"
 
 = Changelog =
 
+Any *text in bold* below describes API breaking changes, which means you need to *update your configuration parameters*.
+
 == Maven Android Plugin 3.x release series ==
 
-The Maven Android Plugin 3.x release series requires Maven 3 and includes all features from from the 2.x release series, with the following additions:
+Requires Maven 3.
+
+Includes all changes from from the 2.x release series.
 
 === Upcoming!! Maven Android Plugin 3.0.0-alpha-1 release notes ===
 
