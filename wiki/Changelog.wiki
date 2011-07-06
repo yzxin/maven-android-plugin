@@ -55,19 +55,12 @@ The Maven Android Plugin 3.x release series requires Maven 3 and includes all fe
  * Run instrumentation tests via ddmlib directly rather than adb command
     * see [https://github.com/jayway/maven-android-plugin/commit/ecccb4a558e81255c705a5f4053bfbe7e2e06c84]
     * contributed by Manfred Moser
-  * Support for various parameters for instrumentation test runs
-    * contributed by Manfred Moser
-  * Added apk parameters support "renameInstrumentationTargetPackage"
-    * see [https://github.com/jayway/maven-android-plugin/pull/38]
-    * contributed by Rodrigo Munoz
+ * Support for various parameters for instrumentation test runs
+     * contributed by Manfred Moser
 
 
 API/Configuration Changes: 
 
-  * noLocals (default false), pass --no-locals to dx command
-  * lazyLibraryUnpack (default false) only unpack library after a clean build and not when output directory already exists
-  * aaptExtraArgs array of string extra arguments to be passed to aapt
-  * renameManifestPackage - pass the --rename-manifest-package to the apkbuildern
   * new standalone goal "version-update" with parameters "versionname.update" and "versioncode.autoincrement"
   * new goal ndk-build
      * "ndk.path" parameter for Android NDK support, supports environment variable ANDROID_NDK_HOME
@@ -87,7 +80,6 @@ API/Configuration Changes:
      * "test.testsize"
      * changed "instrumentationRunner" to "test.instrumentationRunner"
      * changed "instrumentationPackage" to "test.instrumentationPackage"
-  * new apk generation parameters "renameInstrumentationTargetPackage"
 
 
 == Maven Android Plugin 2.x release series ==
@@ -106,6 +98,9 @@ API/Configuration Changes:
  * Support for extra arguments for aapt (Issue 165)
    * see [https://github.com/jayway/maven-android-plugin/pull/35]
    * contributed by Fabrizio Giudici
+ * Added apk parameters support "renameInstrumentationTargetPackage"
+   * see [https://github.com/jayway/maven-android-plugin/pull/38]
+   * contributed by Rodrigo Munoz
 
 
 API/Configuration Changes: 
@@ -113,7 +108,8 @@ API/Configuration Changes:
   * noLocals (default false), pass --no-locals to dx command
   * lazyLibraryUnpack (default false) only unpack library after a clean build and not when output directory already exists
   * aaptExtraArgs array of string extra arguments to be passed to aapt
-  * renameManifestPackage - pass the --rename-manifest-package to the apkbuilder
+  * renameManifestPackage - pass the --rename-manifest-package parameter to aapt
+  * renameInstrumentationTargetPackage - pass the --rename-instrumentation-target-package parameter to aapt
  
 
 === Maven Android Plugin 2.9.0-beta-4 ===
