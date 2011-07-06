@@ -7,9 +7,13 @@ This link will take you to the latest stable samples:
 
 --> [http://github.com/jayway/maven-android-plugin-samples/archives/stable Download samples from the stable branch]
 
-This link will take you to samples for testing the latest beta of maven-android-plugin:
+This link will take you to samples for testing the latest 2.9.0-beta of maven-android-plugin:
 
 --> [http://github.com/jayway/maven-android-plugin-samples/archives/beta Download samples from the beta branch]
+
+This link will take you to samples for testing the latest 3.0.0-alpha of maven-android-plugin:
+
+--> [http://github.com/jayway/maven-android-plugin-samples/archives/alpha Download samples from the alpha branch]
 
 
 === Important notes: ===
