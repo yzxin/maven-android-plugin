@@ -13,7 +13,9 @@ Requires Maven 3.
 
 Includes all changes from from the 2.x release series.
 
-=== Upcoming!! Maven Android Plugin 3.0.0-alpha-1 release notes ===
+The 3.0.0-alpha-1 is already very usable, and the alpha mark really only means that you should expect "API" breaking changes during the alphas, until it reaches beta. Specifically, we will change a bunch of configuration parameters and some might even be removed. This means you will need to look at the changelog for *text in bold* before upgrading to an alpha version.
+
+=== Maven Android Plugin 3.0.0-alpha-1 release notes ===
 
  * Fix for Issue 153: jvmArguments missing dash
    * contributed by Manfred Moser
