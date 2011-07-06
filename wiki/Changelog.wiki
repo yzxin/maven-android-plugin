@@ -5,7 +5,7 @@ In order to see correct documentation for your plugin version you can build the 
 
 = Changelog =
 
-Any *text in bold* below describes changes, which may cause existing builds to break. You may need to *update / clean up your project configuration*.
+Any *text in bold* below describes changes, which may cause existing builds to break. You may need to *update / clean up your project configuration*. This should only happen during alphas, btw.
 
 == Maven Android Plugin 3.x release series ==
 
