@@ -5,7 +5,11 @@ In order to see correct documentation for your plugin version you need can build
 
 = Changelog =
 
-== Upcoming!! Maven Android Plugin 3.0.0-alpha-1 release notes ==
+== Maven Android Plugin 3.x release series ==
+
+The Maven Android Plugin 3.x release series requires Maven 3 and includes all features from from the 2.x release series, with the following additions:
+
+=== Upcoming!! Maven Android Plugin 3.0.0-alpha-1 release notes ===
 
  * Fix for Issue 153: jvmArguments missing dash
    * contributed by Manfred Moser
