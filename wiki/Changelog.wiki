@@ -84,8 +84,8 @@ API/Configuration Changes:
      * "test.coverage"
      * "test.logonly"
      * "test.testsize"
-     * changed "instrumentationRunner" to "test.instrumentationRunner"
-     * changed "instrumentationPackage" to "test.instrumentationPackage"
+     * *changed "instrumentationRunner" to "test.instrumentationRunner"*
+     * *changed "instrumentationPackage" to "test.instrumentationPackage"*
 
 
 == Maven Android Plugin 2.x release series ==
