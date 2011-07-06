@@ -5,7 +5,7 @@ In order to see correct documentation for your plugin version you can build the 
 
 = Changelog =
 
-Any *text in bold* below describes API breaking changes, which means you need to *update your configuration parameters*.
+Any *text in bold* below describes changes, which may cause existing builds to break. You may need to *update / clean up your project configuration*.
 
 == Maven Android Plugin 3.x release series ==
 
@@ -44,14 +44,14 @@ Includes all changes from from the 2.x release series.
  * Additional config option for apk allowing additional source directories
    * see [https://github.com/jayway/maven-android-plugin/pull/23]
    * contributed by Lars Poeschel
- * Remove jar goal from process resources phase
+ * *Remove jar goal from process resources phase*
    * see [https://github.com/jayway/maven-android-plugin/pull/36]
    * required for M2 Eclipse Android Integration 
    * contributed by Ricardo Gladwell
  * Support for extra arguments for aapt (Issue 165)
    * see [https://github.com/jayway/maven-android-plugin/pull/35]
    * contributed by Fabrizio Giudici
- * Removed support for Android 1.1 SDK tools (NOT platform/API) 
+ * *Removed support for Android 1.1 SDK tools* (NOT platform/API) 
    * contributed by Manfred Moser
  * Added multi-device support for push, pull and instrumentation test runs
    * see [https://github.com/jayway/maven-android-plugin/commit/33e52c75edea2f7d579b3d2517c33356bf77ddca]
@@ -75,7 +75,7 @@ API/Configuration Changes:
      * "nativeLibrariesDirectory" parameter
      * "ndk.build.architecture" parameter, default armeabi
   * "classifier" parameter, when given cause the apk to get a classifier and be an attached build artifact
-  * removed parameter "deleteDataAndCacheDirectoriesOnDevice" since it is no longer needed
+  * *removed parameter "deleteDataAndCacheDirectoriesOnDevice"* since it is no longer needed
 
   * new instrumentation test related parameters
      * "test.debug" 
