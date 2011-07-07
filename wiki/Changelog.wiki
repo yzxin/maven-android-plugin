@@ -1,7 +1,7 @@
 #summary Changes from version to version.
 #labels Featured
 
-In order to see correct documentation for your plugin version you can build the version from source and then build the site with "mvn site"
+_Tip: In order to see correct documentation for your plugin version you can build the version from source and then build the site with "mvn site"_
 
 = Changelog =
 
