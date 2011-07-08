@@ -22,6 +22,7 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
    * see https://github.com/jayway/maven-android-plugin/commit/8fa9454c5f16d0d0024ad2452088e3a0b622dcf6
    * contributed by Manfred Moser
  * automatically start adb if not running for ddmlib based code like new deploy, undeploy and instrument
+    * fixes issue 176
     * see https://github.com/jayway/maven-android-plugin/pull/42
     * contributed by Roberto Tyley
 
