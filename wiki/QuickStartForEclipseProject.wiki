@@ -54,7 +54,6 @@ To enable your Android project to be built with Maven you need to add a pom look
                         <path>${env.ANDROID_HOME}</path>
                         <platform>1.6</platform>
                     </sdk>
-                    <deleteConflictingFiles>true</deleteConflictingFiles>
                 </configuration>
                 <extensions>true</extensions>
             </plugin>
