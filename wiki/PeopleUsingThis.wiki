@@ -17,3 +17,11 @@ If you want to see how we have configured Maven then please contact me. Our code
 [http://www.simpligity.com Simpligility Technologies] is using the Maven Android plugin for an Android application for a top 5 electronics reseller client.
 
 Juan Carlos - PomoTodo -  http://code.google.com/p/pomotodo/
+
+Michael Burton - RoboGuice and lots of applications using it
+
+Robolectric
+
+Robotium
+
+Donn Felker
