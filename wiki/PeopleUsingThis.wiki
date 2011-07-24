@@ -27,3 +27,5 @@ Robolectric [http://pivotal.github.com/robolectric/]
 Robotium [http://code.google.com/p/robotium/]
 
 Donn Felker, http://blog.donnfelker.com/, multi Android book author
+
+Jake Wharton, author of ActionBarSherlock, http://actionbarsherlock.com
