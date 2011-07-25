@@ -29,3 +29,4 @@ Robotium [http://code.google.com/p/robotium/]
 Donn Felker, http://blog.donnfelker.com/, multi Android book author
 
 Jake Wharton, author of ActionBarSherlock, http://actionbarsherlock.com
+Fabrizio Giudici, author of blueBill Mobile, http://bluebill.tidalwave.it/mobile/
