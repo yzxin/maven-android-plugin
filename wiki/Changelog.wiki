@@ -20,16 +20,16 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
 
  * Improved logging for deploy and undeploy
    * see https://github.com/jayway/maven-android-plugin/commit/8fa9454c5f16d0d0024ad2452088e3a0b622dcf6
-   * contributed by Manfred Moser
+   * contributed by Manfred Moser, http://simpligility.com
  * automatically start adb if not running for ddmlib based code like new deploy, undeploy and instrument
     * fixes issue 176
     * see https://github.com/jayway/maven-android-plugin/pull/42
     * contributed by Roberto Tyley
  * Refactored pull and push goals to use ddmlib, also changed parameter names to not conflict between the two
-   * contributed by Manfred Moser
+   * contributed by Manfred Moser,  http://simpligility.com
  * Removed deleteConflictingFiles  parameter as it is no longer needed
    * fixes issue 182
-   * contributed by Manfred Moser
+   * contributed by Manfred Moser,  http://simpligility.com
  * Suppress empty error log line causing wrong reporting in Hudson/Jenkins
    * see https://github.com/jayway/maven-android-plugin/pull/48
    * contributed by oldelvet 
@@ -42,7 +42,7 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
    * fixes issue 102
  * automatically create a junit compatible xml file for each device/emulator the instrumentation tests run on complete with system and device properties, error messages, stack traces, timing and so on,  files are created in target/surefire-reports
    * issue 
-   * contributed by Manfred Moser http://simpligility.com
+   * contributed by Manfred Moser, http://simpligility.com
 API/Configuration Changes: 
 
    * *pull* goal parameters are now *android.pull.source* and *android.pull.destination*
