@@ -30,6 +30,10 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
  * Removed deleteConflictingFiles  parameter as it is no longer needed
    * fixes issue 182
    * contributed by Manfred Moser
+ * Suppress empty error log line causing wrong reporting in Hudson/Jenkins
+   * see https://github.com/jayway/maven-android-plugin/pull/48
+   * contributed by oldelvet 
+
 
 API/Configuration Changes: 
 
