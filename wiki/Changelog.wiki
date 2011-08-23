@@ -33,6 +33,10 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
  * Suppress empty error log line causing wrong reporting in Hudson/Jenkins
    * see https://github.com/jayway/maven-android-plugin/pull/48
    * contributed by oldelvet 
+ * Declare need for Java 1.6 at build and run time since a 1.6 file IO call is used in the source already
+   * see https://github.com/jayway/maven-android-plugin/pull/47
+   * contributed by Mykola Nikishov 
+
  
 
 API/Configuration Changes: 
