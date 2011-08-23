@@ -43,8 +43,8 @@ API/Configuration Changes:
 
    * *pull* goal parameters are now *android.pull.source* and *android.pull.destination*
    * *push* goal parameters are now *android.push.source* and *android.push.destination*
-   * *deleteConflictingFiles* parameter removed
-* Java 1.6 now required to build plugin and to run plugin as well
+   * *deleteConflictingFiles* parameter removed*
+   * *Java 1.6 now required* to build plugin and to run plugin as well
 
 === Maven Android Plugin 3.0.0-alpha-2 ===
 
