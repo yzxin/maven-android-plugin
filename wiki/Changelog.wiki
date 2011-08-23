@@ -46,7 +46,10 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
  * honor flag to undeployBeforeDeploy also for instrumentation test apk
    * issue 160
    * contributed by Manfred Moser, http://simpligility.com
-
+ * added documentation for jvmArguments parameters for dex command
+   * issue 146
+   * contributed by Manfred Moser, http://simpligility.com
+   
 
 API/Configuration Changes: 
 
