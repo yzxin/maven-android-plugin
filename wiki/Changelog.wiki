@@ -36,9 +36,10 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
  * Declare need for Java 1.6 at build and run time since a 1.6 file IO call is used in the source already
    * see https://github.com/jayway/maven-android-plugin/pull/47
    * contributed by Mykola Nikishov 
- * new mojo that can run the application, needs a project and then you can use "mvn android:run"
+ * new mojo that can run the application, needs a project and then you can use "mvn android:run", application needs to be deployed
    * see https://github.com/jayway/maven-android-plugin/pull/46
    * contributed by Lorenzo Villani and Manfred Moser
+   * fixes issue 102
 
 API/Configuration Changes: 
 
@@ -46,7 +47,7 @@ API/Configuration Changes:
    * *push* goal parameters are now *android.push.source* and *android.push.destination*
    * *deleteConflictingFiles* parameter removed
    * *Java 1.6 now required* to build plugin and to run plugin as well
-   * new standalong mojo *android:run*
+   * new standalone mojo *android:run*
 
 === Maven Android Plugin 3.0.0-alpha-2 ===
 
