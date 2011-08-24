@@ -1,5 +1,6 @@
-#summary Changes from version to version.
 #labels Featured
+
+#summary Changes from version to version.
 
 _Tip: In order to see correct documentation for your plugin version you can build the version from source and then build the site with "mvn site"_
 
@@ -16,7 +17,7 @@ Includes all changes from from the 2.x release series.
 The 3.0.0-alphas are already very usable, and the alpha mark really only means that you should expect "API" breaking changes during the alphas, until it reaches beta. Specifically, we will change a bunch of configuration parameters and some might even be removed. This means you will need to look at the changelog for *text in bold* before upgrading to an alpha version.
 
 
-=== Maven Android Plugin 3.0.0-alpha-3 - not yet released! ===
+=== Maven Android Plugin 3.0.0-alpha-3 ===
 
  * Improved logging for deploy and undeploy
    * see https://github.com/jayway/maven-android-plugin/commit/8fa9454c5f16d0d0024ad2452088e3a0b622dcf6
@@ -49,7 +50,6 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
  * added documentation for jvmArguments parameters for dex command
    * issue 146
    * contributed by Manfred Moser, http://simpligility.com
-   
 
 API/Configuration Changes: 
 
@@ -57,8 +57,9 @@ API/Configuration Changes:
    * *push* goal parameters are now *android.push.source* and *android.push.destination*
    * *deleteConflictingFiles* parameter removed
    * *Java 1.6 now required* to build plugin and to run plugin as well
-   * new standalone mojo *android:run*
-   * new parameter *android.test.createreport* default to true, set to false and junit xml report will not be created
+   * new standalone mojo android:run
+   * new parameter android.test.createreport default to true, set to false and junit xml report will not be created
+
 === Maven Android Plugin 3.0.0-alpha-2 ===
 
  * Fix so that builds won't pass when integration tests fail
