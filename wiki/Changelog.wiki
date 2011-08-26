@@ -1,6 +1,5 @@
-#labels Featured
-
 #summary Changes from version to version.
+#labels Featured
 
 _Tip: In order to see correct documentation for your plugin version you can build the version from source and then build the site with "mvn site"_
 
@@ -16,6 +15,10 @@ Includes all changes from from the 2.x release series.
 
 The 3.0.0-alphas are already very usable, and the alpha mark really only means that you should expect "API" breaking changes during the alphas, until it reaches beta. Specifically, we will change a bunch of configuration parameters and some might even be removed. This means you will need to look at the changelog for *text in bold* before upgrading to an alpha version.
 
+=== Maven Android Plugin 3.0.0-alpha-3 ===
+ * new goal "help" that will display all goals and their help text or a specific goal and its parameters
+    * fixes issues 191
+    * contributed by Hakan Tandogan
 
 === Maven Android Plugin 3.0.0-alpha-3 ===
 
