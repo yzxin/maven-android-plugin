@@ -19,7 +19,10 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
  * new goal "help" that will display all goals and their help text or a specific goal and its parameters
     * fixes issues 191
     * contributed by Hakan Tandogan
-
+ * fixed bug in deploy mojo that skipped installed when app already there
+   * see https://github.com/jayway/maven-android-plugin/pull/54
+   * contributed by Lorenzo Villani and Manfred Moser
+ 
 API/Configuration Changes:
 
  * new *help* goal: try mvn android:help
