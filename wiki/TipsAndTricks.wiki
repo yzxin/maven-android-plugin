@@ -6,6 +6,12 @@
 === View all available goals ===
 
   {{{
+  mvn android:help
+  }}}
+
+or in older releases
+ 
+  {{{
   mvn help:describe -Dplugin=com.jayway.maven.plugins.android.generation2:maven-android-plugin
   }}}
 
