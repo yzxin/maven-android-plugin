@@ -15,6 +15,15 @@ Includes all changes from from the 2.x release series.
 
 The 3.0.0-alphas are already very usable, and the alpha mark really only means that you should expect "API" breaking changes during the alphas, until it reaches beta. Specifically, we will change a bunch of configuration parameters and some might even be removed. This means you will need to look at the changelog for *text in bold* before upgrading to an alpha version.
 
+=== Maven Android Plugin 3.0.0-alpha-6, currently releasing... ===
+ * new parameter {{{optimize}}}. Defaults to {{{true}}}. Setting to {{{false}}} may make the build faster.
+   * see https://github.com/jayway/maven-android-plugin/pull/56
+   * contributed by Lorenzo Villani
+ 
+API/Configuration Changes:
+
+ * new *optimize* boolean parameter.
+
 === Maven Android Plugin 3.0.0-alpha-5 ===
 
  * failure of test run result in build failure
