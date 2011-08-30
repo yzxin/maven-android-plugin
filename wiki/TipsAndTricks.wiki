@@ -16,6 +16,17 @@ or in older releases
   }}}
 
 
+=== Bash completion === 
+
+If you are using the bash shell or something compatible a completion script is available here
+
+https://github.com/mosabua/maven-bash-completion/tree/android
+
+Hopefully soon upstream too.
+https://github.com/juven/maven-bash-completion
+
+
+
 === Shorter commandline ===
 
 _If you only execute {{{mvn android:...}}} commands from the root of a Maven project where the {{{pom.xml}}} is configured for the maven-android-plugin, you don't need this configuration. It helps when you want to execute commands from other directories though._
