@@ -27,7 +27,7 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
 
 API/Configuration Changes:
 
-* support for emulator name (e.g. emulator-5554) in android.device parameter
+  * support for emulator name (e.g. emulator-5554) in android.device parameter
 
 === Maven Android Plugin 3.0.0-alpha-6 ===
  * new parameter {{{optimize}}}. Defaults to {{{true}}}. Setting to {{{false}}} may make the build faster.
