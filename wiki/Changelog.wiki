@@ -47,7 +47,7 @@ android:versionName on the manifest element. android:versionCode on the manifest
 Note: This process will reformat the AndroidManifest.xml per JAXP Transformer defaults if updates are made to the manifest.
 
 Updating Your android:debuggable attribute
-
+{{{
   <plugin>
     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
     <artifactId>maven-android-plugin</artifactId>
@@ -63,7 +63,7 @@ Updating Your android:debuggable attribute
       </execution>
     </executions>
   </plugin>
-
+}}}
 
 === Maven Android Plugin 3.0.0-alpha-6 ===
  * new parameter {{{optimize}}}. Defaults to {{{true}}}. Setting to {{{false}}} may make the build faster.
