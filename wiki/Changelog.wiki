@@ -16,7 +16,7 @@ Includes all changes from from the 2.x release series.
 The 3.0.0-alphas are already very usable, and the alpha mark really only means that you should expect "API" breaking changes during the alphas, until it reaches beta. Specifically, we will change a bunch of configuration parameters and some might even be removed. This means you will need to look at the changelog for *text in bold* before upgrading to an alpha version.
 
 === Maven Android Plugin 3.0.0-alpha-7, not yet released ===
- 
+
  * improved naming for devices in logging and unit report file name
     * see https://github.com/jayway/maven-android-plugin/pull/
     * contributed by Manfred Moser,  http://simpligility.com
@@ -30,9 +30,40 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
    * fixes issue 189 
    * contributed by Dominik Hiltbrunner
 
+ * merged VersionsUpdateMojo into more generic new ManifestUpdateMojo
+   * see https://github.com/jayway/maven-android-plugin/pull/52
+   * contributed by Nik Strong http://www.codepoets.co.nzem
+
 API/Configuration Changes:
 
   * support for emulator name (e.g. emulator-5554) in android.device parameter
+  * new manifest update mojo replacing the version update mojo: 
+
+Updates various version attributes present in the AndroidManifest.xml file.
+You can configure this mojo to update the following manifest attributes:
+
+android:versionName on the manifest element. android:versionCode on the manifest element. android:sharedUserId on the manifest element. android:debuggable on the application element.
+
+Note: This process will reformat the AndroidManifest.xml per JAXP Transformer defaults if updates are made to the manifest.
+
+Updating Your android:debuggable attribute
+
+  <plugin>
+    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+    <artifactId>maven-android-plugin</artifactId>
+    <executions>
+      <execution>
+        <id>update-manifest</id>
+        <goals>
+          <goal>manifest-update</goal>
+        </goals>
+        <configuration>
+          <debuggable>true</debuggable>
+        </configuration>
+      </execution>
+    </executions>
+  </plugin>
+
 
 === Maven Android Plugin 3.0.0-alpha-6 ===
  * new parameter {{{optimize}}}. Defaults to {{{true}}}. Setting to {{{false}}} may make the build faster.
