@@ -25,6 +25,11 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
     * see https://github.com/jayway/maven-android-plugin/pull/
     * contributed by Manfred Moser,  http://simpligility.com
 
+ * fix to avoid ArrayIndexOutOfBoundsException in NDK build
+   * see https://github.com/jayway/maven-android-plugin/pull/59
+   * fixes issue 189 
+   * contributed by Dominik Hiltbrunner
+
 API/Configuration Changes:
 
   * support for emulator name (e.g. emulator-5554) in android.device parameter
