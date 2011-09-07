@@ -15,7 +15,7 @@ Includes all changes from from the 2.x release series.
 
 The 3.0.0-alphas are already very usable, and the alpha mark really only means that you should expect "API" breaking changes during the alphas, until it reaches beta. Specifically, we will change a bunch of configuration parameters and some might even be removed. This means you will need to look at the changelog for *text in bold* before upgrading to an alpha version.
 
-=== Maven Android Plugin 3.0.0-alpha-7, not yet released ===
+=== Maven Android Plugin 3.0.0-alpha-7, currently being released... ===
 
  * improved naming for devices in logging and unit report file name
     * see https://github.com/jayway/maven-android-plugin/pull/
