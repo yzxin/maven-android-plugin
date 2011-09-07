@@ -32,7 +32,13 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
 
  * merged VersionsUpdateMojo into more generic new ManifestUpdateMojo
    * see https://github.com/jayway/maven-android-plugin/pull/52
-   * contributed by Nik Strong http://www.codepoets.co.nzem
+   * contributed by Nik Strong http://www.codepoets.co.nz
+
+ * new mojo to stop all attached emulators, stop emulators with adb bridge, possibility to start multiple emulators from command line, this should work flawlessly on Windows now too!! 
+   * see https://github.com/jayway/maven-android-plugin/pull/60
+     and a few separate commits in master
+   * contributed by Bryan O'Neil  and Manfred Moser,  http://simpligility.com
+
 
 API/Configuration Changes:
 
@@ -64,6 +70,8 @@ Updating Your android:debuggable attribute
     </executions>
   </plugin>
 }}}
+
+ * new goal to stop all emulators, try mvn android:emulator-stop-all
 
 === Maven Android Plugin 3.0.0-alpha-6 ===
  * new parameter {{{optimize}}}. Defaults to {{{true}}}. Setting to {{{false}}} may make the build faster.
