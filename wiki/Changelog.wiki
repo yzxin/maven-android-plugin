@@ -18,7 +18,7 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
 === Maven Android Plugin 3.0.0-alpha-7, currently being released... ===
 
  * improved naming for devices in logging and unit report file name
-    * see https://github.com/jayway/maven-android-plugin/pull/
+    * see https://github.com/jayway/maven-android-plugin/pull/58
     * contributed by Manfred Moser,  http://simpligility.com
  
  * support for emulator name in android.device parameter
