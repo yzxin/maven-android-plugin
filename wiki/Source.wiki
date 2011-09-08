@@ -57,6 +57,20 @@ To learn more about Git, see for example http://github.com/.
 
 If you think you will want to edit something, fork the project on Github, and clone your own fork to your development machine, instead of cloning directly from the readonly jayway/maven-android-plugin repo.
 
+==Configure your git correctly for contributions==
+We accept only code contributions with LF as line-endings.
+
+You can set up git to convert CRLF/LF automatically. According to the book [http://progit.org/book/ch7-1.html Pro Git chapter 7], set it up like this:
+=== ...on Windows ===
+{{{
+git config --global core.autocrlf true
+}}}
+=== ...on Linux / Mac ===
+{{{
+git config --global core.autocrlf input
+}}}
+
+
 ==Work on the right branch!==
 
 Work happens on separate branches, which are branched off of the following listed ones.
