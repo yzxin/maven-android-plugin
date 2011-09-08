@@ -60,7 +60,7 @@ If you think you will want to edit something, fork the project on Github, and cl
 ==Configure your git correctly for contributions==
 We accept only code contributions with LF as line-endings.
 
-You can set up git to convert CRLF/LF automatically. According to the book [http://progit.org/book/ch7-1.html Pro Git chapter 7], set it up like this:
+You can set up git to convert CRLF/LF automatically. According to the book [http://progit.org/book/ch7-1.html#coreautocrlf Pro Git chapter 7], set it up like this:
 === ...on Windows ===
 {{{
 git config --global core.autocrlf true
