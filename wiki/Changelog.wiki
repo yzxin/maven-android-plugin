@@ -25,7 +25,7 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
    * see https://groups.google.com/d/topic/maven-android-developers/7vTpCUdgPD0/discussion
    * contributed by Hugo Josefson
  
- * refactored name of plugin to android-maven-plugin
+ * refactored name of plugin to *android-maven-plugin*
    * see http://code.google.com/p/maven-android-plugin/issues/detail?id=198
    * contributed by Manfred Moser,  http://simpligility.com 
 
