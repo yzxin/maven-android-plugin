@@ -19,6 +19,7 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
 
  * Wait for the initial device list to be loaded from the Android Debug Bridge before proceeding to deploy and other tasks using adb
    * see https://github.com/jayway/maven-android-plugin/pull/61
+   * fixes issue 197
    * contributed by oldelvet 
  
  * *Require Maven 3.0.3.*
