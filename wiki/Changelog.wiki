@@ -30,6 +30,18 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
    * see http://code.google.com/p/maven-android-plugin/issues/detail?id=198
    * contributed by Manfred Moser,  http://simpligility.com 
 
+ * Allow to push directories to the device
+   * fixes issue 192
+   * see https://github.com/jayway/maven-android-plugin/pull/63
+   * contributed by Roman Zimmer http://sprylab.com
+
+ * Start apk with debug flag for run goal
+   * fixes issue 199 
+   * see https://github.com/jayway/maven-android-plugin/pull/64
+   * contributed by cherrydev 
+
+
+
 API/Configuration Changes:
 
  * *Upgrade to Maven 3.0.3+ *
