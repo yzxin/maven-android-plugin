@@ -44,9 +44,6 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
  * fixed StringIndexOutOfBoundException when instrumentation test report AssertionError 
    * contributed by Manfred Moser,  http://simpligility.com 
 
- * fixed StringIndexOutOfBoundException when instrumentation test report AssertionError 
-   * contributed by Manfred Moser,  http://simpligility.com 
-
  * support for all instrumentation test configuration parameters to be supplied as properties or in plugin configuration
    * contributed by Manfred Moser,  http://simpligility.com 
 
@@ -60,7 +57,9 @@ API/Configuration Changes:
 
  * *Upgrade to Maven 3.0.3+ *
  * renamed all plugin configuration from {{{<artifactId>maven-android-plugin</artifactId>}}} to *{{{<artifactId>android-maven-plugin</artifactId>}}}*
- * support for debug parameter for run goal as android.run.debug as property value in pom, settings or command line or in plugin configuration as <configuration><run><debug>true|false</debug></run>..
+ * support for debug parameter for run goal as android.run.debug as property value in pom, settings or command line or in plugin configuration as  {{{
+<configuration><run><debug>true|false</debug></run>}}}
+ * refactored enableIntegrationTest parameter to android.test.skip also see next.. 
  * support for test configuration parameters to be supplied in pom like so
 {{{
 <test>
