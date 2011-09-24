@@ -62,7 +62,7 @@ API/Configuration Changes:
 {{{
 <configuration><run><debug>true|false</debug></run></configuration>
 }}}
- * refactored enableIntegrationTest parameter to android.test.skip also see next.. 
+ * refactored *enableIntegrationTest* parameter to *android.test.skip* also see next.. 
  * support for test configuration parameters to be supplied in pom like so
 {{{
 <configuration>
