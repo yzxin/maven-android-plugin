@@ -54,6 +54,9 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
  * internal refactor of all pure config pojos into separate package and other cleanup
    * contributed by Manfred Moser,  http://simpligility.com 
 
+ * refactored configuration parameters for manifest update mojo to be contained in <manifest> element 
+   * contributed by Manfred Moser,  http://simpligility.com 
+
 API/Configuration Changes:
 
  * *Upgrade to Maven 3.0.3+ *
@@ -84,6 +87,21 @@ API/Configuration Changes:
 </test>
 </configuration>
 }}}
+ * changed manifest update configuration to be contained in element in pom like so
+{{{
+<configuration>
+  <manifest>
+    <versionName></versionName>
+    <versionCode>123</versionCode>
+    <versionCodeAutoIncrement>true|false</versionCodeAutoIncrement>
+    <versionCodeUpdateFromVersion>true|false</versionCodeUpdateFromVersion>
+    <sharedUserId>anId</sharedUserId>
+    <debuggable>true|false</debuggable>
+  </manifest>
+</configuration>
+}}}
+or have the manifest as part of the configuration property like e.g. 
+android.manifest.debuggable or android.manifest.sharedUserId
 
 === Maven Android Plugin 3.0.0-alpha-7 ===
 
