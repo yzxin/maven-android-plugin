@@ -70,6 +70,9 @@ git config --global core.autocrlf true
 git config --global core.autocrlf input
 }}}
 
+==Code Conventions==
+
+We have few conventions and are pretty lax about it but we do have some best practice documented on CodeConventions
 
 ==Work on the right branch!==
 
