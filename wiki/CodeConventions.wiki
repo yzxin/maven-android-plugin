@@ -40,7 +40,7 @@ Documentation for the configuration should be with the parameter in the mojo.
 
 So what do we achieve with this:
 
-* configuration in the pom or settings file as part of the plugin configuration is possible like so
+  * configuration in the pom or settings file as part of the plugin configuration is possible like so
 {{{
 <configuration>
   <run>
@@ -48,13 +48,13 @@ So what do we achieve with this:
   </run>
 </configuration>
 }}}
-* properties can be used pom or settings file like so
+  * properties can be used pom or settings file like so
 {{{
 <properties>
     <run.debug>true</run.debug>
 </properties>
 }}}
 
-* command-line with parameter can be used as -Dandroid.run.debug
+  * command-line with parameter can be used as -Dandroid.run.debug
 
-* the plugin documentation as produced with the site plugin has the configuration for the run goal together since run and runDebug all together when alphabetical sorting applies..  
+  * the plugin documentation as produced with the site plugin has the configuration for the run goal together since run and runDebug all together when alphabetical sorting applies..  
