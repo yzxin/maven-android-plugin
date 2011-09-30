@@ -1,4 +1,4 @@
-#summary Glossary of terms used in Maven Android Plugin.
+#summary Glossary of terms used in Android Maven Plugin.
 
 ----
 <sup>This page is related to [http://code.google.com/p/maven-android-plugin/issues/detail?id=6 Issue 6].</sup>
@@ -6,7 +6,7 @@
 
 == General ==
 
-The rule(s) of thumb for naming things in Maven Android Plugin, are:
+The rule(s) of thumb for naming things in Android Maven Plugin, are:
  * They should reflect the way other things in Maven-world are named.
  * In second hand, when there is no appropriate name for it in Maven-world, use whatever it is called in Android-world.
 

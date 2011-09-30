@@ -12,7 +12,7 @@
 or in older releases
  
   {{{
-  mvn help:describe -Dplugin=com.jayway.maven.plugins.android.generation2:maven-android-plugin
+  mvn help:describe -Dplugin=com.jayway.maven.plugins.android.generation2:android-maven-plugin
   }}}
 
 
@@ -29,7 +29,7 @@ https://github.com/juven/maven-bash-completion
 
 === Shorter commandline ===
 
-_If you only execute {{{mvn android:...}}} commands from the root of a Maven project where the {{{pom.xml}}} is configured for the maven-android-plugin, you don't need this configuration. It helps when you want to execute commands from other directories though._
+_If you only execute {{{mvn android:...}}} commands from the root of a Maven project where the {{{pom.xml}}} is configured for the android-maven-plugin, you don't need this configuration. It helps when you want to execute commands from other directories though._
 
 Without any special settings, you can run standalone goals *from root directory of a Maven/Android project* like this: 
 
@@ -40,7 +40,7 @@ Without any special settings, you can run standalone goals *from root directory 
 ... and from *any other directory* like this:
 
   {{{
-  mvn com.jayway.maven.plugins.android.generation2:maven-android-plugin:deploy -Dandroid.file=myApp.apk
+  mvn com.jayway.maven.plugins.android.generation2:android-maven-plugin:deploy -Dandroid.file=myApp.apk
   }}}
 
 With an extra setting, you can do it *in any directory* as easy as this:

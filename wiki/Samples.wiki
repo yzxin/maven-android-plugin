@@ -11,14 +11,14 @@ This link will take you to samples for testing the latest 2.9.0-beta of maven-an
 
 --> [http://github.com/jayway/maven-android-plugin-samples/archives/beta Download samples from the beta branch]
 
-This link will take you to samples for testing the latest 3.0.0-alpha of maven-android-plugin:
+This link will take you to samples for testing the latest 3.0.0-alpha of android-maven-plugin:
 
 --> [http://github.com/jayway/maven-android-plugin-samples/archives/alpha Download samples from the alpha branch]
 
 
 === Important notes: ===
 
- #. Use the above links to get a correct version of the samples! Then you will automatically use a proper released version of maven-android-plugin. If you would use the very latest "master" version of the samples, they will require that you compile the plugin by yourself first. (Full explanation about correct version is on the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 Source] tab.)
+ #. Use the above links to get a correct version of the samples! Then you will automatically use a proper released version of android-maven-plugin. If you would use the very latest "master" version of the samples, they will require that you compile the plugin by yourself first. (Full explanation about correct version is on the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 Source] tab.)
  #. Make sure to choose a location with a short path to unzip the package; it has deeply nested structures and you want to stay within the path length limits of your OS. Windows is known to skip some deeply located files when the complete directory path becomes too long.
 
 == What are the samples? ==
@@ -49,9 +49,9 @@ The !LibraryProjects example in the _beta_ link above, shows how to set up Andro
 More documentation on Android Library Projects: ApkLib.
 
 === !ApiDemos ===
-!ApiDemos is a sample application that comes with the Android SDK converted to use a Maven Android Plugin based build. 
+!ApiDemos is a sample application that comes with the Android SDK converted to use a Android Maven Plugin based build.
 
-The samples are meant to show you how to create a {{{pom.xml}}} and structure your project to work with Maven Android Plugin.
+The samples are meant to show you how to create a {{{pom.xml}}} and structure your project to work with Android Maven Plugin.
 
 For example, the apidemos sample has this structure:
 {{{
@@ -91,5 +91,5 @@ For example if you have set up your development environment according to Getting
 
 When you build from that directory, you will build both the application project and instrumentation test project. They both generate an apk each.
 
-As part of the {{{apidemos-15-instrumentationtest}}} project, Maven Android Plugin will deploy both apk files to the connected device or emulator and
+As part of the {{{apidemos-15-instrumentationtest}}} project, Android Maven Plugin will deploy both apk files to the connected device or emulator and
 run the instrumentation tests inside the device.

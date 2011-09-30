@@ -4,7 +4,7 @@
 
 This article describes how to use the Maven jarsigner plugin to sign an android application with a proper key store, rather then the debug one. This is the recommended way to sign your Android application when using Maven to build it.
 
-A fully working application of signing, zipaligning and proguarding is available in the MorseFlash application that is part of the Maven Android Samples project.
+A fully working application of signing, zipaligning and proguarding is available in the MorseFlash application that is part of the Android Maven Samples project.
 
 = Details =
 

@@ -1,4 +1,4 @@
-#summary Building for Android Add-Ons using Maven Android Plugin
+#summary Building for Android Add-Ons using Android Maven Plugin
 
 = Introduction =
 

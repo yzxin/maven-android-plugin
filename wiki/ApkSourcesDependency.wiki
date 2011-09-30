@@ -4,7 +4,7 @@
 
 _You should probably use Android Library Projects (ApkLib) instead._
 
-_!ApkSourcesDependency was introduced in Maven Android Plugin long before Google supplied a way to use libraries in Android development. Now that both the official Android tools and Maven Android Plugin support proper Android Library Projects, use will probably want to use that instead: ApkLib_
+_!ApkSourcesDependency was introduced in Android Maven Plugin long before Google supplied a way to use libraries in Android development. Now that both the official Android tools and Android Maven Plugin support proper Android Library Projects, use will probably want to use that instead: ApkLib_
 
 = Introduction =
 
@@ -39,7 +39,7 @@ In the apk project you wish to make available to other project as sources, decla
  <packaging>apk</packaging>
 }}}
 
-Also, add this to the maven-android-plugin's {{{<configuration>}}} tag:
+Also, add this to the android-maven-plugin's {{{<configuration>}}} tag:
 
 {{{
  <attachSources>true</attachSources>

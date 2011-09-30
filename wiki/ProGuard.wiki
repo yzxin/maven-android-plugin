@@ -1,4 +1,4 @@
-#summary How to use ProGuard with maven-android-plugin
+#summary How to use ProGuard with android-maven-plugin
 #labels ProGuard
 
 = Introduction =
@@ -7,7 +7,7 @@ When packaging an apk, all classes of all libraries used by the program will be 
 
 = Details =
 
-The possibility to use !ProGuard together with maven-android-plugin was introduced in maven-android-plugin 2.6.0, with this patch:
+The possibility to use !ProGuard together with android-maven-plugin was introduced in version 2.6.0 of this plugin, with this patch:
 
 http://github.com/jayway/maven-android-plugin/pull/2 
 
@@ -64,7 +64,7 @@ Complete setup with more options and operating system switch for different rt.ja
 
 https://github.com/jayway/maven-android-plugin-samples/blob/stable/morseflash/morseflash-app/pom.xml
 
-Use maven-android-plugin with scala and !ProGuard
+Use android-maven-plugin with scala and !ProGuard
 
 http://github.com/jayway/maven-android-plugin-samples/tree/stable/scala/
 

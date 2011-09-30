@@ -1,4 +1,4 @@
-#summary Documentation collection for Maven Android Plugin
+#summary Documentation collection for Android Maven Plugin
 #labels Featured
 
 = Maven: The Complete Reference - Android chapter =
@@ -11,7 +11,7 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
 
 == Start here ==
  * [GettingStarted] quickly!
- * See some [Samples] of how to use Maven Android Plugin
+ * See some [Samples] of how to use Android Maven Plugin
  * [TipsAndTricks Tips and tricks] for using the plugin even easier!
 
 == Eclipse ==

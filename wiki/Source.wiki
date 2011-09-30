@@ -27,9 +27,9 @@ Go to --> [Samples] page instead :)
 
 =What is this not?=
 
-This source code page is only useful for developers of the maven-android-plugin, and for those who develop and maintain the samples.
+This source code page is only useful for developers of the android-maven-plugin, and for those who develop and maintain the samples.
 
-All Android *application developers* (who want to copy and *use* the samples), please go to the [Samples] page instead, where you will get a version of the samples source code which use a released version of the maven-android-plugin.
+All Android *application developers* (who want to copy and *use* the samples), please go to the [Samples] page instead, where you will get a version of the samples source code which use a released version of the android-maven-plugin.
 
 --> [Samples] <-- Application developers, go there now
 
@@ -90,11 +90,11 @@ This is especially important to be able to create good Pull Requests (see below)
 ===maven-android-plugin===
 
 || *maven-android-plugin-2.x* || *master* ||
-|| Active integration branch for versions in the 2.x series of maven-android-plugin.<br/>Base your feature and bugfix branches off of this one, if you want your code to end up in version 2.9.0, 2.10.0 etc...<br/>Uses Maven 2.||Active integration branch for versions in the 3.x series of maven-android-plugin.<br/>Base your feature and bugfix branches off of this one, if your code changes the way anything existing works, so that existing builds may be affected. This includes for example renamed or removed parameters, or changing the behavior of an existing configuration parameter.<br/>Will require Maven 3, so any patches which require Maven 3 should go here as well.||	
+|| Active integration branch for versions in the 2.x series of maven-android-plugin.<br/>Base your feature and bugfix branches off of this one, if you want your code to end up in version 2.9.0, 2.10.0 etc...<br/>Uses Maven 2.||Active integration branch for versions in the 3.x series of android-maven-plugin.<br/>Base your feature and bugfix branches off of this one, if your code changes the way anything existing works, so that existing builds may be affected. This includes for example renamed or removed parameters, or changing the behavior of an existing configuration parameter.<br/>Will require Maven 3, so any patches which require Maven 3 should go here as well.||
 
 ===maven-android-plugin-samples===
 || *stable* || *beta* || *2.x-snapshot* || *master* ||
-|| Samples in this branch use the latest non-beta release of maven-android-plugin.<br/>It is meant to be suitable for any user. || Samples in this branch use the latest release of maven-android-plugin, even if that version happens to be a beta version.<br/>It it meant to be used by users comfortable with running beta software. || Samples in this branch use the SNAPSHOT version in the maven-android-plugin-2.x branch of maven-android-plugin.<br/>This is mainly for testing the state of that branch. || Samples in this branch use the SNAPSHOT version in the master branch of maven-android-plugin.<br/>This is mainly for testing the state of that branch. ||
+|| Samples in this branch use the latest non-beta release of maven-android-plugin.<br/>It is meant to be suitable for any user. || Samples in this branch use the latest release of maven-android-plugin, even if that version happens to be a beta version.<br/>It it meant to be used by users comfortable with running beta software. || Samples in this branch use the SNAPSHOT version in the maven-android-plugin-2.x branch of maven-android-plugin.<br/>This is mainly for testing the state of that branch. || Samples in this branch use the SNAPSHOT version in the master branch of android-maven-plugin.<br/>This is mainly for testing the state of that branch. ||
 
 
 ==Submit!==

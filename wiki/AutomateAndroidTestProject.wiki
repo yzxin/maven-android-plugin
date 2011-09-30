@@ -3,7 +3,7 @@
 
 = Automating Android test projects with Maven =
 
-This guide will show how an android test project created using Eclipse can be set up to build and execute using the maven android plugin. This article assumes you have already performed the steps in the QuickStartForEclipseProject article.
+This guide will show how an android test project created using Eclipse can be set up to build and execute using the Android Maven Plugin. This article assumes you have already performed the steps in the QuickStartForEclipseProject article.
 
 To enable maven builds in your test project you need to create the following pom file in the project root.
 

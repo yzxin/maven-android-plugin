@@ -8,7 +8,7 @@ An Android Library Project is a project intended for inclusion in other Android 
 
 When this works well, it should deprecate ApkSourcesDependency.
 = Help test this =
-Support for Android library projects in Maven Android Plugin has been our number 1 most starred issue (Issue 96) for a long time. There is support for it from maven-android-plugin version 2.9.0-beta-1 and onwards.
+Support for Android library projects in Android Maven Plugin has been our number 1 most starred issue (Issue 96) for a long time. There is support for it from version 2.9.0-beta-1 and onwards.
 
 Please try it out:
 
@@ -22,13 +22,13 @@ Please try it out:
 }}}
 _(Check the [Changelog] for current version, in case this wiki page is left behind...)_
 
-Beta releases can be used just like any other release on Maven Central, without compiling maven-android-plugin from source.
+Alpha and beta releases can be used just like any other release on Maven Central, without compiling android-maven-plugin from source.
 
 File any issues in the [http://code.google.com/p/maven-android-plugin/issues/list issue tracker].
 
 == Samples ==
 
-The [Samples] page has a link to beta samples, which use the latest beta version of Maven Android Plugin. The beta samples contain specific sample projects for testing the Android Library Project functionality.
+The [Samples] page has a link to beta samples, which use the latest beta version of Android Maven Plugin. The beta samples contain specific sample projects for testing the Android Library Project functionality.
 
 Those samples do not include any aidl testing, so please test aidl files and report both issues and any success.
 

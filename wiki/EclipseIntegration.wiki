@@ -3,11 +3,11 @@
 
 = Introduction =
 
-Android's official development effort provides solid support for Eclipse integration, and we'd like to make sure maven-android-plugin helps bridge Maven, Android, and Eclipse. This page will help us collect information on what works and doesn't work.
+Android's official development effort provides solid support for Eclipse integration, and we'd like to make sure android-maven-plugin helps bridge Maven, Android, and Eclipse. This page will help us collect information on what works and doesn't work.
 
 == The solution ==
 
-To make maven-android-plugin work well in Eclipse with ADT, this is what you need:
+To make android-maven-plugin work well in Eclipse with ADT, this is what you need:
 
  * Go to the project [http://rgladwell.github.com/m2e-android/ m2e-android] and follow their instructions.
 

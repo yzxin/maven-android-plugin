@@ -1,4 +1,4 @@
-#summary Get started using Maven Android Plugin
+#summary Get started using Android Maven Plugin
 #labels Featured
 
 Documentation in book form is available with the Android chapter of the free book
@@ -49,12 +49,12 @@ Alternatively, these are the steps to create an Android project manually:
 The currently valid dependencies versions are  1.5_r4, 1.6_r2, 2.1.2 and 2.2.1. 
 Use one of these depending on the platform version you are developing against.
 
-     * In the maven-android-plugin configuration, set the correct platform number which corresponds to the version you declared for the android dependency, for example: {{{<platform>7</platform>}}}. You can use API level (e.g. 7) or platform version (e.g. 2.1)
-  <li>You won't need these files/directories with Maven Android Plugin, so you can remove them:</li>
+     * In the android-maven-plugin configuration, set the correct platform number which corresponds to the version you declared for the android dependency, for example: {{{<platform>7</platform>}}}. You can use API level (e.g. 7) or platform version (e.g. 2.1)
+  <li>You won't need these files/directories with Android Maven Plugin, so you can remove them:</li>
      {{{
      rm -r bin build.xml build.properties libs
      }}}
-     _The {{{default.properties}}} file is currently not used by Maven Android Plugin, but will be, so leave that in place for now. {{{default.properties}}} and the {{{gen}}} folder are used by the ADT plugin in Eclipse, if you use that._<br/>
+     _The {{{default.properties}}} file is currently not used by Android Maven Plugin, but will be, so leave that in place for now. {{{default.properties}}} and the {{{gen}}} folder are used by the ADT plugin in Eclipse, if you use that._<br/>
      _(Also leave the "test" folder for now. You can later move it out to its own project. If you want, you can then look at the {{{apidemos-15-instrumentationtest}}} sample project.)_
   <li>To build your apk, simply:</li>
      {{{
@@ -71,9 +71,9 @@ Use one of these depending on the platform version you are developing against.
 
 Notes:
 
- # Do not put tests in {{{src/test/java}}} that you want to be run by the Maven Android plugin. If you put your tests there, Maven runs them as normal JUnit tests in the JVM, with the JAR files that are accessible on the classpath, which includes the android.jar. Because the android.jar only contains empty methods that throw exceptions, you get exceptions of the form {{{java.lang.RuntimeException: Stub!}}}. Instead, the tests need to go in {{{src/main/java}}}, where they will not be run by Maven as tests during compilation, but will be included in the apk and deployed and run on the device (where the android.jar has method implementations instead of stubs).
+ # Do not put tests in {{{src/test/java}}} that you want to be run by the Android Maven Plugin. If you put your tests there, Maven runs them as normal JUnit tests in the JVM, with the JAR files that are accessible on the classpath, which includes the android.jar. Because the android.jar only contains empty methods that throw exceptions, you get exceptions of the form {{{java.lang.RuntimeException: Stub!}}}. Instead, the tests need to go in {{{src/main/java}}}, where they will not be run by Maven as tests during compilation, but will be included in the apk and deployed and run on the device (where the android.jar has method implementations instead of stubs).
  # If you have JUnit tests that don't call any Android APIs (directly or transitively), put them in {{{src/test/java}}} so JUnit runs them locally and more quickly than if run on the device.
- # Make sure the Maven Android goal is set to {{{<goal>jar-no-fork</goal>}}} instead of {{{<goal>test-jar-no-fork</goal>}}}. Do this even for projects that only contain tests.
+ # Make sure the Android Maven goal is set to {{{<goal>jar-no-fork</goal>}}} instead of {{{<goal>test-jar-no-fork</goal>}}}. Do this even for projects that only contain tests.
 
 == Run instrumentation tests on device ==
 Check out the {{{apidemos-15-instrumentationtest}}} project in [Samples]`*`.

@@ -2,7 +2,7 @@
 
 = Automating Android builds with Maven =
 
-Below are the steps required to get up and running with the Maven Android plugin for an already existing Eclipse project. It will cause minimal disruption for team members that already use Eclipse and are happy with this.
+Below are the steps required to get up and running with the Android Maven Plugin for an already existing Eclipse project. It will cause minimal disruption for team members that already use Eclipse and are happy with this.
 
 Prerequisites are a working [http://maven.apache.org Maven 2.2.1] installation, and the [http://developer.android.com/sdk/index.html Android SDK].
 

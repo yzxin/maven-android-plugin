@@ -3,7 +3,7 @@
 
 = Introduction =
 
-This should be of no interest to developers of Android applications. This is for those developers of the Maven Android Plugin who perform releases of the plugin.
+This should be of no interest to developers of Android applications. This is for those developers of the Android Maven Plugin who perform releases of the plugin.
 
 
 = Setup environment =
@@ -56,7 +56,7 @@ it includes the required gpg-agent too.
 
 = Deploy a SNAPSHOT version =
 
-If you want to make available a binary version of Maven Android Plugin for someone to test, before making a proper release, deploy a SNAPSHOT version.
+If you want to make available a binary version of Android Maven Plugin for someone to test, before making a proper release, deploy a SNAPSHOT version.
 
 Don't worry, it will sit in a separate directory structure from the proper releases. It won't end up on Maven Central.
 
@@ -130,7 +130,7 @@ Check if there is anything you need to {{{svn add}}}:
 Go ahead and commit the updated site.
 
   {{{
-  svn ci -m 'Generated maven site for maven-android-plugin 2.0.1.'
+  svn ci -m 'Generated maven site for android-maven-plugin 3.0.0-alpha-11.'
   }}}
 
 Mime-types should hopefully be correct. Check at http://maven-android-plugin-m2site.googlecode.com/svn/index.html
@@ -158,13 +158,13 @@ Try the updated samples with an emulator or usb device:
 Commit the updates to git:
 
   {{{
-  git commit -m 'Use the most recently released version of maven-android-plugin.'
+  git commit -m 'Use the most recently released version of android-maven-plugin.'
   }}}
 
 ----
 == WAIT UNTIL THE RELEASE IS SYNCED TO CENTRAL: ==
 
-http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/maven-android-plugin/
+http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/android-maven-plugin/
 ----
 
 == "Half" release samples ==
@@ -194,7 +194,7 @@ Update the samples' root {{{pom.xml}}} file to use the next SNAPSHOT version of 
 Commit the updates to git:
 
   {{{
-  git commit -m 'Use the next SNAPSHOT version of maven-android-plugin.'
+  git commit -m 'Use the next SNAPSHOT version of android-maven-plugin.'
   }}}
 
 == Update Samples wiki page ==
