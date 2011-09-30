@@ -24,6 +24,7 @@
 *Reference*
 
   * [Documentation]
+  * [PluginRenamed]
   * [LinksBlogsAndMore Links, blogs and more]
   * [Presentations]
   * [PeopleUsingThis People Using This]
