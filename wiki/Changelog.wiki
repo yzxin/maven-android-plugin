@@ -16,7 +16,7 @@ Includes all changes from from the 2.x release series.
 The 3.0.0-alphas are already very usable, and the alpha mark really only means that you should expect "API" breaking changes during the alphas, until it reaches beta. Specifically, we will change a bunch of configuration parameters and some might even be removed. This means you will need to look at the changelog for *text in bold* before upgrading to an alpha version.
 
 
-=== Android Maven Plugin 3.0.0-alpha-11, not yet released ===
+=== Android Maven Plugin 3.0.0-alpha-11, being synced to Maven Central... ===
 
  * refactored name of plugin to *android-maven-plugin*
    * *THIS MEANS ALL USERS MUST UPDATE THEIR POMS*
@@ -27,7 +27,7 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
 API/Configuration Changes:
  * renamed all plugin configuration from {{{<artifactId>maven-android-plugin</artifactId>}}} to *{{{<artifactId>android-maven-plugin</artifactId>}}}*
 
-=== Maven Android Plugin 3.0.0-alpha-11, not yet released ===
+=== Maven Android Plugin 3.0.0-alpha-11, being synced to Maven Central... ===
 
  * This is the last 3.x-series release under the name {{{maven-android-plugin}}}. From now on, the plugin is known as {{{android-maven-plugin}}}. See above.
  * Added forward-pointing relocation meta-data to artifactId {{{android-maven-plugin}}}.
