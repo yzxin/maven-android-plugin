@@ -1,5 +1,4 @@
 #summary Plugin was renamed to android-maven-plugin.
-#labels Featured
 
 = What has happened? =
 
