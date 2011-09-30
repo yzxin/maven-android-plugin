@@ -34,7 +34,7 @@ Now a pom.xml needs to be created that holds information which is similar for bo
             </plugin>
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                <artifactId>maven-android-plugin</artifactId>
+                <artifactId>android-maven-plugin</artifactId>
                 <configuration>
                     <sdk>
                         <path>${env.ANDROID_HOME}</path>
