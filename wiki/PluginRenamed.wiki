@@ -1,0 +1,20 @@
+#summary Plugin was renamed to android-maven-plugin.
+#labels Featured
+
+= What has happened? =
+
+This plugin was recently renamed to *{{{android-maven-plugin}}}*.
+
+= Does it affect me? =
+For anyone using version 3.0.0-alpha-11 or greater, *{{{android-maven-plugin}}}* is the name to use. Previous versions will always be available under the old name {{{maven-android-plugin}}}.
+
+= What do I need to do? =
+In your Android app projects, change all occurances of {{{maven-android-plugin}}} to *{{{android-maven-plugin}}}*.
+
+If you're on a Unix-like system, this command might work:
+{{{
+find . -name pom.xml -exec sed -r 's/maven-android-plugin/android-maven-plugin/g' -i {} \;
+}}}
+
+= Why? =
+Please read [https://groups.google.com/d/topic/maven-android-developers/KS1xPtNlHEk/discussion the discussion thread leading up to the renaming decision].
