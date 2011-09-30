@@ -12,13 +12,13 @@ This sections deals with our approach to configuration parameters.
 
 The following approach is slowly being implemented for the 3.0.0 release to allow for a useful and consistent plugin documentation via the Maven site plugin as well as in the javadoc and providing a relatively clean configuration in the pom or settings file as well as via the command line.
 
-I am going to explain this with the RunMojo as an example. 
+I am going to explain this with the !RunMojo as an example. 
 
 Each mojo should have a configuration object in com.jayway.maven.plugins.android.configuration and named like the goal ideally.
 
 This object is a pojo with setters. See the Run class.
 
-This object is then used as a @parameter in the mojo (RunMojo).
+This object is then used as a @parameter in the mojo (!RunMojo).
 
 Each pojo attribute has to have a mirror in the mojo named with the goal prepended and a parameter expression of android.goalname.parametername. So it would look like this simplified.
 
