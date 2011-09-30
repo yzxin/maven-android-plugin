@@ -17,7 +17,8 @@ find . -name pom.xml -exec sed -r 's/maven-android-plugin/android-maven-plugin/g
 
 = Why? =
 Please read [https://groups.google.com/d/topic/maven-android-developers/KS1xPtNlHEk/discussion the discussion thread leading up to the renaming decision].
-
+<br/>
+----
 = TODO =
 Here is a list of stuff we need to do to finish the work of renaming the plugin:
  * ~~Update the plugin source code.~~
