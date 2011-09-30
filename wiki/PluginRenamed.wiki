@@ -17,3 +17,16 @@ find . -name pom.xml -exec sed -r 's/maven-android-plugin/android-maven-plugin/g
 
 = Why? =
 Please read [https://groups.google.com/d/topic/maven-android-developers/KS1xPtNlHEk/discussion the discussion thread leading up to the renaming decision].
+
+= TODO =
+Here is a list of stuff we need to do to finish the work of renaming the plugin:
+ * ~~Update the plugin source code.~~
+ * ~~Release the plugin with the old name and a {{{<relocation>}}} configuration.~~
+ * ~~Release the plugin with the new name.~~
+ * ~~Update the front page of the Google Code project website.~~
+ * ~~Update the [Samples] source code.~~
+ * Update all relevant pages on the wiki.
+ * Update the maven complete reference book chapter.
+ * Update the maven archetype.
+
+When one of the above is done, please edit this page and check it off. For wiki edit permissions, please email hugo@josefson.org.
