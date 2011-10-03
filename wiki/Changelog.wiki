@@ -23,8 +23,11 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
    * contributed by Manfred Moser,  http://simpligility.com 
 
  * refactored configuration for dex and run goals, updated lots of documentation, cleaned up so parameters work from command line, properties, pom file and settings file
+   * see https://github.com/jayway/maven-android-plugin/commit/c8f49952391ffdb77696d762132a90f39a3079a6
    * contributed by Manfred Moser,  http://simpligility.com 
-
+ * android.test.debug value can be empty and defaults to auto then
+   * see https://github.com/jayway/maven-android-plugin/commit/c8f49952391ffdb77696d762132a90f39a3079a6
+   * contributed by Manfred Moser,  http://simpligility.com 
 
 
 API/Configuration Changes:
@@ -35,7 +38,7 @@ API/Configuration Changes:
     <debug>true</debug>
 </run>
 }}}
-* dex configuration ow nest and so on like run config
+ * dex configuration ow nest and so on like run config
 {{{
 <dex>
   <jvmArguments>
