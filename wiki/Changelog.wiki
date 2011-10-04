@@ -63,6 +63,8 @@ API/Configuration Changes:
 API/Configuration Changes:
  * renamed all plugin configuration from {{{<artifactId>maven-android-plugin</artifactId>}}} to *{{{<artifactId>android-maven-plugin</artifactId>}}}*
 
+----
+
 === Maven Android Plugin 3.0.0-alpha-11 ===
 
  * This is the last 3.x-series release under the name {{{maven-android-plugin}}}. From now on, the plugin is known as {{{android-maven-plugin}}}. See above.
