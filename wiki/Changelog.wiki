@@ -29,7 +29,7 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
    * see https://github.com/jayway/maven-android-plugin/commit/c8f49952391ffdb77696d762132a90f39a3079a6
    * contributed by Manfred Moser,  http://simpligility.com 
  * support for directories in the pull goal
-    * fixes Issue 292
+    * see Issue 292
     * see https://github.com/jayway/maven-android-plugin/pull/66
     * contributed by Roman Zimmer http://sprylab.com
 
