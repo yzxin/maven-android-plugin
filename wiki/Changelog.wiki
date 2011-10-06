@@ -32,6 +32,10 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
     * fixes issue 205
     * see https://github.com/jayway/maven-android-plugin/pull/66
     * contributed by Roman Zimmer http://sprylab.com
+ * pull and push mojo now support nested configuration in the pom following the codeconvention
+   * see https://github.com/jayway/maven-android-plugin/pull/67
+   * contributed by Manfred Moser,  http://simpligility.com 
+ 
 
 API/Configuration Changes:
 
@@ -41,7 +45,7 @@ API/Configuration Changes:
     <debug>true</debug>
 </run>
 }}}
- * dex configuration ow nest and so on like run config
+ * dex configuration now nest and so on like run config
 {{{
 <dex>
   <jvmArguments>
@@ -53,7 +57,20 @@ API/Configuration Changes:
   <optimize>true|false</optimize>
 </dex>
 }}}
-
+ * push configuration now nest and so on like run config
+{{{
+<push>
+    <source>path</source>
+    <destination>path</destination>
+</push>
+}}}
+ * pull configuration now nest and so on like run config
+{{{
+<pull>
+    <source>path</source>
+    <destination>path</destination>
+</pull>
+}}}
 === Android Maven Plugin 3.0.0-alpha-11 ===
 
  * refactored name of plugin to *android-maven-plugin*
