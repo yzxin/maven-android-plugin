@@ -36,8 +36,12 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
    * see https://github.com/jayway/maven-android-plugin/pull/67
    * contributed by Manfred Moser,  http://simpligility.com 
  
+Samples project changes:
+ 
+ * update morseflash example setup to use the manifest-update goal for debuggable and versionCodeAutoIncrement 
+   * contributed by Manfred Moser,  http://simpligility.com 
 
-API/Configuration Changes:
+API/Configuration Changes
 
  * run configuration now nested in pom and using parameter android.run.debug for command line or run.debug for property
 {{{
@@ -51,7 +55,7 @@ API/Configuration Changes:
   <jvmArguments>
     <jvmArgument>-Xms256m</jvmArgument>
     <jvmArgument>-Xmx512m</jvmArgument>
-  </jvmArguments>
+  </jvmArguments> 
   <coreLibrary>true|false</coreLibrary>
   <noLocals>true|false</noLocals>
   <optimize>true|false</optimize>
