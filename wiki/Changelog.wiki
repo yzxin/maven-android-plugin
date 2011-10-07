@@ -45,7 +45,7 @@ API/Configuration Changes:
     <debug>true</debug>
 </run>
 }}}
- * dex configuration now nest and so on like run config
+ * dex configuration now nested and so on like run config
 {{{
 <dex>
   <jvmArguments>
@@ -57,20 +57,21 @@ API/Configuration Changes:
   <optimize>true|false</optimize>
 </dex>
 }}}
- * push configuration now nest and so on like run config
+ * push configuration now nested and so on like run config
 {{{
 <push>
     <source>path</source>
     <destination>path</destination>
 </push>
 }}}
- * pull configuration now nest and so on like run config
+ * pull configuration now nested and so on like run config
 {{{
 <pull>
     <source>path</source>
     <destination>path</destination>
 </pull>
 }}}
+
 === Android Maven Plugin 3.0.0-alpha-11 ===
 
  * refactored name of plugin to *android-maven-plugin*
