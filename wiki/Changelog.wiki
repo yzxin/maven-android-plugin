@@ -19,7 +19,7 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
 
  * your improvements could be right here!
 
-=== Android Maven Plugin 3.0.0-alpha-12, being released... ===
+=== Android Maven Plugin 3.0.0-alpha-12 ===
 
  * upgraded to `r13` of ddmlib, that is now available in central
    * special thanks to Ladislav Thon and Robert Manning
