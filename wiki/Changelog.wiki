@@ -17,6 +17,10 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
 
 === Android Maven Plugin 3.0.0-alpha-13, not yet released ===
 
+ * improved error message for apkbuilder
+    * see https://github.com/jayway/maven-android-plugin/pull/69
+    * contributed by Mykola Nikishov https://manandbytes.wordpress.com/
+
  * your improvements could be right here!
 
 === Android Maven Plugin 3.0.0-alpha-12 ===
