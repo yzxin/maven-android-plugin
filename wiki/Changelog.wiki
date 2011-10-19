@@ -20,7 +20,6 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
  * improved error message for apkbuilder
     * see https://github.com/jayway/maven-android-plugin/pull/69
     * contributed by Mykola Nikishov https://manandbytes.wordpress.com/
-
  * Fix for transient dependency issue with native libs
     * see https://github.com/jayway/maven-android-plugin/pull/70
     * contributed by Johan Lindquist 
