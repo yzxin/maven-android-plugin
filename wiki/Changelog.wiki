@@ -27,6 +27,9 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
  * Example for transient dependency with native libs
     * see https://github.com/jayway/maven-android-plugin-samples/pull/10/
     * contributed by Johan Lindquist 
+ * fix to changed call for apk tool in SDK r14
+    * see https://github.com/jayway/maven-android-plugin/pull/71
+    * contributed by Erik Ogenvik http://erikhjortsberg.blogspot.com
  * your improvements could be right here!
 
 === Android Maven Plugin 3.0.0-alpha-12 ===
