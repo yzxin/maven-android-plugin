@@ -24,10 +24,10 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
      * see https://github.com/jayway/maven-android-plugin-samples/pull/13 
      * see  https://github.com/jayway/maven-android-plugin-samples/pull/12
      * contributed by Johan Lindquist 
-   * updated example library project to api 10
+  * updated example library project to api 10
       * see https://github.com/jayway/maven-android-plugin-samples/pull/11
       * contributed by Luigi Agosti  http://www.luigiagosti.com
-   * samples project to no longer start any emulators
+  * samples project to no longer start any emulators
    * contributed by Manfred Moser http://simpligility.com
  * your improvements could be right here!
 
