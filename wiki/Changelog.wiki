@@ -202,9 +202,9 @@ API/Configuration Changes:
   <instrumentationRunner>className</instrumentationRunner>
   <debug>true|false</debug>
   <coverage>true|false</coverage>
-  <logonly>true|false</logonly>  avd
-  <testsize>small|medium|large</testsize>
-  <createreport>true|false</createreport>
+  <logOnly>true|false</logOnly>  avd
+  <testSize>small|medium|large</testSize>
+  <createReport>true|false</createReport>
   <classes>
     <class>your.package.name.YourTestClass</class>
   </classes>
