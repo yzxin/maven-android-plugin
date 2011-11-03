@@ -36,6 +36,12 @@ Sample project changes:
       * contributed by Luigi Agosti  http://www.luigiagosti.com
   * samples project to no longer start any emulators
    * contributed by Manfred Moser http://simpligility.com
+  * new samples project "Support4Demos" using compatibility library example
+   * contributed by Manfred Moser http://simpligility.com
+  * replaced android 1.5 ApiDemos example project with same project from 2.3.4 (platform 10)
+   * contributed by Manfred Moser http://simpligility.com
+  * explicitly forcing test reporting on in samples project on and adding all other test parameters in comment to showcase/test 
+   * contributed by Manfred Moser http://simpligility.com
 
 API/Configuration Changes:
   * new parameter genDirectoryAidl to specify target folder for aidl classes generated
