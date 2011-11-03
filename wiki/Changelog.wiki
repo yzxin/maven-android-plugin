@@ -20,6 +20,9 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
   * support for statically linked native libraries as dependencies 
     * see https://github.com/jayway/maven-android-plugin/pull/73
     * contributed by Johan Lindquist 
+  * new parameter for aidl classes location "genDirectoryAidl"
+    * see https://github.com/jayway/maven-android-plugin/pull/74
+    * contributed by Anthony Dahanne http://blog.dahanne.net
  * your improvements could be right here!
 
 Sample project changes:
@@ -33,6 +36,9 @@ Sample project changes:
       * contributed by Luigi Agosti  http://www.luigiagosti.com
   * samples project to no longer start any emulators
    * contributed by Manfred Moser http://simpligility.com
+
+API/Configuration Changes:
+  * new parameter genDirectoryAidl to specify target folder for aidl classes generated
 
 === Android Maven Plugin 3.0.0-alpha-13 ===
 
