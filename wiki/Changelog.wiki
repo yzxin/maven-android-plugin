@@ -23,6 +23,15 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
   * new parameter for aidl classes location "genDirectoryAidl"
     * see https://github.com/jayway/maven-android-plugin/pull/74
     * contributed by Anthony Dahanne http://blog.dahanne.net
+  * static lib support for NDK build 
+     * see https://github.com/jayway/maven-android-plugin/pull/77
+     * 
+
+  * exclusions
+     * see https://github.com/jayway/maven-android-plugin/pull/76
+     * contributed by Roberto Tyley http://www.guardian.co.uk/profile/roberto-tyley
+
+
  * your improvements could be right here!
 
 Sample project changes:
@@ -44,7 +53,9 @@ Sample project changes:
    * contributed by Manfred Moser http://simpligility.com
 
 API/Configuration Changes:
-  * new parameter genDirectoryAidl to specify target folder for aidl classes generated
+  * new parameter *genDirectoryAidl* to specify target folder for aidl classes generated
+  * new parameter to specify alternate ndk build file *android.ndk.ndk-build-executable*
+  * new parameter to specify build directory for ndk build step *android.ndk.ndk-build-directory*
 
 === Android Maven Plugin 3.0.0-alpha-13 ===
 
