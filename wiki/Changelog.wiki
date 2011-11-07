@@ -23,16 +23,13 @@ The 3.0.0-alphas are already very usable, and the alpha mark really only means t
   * new parameter for aidl classes location "genDirectoryAidl"
     * see https://github.com/jayway/maven-android-plugin/pull/74
     * contributed by Anthony Dahanne http://blog.dahanne.net
-  * static lib support for NDK build 
+  * Support for alternate build script and directory for NDK builds
      * see https://github.com/jayway/maven-android-plugin/pull/77
-     * 
-
-  * exclusions
+     * contributed by Johan Lindquist 
+  * Fix search for native artifacts to respect excluded dependencies
      * see https://github.com/jayway/maven-android-plugin/pull/76
      * contributed by Roberto Tyley http://www.guardian.co.uk/profile/roberto-tyley
-
-
- * your improvements could be right here!
+  * your improvements could be right here!
 
 Sample project changes:
 
