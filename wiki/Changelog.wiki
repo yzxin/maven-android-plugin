@@ -30,8 +30,11 @@ Sample project changes:
 
 API/Configuration Changes:
 
-  * new goal android:proguard, by default disabled, enable with 
-    <proguard><skip>false</skip></proguard> in the plugin configuration, by default uses a proguard.cfg file as used/created by the Android SDK
+  * new goal android:proguard, by default disabled, enable with
+{{{ 
+    <proguard><skip>false</skip></proguard>
+}}}
+ in the plugin configuration, by default uses a proguard.cfg file as used/created by the Android SDK
 
 === Android Maven Plugin 3.0.0-alpha-14 ===
 
