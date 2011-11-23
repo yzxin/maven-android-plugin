@@ -27,6 +27,9 @@ Sample project changes:
     * contributed by Manfred Moser http://simpligility.com
   * Release profile on morseflash example adapted to new proguard goal
     * contributed by Manfred Moser http://simpligility.com
+  * Native transitive dependency example fixed namespace so it works again
+     * contributed by Johan Lindquist 
+
 
 API/Configuration Changes:
 
