@@ -10,6 +10,9 @@ This page tries to link to blog posts and other documentation about using the An
 Attention .. this list is in reverse chronological order since older posts tend to have content that is not up to date and in some cases has been succeeded with better ways of doing the task at hand.
 
 || Date || Author || Title & Link ||
+
+|| 2011-11-23 || Fabrizio Giudici ||  http://www.slideshare.net/fabriziogiudici/dv11-c-17093-building-android-apps-with-maven] ||
+|| 2011-11-07 || Manfred Moser || [http://www.simpligility.com/2011/11/apache-maven-at-andevcon-ii/] ||
 || 2011-06-18 ||  Farrukh Najmi || [http://netbeans.dzone.com/nb-developing-android-apps Developing Android Apps with NetBeans, Maven, and VirtualBox] || 
 || 2011-02-09 || Roy Clarkson || [http://blog.springsource.com/2011/02/09/spring-android-and-maven-part-2/ Spring Android and Maven (Part 2)] || 
 || 2011-01-24 || ?? || [http://www.makeurownrules.com/rest-spring-maven-android RESTFul client using Spring+Maven on Android] ||
