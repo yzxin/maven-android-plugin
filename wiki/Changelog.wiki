@@ -5,21 +5,23 @@ _Tip: In order to see correct documentation for your plugin version you can buil
 
 = Changelog =
 
-Any *text in bold* below describes changes, which may cause existing builds to break. You may need to *update / clean up your project configuration*. This should only happen during alphas, btw.
+Any *text in bold* below describes changes, which may cause existing builds to break. You may need to *update / clean up your project configuration*. This should only happen during alphas, and between major versions.
 
 == Android Maven Plugin 3.x release series ==
 
 Requires Maven 3.
 
-Includes all changes from from the 2.x release series.
+A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-The 3.0.0-alphas are already very usable, and the alpha mark really only means that you should expect "API" breaking changes during the alphas, until it reaches beta. Specifically, we will change a bunch of configuration parameters and some might even be removed. This means you will need to look at the changelog for *text in bold* before upgrading to an alpha version.
+=== Android Maven Plugin 3.0.1, not yet released ===
 
-=== Android Maven Plugin 3.0.0, not yet released ===
+  * _your changes could be right here!_
+
+=== Android Maven Plugin 3.0.0, currently being released... ===
 
   * new proguard goal 
      * see https://github.com/jayway/maven-android-plugin/pull/78
-     * contributed by Jonson, Matthias Käppler http://brainflush.wordpress.com , Hugo Josefson http://bit.ly/hugojosefson and Manfred Moser http://simpligility.com
+     * contributed by Jonson, Matthias Käppler http://brainflush.wordpress.com , Hugo Josefson http://about.me/hugojosefson and Manfred Moser http://simpligility.com
 
 Sample project changes:
 
