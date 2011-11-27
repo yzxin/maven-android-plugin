@@ -76,26 +76,16 @@ We have few conventions and are pretty lax about it but we do have some best pra
 
 ==Work on the right branch!==
 
-Work happens on separate branches, which are branched off of the following listed ones.
+Work happens on separate issue branches, which are branched off of the master branch.
 
-For example, if you are fixing Issue 140, which applies to maven-android-plugin 2.9.0, create a separate branch for that, based on the maven-android-plugin-2.x branch. Like this:
+For example, if you are fixing Issue 1234, create a separate branch for that, based on the master branch. Like this:
 
 {{{
-git checkout maven-android-plugin-2.x
-git checkout -b issue-140
+git checkout master
+git checkout -b issue-1234
 }}}
 
 This is especially important to be able to create good Pull Requests (see below).
-
-===maven-android-plugin===
-
-|| *maven-android-plugin-2.x* || *master* ||
-|| Active integration branch for versions in the 2.x series of maven-android-plugin.<br/>Base your feature and bugfix branches off of this one, if you want your code to end up in version 2.9.0, 2.10.0 etc...<br/>Uses Maven 2.||Active integration branch for versions in the 3.x series of android-maven-plugin.<br/>Base your feature and bugfix branches off of this one, if your code changes the way anything existing works, so that existing builds may be affected. This includes for example renamed or removed parameters, or changing the behavior of an existing configuration parameter.<br/>Will require Maven 3, so any patches which require Maven 3 should go here as well.||
-
-===maven-android-plugin-samples===
-|| *stable* || *beta* || *2.x-snapshot* || *master* ||
-|| Samples in this branch use the latest non-beta release of maven-android-plugin.<br/>It is meant to be suitable for any user. || Samples in this branch use the latest release of maven-android-plugin, even if that version happens to be a beta version.<br/>It it meant to be used by users comfortable with running beta software. || Samples in this branch use the SNAPSHOT version in the maven-android-plugin-2.x branch of maven-android-plugin.<br/>This is mainly for testing the state of that branch. || Samples in this branch use the SNAPSHOT version in the master branch of android-maven-plugin.<br/>This is mainly for testing the state of that branch. ||
-
 
 ==Submit!==
 
@@ -114,4 +104,4 @@ And anybody can submit code through github!
 4. then click "Pull Request" on your repository to tell us there are changes to bring in.
 
 ===Sending patches===
-You may of course also send patches directly through the [http://code.google.com/p/maven-android-plugin/issues/list Issue tracker] or mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers].
+You may of course also send patches directly through the [http://code.google.com/p/maven-android-plugin/issues/list Issue tracker] or mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers]. However, pull requests sent via github are merged first.

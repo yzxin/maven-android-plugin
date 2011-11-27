@@ -7,18 +7,9 @@ This link will take you to the latest stable samples:
 
 --> [http://github.com/jayway/maven-android-plugin-samples/archives/stable Download samples from the stable branch]
 
-This link will take you to samples for testing the latest 2.9.0-beta of maven-android-plugin:
-
---> [http://github.com/jayway/maven-android-plugin-samples/archives/beta Download samples from the beta branch]
-
-This link will take you to samples for testing the latest 3.0.0-alpha of android-maven-plugin:
-
---> [http://github.com/jayway/maven-android-plugin-samples/archives/alpha Download samples from the alpha branch]
-
-
 === Important notes: ===
 
- #. Use the above links to get a correct version of the samples! Then you will automatically use a proper released version of android-maven-plugin. If you would use the very latest "master" version of the samples, they will require that you compile the plugin by yourself first. (Full explanation about correct version is on the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 Source] tab.)
+ #. Use the above link to get a correct version of the samples! Then you will automatically use a proper released version of android-maven-plugin. If you would use the very latest "master" version of the samples, they will require that you compile the plugin by yourself first. (Full explanation about correct version is on the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 Source] tab.)
  #. Make sure to choose a location with a short path to unzip the package; it has deeply nested structures and you want to stay within the path length limits of your OS. Windows is known to skip some deeply located files when the complete directory path becomes too long.
 
 == What are the samples? ==
@@ -42,9 +33,9 @@ The !MorseFlash is the most comprehensive example available. It has a plain java
 
 The Scala example show you how to build an Android application written with the Scala language and how to use Proguard to reduce the size of the resulting package.
 
-=== !LibraryProjects (beta) ===
+=== !LibraryProjects ===
 
-The !LibraryProjects example in the _beta_ link above, shows how to set up Android Library Projects. An app project called {{{libraryprojects-mainapp}}} has dependencies to two libraries of type {{{apklib}}}. There are also instrumentation tests to verify that all different kind of resources from the libraries are reachable from the main app.
+The !LibraryProjects example shows how to set up Android Library Projects. An app project called {{{libraryprojects-mainapp}}} has dependencies to two libraries of type {{{apklib}}}. There are also instrumentation tests to verify that all different kind of resources from the libraries are reachable from the main app.
 
 More documentation on Android Library Projects: ApkLib.
 
@@ -56,18 +47,18 @@ The samples are meant to show you how to create a {{{pom.xml}}} and structure yo
 For example, the apidemos sample has this structure:
 {{{
 |
-\-- apidemos-15
+\-- apidemos-android-10
   \
-  +--- apidemos-15-app
+  +--- application
   |
-  \--- apidemos-15-instrumentationtest
+  \--- instrumentationtests
 
 }}}
- * The directory name {{{apidemos-15}}} means it contains !ApiDemos from Android SDK 1.5
+ * The directory name {{{apidemos-android-10}}} means it contains !ApiDemos from Android SDK at API level 10.
 
  * It is split up into two Maven projects:
-   * {{{apidemos-15-app}}}, which contains a {{{pom.xml}}} and source code for the application apk.
-   * {{{apidemos-15-instrumentationtest}}}, which contains a {{{pom.xml}}} and source code for instrumentation tests of the app.
+   * {{{application}}}, which contains a {{{pom.xml}}} and source code for the application apk.
+   * {{{instrumentationtests}}}, which contains a {{{pom.xml}}} and source code for instrumentation tests of the app.
 
 
 == How to build the samples ==
@@ -82,14 +73,14 @@ in the samples root folder. As a prerequisite you have to have an emulator of AP
 
 You can also run each example separately with the same command. Sample specific documentation can be found in the README.txt file in each project folder.
 
-For example if you have set up your development environment according to GettingStarted, you can build for example the !ApiDemos sample from Android SDK 1.5 like this:
+For example if you have set up your development environment according to GettingStarted, you can build for example the !ApiDemos like this:
 
  {{{
- cd apidemos-15
+ cd apidemos-android-10
  mvn install
  }}}
 
 When you build from that directory, you will build both the application project and instrumentation test project. They both generate an apk each.
 
-As part of the {{{apidemos-15-instrumentationtest}}} project, Android Maven Plugin will deploy both apk files to the connected device or emulator and
+As part of the {{{instrumentationtests}}} project, Android Maven Plugin will deploy both apk files to the connected device or emulator and
 run the instrumentation tests inside the device.
