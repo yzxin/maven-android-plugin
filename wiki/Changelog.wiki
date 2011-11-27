@@ -17,7 +17,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
   * _your changes could be right here!_
 
-=== Android Maven Plugin 3.0.0, [http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/android-maven-plugin/ any minute now...] ===
+=== Android Maven Plugin 3.0.0 ===
 
   * new proguard goal 
      * see https://github.com/jayway/maven-android-plugin/pull/78
