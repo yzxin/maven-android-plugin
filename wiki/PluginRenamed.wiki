@@ -5,7 +5,7 @@
 This plugin was recently renamed to *{{{android-maven-plugin}}}*.
 
 = Does it affect me? =
-For anyone using version 3.0.0-alpha-11 or greater, *{{{android-maven-plugin}}}* is the name to use. Previous versions will always be available under the old name {{{maven-android-plugin}}}.
+For anyone using version 3.0.0 or greater, *{{{android-maven-plugin}}}* is the name to use. Previous versions will always be available under the old name {{{maven-android-plugin}}}.
 
 = What do I need to do? =
 In your Android app projects, change all occurances of {{{maven-android-plugin}}} to *{{{android-maven-plugin}}}*.
