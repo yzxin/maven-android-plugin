@@ -15,7 +15,12 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.0.1, not yet released ===
 
-  * _your changes could be right here!_
+  * plugin site updated to use fluido skin and new report plugin versions
+     * contributed by Manfred Moser http://simpligility.com
+  * max heap default to 1Gb for dex command
+     * see https://github.com/jayway/maven-android-plugin/pull/81
+     * contributed by Jan Berkel
+
 
 === Android Maven Plugin 3.0.0 ===
 
