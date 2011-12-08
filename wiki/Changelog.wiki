@@ -22,10 +22,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
      * contributed by Jan Berkel
      * see https://github.com/jayway/maven-android-plugin/pull/83
      * contributed by Manfred Moser http://simpligility.com
-  * 
+  * use project.build.outputDirectory instead of assuming classes
     * see https://github.com/jayway/maven-android-plugin/pull/84
     * contributed by Matt Benson https://github.com/mbenson
-
 
 === Android Maven Plugin 3.0.0 ===
 
