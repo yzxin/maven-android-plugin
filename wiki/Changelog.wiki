@@ -32,10 +32,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
      * instrument (=test)
      * proguard
      * manifest-update
-
      * see https://github.com/jayway/maven-android-plugin/pull/86
      * contributed by Manfred Moser http://simpligility.com
-
   * proguard goal enhancemments
      * allow to use different proguard jar from the default in the android sdk (e.g. newer version)
      * specific jvmArguments for proguard independent of other goals
