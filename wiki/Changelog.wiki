@@ -46,16 +46,15 @@ API/Configuration Changes:
   * as mentioned above overriding of plugin configuration for various goals from properties or command line parameter should now work
   * new proguard config for alternate proguard jar and jvm arguments, also using absolute path to a proguard.cfg should now work
 {{{
-  <proguard>
-         <skip>false</skip>
-         <config>proguard.cfg</config>
-         <proguardJarPath>someAbsolutePathToProguardJar</proguardJarPath>
-         <jvmArguments>
-          <jvmArgument>-Xms256m</jvmArgument>
-          <jvmArgument>-Xmx512m</jvmArgument>
-        </jvmArguments>
-      </proguard>
-
+<proguard>
+  <skip>false</skip>
+  <config>proguard.cfg</config>
+  <proguardJarPath>someAbsolutePathToProguardJar</proguardJarPath>
+  <jvmArguments>
+    <jvmArgument>-Xms256m</jvmArgument>
+    <jvmArgument>-Xmx512m</jvmArgument>
+  </jvmArguments>
+</proguard>
 }}}
 
 === Android Maven Plugin 3.0.0 ===
