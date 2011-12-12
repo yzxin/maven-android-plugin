@@ -42,8 +42,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 
 API/Configuration Changes:
-* as mentioned above overriding of plugin configuration for various goals from properties or command line parameter should now work
-* new proguard config for alternate proguard jar and jvm arguments, also using absolute path to a proguard.cfg should now work
+
+  * as mentioned above overriding of plugin configuration for various goals from properties or command line parameter should now work
+  * new proguard config for alternate proguard jar and jvm arguments, also using absolute path to a proguard.cfg should now work
 {{{
   <proguard>
          <skip>false</skip>
