@@ -21,16 +21,15 @@ mvn android:help -Dgoal=proguard -Ddetail=true
 
 Also see
 {{{
- <proguard>
-         <skip>false</skip>
-         <config>proguard.cfg</config>
-         <proguardJarPath>someAbsolutePathToProguardJar</proguardJarPath>
-         <jvmArguments>
-          <jvmArgument>-Xms256m</jvmArgument>
-          <jvmArgument>-Xmx512m</jvmArgument>
-        </jvmArguments>
-      </proguard>
-
+<proguard>
+  <skip>false</skip>
+  <config>proguard.cfg</config>
+  <proguardJarPath>someAbsolutePathToProguardJar</proguardJarPath>
+  <jvmArguments>
+    <jvmArgument>-Xms256m</jvmArgument>
+    <jvmArgument>-Xmx512m</jvmArgument>
+  </jvmArguments>
+</proguard>
 }}}
 
 
