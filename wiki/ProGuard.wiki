@@ -14,8 +14,24 @@ AS of the version 3.0.0 the android maven plugin has built in support for progua
 </proguard>
 }}}
 
-More documentation is in the plugin help available with mvn android:help
+More documentation is in the plugin help available with 
+{{{
+mvn android:help -Dgoal=proguard -Ddetail=true
+}}}
 
+Also see
+{{{
+ <proguard>
+         <skip>false</skip>
+         <config>proguard.cfg</config>
+         <proguardJarPath>someAbsolutePathToProguardJar</proguardJarPath>
+         <jvmArguments>
+          <jvmArgument>-Xms256m</jvmArgument>
+          <jvmArgument>-Xmx512m</jvmArgument>
+        </jvmArguments>
+      </proguard>
+
+}}}
 
 
 = Details - Old way=
