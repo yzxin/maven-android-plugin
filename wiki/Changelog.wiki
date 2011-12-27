@@ -39,7 +39,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
      * specific jvmArguments for proguard independent of other goals
      * see https://github.com/jayway/maven-android-plugin/pull/86
      * contributed by Manfred Moser http://simpligility.com
-
+  * native plugin updates for r7 of the NDK including updated samples project
+    * see https://github.com/jayway/maven-android-plugin/pull/87
+    * samples project changes see https://github.com/jayway/maven-android-plugin-samples/pull/22
+    * contributed by Johan Lindquist
 
 API/Configuration Changes:
 
@@ -56,6 +59,8 @@ API/Configuration Changes:
   </jvmArguments>
 </proguard>
 }}}
+  * target parameter for ndk builds is now required
+  * NDK builds now require NDK r7 
 
 === Android Maven Plugin 3.0.0 ===
 
