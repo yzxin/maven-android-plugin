@@ -5,7 +5,7 @@ _Tip: In order to see correct documentation for your plugin version you can buil
 
 = Changelog =
 
-Any *text in bold* below describes changes, which may cause existing builds to break. You may need to *update / clean up your project configuration*. This should only happen during alphas, and between major versions.
+Any *text in bold* below describes changes, which may cause existing builds to break. You may need to *update / clean up your project configuration*. This should only happen during alphas, and between major versions. From time to time, upgrading Google's Android SDK and NDK may also be necessary.
 
 == Android Maven Plugin 3.x release series ==
 
@@ -46,9 +46,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 API/Configuration Changes:
 
-  * *NDK builds now require NDK `r7`* 
-  * *`target` parameter for ndk builds is now required*
-  * as mentioned above overriding of plugin configuration for various goals from properties or command line parameter should now work
+  * as mentioned above, overriding of plugin configuration for various goals from properties or command line parameter should now work
   * new proguard config for alternate proguard jar and jvm arguments, also using absolute path to a proguard.cfg should now work
 {{{
 <proguard>
@@ -61,6 +59,7 @@ API/Configuration Changes:
   </jvmArguments>
 </proguard>
 }}}
+  * *NDK builds now require NDK `r7`*
 
 === Android Maven Plugin 3.0.0 ===
 
