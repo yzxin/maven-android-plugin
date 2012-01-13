@@ -43,6 +43,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/87
     * samples project changes see https://github.com/jayway/maven-android-plugin-samples/pull/22
     * contributed by Johan Lindquist
+  * fix for issue 200, allow rebuild of ndk project without clean
+    * see https://github.com/jayway/maven-android-plugin/pull/90
+    * contributed by Johan Lindquist
 
 API/Configuration Changes:
 
