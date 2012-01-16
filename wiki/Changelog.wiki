@@ -49,6 +49,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * fix for issue 240 ClassCastException when specifiying test class names 
      * see https://github.com/jayway/maven-android-plugin/pull/93
      * contributed by Tristano Costa https://github.com/mrtrix
+  * fix for issue 237, ignore optional transitive dependencies
+     * see https://github.com/jayway/maven-android-plugin/pull/91
 
 API/Configuration Changes:
 
