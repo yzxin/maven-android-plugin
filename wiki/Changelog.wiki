@@ -51,6 +51,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
      * contributed by Tristano Costa https://github.com/mrtrix
   * fix for issue 237, ignore optional transitive dependencies
      * see https://github.com/jayway/maven-android-plugin/pull/91
+  * for for issue 241, proguard fails when jdk installed in folder with spaces on Windows
+    * see https://github.com/jayway/maven-android-plugin/pull/94
+    * contributed by Richard Mortimer https://github.com/oldelvet
 
 API/Configuration Changes:
 
