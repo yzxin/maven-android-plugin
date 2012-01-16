@@ -46,6 +46,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * fix for issue 200, allow rebuild of ndk project without clean
     * see https://github.com/jayway/maven-android-plugin/pull/90
     * contributed by Johan Lindquist
+  * fix for issue 240 ClassCastException when specifiying test class names 
+     * see https://github.com/jayway/maven-android-plugin/pull/93
+     * contributed by Tristano Costa https://github.com/mrtrix
 
 API/Configuration Changes:
 
