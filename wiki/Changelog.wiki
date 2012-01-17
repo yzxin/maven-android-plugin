@@ -57,6 +57,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * Fail a device operation if the android.device parameter could not be found.
     * see https://github.com/jayway/maven-android-plugin/pull/99
     * contributed by Richard Mortimer https://github.com/oldelvet
+  * Correct javadoc comments for test operation and member references
+    * see https://github.com/jayway/maven-android-plugin/pull/98
+    * contributed by Richard Mortimer https://github.com/oldelvet
 
 API/Configuration Changes:
 
