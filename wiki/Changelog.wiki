@@ -63,6 +63,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * upgrade to r16 of ddmlib
      * see https://github.com/jayway/maven-android-plugin/pull/100
      * contributed by Manfred Moser http://simpligility.com
+ * configuration fix for classes/class parameter for instrument (test) mojo
+     * see https://github.com/jayway/maven-android-plugin/pull/97
+     * contributed by Erik Ogenvik http://erikhjortsberg.blogspot.com
  
 API/Configuration Changes:
 
