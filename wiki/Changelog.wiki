@@ -60,7 +60,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * Correct javadoc comments for test operation and member references
     * see https://github.com/jayway/maven-android-plugin/pull/98
     * contributed by Richard Mortimer https://github.com/oldelvet
-
+ * upgrade to r16 of ddmlib
+     * see https://github.com/jayway/maven-android-plugin/pull/100
+     * contributed by Manfred Moser http://simpligility.com
+ 
 API/Configuration Changes:
 
   * as mentioned above, overriding of plugin configuration for various goals from properties or command line parameter should now work
