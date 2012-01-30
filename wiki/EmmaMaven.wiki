@@ -1,6 +1,8 @@
 #summary Configuration of Emma - tool for code coverage.
 #labels Phase-QA
 
+== incomplete - wait for commit code ==
+ 
 = Introduction =
 
 Emma is a tool which measures how many lines of code have been caused during testing.
