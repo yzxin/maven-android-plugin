@@ -13,7 +13,7 @@ Requires Maven 3.
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.0.3 (not yet released) ===
+=== Android Maven Plugin 3.1.0 (currently releasing...) ===
 
   * plugin site updated to use fluido skin and new report plugin versions
      * contributed by Manfred Moser http://simpligility.com
