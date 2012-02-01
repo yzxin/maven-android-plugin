@@ -17,7 +17,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
   * _your changes can be right here!_
 
-=== Android Maven Plugin 3.1.0 (syncing to Maven Central...) ===
+=== Android Maven Plugin 3.1.0 (syncing to [http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/android-maven-plugin/ Maven Central...]) ===
 
   * plugin site updated to use fluido skin and new report plugin versions
      * contributed by Manfred Moser http://simpligility.com
