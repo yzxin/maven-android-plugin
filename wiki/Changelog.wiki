@@ -15,7 +15,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.1.1 (not released yet) ===
 
-  * _your changes can be right here!_
+  * verify required NDK message and bring up useful error messages
+    * see https://github.com/jayway/maven-android-plugin/pull/87
+    * contributed by Johan Lindquist
 
 === Android Maven Plugin 3.1.0 ===
 
