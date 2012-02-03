@@ -17,7 +17,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
   * _your contribution could be right here_
 
-=== Android Maven Plugin 3.1.1 (syncing to Maven Central...) ===
+=== Android Maven Plugin 3.1.1 ===
 
   * verify required NDK message and bring up useful error messages
     * see https://github.com/jayway/maven-android-plugin/pull/102
