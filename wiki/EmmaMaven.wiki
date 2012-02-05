@@ -226,3 +226,32 @@ When we have this two files: coverage.ec, coverage.em we can generate nice repor
 java -cp ${emmaDirectory}/emma.jar emma report -r html -in coverage.em,coverage.ec -sp ${project.source.folder}
 }}}
 In command C4, option -sp is optional - when you use this option, report will be more detailed - because each line of code will be marked.
+
+== Emma compile process ==
+
+When we use maven-android-plugin without emma profile: 
+{{{
+mvn clean compile install
+}}}
+Then: 
+  #. maven clean target folder and temporary folder
+  #. maven use javac to compile sources -> to target/classes/ folder
+  #. maven use dex command to convert java byte code to dex format -> targer/classes.dex 
+  #.classees.dex and resources are package to targer/.apk 
+  #. (1-4) for integration test. 
+  #. apk file are install to device
+  #. integration test are started.  
+
+When we use maven-android-plugin with emma profile: 
+{{{
+mvn clean compile install -Pemma
+}}}
+Then: 
+  #. maven clean target folder and temporary folder
+  #. maven use javac to compile sources -> to target/classes/ folder
+  #. *emma.jar is run - and we inject emma code to java byte code. This command generate coverage.em file - meta-data file which collect name of all class and function in our project* 
+  #. maven use dex command to convert java byte code to dex format -> targer/classes.dex 
+  #. classees.dex and resources are package to targer/.apk 
+  #. (1-5) for integration test. 
+  #. apk file are install to device
+  #. integration test are started with flag *coverage true* and after this command on device in folder */data/data/${project}/files/coverage.ec* is generated   
