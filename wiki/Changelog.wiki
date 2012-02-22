@@ -15,7 +15,13 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.1.2 (not released yet) ===
 
-  * _your contribution could be right here_
+  * Capture screenshots from the Android device during integration tests
+     * see https://github.com/jayway/maven-android-plugin/pull/104
+     * contributed by Roberto Tyley http://www.guardian.co.uk/profile/roberto-tyley
+
+API/Configuration Changes:
+
+ * see pull request for screenshot features on how to use it
 
 === Android Maven Plugin 3.1.1 ===
 
