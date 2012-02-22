@@ -21,7 +21,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 API/Configuration Changes:
 
- * see pull request for screenshot features on how to use it
+ * see pull request for screenshot features on how to use it, not a configuration change really...
 
 === Android Maven Plugin 3.1.1 ===
 
