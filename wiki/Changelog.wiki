@@ -19,7 +19,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
      * see https://github.com/jayway/maven-android-plugin/pull/104
      * contributed by Roberto Tyley http://www.guardian.co.uk/profile/roberto-tyley
   * Test coverage with Emma
-     * see http://android-developers.blogspot.com/2012/02/new-app-stats-for-publishers-on-android.html
+     * see https://github.com/jayway/maven-android-plugin/pull/101/
      * contributed by Mariusz Saramak http://saramak.eu/
 
 API/Configuration Changes:
