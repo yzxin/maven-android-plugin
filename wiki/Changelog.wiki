@@ -20,6 +20,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
      * contributed by Roberto Tyley http://www.guardian.co.uk/profile/roberto-tyley
   * Test coverage with Emma
      * see https://github.com/jayway/maven-android-plugin/pull/101/
+     * see https://github.com/jayway/maven-android-plugin-samples/pull/24/
      * contributed by Mariusz Saramak http://saramak.eu/
 
 API/Configuration Changes:
