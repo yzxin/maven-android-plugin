@@ -30,32 +30,42 @@ Add to pom.xml additional emma profile
 
 {{{
   <build/>
+
+<!-- un commment when you want use sonar to present rules 
+<properties>
+    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+    <sonar.emma.reportPath>target/emma/</sonar.emma.reportPath>
+    <sonar.surefire.reportsPath >../regalandroid-test/target/surefire-reports</sonar.surefire.reportsPath>
+    <sonar.core.codeCoveragePlugin>emma</sonar.core.codeCoveragePlugin>
+</properties>
+--> 
+
 <profiles>
-                <profile>
-                        <id>emma</id>
-                        <build>
-                                <plugins>
-                                        <plugin>
-                                                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                                        <artifactId>android-maven-plugin</artifactId>
-                                                <configuration>
-                                                <!-- emma start -->
-                                                        <emma>
-                                                                <enable>true</enable>
-                                                                <classFolders>${project.basedir}/target/classes/</classFolders>
-                                                                <outputMetaFile>${project.basedir}/target/emma/coverage.em</outputMetaFile>
-                                                        </emma>
-                                                        <!-- emma stop -->
-                                                        <dex>
-                                                                <noLocals>true</noLocals> <!--  must be set for emma -->
-                                                        </dex>
-                                                </configuration>
-                                                <extensions>true</extensions>
-                                        </plugin>
-                                </plugins>
-                        </build>
-                </profile>
-        </profiles>
+    <profile>
+            <id>emma</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                    <artifactId>android-maven-plugin</artifactId>
+                    <configuration>
+                      <!-- emma start -->
+                        <emma>
+                             <enable>true</enable>
+                             <classFolders>${project.basedir}/target/classes/</classFolders>
+                        <outputMetaFile>${project.basedir}/target/emma/coverage.em</outputMetaFile>
+                        </emma>
+                        <!-- emma stop -->
+                        <dex>
+                             <noLocals>true</noLocals> <!--  must be set for emma -->
+                        </dex>
+                    </configuration>
+                    <extensions>true</extensions>
+                   </plugin>
+                 </plugins>
+              </build>
+    </profile>
+</profiles>
 
 }}}
 
@@ -83,14 +93,15 @@ add to pom.xml
             <dependencies>
 
                <dependency>
-                    <groupId>com.vladium.emma</groupId>
+                    <groupId>emma</groupId>
                     <artifactId>emma</artifactId>
                     <type>jar</type>
                     <scope>compile</scope>
-                    <version>1.0</version>
+                    <version>2.1.5320</version>
                </dependency> 
              </dependencies>
-                    <build>
+             
+            <build>
             <plugins>
                <plugin>
                   <groupId>org.codehaus.mojo</groupId>
@@ -146,7 +157,7 @@ Most important property is tested.project.dir - should be path to project which 
          <reporting>
             <plugins>
                <plugin>
-                  <!-- Plugin for generate report--> 
+                  <!-- Plugin for generate report - if you want use sonar you could skip this raport plugin --> 
                   <groupId>org.sonatype.maven.plugin</groupId>
                   <artifactId>emma4it-maven-plugin</artifactId>
                   <version>1.3</version>
@@ -179,7 +190,25 @@ when all tests are successful finished we should have in folder:
 coverage.em file ( around more then 1MB)
 coverage.ec file ( more then 37B ) 37B = empty file
 
-When we have this two files we can generate report: 
+When we have this two files we can generate report (sonar or report plugin)
+
+== How to present emma coverage result == 
+We have more then one: 
+===Sonar (_thanks for Anthony Dahanne (anthonydahanne) for help configure sonnar_) === 
+We need enable emma plugin in sonar and add properties to our projects:
+{{{
+
+<properties>
+    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+    <sonar.emma.reportPath>target/emma/</sonar.emma.reportPath>
+    <sonar.surefire.reportsPath >../<<TestProjectFolder>>/target/surefire-reports</sonar.surefire.reportsPath>
+    <sonar.core.codeCoveragePlugin>emma</sonar.core.codeCoveragePlugin>
+</properties>
+
+}}}
+This properties are need to force use coverage.ec and coverage.em files and not run sonar re instrument code by emma plugin in Sonar.
+ 
+=== Report plugin === 
 {{{
 mvn org.sonatype.maven.plugin:emma4it-maven-plugin:1.3:report 
 }}}
