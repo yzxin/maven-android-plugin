@@ -23,6 +23,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
      * see https://github.com/jayway/maven-android-plugin/pull/101/
      * see https://github.com/jayway/maven-android-plugin-samples/pull/24/
      * contributed by Mariusz Saramak http://saramak.eu/
+  * Fix for manifest update 
+     * see https://github.com/jayway/maven-android-plugin/pull/106
+     * contributed by Matt Benson
 
 API/Configuration Changes:
 
