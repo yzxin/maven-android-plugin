@@ -1,7 +1,5 @@
 #summary Configuration of Emma - tool for code coverage.
 #labels Phase-QA
-
-== incomplete - wait for commit code ==
  
 = Introduction =
 
