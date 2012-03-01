@@ -16,6 +16,10 @@ If you want to see how we have configured Maven then please contact me. Our code
 ===Simpligility Technologies===
 [http://www.simpligity.com Simpligility Technologies] is using the Android Maven Plugin for an Android application for a top 5 electronics reseller client.
 
+===GitHub===
+
+[https://github.com/ GitHub] uses the Android Maven Plugin in their open-source [https://github.com/github/gauges-android _Gaug.es_ for Android] app.
+
 ===Others===
 
  * Juan Carlos - PomoTodo -  http://code.google.com/p/pomotodo/
