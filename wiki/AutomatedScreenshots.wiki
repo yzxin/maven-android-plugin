@@ -1,14 +1,13 @@
 #summary On-demand screenshots during Android integration tests
 
-= Introduction =
+= Usage =
 
 Getting a screenshot is simple - you just invoke 'poseForScreenshot()'
 when you want one. The rest of the test is just setting up the activity
-so it's ready to have it's screenshot taken - ie startActivitySync() and
-then waiting a short period for the activity to be ready.
+so it's ready to have it's screenshot taken - ie startActivitySync() and then waiting a short period for the activity to be ready.
 
 The screenshots will be placed in a 'screenshots' folder under your
-target directory, for example:
+instrumentation test target directory, for example:
 
 morseflash/morseflash-instrumentation/target/screenshots
 
