@@ -1,4 +1,4 @@
-#summary How to get automated screenshots during integration tests
+#summary On-demand screenshots during Android integration tests
 
 = Introduction =
 
