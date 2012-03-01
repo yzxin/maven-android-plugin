@@ -18,7 +18,7 @@ If you want to see how we have configured Maven then please contact me. Our code
 
 ===!GitHub===
 
-[https://github.com/ GitHub] uses the Android Maven Plugin in their open-source [https://github.com/github/gauges-android _Gaug.es_ for Android] app.
+[https://github.com/ GitHub] uses the Android Maven Plugin in their open-source [https://github.com/github/gauges-android Gaug.es for Android] app.
 
 ===Others===
 
