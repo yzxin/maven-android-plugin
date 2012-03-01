@@ -19,4 +19,4 @@ animated-gif will be created showing all screenshots taken.
 
 = Examples =
 
-The morseflash project has an [https://github.com/jayway/maven-android-plugin-samples/commit/8094291fee576fb21f202e320b56552a46a81957#L1R47 example test] that takes screenshots and there's also an [https://github.com/github/gauges-android/blob/gauges-android-1.1/integration-tests/src/main/java/com/github/mobile/gauges/test/AppearanceTest.java#L88-109 example robotium test] in the open-source _Gaug.es_ android app by GitHub.
+The morseflash project has an [https://github.com/jayway/maven-android-plugin-samples/commit/8094291fee576fb21f202e320b56552a46a81957#L1R47 example test] that takes screenshots and there's also an [https://github.com/github/gauges-android/blob/gauges-android-1.1/integration-tests/src/main/java/com/github/mobile/gauges/test/AppearanceTest.java#L88-109 example robotium test] in the open-source _Gaug.es_ android app by !GitHub.
