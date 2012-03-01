@@ -1,0 +1,22 @@
+#summary How to get automated screenshots during integration tests
+
+= Introduction =
+
+Getting a screenshot is simple - you just invoke 'poseForScreenshot()'
+when you want one. The rest of the test is just setting up the activity
+so it's ready to have it's screenshot taken - ie startActivitySync() and
+then waiting a short period for the activity to be ready.
+
+The screenshots will be placed in a 'screenshots' folder under your
+target directory, for example:
+
+morseflash/morseflash-instrumentation/target/screenshots
+
+They're named sequentially by default (0000.png, 0001.png, etc), but you
+can set an explicit name for the shot using 'poseForScreenshotNamed()'
+if you like. In addition, for each android device used in the tests, an
+animated-gif will be created showing all screenshots taken.
+
+= Examples =
+
+The morseflash project has an [https://github.com/jayway/maven-android-plugin-samples/commit/8094291fee576fb21f202e320b56552a46a81957#L1R47 example test] that takes screenshots and there's also an [https://github.com/github/gauges-android/blob/gauges-android-1.1/integration-tests/src/main/java/com/github/mobile/gauges/test/AppearanceTest.java#L88-109 example robotium test] in the open-source _Gaug.es_ android app by GitHub.
