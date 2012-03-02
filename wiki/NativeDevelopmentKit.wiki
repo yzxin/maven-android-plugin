@@ -13,7 +13,7 @@ Set the `ANDROID_NDK_HOME` the the root directory of your NDK installation. Exam
 SET ANDROID_NDK_HOME=C:\opt\android-ndk-r7b
 }}}
 
-== Setup Project ==
+== Setup pom.xml ==
 
 The following instructions apply to the setup of a apk with a native library. For the creation and use of libraries see NativeLibsAsDependencies.
 
@@ -59,6 +59,7 @@ The NDK does not compile into the `target` directory but `obj` and `libs`:
 
 {{{
 mvn com.jayway.maven.plugins.android.generation2:android-maven-plugin:ndk-build
+mvn install
 }}}
 
 = Details =
