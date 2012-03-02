@@ -1,8 +1,6 @@
 #summary Howto use the android-maven-plugin to create native libraries.
 #labels NDK,HowTo
 
-*WORK in PROGRESS — currently only collection ideas for the documentation*
-
 = Introduction =
 
 == Setup Environment ==
@@ -19,7 +17,7 @@ The following instructions apply to the setup of a apk with a native library. Fo
 
 === Cleanup ===
 
-The NDK does not compile into the `target` directory but `obj` and `libs`:
+The NDK does not compile into the `target` directory but into `obj` and `libs` so they need to be cleaned as well:
 
 {{{
       <plugin>
@@ -39,6 +37,8 @@ The NDK does not compile into the `target` directory but `obj` and `libs`:
 
 === Build Setup ===
 
+Native buuld is activated by the `ndk-build` goal. Also the plugin need to know the location of the NDK installation.
+
 {{{
       <plugin>
         <groupId>com.jayway.maven.plugins.android.generation2</groupId>
@@ -55,18 +55,11 @@ The NDK does not compile into the `target` directory but `obj` and `libs`:
       </plugin>
 }}}
 
-== Build Environment ==
+== Execute Build ==
 
-Use the following command to build (you need to set the pluginGroup as described in TipsAndTricks):
+Use the following two command to build (you need to set the pluginGroup as described in TipsAndTricks):
 
 {{{
 mvn android:ndk-build
 mvn install
 }}}
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
