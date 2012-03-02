@@ -9,6 +9,7 @@
   * [Glossary]
 
 *Advanced*
+  * [NativeDevelopmentKit Native Development]
   * [NativeLibsAsDependencies Native Libraries as Dependencies]
   * [AddOns Google Add Ons (Maps)]
   * [ProGuard Shrink, Obfuscate and Optimize with Proguard]
@@ -19,7 +20,7 @@
   * [ApkLib Android Library Projects (apklib)]
   * [ApkSourcesDependency]
   * [SynchronisingVersionWithGmaven]
-
+  * [Scala]
 
 *Reference*
 
