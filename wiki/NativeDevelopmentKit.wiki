@@ -1,5 +1,5 @@
 #summary Howto use the android-maven-plugin to create native libraries.
-#labels NDK
+#labels NDK,HowTo
 
 *WORK in PROGRESS — currently only collection ideas for the documentation*
 
