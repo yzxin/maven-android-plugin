@@ -6,6 +6,10 @@
 = Introduction =
 
 {{{
+SET ANDROID_NDK_HOME=%[opt]\android-ndk-r7b
+}}}
+
+{{{
       <plugin>
         <groupId>com.jayway.maven.plugins.android.generation2</groupId>
         <artifactId>android-maven-plugin</artifactId>
@@ -14,11 +18,15 @@
         </goals>
         <configuration>
           <ndk>
-            <path>C:\opt\android-ndk-r7b</path>
+            <path>${env.ANDROID_NDK_HOME}</path>
           </ndk>
         </configuration>
         <extensions>true</extensions>
       </plugin>
+}}}
+
+{{{
+mvn com.jayway.maven.plugins.android.generation2:android-maven-plugin:ndk-build
 }}}
 
 = Details =
