@@ -10,6 +10,8 @@ Getting a screenshot is simple - you just invoke `poseForScreenshot()`
 when you want one:
 
 {{{
+import static com.github.rtyley.android.screenshot.celebrity.Screenshots.poseForScreenshot;
+
     public void testAppearance() {
         startActivitySync(ConfigureMorseActivity.class);
         Instrumentation instrumentation = getInstrumentation();
@@ -22,7 +24,7 @@ when you want one:
         instrumentation.sendStringSync("o");
         poseForScreenshot();
         instrumentation.sendStringSync("s");
-        poseForScreenshotNamed("ConfigureMorseActivity-SOS");
+        poseForScreenshot();
     }
 }}}
 
