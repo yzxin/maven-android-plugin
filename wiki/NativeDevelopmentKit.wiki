@@ -57,8 +57,10 @@ The NDK does not compile into the `target` directory but `obj` and `libs`:
 
 == Build Environment ==
 
+Use the following command to build (you need to set the pluginGroup as described in TipsAndTricks):
+
 {{{
-mvn com.jayway.maven.plugins.android.generation2:android-maven-plugin:ndk-build
+mvn android:ndk-build
 mvn install
 }}}
 
