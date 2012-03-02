@@ -1,0 +1,29 @@
+#summary Howto use the android-maven-plugin to create native libraries.
+#labels NDK
+
+*WORK in PROGRESS — currently only collection ideas for the documentation*
+
+= Introduction =
+
+{{{
+      <plugin>
+        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+        <artifactId>android-maven-plugin</artifactId>
+        <goals>
+          <goal>ndk-build</goal>
+        </goals>
+        <configuration>
+          <ndk>
+            <path>C:\opt\android-ndk-r7b</path>
+          </ndk>
+        </configuration>
+        <extensions>true</extensions>
+      </plugin>
+}}}
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
