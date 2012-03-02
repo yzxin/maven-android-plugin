@@ -7,7 +7,26 @@ The screenshot capture speed is about 1 frame per second, so you can't get full 
 = Usage =
 
 Getting a screenshot is simple - you just invoke 'poseForScreenshot()'
-when you want one. The rest of the test is just setting up the activity so it's ready to have it's screenshot taken - ie startActivitySync() and then waiting a short period for the activity to be ready.
+when you want one:
+
+{{{
+    public void testAppearance() {
+        startActivitySync(ConfigureMorseActivity.class);
+        Instrumentation instrumentation = getInstrumentation();
+
+        sleep(500); // robotium provides neater ways of waiting for the activity to initialise
+
+        poseForScreenshot();
+        instrumentation.sendStringSync("s");
+        poseForScreenshot();
+        instrumentation.sendStringSync("o");
+        poseForScreenshot();
+        instrumentation.sendStringSync("s");
+        poseForScreenshotNamed("ConfigureMorseActivity-SOS");
+    }
+}}}
+
+The rest of the test is just setting up the activity so it's ready to have it's screenshot taken - ie startActivitySync() and then waiting a short period for the activity to be ready.
 
 The screenshots will be placed in a 'screenshots' folder under your
 instrumentation test target directory, for example:
