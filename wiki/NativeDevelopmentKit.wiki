@@ -5,9 +5,17 @@
 
 = Introduction =
 
+== Setup Environment ==
+
+Set the `ANDROID_NDK_HOME` the the root directory of your NDK installation. Example (Windows):
+
 {{{
-SET ANDROID_NDK_HOME=%[opt]\android-ndk-r7b
+SET ANDROID_NDK_HOME=C:\opt\android-ndk-r7b
 }}}
+
+== Setup Project ==
+
+Note that I
 
 {{{
       <plugin>
