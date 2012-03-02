@@ -15,7 +15,7 @@ SET ANDROID_NDK_HOME=C:\opt\android-ndk-r7b
 
 == Setup Project ==
 
-The following instructions apply to the setup of a apk. For the use of libraries see NativeLibsAsDependencies.
+The following instructions apply to the setup of a apk with a native library. For the creation and use of libraries see NativeLibsAsDependencies.
 
 === Cleanup ===
 
