@@ -1,7 +1,24 @@
 #summary Howto use the android-maven-plugin to create native libraries.
-#labels NDK,HowTo
+#labels HowTo
 
 = Introduction =
+
+== Features ==
+
+Currently, the Android Maven plugin supports the following scenarios when developing with native code:
+
+  * Compile native shared library (.so) for use by other projects
+    * Can depend on other native shared/static libraries
+      * Declared as dependencies in the pom.xml 
+  * Include native library in your APK
+    * Defined as a dependency in the pom.xml
+  * Compile a native static library (.a) to be shared with other projects
+    * Shares header files as part of project artifacts
+      * Used by projects depending on static library as part of the build
+
+== Prerequisites ==
+
+  * Android NDK r7 or later
 
 == Setup Environment ==
 
