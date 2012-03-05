@@ -22,11 +22,21 @@ Currently, the Android Maven plugin supports the following scenarios when develo
 
 == Setup Environment ==
 
-Set the `ANDROID_NDK_HOME` the the root directory of your NDK installation. Example (Windows):
+Set the `ANDROID_NDK_HOME` the the root directory of your NDK installation. 
+
+For example:
 
 {{{
+# Windows
 SET ANDROID_NDK_HOME=C:\opt\android-ndk-r7b
 }}}
+
+{{{
+# Linux
+export ANDROID_NDK_HOME=$HOME/opt/android-ndk-r7b
+}}}
+
+These settings are best to persist by adding as permanent environment variables.
 
 == Setup pom.xml ==
 
