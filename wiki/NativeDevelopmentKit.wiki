@@ -3,24 +3,25 @@
 
 = Introduction =
 
-== Features ==
+= Features =
 
-Currently, the Android Maven plugin supports the following scenarios when developing with native code:
+Currently, the Android Maven Plugins NDK mojo supports the following scenarios when developing with native code:
 
   * Compile native shared library (.so) for use by other projects
     * Can depend on other native shared/static libraries
       * Declared as dependencies in the pom.xml 
   * Include native library in your APK
     * Defined as a dependency in the pom.xml
+    * Defined as 'mixed' with the APK code
   * Compile a native static library (.a) to be shared with other projects
     * Shares header files as part of project artifacts
       * Used by projects depending on static library as part of the build
 
-== Prerequisites ==
+= Prerequisites =
 
   * Android NDK r7 or later
 
-== Setup Environment ==
+= Setup Environment =
 
 Set the `ANDROID_NDK_HOME` the the root directory of your NDK installation. 
 
@@ -38,7 +39,14 @@ export ANDROID_NDK_HOME=$HOME/opt/android-ndk-r7b
 
 These settings are best to persist by adding as permanent environment variables.
 
-== Setup pom.xml ==
+= Configuring Your Maven Project =
+
+There are many variations on how the NDK 
+
+  * [NativeDevelopmentKit#Native_Code_Lives_in_the_APK_project Mixed Code]
+
+== Native Code Lives in the APK project ==
+=== Setup pom.xml ===
 
 The following instructions apply to the setup of a apk with a native library. For the creation and use of libraries see NativeLibsAsDependencies.
 
@@ -82,7 +90,7 @@ Native buuld is activated by the `ndk-build` goal. Also the plugin need to know 
       </plugin>
 }}}
 
-== Execute Build ==
+=== Execute Build ===
 
 Use the following two command to build (you need to set the pluginGroup as described in TipsAndTricks):
 
