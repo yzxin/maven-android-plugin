@@ -44,6 +44,7 @@ These settings are best to persist by adding as permanent environment variables.
 There are many variations on how the NDK 
 
   * [NativeDevelopmentKit#Native_Code_Lives_in_the_APK_project Native Code Lives in the APK project]
+  * ...
 
 == Native Code Lives in the APK project ==
 === Setup pom.xml ===
