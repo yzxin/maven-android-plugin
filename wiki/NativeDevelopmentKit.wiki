@@ -139,12 +139,14 @@ The POM should be set up as `<packaging>apklib</packaging>`. Taking it from ther
 
 Add an apklib dependency:
 
+{{{
     <dependency>
       <groupId>my.package</groupId>
       <artifactId>Native-Lib</artifactId>
       <version>0.0.0</version>
       <type>apklib</type>
     </dependency>
+}}}
 
 === Execute Build ===
 
