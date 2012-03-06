@@ -1,5 +1,5 @@
 #summary Android Library Project with apklib packaging type
-#labels HowTp
+#labels HowTo,APKLIB
 
 = Introduction =
 
