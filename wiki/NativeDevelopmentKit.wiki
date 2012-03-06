@@ -105,3 +105,52 @@ mvn install
 
 The following instructions apply to the setup of a APK Library project with a native library. Note that the Library must have the same name as the artifact id. You can not add multiple native Libraries to a single APKLIB
 
+=== Cleanup ===
+
+You should add a `maven-clean-plugin` section like the one described in [NativeDevelopmentKit#Native_Code_Lives_in_the_APK_project Native Code Lives in the APK project].
+
+=== Library POM ===
+
+The POM should be set up as `<packaging>apklib</packaging>`. Taking it from there you set the configuration as follow:
+
+{{{
+      <plugin>
+        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+        <artifactId>android-maven-plugin</artifactId>
+        <goals>
+          <goal>ndk-build</goal>
+        </goals>
+        <configuration>
+          <deleteConflictingFiles>true</deleteConflictingFiles>
+          <attachNativeArtifacts>true</attachNativeArtifacts>
+          <clearNativeArtifacts>false</clearNativeArtifacts>
+          <sign>
+            <debug>false</debug>
+          </sign>
+          <proguard>
+            <skip>true</skip>
+          </proguard>
+        </configuration>
+        <extensions>true</extensions>
+      </plugin>
+}}}
+
+=== Application POM ===
+
+Add an apklib dependency:
+
+    <dependency>
+      <groupId>my.package</groupId>
+      <artifactId>Native-Lib</artifactId>
+      <version>0.0.0</version>
+      <type>apklib</type>
+    </dependency>
+
+=== Execute Build ===
+
+Use the following two command to build (you need to set the pluginGroup as described in TipsAndTricks):
+
+{{{
+mvn --projects ../Native-Lib android:ndk-build
+mvn install
+}}}
