@@ -1,5 +1,5 @@
 #summary Howto use the android-maven-plugin to create native libraries.
-#labels HowTo
+#labels HowTo,NDK,APKLIB
 
 = Introduction =
 
@@ -28,7 +28,7 @@ Set the `ANDROID_NDK_HOME` the the root directory of your NDK installation.
 For example:
 
 {{{
-# Windows
+REM Windows
 SET ANDROID_NDK_HOME=C:\opt\android-ndk-r7b
 }}}
 
@@ -44,12 +44,13 @@ These settings are best to persist by adding as permanent environment variables.
 There are many variations on how the NDK 
 
   * [NativeDevelopmentKit#Native_Code_Lives_in_the_APK_project Native Code Lives in the APK project]
-  * ...
+  * [NativeDevelopmentKit#Native_Code_Lives_in_the_APKLIB_project Native Code Lives in the APKLIB project]
 
 == Native Code Lives in the APK project ==
+
 === Setup pom.xml ===
 
-The following instructions apply to the setup of a apk with a native library. For the creation and use of libraries see NativeLibsAsDependencies.
+The following instructions apply to the setup of a apk with a native library.
 
 === Cleanup ===
 
@@ -99,3 +100,8 @@ Use the following two command to build (you need to set the pluginGroup as descr
 mvn android:ndk-build
 mvn install
 }}}
+
+== Native Code Lives in the APKLIB project ==
+
+The following instructions apply to the setup of a APK Library project with a native library. Note that the Library must have the same name as the artifact id. You can not add multiple native Libraries to a single APKLIB
+
