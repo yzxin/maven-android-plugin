@@ -1,4 +1,5 @@
 #summary Android Library Project with apklib packaging type
+#labels HowTp
 
 = Introduction =
 
@@ -7,7 +8,11 @@ An Android Library Project is a project intended for inclusion in other Android 
  * [http://developer.android.com/guide/developing/projects/projects-eclipse.html#SettingUpLibraryProject Android Library Projects in Eclipse]
 
 This deprecates ApkSourcesDependency.
+
+*Note:* Maven also supports plain old jar files as libraries for android. Depending on your needs this might be the simpler solution.
+
 = Help test this =
+
 Support for Android library projects in Android Maven Plugin was our number 1 most starred issue (Issue 96) for a long time. There is support for it from version 2.9.0-beta-1 and onwards.
 
 Please try it out:
@@ -25,10 +30,13 @@ _(Check the [Changelog] for current version, in case this wiki page is left behi
 File any issues in the [http://code.google.com/p/maven-android-plugin/issues/list issue tracker].
 
 == Compatible with non-Maven Android Library Projects! ==
+
 The generated {{{.apklib}}} file will have the layout of a standard Android/Eclipse library project. This means that regardless of your Maven layout, the layout inside the {{{.apklib}}} file will be that source code is in "src/" instead of "src/main/java/", but still interpreted correctly when used in an Android/Maven application project. This is to be compatible with non-Maven developers' library projects, which is important to grow the Android developer community.
 
 === Use other non-Maven developers' libraries ===
+
 It also means we can take any external Android library project zip file (from non-Maven developers) and do {{{mvn install:install-file ...}}} on it and simply start using it as a dependency.
 
 === Share your {{{.apklib}}} with non-Maven developers ===
+
 To share your {{{.apklib}}} file with a non-Maven developer, they will probably feel more comfortable if you rename it to {{{.zip}}}. They can then simply unpack it in a directory and use it from there.
