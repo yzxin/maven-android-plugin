@@ -9,7 +9,7 @@ An Android Library Project is a project intended for inclusion in other Android 
 
 This deprecates ApkSourcesDependency.
 
-*Note:* Maven also supports plain old jar files as libraries for android. Depending on your needs this might be the simpler solution.
+Note that the apklib will include content of the  `…/src/main/java` source directory, the `…/libs` native library directory and `…/res` resource directory. They will *not* contain and not the compiled *.class* files. Depending on your needs using a plain old jar package might be the simpler solution.
 
 = Help test this =
 
