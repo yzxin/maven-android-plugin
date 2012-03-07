@@ -121,7 +121,7 @@ If your project set-up contains libraries then those too need to be added as `<s
     </dependency>
 }}}
 
-This is the workaround for Bug # 142. 
+This is the workaround for Bug #142. 
 
 = Proguard =
 
