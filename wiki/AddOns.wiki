@@ -6,40 +6,6 @@ To Build your android projects which are dependent on Add-Ons such as Google Map
 
 == Additional development setup ==
 
-   # Add one of the following dependency to your project pom.xml depending on which SDK version you are using.
+   # Add one of the dependency as documented on the Maven Android SDK Deployer site to your project pom.xml.
 
-{{{
-           <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>3_r3</version>
-              <scope>provided</scope>
-          </dependency>
-
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>4_r1</version>
-              <scope>provided</scope>
-          </dependency>
-
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>7_r1</version>
-              <scope>provided</scope>
-          </dependency>
-
-          <dependency>
-              <groupId>com.google.android.maps</groupId>
-              <artifactId>maps</artifactId>
-              <version>8_r1</version>
-              <scope>provided</scope>
-          </dependency>
-}}}
-
-== Issues ==
-
-  Future version of the plugin will automatically take care of the Add-Ons. Please refer the following issue for the details and star it to bump it up the issue stack:
-
-     * http://code.google.com/p/maven-android-plugin/issues/detail?id=20
+   # Thats it.. 
