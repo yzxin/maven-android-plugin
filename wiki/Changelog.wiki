@@ -41,7 +41,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
 API/Configuration Changes:
 
  * see pull request for screenshot features on how to use it, not a configuration change really...
- * new and old proguard config options also supported are android.proguard.* as properties 
+ * new and old proguard config options also supported are android.proguard.xyz as properties 
 {{{
 <proguard>
    <skip>true|false</skip>
