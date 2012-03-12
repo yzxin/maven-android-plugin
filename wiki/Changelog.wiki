@@ -32,11 +32,11 @@ A bunch of configuration parameters have changed and some have be removed, compa
      * contributed by Adrian Stabiszewski https://github.com/grundid/ and Manfred Moser http://simpligility.com 
   * New parameter to allow to set location of coverage file for instrumentation test runs
     * see https://github.com/jayway/maven-android-plugin/pull/108
-    * contributed by Tim ? https://github.com/androidweasel 
- 
-
-
-
+    * contributed by Tim ? https://github.com/androidweasel
+  * New configuration parsing for Pull, Push and Run mojos, also added required parameter for PullParameter annotation and improved error message for any mojos using it
+    * see https://github.com/jayway/maven-android-plugin/pull/110
+    * see https://github.com/jayway/maven-android-plugin/pull/111
+    * contributed by Manfred Moser http://simpligility.com 
 
 API/Configuration Changes:
 
