@@ -4,9 +4,9 @@
 
 In the following are a couple of conventions we try to adhere to make things easier and better.
 
-
-
 = Configuration parameters =
+
+*As of 2012-03-12 this approach is outdated. Stay tuned for an update to this wiki page and otherwise refer to ConfigHandler and the example implementation in ProguardMojo.*
 
 This sections deals with our approach to configuration parameters.
 
