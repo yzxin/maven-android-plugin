@@ -26,10 +26,47 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * Fix for manifest update 
      * see https://github.com/jayway/maven-android-plugin/pull/106
      * contributed by Matt Benson
+  * New configuration parameter parsing based on mojo property annotation and config pojo for Proguard, new parameters to filder manifest and maven files defaulting to true, allow proguard mojo to use dependency to use external proguard rather than sdk proguard
+     * see https://github.com/jayway/maven-android-plugin/pull/107
+     * see https://github.com/jayway/maven-android-plugin/pull/109
+     * contributed by Adrian Stabiszewski https://github.com/grundid/ and Manfred Moser http://simpligility.com 
+ 
+
+
+
 
 API/Configuration Changes:
 
  * see pull request for screenshot features on how to use it, not a configuration change really...
+ * new and old proguard config options also supported are android.proguard.* as properties 
+{{{
+<proguard>
+   <skip>true|false</skip>
+   <config>proguard.cfg</config>
+   <proguardJarPath>someAbsolutePathToProguardJar</proguardJarPath>
+   <filterMavenDescriptor>true|false</filterMavenDescriptor>
+   <filterManifest>true|false</filterManifest>
+   <jvmArguments>
+    <jvmArgument>-Xms256m</jvmArgument>
+    <jvmArgument>-Xmx512m</jvmArgument>
+  </jvmArguments>
+</proguard>
+}}}
+
+
+ * use external proguard dependency (e.g. 4.7 as deployed to Central Repository)
+{{{
+<plugin>
+  <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+  <artifactId>android-maven-plugin</artifactId>
+    <dependencies>
+      <dependency>
+        <groupId>net.sf.proguard</groupId>
+        <artifactId>proguard-base</artifactId>
+        <version>4.7</version>
+      </dependency>
+    </dependencies>
+}}}
 
 === Android Maven Plugin 3.1.1 ===
 
