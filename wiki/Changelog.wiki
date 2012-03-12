@@ -71,7 +71,29 @@ API/Configuration Changes:
       </dependency>
     </dependencies>
 }}}
- * manifest update goal 
+ * manifest update goal with new parameters for screens
+{{{
+ <manifest>
+            <versionName></versionName>
+            <versionCode>123</versionCode>
+            <versionCodeAutoIncrement>true|false</versionCodeAutoIncrement>
+            <versionCodeUpdateFromVersion>true|false</versionCodeUpdateFromVersion>
+            <sharedUserId>anId</sharedUserId>
+            <debuggable>true|false</debuggable>
+            
+            <supports-screens>
+              <anyDensity>true</anyDensity>
+              <xlargeScreens>false</xlargeScreens>
+            </supports-screens>
+            
+            <compatible-screens>
+              <compatible-screen>
+                <screenSize>small</screenSize>
+                <screenDensity>ldpi</screenDensity>
+              </compatible-screen>
+            </compatible-screens>
+          </manifest>
+}}} 
 === Android Maven Plugin 3.1.1 ===
 
   * verify required NDK message and bring up useful error messages
