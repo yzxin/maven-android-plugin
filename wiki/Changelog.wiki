@@ -37,6 +37,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/110
     * see https://github.com/jayway/maven-android-plugin/pull/111
     * contributed by Manfred Moser http://simpligility.com 
+  * support for SupportScreens and CompatibleScreens elements in manifest-update goal
+    * see https://github.com/jayway/maven-android-plugin/pull/92
+    * contributed by Matthias Käppler http://brainflush.wordpress.com
 
 API/Configuration Changes:
 
@@ -55,8 +58,6 @@ API/Configuration Changes:
   </jvmArguments>
 </proguard>
 }}}
-
-
  * use external proguard dependency (e.g. 4.7 as deployed to Central Repository)
 {{{
 <plugin>
@@ -70,7 +71,7 @@ API/Configuration Changes:
       </dependency>
     </dependencies>
 }}}
-
+ * manifest update goal 
 === Android Maven Plugin 3.1.1 ===
 
   * verify required NDK message and bring up useful error messages
