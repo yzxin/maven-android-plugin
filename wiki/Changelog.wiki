@@ -18,7 +18,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * Capture screenshots from the Android device during integration tests
      * see https://github.com/jayway/maven-android-plugin/pull/104
      * see https://github.com/jayway/maven-android-plugin-samples/pull/25
-     * contributed by Roberto Tyley http://www.guardian.co.uk/profile/roberto-tyley
+     * contributed by Roberto Tyley https://github.com/rtyley
   * Test coverage with Emma
      * see https://github.com/jayway/maven-android-plugin/pull/101/
      * see https://github.com/jayway/maven-android-plugin-samples/pull/24/
