@@ -35,7 +35,7 @@ The rest of the test is just setting up the activity so it's ready to have it's 
 
 morseflash/morseflash-instrumentation/target/screenshots
 
-They're named sequentially by default (0000.png, 0001.png, etc), but you can set an explicit name for the shot using `poseForScreenshotNamed()` if you like. In addition, for each android device used in the tests, an animated-gif will be created showing all screenshots taken.
+They're named sequentially by default (0000.png, 0001.png, etc), but you can set an explicit name for the shot using `poseForScreenshotNamed("foobar")` if you like. In addition, for each android device used in the tests, an animated-gif will be created showing all screenshots taken.
 
 = Examples =
 
