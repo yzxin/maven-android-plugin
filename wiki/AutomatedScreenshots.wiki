@@ -1,13 +1,14 @@
 #summary On-demand screenshots during Android integration tests
 
-Visual design is (increasingly) important to Android apps, and though it's difficult to test, you _can_ make visual checks much easier by capturing screenshots from your device during your integration tests. As of v3.1.2, the android-maven-plugin includes support for taking screenshots whenever requested to do so by your instrumentation test code.
+Visual design is (increasingly) important to Android apps, and though it's difficult to test, you _can_ make visual checks much easier by capturing screenshots from your device during testing. As of v3.1.2, the android-maven-plugin includes support for taking screenshots whenever requested to do so by your instrumentation test code. This
+functionality is supplied by !GitHub's [https://github.com/rtyley/android-screenshot-lib#readme Android Screenshot] library, which uses [http://sourceforge.net/apps/trac/android4maven/wiki/ddmlib ddmlib] to capture screenshots.
 
 The screenshot capture speed is about 1 frame per second, so you can't get full motion video, but all screenshots captured for a particular test run are also compressed into an animated gif. This gif can be posted to your build radiator or dev chatroom on each build, to give quick visual feedback on the current state of the app.
 
 = Usage =
 
 Getting a screenshot is simple - you just invoke `poseForScreenshot()`
-when you want one:
+when you want one :
 
 {{{
 import static com.github.rtyley.android.screenshot.celebrity.Screenshots.poseForScreenshot;
@@ -28,6 +29,8 @@ import static com.github.rtyley.android.screenshot.celebrity.Screenshots.poseFor
     }
 }}}
 
+The `poseForScreenshot()` method is a small dependency you need to add to your integration-test project, available from Maven Central as the [http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.github.rtyley%22%20AND%20a%3A%22android-screenshot-celebrity%22 android-screenshot-celebrity] library.
+
 The rest of the test is just setting up the activity so it's ready to have it's screenshot taken - ie startActivitySync() and then waiting a short period for the activity to be ready. The screenshots will be placed in a 'screenshots' folder under your instrumentation test target directory, for example:
 
 morseflash/morseflash-instrumentation/target/screenshots
@@ -36,4 +39,4 @@ They're named sequentially by default (0000.png, 0001.png, etc), but you can set
 
 = Examples =
 
-The morseflash project has an [https://github.com/jayway/maven-android-plugin-samples/commit/8094291fee576fb21f202e320b56552a46a81957#L1R47 example test] that takes screenshots and there's also an [https://github.com/github/gauges-android/blob/gauges-android-1.1/integration-tests/src/main/java/com/github/mobile/gauges/test/AppearanceTest.java#L88-109 example robotium test] in the open-source _Gaug.es_ android app by !GitHub.
+The morseflash project has an [https://github.com/jayway/maven-android-plugin-samples/commit/8094291fee576fb21f202e320b56552a46a81957#L1R47 example test] that takes screenshots and there's also an [https://github.com/github/gauges-android/blob/gauges-android-1.1/integration-tests/src/main/java/com/github/mobile/gauges/test/AppearanceTest.java#L88-109 example robotium test] in the open-source [https://play.google.com/store/apps/details?id=com.github.mobile.gauges Gaug.es] android app by !GitHub.
