@@ -43,7 +43,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 API/Configuration Changes:
 
- * see AutomatedScreenshots for information on how to get them
+ * see AutomatedScreenshots for information about the on-demand screenshots during Android integration tests
  * new and old proguard config options also supported are android.proguard.xyz as properties 
 {{{
 <proguard>
