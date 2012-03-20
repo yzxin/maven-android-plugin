@@ -10,6 +10,7 @@
 
 *Advanced*
   * [AddOns Google Add Ons (Maps)]
+  * [AutomatedScreenshots]
   * [ProGuard Shrink, Obfuscate and Optimize with Proguard]
   * [SigningAPKWithMavenJarsigner Signing the APK]
   * [ZipalignAPKBuiltByMAven Zipalign the APK]
