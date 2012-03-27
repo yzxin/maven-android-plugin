@@ -40,6 +40,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * support for SupportScreens and CompatibleScreens elements in manifest-update goal
     * see https://github.com/jayway/maven-android-plugin/pull/92
     * contributed by Matthias Käppler http://brainflush.wordpress.com
+  * support for brackets and spaces in Android Home path for integration tests
+    * fixes issue 263
+    * see https://github.com/jayway/maven-android-plugin/pull/114
+    * contributed by Bob Walker http://www.bobwalker.co.uk
 
 API/Configuration Changes:
 
