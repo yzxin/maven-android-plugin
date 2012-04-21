@@ -17,7 +17,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
   * 
 
-=== Android Maven Plugin 3.2.0 (on its way to [http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/android-maven-plugin/ Maven Central]...) ===
+=== Android Maven Plugin 3.2.0 ===
 
   * Capture screenshots from the Android device during integration tests
      * see https://github.com/jayway/maven-android-plugin/pull/104
