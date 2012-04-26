@@ -34,6 +34,9 @@ Other known specific artifacts are:
 
 [http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.actionbarsherlock%22 ActionBarSherlock and related deployment]
 
+[http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22jsonmarshaller%22 JSON Marshaller]
+
+[http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22ormlite-android%22 ormlite for Android
 and there is a whole bunch more.
 
 = Other repositories =
