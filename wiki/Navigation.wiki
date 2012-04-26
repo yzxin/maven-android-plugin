@@ -27,6 +27,7 @@
 
   * [Documentation]
   * [PluginRenamed]
+  * [Repositories]
   * [LinksBlogsAndMore Links, blogs and more]
   * [Presentations]
   * [PeopleUsingThis People Using This]
