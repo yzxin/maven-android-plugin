@@ -16,7 +16,7 @@ http://search.maven.org/#search%7Cga%7C1%7Candroid
 
 Other known specific artifacts are:
 
-    *[http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.jayway.maven.plugins.android.generation2%22 Android Maven Plugin]
+  * [http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.jayway.maven.plugins.android.generation2%22 Android Maven Plugin]
   * [http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.google.android%22 android.jar and related libraries supplied by the SDK otherwise in com.google.android]
   * [http://search.maven.org/#search%7Cga%7C1%7Ccom.android a bunch of libraries from the SDK/tools project]
   * [http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22de.akquinet.android.archetypes%22 Android Archetypes]
@@ -28,6 +28,7 @@ Other known specific artifacts are:
   * [http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22jsonmarshaller%22 JSON Marshaller]
   * [http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22ormlite-android%22 ormlite for Android]
   * [http://search.maven.org/#search%7Cga%7C1%7Chttpresponsecache  httpresponsecache]
+
 and there is a whole bunch more.
 
 = Other repositories =
