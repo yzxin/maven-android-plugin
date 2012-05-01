@@ -15,7 +15,11 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.2.1 (not released yet) ===
 
-  * 
+  * Expose manifest values in manifest goal as properties so they can be picked up in the build e.g. to be used for further tasks like scm branch creation, logging and so on
+    * see javadoc for property name details, convention is android.manifest.*
+    * see https://github.com/jayway/maven-android-plugin/pull/115
+    * contributed by Richard Guest https://github.com/quiffman
+  * Your change could be here!
 
 === Android Maven Plugin 3.2.0 ===
 
