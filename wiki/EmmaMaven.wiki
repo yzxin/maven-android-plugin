@@ -193,7 +193,7 @@ When we have this two files we can generate report (sonar or report plugin)
 == How to present emma coverage result == 
 We have more then one: 
 ===Sonar (_thanks for Anthony Dahanne (anthonydahanne) for help configure sonnar_) === 
-We need enable emma plugin in sonar and add properties to our projects:
+We cam enable emma plugin in sonar by adding properties to our project:
 {{{
 
 <properties>
