@@ -19,6 +19,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see javadoc for property name details, convention is android.manifest.xyz
     * see https://github.com/jayway/maven-android-plugin/pull/115
     * contributed by Richard Guest https://github.com/quiffman
+  * Fix for Proguard Mojo to work on MacOSX without JAVA_HOME set
+    * see https://github.com/jayway/maven-android-plugin/pull/116
+    * contributed by Arne Riiber
   * Your change could be here!
 
 === Android Maven Plugin 3.2.0 ===
