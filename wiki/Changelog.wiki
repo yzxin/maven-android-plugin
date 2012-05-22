@@ -22,6 +22,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * Fix for Proguard Mojo to work on MacOSX without JAVA_HOME set
     * see https://github.com/jayway/maven-android-plugin/pull/116
     * contributed by Arne Riiber
+  * New standalone goal "devices" that shows a list of attached devices/emulators using the same naming convention as the other goals and shows the device status as well
+    * see https://github.com/jayway/maven-android-plugin/pull/117
+    * contributed by Manfred Moser http://simpligility.com 
   * Your change could be here!
 
 === Android Maven Plugin 3.2.0 ===
