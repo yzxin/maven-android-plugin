@@ -28,7 +28,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * Workaround to the problem that apkbuilder excludes resources in META-INF 
      * fixes issue 97
      * see https://github.com/jayway/maven-android-plugin/pull/89
-     * contributed by pa314159  https://github.com/pa314159
+     * contributed by Pappy STĂNESCU https://github.com/pa314159
   * Your change could be here!
 
 === Android Maven Plugin 3.2.0 ===
