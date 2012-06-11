@@ -29,7 +29,14 @@ A bunch of configuration parameters have changed and some have be removed, compa
      * fixes issue 97
      * see https://github.com/jayway/maven-android-plugin/pull/89
      * contributed by Pappy STĂNESCU https://github.com/pa314159
-  * Your change could be here!
+  * A large number of enhancements and fixes related to the NDK support of the Android Maven Plugin
+    * see https://github.com/jayway/maven-android-plugin/pull/118
+    * fixes issue 255: Apk does not contain native libs in 'libs/armeabi' during
+    * fixes issue 264: NDK build doesn't work on Windows: PatternSyntaxException
+    * fixes issue 265: NDK Build leaves generated .so unstripped thus large
+    * fixes issue 277: NDK build leaves a lot of temporary files around
+    * initial support for apk's with native debugging suport (include gdbserver)
+    * contributed by Johan Lindquist
 
 === Android Maven Plugin 3.2.0 ===
 
