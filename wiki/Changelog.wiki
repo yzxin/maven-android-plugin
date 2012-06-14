@@ -37,6 +37,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * fixes issue 277: NDK build leaves a lot of temporary files around
     * initial support for apk's with native debugging suport (include gdbserver)
     * contributed by Johan Lindquist
+  * Allow exclusion of transitive dependencies for native libraries
+    * fixes issue 282
+    * see https://github.com/jayway/maven-android-plugin/pull/119
+    * contributed by Johan Lindquist
 
 === Android Maven Plugin 3.2.0 ===
 
