@@ -41,6 +41,11 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * fixes issue 282
     * see https://github.com/jayway/maven-android-plugin/pull/119
     * contributed by Johan Lindquist
+  * Allow parsing of invalid version numbers to upgrade versionCode as good as possible
+    * see https://github.com/jayway/maven-android-plugin/pull/112
+    * and https://github.com/jayway/maven-android-plugin/commit/03e275df8a1b3801d4ed1f704b6b1619a3af682b
+    * contributed by Marvin Bredal Lillehaug https://github.com/computerlove and Manfred Moser http://simpligility.com
+
 
 === Android Maven Plugin 3.2.0 ===
 
