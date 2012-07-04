@@ -13,7 +13,7 @@ Requires Maven 3.
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.2.1 (not released yet) ===
+=== Android Maven Plugin 3.3.0 (not released yet) ===
 
   * Expose manifest values in manifest goal as properties so they can be picked up in the build e.g. to be used for further tasks like scm branch creation, logging and so on
     * see javadoc for property name details, convention is android.manifest.xyz
@@ -32,10 +32,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * A large number of enhancements and fixes related to the NDK support of the Android Maven Plugin
     * see https://github.com/jayway/maven-android-plugin/pull/118
     * fixes issue 255: Apk does not contain native libs in 'libs/armeabi' during
-    * fixes issue 264: NDK build doesn't work on Windows: PatternSyntaxException
+    * fixes issue 264: NDK build doesn't work on Windows: !PatternSyntaxException
     * fixes issue 265: NDK Build leaves generated .so unstripped thus large
     * fixes issue 277: NDK build leaves a lot of temporary files around
-    * initial support for apk's with native debugging suport (include gdbserver)
+    * initial support for apk's with native debugging support (include gdbserver)
     * contributed by Johan Lindquist
   * Allow exclusion of transitive dependencies for native libraries
     * fixes issue 282
