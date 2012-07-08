@@ -13,7 +13,10 @@ Requires Maven 3.
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.3.0 (not released yet) ===
+=== Android Maven Plugin 3.3.1 (not released yet) ===
+  * _your change could be here :)_
+
+=== Android Maven Plugin 3.3.0 (syncing to [http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/android-maven-plugin/ Maven Central]...) ===
 
   * Expose manifest values in manifest goal as properties so they can be picked up in the build e.g. to be used for further tasks like scm branch creation, logging and so on
     * see javadoc for property name details, convention is android.manifest.xyz
