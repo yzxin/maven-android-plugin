@@ -20,6 +20,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Support BuildConfig generation.
     * see https://github.com/jayway/maven-android-plugin/pull/123
     * contributed by Jake Wharton http://jakewharton.com 
+ * Support use of alternative executable for "emulator"
+    * see https://github.com/jayway/maven-android-plugin/pull/122 and some commit around that merge in master.. 
+    * contributed by Tobias Gesellchen and Manfred Moser
+
  * _your change could be here :)_
 
 === Android Maven Plugin 3.3.0 ===
