@@ -58,7 +58,7 @@ Use one of these depending on the platform version you are developing against.
      _(Also leave the "test" folder for now. You can later move it out to its own project. If you want, you can then look at the {{{apidemos-15-instrumentationtest}}} sample project.)_
   <li>To build your apk, simply:</li>
      {{{
-     mvn install
+     mvn clean install
      }}}
   <li>To deploy your apk to the connected device:</li>
      {{{
