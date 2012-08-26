@@ -166,21 +166,6 @@ Commit the updates to git:
 http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/android-maven-plugin/
 ----
 
-== "Half" release samples ==
-Perform "half" a release. We can't sync the samples to Maven Central because they have dependencies to things not already on Central (currently Scala, but could be more stuff in the future). Therefore we don't deploy them to our m2repo at all. We do however want a release tag in git, so do it like this:
-
-  {{{
-  mvn clean && mvn install release:prepare
-  }}}
-
-That should test everything and create a release tag in git.
-
-Afterwards, you should clean up the residue release files:
-
-  {{{
-  mvn release:clean
-  }}}
-
 == Update samples poms (to snapshot) ==
 
 
