@@ -181,10 +181,6 @@ Commit the updates to git:
   git commit -m 'Use the next SNAPSHOT version of android-maven-plugin.'
   }}}
 
-== Update Samples wiki page ==
-
-Update the [Samples] wiki page. For example set the link to the release tag you just created when releasing.
-
 == Update Changelog ==
 
 Update [Changelog] with all interesting information about the plugin release, such as:
