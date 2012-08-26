@@ -101,11 +101,10 @@ That should perform the entire release, including deploying the site into {{{~/m
 Now you need to promote the staged release, for it to be moved to the release repo where it's synced to Central from.
 
   #. Browse to [http://oss.sonatype.org/] and log in.
-  #. Click "Staging".
-  #. At the top, select the staging repo.
-  #. In the middle frame, right click on the repo and choose "Close".
-  #. Then right click again and choose "Promote".
-  #. Select to promote it into "Jayway Releases".
+  #. Click "Staging Repositories".
+  #. Select the repo and choose "Close".
+  #. Then choose "Relese" for the same repo.
+  #. If prompted for where to release it, choose "Jayway Releases".
 
 == Upload the m2site ==
 Check if there is anything you need to {{{svn add}}}:
