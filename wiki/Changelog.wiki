@@ -29,6 +29,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * Add support to multiple native architectures
     * see https://github.com/jayway/maven-android-plugin/pull/125
     * contributed by Johann Reyes http://vaporwarecorp.com
+  * Plugin updates, plugin site improvements and minor fixes
+   * contributed by Manfred Moser http://simpligility.com 
  * _your change could be here :)_
 
 All merges into master contributed by Manfred Moser
