@@ -23,13 +23,13 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Support use of alternative executable for "emulator"
     * see https://github.com/jayway/maven-android-plugin/pull/122 and some commit around that merge in master.. 
     * contributed by Tobias Gesellchen and Manfred Moser
-  * Fix proguard mojo for projects which use the Android version of Apache Http components
+ * Fix proguard mojo for projects which use the Android version of Apache Http components
     * see https://github.com/jayway/maven-android-plugin/pull/126
     * contributed by Tavian Barnes http://tavianator.com/ 
-  * Add support to multiple native architectures
+ * Add support to multiple native architectures
     * see https://github.com/jayway/maven-android-plugin/pull/125
     * contributed by Johann Reyes http://vaporwarecorp.com
-  * Plugin updates, plugin site improvements and minor fixes
+ * Plugin updates, plugin site improvements and minor fixes
    * contributed by Manfred Moser http://simpligility.com 
  * _your change could be here :)_
 
