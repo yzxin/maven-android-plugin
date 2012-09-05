@@ -31,13 +31,13 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Johann Reyes http://vaporwarecorp.com
  * Plugin updates, plugin site improvements and minor fixes
    * contributed by Manfred Moser http://simpligility.com 
-  * Report correct test run count even when failures occur
+ * Report correct test run count even when failures occur
     * https://github.com/jayway/maven-android-plugin/pull/128
     * contributed by Jan Berkel http://zegoggl.es/
-  * Use logger in debug level instead of stdout in CommandExecutor
+ * Use logger in debug level instead of stdout in CommandExecutor
     * https://github.com/jayway/maven-android-plugin/pull/129
     * contributed by Jan Berkel http://zegoggl.es/
-* _your change could be here :)_
+ * _your change could be here :)_
 
 All merges into master contributed by Manfred Moser
 
