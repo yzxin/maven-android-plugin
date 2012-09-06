@@ -52,8 +52,10 @@ it includes the required gpg-agent too.
     * Here are some instructions: http://maven.apache.org/developers/release/pmc-gpg-keys.html
     * You should upload it to http://pgp.mit.edu/
   * Run some kind of gpg-agent. Our {{{pom.xml}}} requires it.
+  * If you need to migrate keys look at http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html
 
-
+When using gpg2 you will need to tell the Maven GPG Plugin that the executable is gpg2. Do this by passing the -Dgpg.executable=gpg2 on the command line invocation of your Maven build command.
+  
 = Deploy a SNAPSHOT version =
 
 If you want to make available a binary version of Android Maven Plugin for someone to test, before making a proper release, deploy a SNAPSHOT version.
@@ -66,7 +68,7 @@ To perform the SNAPSHOT release:
 
   {{{
   cd ~/maven-android-plugin
-  mvn clean && mvn install && mvn deploy -P official-release
+  mvn clean deploy -P official-release
   }}}
 
 That should deploy the artifacts directly to our SNAPSHOT repo on [http://oss.sonatype.org]. Daring users can follow instructions in [SnapshotRepo] to access them.
