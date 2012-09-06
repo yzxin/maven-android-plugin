@@ -35,8 +35,12 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * https://github.com/jayway/maven-android-plugin/pull/128
     * contributed by Jan Berkel http://zegoggl.es/
  * Use logger in debug level instead of stdout in CommandExecutor
-    * https://github.com/jayway/maven-android-plugin/pull/129
+    * see https://github.com/jayway/maven-android-plugin/pull/129
     * contributed by Jan Berkel http://zegoggl.es/
+ *Add support for annotations when running instrumentation tests    
+    * see https://github.com/jayway/maven-android-plugin/pull/130/
+    * contributed by Jan Berkel http://zegoggl.es/
+
  * _your change could be here :)_
 
 All merges into master contributed by Manfred Moser
