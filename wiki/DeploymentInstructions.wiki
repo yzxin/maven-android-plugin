@@ -55,6 +55,28 @@ it includes the required gpg-agent too.
   * If you need to migrate keys look at http://irtfweb.ifa.hawaii.edu/~lockhart/gpg/gpg-cs.html
 
 When using gpg2 you will need to tell the Maven GPG Plugin that the executable is gpg2. Do this by passing the -Dgpg.executable=gpg2 on the command line invocation of your Maven build command.
+If you don't want to be asked the password for your GPG key during the build you can use -Dgpg.passphrase="supersecretpassword", but be careful .. this will be saved in your history file .. 
+
+== Settings.xml ==
+
+In order for Maven to use your credentials to access the deployment repositories (for which you have to ask Hugo for permission) you have to add them to your ~/.m2/settings.xml file. It should look like this
+
+{{{
+		<!-- jayway servers for Android Maven Plugin -->
+		<server>
+			<id>oss.sonatype.org-jayway-staging</id>
+			<username>KsfUplDW</username>
+			<password>/Da0TNGcQCVPpRnw3UM/QgUWXjEZok1rnNd3s1ONwI0J</password>
+		</server>
+		<server>
+			<id>oss.sonatype.org-jayway-snapshots</id>
+			<username>KsfUplDW</username>
+			<password>/Da0TNGcQCVPpRnw3UM/QgUWXjEZok1rnNd3s1ONwI0J</password>
+		</server>
+
+}}}
+with the respective username and password.
+
   
 = Deploy a SNAPSHOT version =
 
