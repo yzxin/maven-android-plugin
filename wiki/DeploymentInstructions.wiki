@@ -77,9 +77,17 @@ In order for Maven to use your credentials to access the deployment repositories
 }}}
 with the respective username and password.
 
-= Are you okay to deploy =
+= Are you okay to release and deploy? =
 
 In order to be deployed the builds on the CI server for the plugin and the samples should pass! If that is not the case.. fix that first. 
+
+Once that is ok also try building the site locally with
+
+{{{
+mvn clean install site
+}}}
+
+and if that fails, get it to work too ;-)
   
 = Deploy a SNAPSHOT version =
 
