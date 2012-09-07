@@ -170,26 +170,17 @@ Go ahead and commit the updated site.
 Mime-types should hopefully be correct. Check at http://maven-android-plugin-m2site.googlecode.com/svn/index.html
 
 
-== Update samples poms (to release) ==
-
-*We have just switched to a different release cycle / scheme for samples.*
-
-See http://github.com/jayway/maven-android-plugin-samples/pull/2
-
-*TODO: Update these instructions!*
-
-  {{{
-  cd ~/maven-android-plugin-samples
-  }}}
-
+== Update samples  ==
 
 Check out the master branch and change all version strings for the android maven plugin to use the new SNAPSHOT version. Build, commit and push to origin master.
 
-== WAIT UNTIL THE RELEASE IS SYNCED TO CENTRAL: ==
+WAIT UNTIL THE RELEASE IS SYNCED TO CENTRAL
 
-Check out the stable branch and change all the version strings for the android maven plugin to use the new released version. Build, commit and push to origin stable.
+Check here http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/android-maven-plugin/
 
-http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/android-maven-plugin/
+Check out the stable branch, pull up from the master branch in case there are any changes and change all the version strings for the android maven plugin to use the new released version. Build, commit and push to origin stable.
+
+
 
 == Update Changelog ==
 
