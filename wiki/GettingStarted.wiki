@@ -46,7 +46,7 @@ Alternatively, these are the steps to create an Android project manually:
   </dependency>
 }}}
 
-The currently valid dependencies versions are  1.5_r4, 1.6_r2, 2.1.2 and 2.2.1. 
+Check http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22android%22 for available versions.
 Use one of these depending on the platform version you are developing against.
 
      * In the android-maven-plugin configuration, set the correct platform number which corresponds to the version you declared for the android dependency, for example: {{{<platform>7</platform>}}}. You can use API level (e.g. 7) or platform version (e.g. 2.1)
