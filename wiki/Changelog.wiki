@@ -13,7 +13,7 @@ Requires Maven 3.0.3+
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.3.2 (not released yet) ===
+=== Android Maven Plugin 3.3.2 ===
  * Support transitive apklibs when invoking aapt
     * see https://github.com/jayway/maven-android-plugin/pull/124
     * contributed by Jake Wharton http://jakewharton.com
