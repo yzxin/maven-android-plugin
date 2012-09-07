@@ -65,13 +65,13 @@ In order for Maven to use your credentials to access the deployment repositories
 		<!-- jayway servers for Android Maven Plugin -->
 		<server>
 			<id>oss.sonatype.org-jayway-staging</id>
-			<username>KsfUplDW</username>
-			<password>/Da0TNGcQCVPpRnw3UM/QgUWXjEZok1rnNd3s1ONwI0J</password>
+			<username>yourname</username>
+			<password>yourpassword</password>
 		</server>
 		<server>
 			<id>oss.sonatype.org-jayway-snapshots</id>
-			<username>KsfUplDW</username>
-			<password>/Da0TNGcQCVPpRnw3UM/QgUWXjEZok1rnNd3s1ONwI0J</password>
+			<username>yourname</username>
+			<password>yourpassword</password>
 		</server>
 
 }}}
