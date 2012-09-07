@@ -182,39 +182,14 @@ See http://github.com/jayway/maven-android-plugin-samples/pull/2
   cd ~/maven-android-plugin-samples
   }}}
 
-Update the samples' {{{pom.xml}}} file to use the newly released version of the plugin, instead of the previous one. See for example [http://github.com/jayway/maven-android-plugin-samples/commit/38bd0adb75035fff955b50bb16596ca4ab49c3fa this commit].
 
-Try the updated samples with an emulator or usb device:
-  {{{
-  mvn clean && mvn install
-  }}}
+Check out the master branch and change all version strings for the android maven plugin to use the new SNAPSHOT version. Build, commit and push to origin master.
 
-Commit the updates to git:
-
-  {{{
-  git commit -m 'Use the most recently released version of android-maven-plugin.'
-  }}}
-
-----
 == WAIT UNTIL THE RELEASE IS SYNCED TO CENTRAL: ==
 
+Check out the stable branch and change all the version strings for the android maven plugin to use the new released version. Build, commit and push to origin stable.
+
 http://repo1.maven.org/maven2/com/jayway/maven/plugins/android/generation2/android-maven-plugin/
-----
-
-== Update samples poms (to snapshot) ==
-
-
-  {{{
-  cd ~/maven-android-plugin-samples
-  }}}
-
-Update the samples' root {{{pom.xml}}} file to use the next SNAPSHOT version of the plugin, so that any rebuilds of samples on master branch will use the latest plugin code. See for example [http://github.com/jayway/maven-android-plugin-samples/commit/924304a4287b4013ecfa483b5ce5490cb328eaf3 this commit].
-
-Commit the updates to git:
-
-  {{{
-  git commit -m 'Use the next SNAPSHOT version of android-maven-plugin.'
-  }}}
 
 == Update Changelog ==
 
