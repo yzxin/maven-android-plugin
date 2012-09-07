@@ -41,6 +41,7 @@ To automatically set correct mime-types on anything you {{{svn add}}}, put this 
   *.jpg = svn:mime-type=image/jpeg
   *.jpeg = svn:mime-type=image/jpeg
   *.gif = svn:mime-type=image/gif
+  *.js = svn:mime-type=application/javascript
   }}}
 
 == GPG ==
