@@ -194,4 +194,10 @@ Update [Changelog] with all interesting information about the plugin release, su
 == Announce ==
 
 Announce on [http://groups.google.com/group/maven-android-developers Maven Android Developers]
-and ideally also on the [http://maven.apache.org/mail-lists.html Maven developers and users mailing lists] 
+and ideally also on the [http://maven.apache.org/mail-lists.html Maven developers and users mailing lists]
+
+== Update front page ==
+
+On the project front page, edit the link and version number for "Latest version / Stable...". Use [http://code.google.com/p/maven-android-plugin/admin the admin page] to edit it.
+
+To obtain a correct permalink to the announcement email, go to the [http://groups.google.com/group/maven-android-developers Maven Android Developers] group, open the announcement post and click the little chain/link icon to the right.
