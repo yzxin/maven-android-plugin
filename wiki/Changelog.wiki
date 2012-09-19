@@ -21,6 +21,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * New additional parameter for proguard goal, "outputDirectory"
     * see https://github.com/jayway/maven-android-plugin/pull/127
     * contributed by Michal Harakal https://github.com/michalharakal
+ * Support for building arm and x86 at the same time
+    * see https://github.com/jayway/maven-android-plugin/pull/132/
+    * contributed by Jonathan Reyes http://vaporwarecorp.com
  * your change could be here :)
 
 === Android Maven Plugin 3.3.2 ===
