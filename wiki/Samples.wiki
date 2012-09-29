@@ -5,7 +5,7 @@
 
 This link will take you to the latest stable samples:
 
---> [http://github.com/jayway/maven-android-plugin-samples/archives/stable Download samples from the stable branch]
+--> [https://github.com/jayway/maven-android-plugin-samples/zipball/stable Download samples from the stable branch]
 
 === Important notes: ===
 
