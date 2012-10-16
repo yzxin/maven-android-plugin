@@ -39,6 +39,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Configure BuildConfig generation via a mojo parameter instead of system property
     * https://github.com/jayway/maven-android-plugin/pull/136
     * contributed by Karsten Sperling https://github.com/ksperling http://www.pluk.com
+ * Added code to merge APKLIB manifests
+   * https://github.com/jayway/maven-android-plugin/pull/135
+   * contributed by  Tom Bollwitt https://github.com/tlbollwitt
  * your change could be here :)
 
 All merges, codestyle fixups and more miscellaneous improvements contributed by Manfred Moser, http://www.simpligility.com
@@ -46,6 +49,36 @@ All merges, codestyle fixups and more miscellaneous improvements contributed by 
 API/Configuration Changes:
 
  * BuildConfig configuration relies on android.release maven configuration rather than system property
+ * APK Merge support has to be configured like this
+{{{
+<plugins>
+        <plugin>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>2.6</version>
+            <executions>
+                <execution>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>resources</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>default-resources</id>
+                    <phase>DISABLED</phase>
+                </execution>
+            </executions>
+        </plugin>
+        <plugin>
+            <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+            <artifactId>android-maven-plugin</artifactId>
+            <configuration>
+                <androidManifestFile>${project.build.directory}/AndroidManifest.xml</androidManifestFile>
+                <mergeManifests>true</mergeManifests>
+            </configuration>
+            <extensions>true</extensions>
+        </plugin>
+    </plugins>
+}}}
 
 === Android Maven Plugin 3.3.2 ===
  * Support transitive apklibs when invoking aapt
