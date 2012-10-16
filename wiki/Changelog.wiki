@@ -46,6 +46,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/134
    * see https://github.com/jayway/maven-android-plugin-samples/pull/30 
    * contributed by by andi12 https://github.com/andi12
+ * Clean up of configuration for zipalign goal to work properly with pom, settings and command line config
+   * see https://github.com/jayway/maven-android-plugin/commit/cb79d0b1aa65f5fd52ec267ce9f8624af17b828e
+   * contributed by Manfred Moser http://www.simpligility.com
  * your change could be here :)
 
 All merges, codestyle fixups and more miscellaneous improvements contributed by Manfred Moser, http://www.simpligility.com
