@@ -13,7 +13,7 @@ Requires Maven 3.0.3+
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.3.3 (not yet released) ===
+=== Android Maven Plugin 3.4.0 (not yet released) ===
 
  * Added support to specify application makefile in ndk-build
     * see https://github.com/jayway/maven-android-plugin/pull/131
@@ -36,8 +36,17 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Make inclusion of JDK libs in ProGuard input optional.
     * https://github.com/jayway/maven-android-plugin/pull/137
     * contributed by Karsten Sperling https://github.com/ksperling http://www.pluk.com
-
+ * Configure BuildConfig generation via a mojo parameter instead of system property
+    * https://github.com/jayway/maven-android-plugin/pull/136
+    * contributed by Karsten Sperling https://github.com/ksperling http://www.pluk.com
  * your change could be here :)
+
+All merges, codestyle fixups and more contributed by Manfred Moser, http://www.simpligility.com
+
+
+API/Configuration Changes:
+
+* BuildConfig configuration relies on android.release maven configuration rather than system property
 
 === Android Maven Plugin 3.3.2 ===
  * Support transitive apklibs when invoking aapt
