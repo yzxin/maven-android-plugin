@@ -8,9 +8,12 @@ The snapshot repo may contain pre-releases from time to time. They are for examp
 Only use this snapshot repo for testing unreleased versions.
 
 
+
 = Details =
 
-Add this to your pom.xml:
+In order to use the repository just add the url http://oss.sonatype.org/content/repositories/jayway-snapshots/ as a proxy repository to your repository server and add that repository to your public group.
+
+In case you are still not using a repository server you can add the following to your pom.xml or settings.xml. Keep in mind that this is a discouraged Maven practice though and don't use this as a permanent solution.
 
 {{{
     <pluginRepositories>
