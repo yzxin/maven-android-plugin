@@ -29,7 +29,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Jonathan Reyes http://vaporwarecorp.com
  * Fixed parsing of error message from test failures
     * see https://github.com/jayway/maven-android-plugin/pull/139
-    * contributed by Olek P https://github.com/olekp
+    * contributed by Aleksander Pyszny https://github.com/olekp http://www.alan-systems.com
  * Check renameManifestPackage parameter before using package from AndroidManifest.xml
     * https://github.com/jayway/maven-android-plugin/pull/138
     * contributed by Jason Holmes http://blog.thejholmes.com
