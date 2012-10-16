@@ -27,6 +27,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fixed ndkstripper when no toolchain is specified
     * see https://github.com/jayway/maven-android-plugin/pull/133/
     * contributed by Jonathan Reyes http://vaporwarecorp.com
+ * Fixed parsing of error message from test failures
+    * see https://github.com/jayway/maven-android-plugin/pull/139
+    * contributed by Olek P https://github.com/olekp
+
  * your change could be here :)
 
 === Android Maven Plugin 3.3.2 ===
