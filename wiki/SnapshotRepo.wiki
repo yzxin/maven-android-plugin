@@ -13,7 +13,7 @@ Only use this snapshot repo for testing unreleased versions.
 
 In order to use the repository just add the url http://oss.sonatype.org/content/repositories/jayway-snapshots/ as a proxy repository to your repository server and add that repository to your public group.
 
-Try Sonatype Nexus, Apache Archive or Jfrog Artifactory.
+Try Sonatype Nexus, Apache Archiva or Jfrog Artifactory.
 
 In case you are still not using a repository server you can add the following to your pom.xml or settings.xml. Keep in mind that this is a discouraged Maven practice though and don't use this as a permanent solution.
 
