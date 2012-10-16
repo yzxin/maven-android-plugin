@@ -41,7 +41,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Karsten Sperling https://github.com/ksperling http://www.pluk.com
  * your change could be here :)
 
-All merges, codestyle fixups and more contributed by Manfred Moser, http://www.simpligility.com
+All merges, codestyle fixups and more miscellaneous improvements contributed by Manfred Moser, http://www.simpligility.com
 
 API/Configuration Changes:
 
