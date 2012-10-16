@@ -33,6 +33,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Check renameManifestPackage parameter before using package from AndroidManifest.xml
     * https://github.com/jayway/maven-android-plugin/pull/138
     * contributed by Jason Holmes http://blog.thejholmes.com
+ * Make inclusion of JDK libs in ProGuard input optional.
+    * https://github.com/jayway/maven-android-plugin/pull/137
+    * contributed by Karsten Sperling https://github.com/ksperling
 
  * your change could be here :)
 
