@@ -28,4 +28,4 @@ In case you are still not using a repository server you can add the following to
     </pluginRepositories>
 }}}
 
-Then you can change the `<version>` tag for the android-maven-plugin you're using in that pom, to the unreleased `*-SNAPSHOT` version you wish to test.
+With this setup done, you can change the `<version>` tag for the android-maven-plugin you're using in that pom, to the unreleased `*-SNAPSHOT` version you wish to test.
