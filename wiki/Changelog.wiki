@@ -43,10 +43,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 All merges, codestyle fixups and more contributed by Manfred Moser, http://www.simpligility.com
 
-
 API/Configuration Changes:
 
-* BuildConfig configuration relies on android.release maven configuration rather than system property
+ * BuildConfig configuration relies on android.release maven configuration rather than system property
 
 === Android Maven Plugin 3.3.2 ===
  * Support transitive apklibs when invoking aapt
