@@ -72,7 +72,7 @@ API/Configuration Changes:
  * Use logger in debug level instead of stdout in CommandExecutor
     * see https://github.com/jayway/maven-android-plugin/pull/129
     * contributed by Jan Berkel http://zegoggl.es/
- *Add support for annotations when running instrumentation tests    
+ * Add support for annotations when running instrumentation tests    
     * see https://github.com/jayway/maven-android-plugin/pull/130/
     * contributed by Jan Berkel http://zegoggl.es/
 
