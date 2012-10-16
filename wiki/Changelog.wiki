@@ -31,17 +31,21 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/139
     * contributed by Aleksander Pyszny https://github.com/olekp http://www.alan-systems.com
  * Check renameManifestPackage parameter before using package from AndroidManifest.xml
-    * https://github.com/jayway/maven-android-plugin/pull/138
+    * see https://github.com/jayway/maven-android-plugin/pull/138
     * contributed by Jason Holmes http://blog.thejholmes.com
  * Make inclusion of JDK libs in ProGuard input optional.
-    * https://github.com/jayway/maven-android-plugin/pull/137
+    * see https://github.com/jayway/maven-android-plugin/pull/137
     * contributed by Karsten Sperling https://github.com/ksperling http://www.pluk.com
  * Configure BuildConfig generation via a mojo parameter instead of system property
-    * https://github.com/jayway/maven-android-plugin/pull/136
+    * see https://github.com/jayway/maven-android-plugin/pull/136
     * contributed by Karsten Sperling https://github.com/ksperling http://www.pluk.com
  * Added code to merge APKLIB manifests
-   * https://github.com/jayway/maven-android-plugin/pull/135
+   * see https://github.com/jayway/maven-android-plugin/pull/135
    * contributed by  Tom Bollwitt https://github.com/tlbollwitt
+ * Improvements and fixes for APKLib support with Native code including sample projects
+   * see https://github.com/jayway/maven-android-plugin/pull/134
+   * see https://github.com/jayway/maven-android-plugin-samples/pull/30 
+   * contributed by by andi12 https://github.com/andi12
  * your change could be here :)
 
 All merges, codestyle fixups and more miscellaneous improvements contributed by Manfred Moser, http://www.simpligility.com
