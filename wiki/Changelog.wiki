@@ -59,6 +59,10 @@ All merges, codestyle fixups and more miscellaneous improvements contributed by 
 API/Configuration Changes:
 
  * BuildConfig configuration relies on android.release maven configuration rather than system property
+ * zipalign activation/deactivation now works properly so you need to activate it with
+{{{
+<zipalign><skip>false</skip></zipalign> 
+}}} in configuration or with android.zipalign.skip=false
  * APK Merge support has to be configured like this
 {{{
 <plugins>
