@@ -62,7 +62,8 @@ API/Configuration Changes:
  * zipalign activation/deactivation now works properly so you need to activate it with
 {{{
 <zipalign><skip>false</skip></zipalign> 
-}}} in configuration or with android.zipalign.skip=false
+}}} 
+in configuration or with android.zipalign.skip=false
  * APK Merge support has to be configured like this
 {{{
 <plugins>
