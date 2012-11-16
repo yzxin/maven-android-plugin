@@ -23,6 +23,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * Adapted Manifest merging to Android SDK release 21
     * see https://github.com/jayway/maven-android-plugin/pull/146
     * contributed by Tom Bollwitt https://github.com/tlbollwitt
+  * Fixed parsing of android.test.packages for multiple comma separated packages names to test
+    * see https://github.com/jayway/maven-android-plugin/pull/145
+    * contributed by Aleksander Pyszny http://www.alan-systems.com/en
 
 your changes could be here!
 
