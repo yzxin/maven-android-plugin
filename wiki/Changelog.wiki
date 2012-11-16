@@ -17,6 +17,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * apklib now uses the resourceOverlayDirectories and resourceOverlayDirectory options
     * see https://github.com/jayway/maven-android-plugin/pull/143
     * contributed by Tim Hepner https://github.com/mithepner
+  * Showing current test count and number of total count of tests during instrumentation test runs
+    * see https://github.com/jayway/maven-android-plugin/pull/147
+    * contributed by Aleksander Pyszny http://www.alan-systems.com/en
 
 your changes could be here!
 
