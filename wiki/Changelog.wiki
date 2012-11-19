@@ -26,7 +26,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * Fixed parsing of android.test.packages for multiple comma separated packages names to test
     * see https://github.com/jayway/maven-android-plugin/pull/145
     * contributed by Aleksander Pyszny http://www.alan-systems.com/en
-
+  * Parse return value of installPackage() during deploy and report failure as build failure with error message instead of ignoring it
+    * see https://github.com/jayway/maven-android-plugin/pull/148
+    * contributed by Nic Strong http://www.codepoets.co.nz
+ 
 your changes could be here!
 
 === Android Maven Plugin 3.4.0 ===
@@ -68,7 +71,6 @@ your changes could be here!
  * Fix for failure when ndk-build run twice by task sequence
    * see https://github.com/jayway/maven-android-plugin/pull/141
    * contributed by by Andi Everitt  https://github.com/andi12  http://www.raje.org.uk
- * your change could be here :)
 
 All merges, codestyle fixups and more miscellaneous improvements contributed by Manfred Moser, http://www.simpligility.com
 
