@@ -13,7 +13,12 @@ Requires Maven 3.0.3+
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.4.1 (not yet released) ===
+=== Android Maven Plugin 3.4.2 (not yet released) ===
+
+your changes could be here!
+
+
+=== Android Maven Plugin 3.4.1 ===
   * apklib now uses the resourceOverlayDirectories and resourceOverlayDirectory options
     * see https://github.com/jayway/maven-android-plugin/pull/143
     * contributed by Tim Hepner https://github.com/mithepner
@@ -30,7 +35,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/148
     * contributed by Nic Strong http://www.codepoets.co.nz
  
-your changes could be here!
+All merges, miscellaneous improvements and release performance contributed by Manfred Moser, http://www.simpligility.com
 
 === Android Maven Plugin 3.4.0 ===
 
