@@ -24,6 +24,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Improved automatic versionCode generation to avoid ambigious versionCode for different versions
     * see https://github.com/jayway/maven-android-plugin/pull/154
     * contributed by Fred Eisele https://github.com/phreed
+ * Allow the specification of patterns to exclude jar files from resource inclusion
+    * see https://github.com/jayway/maven-android-plugin/pull/152
+    * contributed by Mark Raynsford http://io7m.com
 
 
 API/Configuration Changes:
