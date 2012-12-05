@@ -15,7 +15,15 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.4.2 (not yet released) ===
 
-your changes could be here!
+ * Non-release builds will now automatically be debuggable
+    * see https://github.com/jayway/maven-android-plugin/pull/149
+    * contributed by jlawrienyt https://github.com/jlawrienyt
+
+
+
+API/Configuration Changes:
+
+* since non-release builds are now debuggable by default you need to ensure to set the release parameter in your configuration or android.release if you want to pass the parameter in on the command line.
 
 
 === Android Maven Plugin 3.4.1 ===
