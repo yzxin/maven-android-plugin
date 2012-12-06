@@ -23,11 +23,13 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Nic Strong http://www.codepoets.co.nz
  * Improved automatic versionCode generation to avoid ambigious versionCode for different versions
     * see https://github.com/jayway/maven-android-plugin/pull/154
+    * and https://github.com/jayway/maven-android-plugin/pull/155
     * contributed by Fred Eisele https://github.com/phreed
  * Allow the specification of patterns to exclude jar files from resource inclusion
     * see https://github.com/jayway/maven-android-plugin/pull/152
     * contributed by Mark Raynsford http://io7m.com
 
+Code reviews, testing, minor adjustments by Manfred Moser http://www.simpligility.com
 
 API/Configuration Changes:
 
