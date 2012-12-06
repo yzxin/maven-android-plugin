@@ -17,7 +17,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
  * Non-release builds will now automatically be debuggable
     * see https://github.com/jayway/maven-android-plugin/pull/149
-    * contributed by jlawrienyt https://github.com/jlawrienyt
+    * contributed by James Lawrie  https://github.com/jlawrienyt
  * Added support to for updating android:authorities attributes on provider elements in the manifest
     * see https://github.com/jayway/maven-android-plugin/pull/151 
     * contributed by Nic Strong http://www.codepoets.co.nz
