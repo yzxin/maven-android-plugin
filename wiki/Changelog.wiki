@@ -40,7 +40,25 @@ Code reviews, testing, minor adjustments by Manfred Moser http://www.simpligilit
 
 API/Configuration Changes:
 
-* since non-release builds are now debuggable by default you need to ensure to set the release parameter in your configuration or android.release if you want to pass the parameter in on the command line.
+* ATTENTION*
+
+Since non-release builds are now debuggable by default you NEED TO ensure that the release parameter is set to true in your release build.
+
+In the pom this would be e.g. 
+{{{
+<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+<artifactId>android-maven-plugin</artifactId>
+<configuration>
+    <release>true</release>
+}}}
+
+or you could activate on the command line with e.g
+
+{{{
+mvn clean deploy -Dandroid.release=true
+}}}
+
+or if you use the release plugin just add the above pom config to the release profile.
 
 
 === Android Maven Plugin 3.4.1 ===
