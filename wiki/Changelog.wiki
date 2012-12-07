@@ -32,6 +32,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/156
     * fixes issue 303
     * contributed by Tomasz Ptak https://github.com/tptak
+ * Fix for RC versions of the SDK in terms of manifest parsing and overall plugin execution
+    * see https://github.com/jayway/maven-android-plugin/pull/157
+    * contributed by Stéphane Nicolas https://github.com/stephanenicolas
 
 Code reviews, testing, minor adjustments by Manfred Moser http://www.simpligility.com
 
