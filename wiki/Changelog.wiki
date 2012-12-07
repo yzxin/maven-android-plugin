@@ -28,6 +28,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Allow the specification of patterns to exclude jar files from resource inclusion
     * see https://github.com/jayway/maven-android-plugin/pull/152
     * contributed by Mark Raynsford http://io7m.com
+ * Support for multiple shared libraries in the ndk build
+    * see https://github.com/jayway/maven-android-plugin/pull/156
+    * fixes issue 303
+    * contributed by Tomasz Ptak https://github.com/tptak
 
 Code reviews, testing, minor adjustments by Manfred Moser http://www.simpligility.com
 
