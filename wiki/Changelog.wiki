@@ -35,6 +35,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fix for RC versions of the SDK in terms of manifest parsing and overall plugin execution
     * see https://github.com/jayway/maven-android-plugin/pull/157
     * contributed by Stéphane Nicolas https://github.com/stephanenicolas
+ * Allow relative package names for the run goal
+    * see https://github.com/jayway/maven-android-plugin/pull/160
+    * contributed by Jonas Alves http://jonasalves.wordpress.com/
 
 Code reviews, testing, minor adjustments by Manfred Moser http://www.simpligility.com
 
