@@ -39,7 +39,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/160
     * contributed by Jonas Alves http://jonasalves.wordpress.com/
  * Introduced usage of parent pom to remove need to manage plugin versions
+   * contributed by Manfred Moser http://www.simpligility.com
  * Cleaned up site creation
+   * contributed by Manfred Moser http://www.simpligility.com
  * Updated all dependency versions
    * contributed by Manfred Moser http://www.simpligility.com
 
