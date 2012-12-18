@@ -38,6 +38,11 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Allow relative package names for the run goal
     * see https://github.com/jayway/maven-android-plugin/pull/160
     * contributed by Jonas Alves http://jonasalves.wordpress.com/
+ * Introduced usage of parent pom to remove need to manage plugin versions
+ * Cleaned up site creation
+ * Updated all dependency versions
+   * contributed by Manfred Moser http://www.simpligility.com
+
 
 Code reviews, testing, minor adjustments by Manfred Moser http://www.simpligility.com
 
