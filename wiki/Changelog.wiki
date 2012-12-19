@@ -15,6 +15,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.5.1 ===
 
+Your improvements could be here!
+
 === Android Maven Plugin 3.5.0 - released 2012-12-18 ===
 
  * Non-release builds will now automatically be debuggable
