@@ -23,6 +23,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/163
     * fixes issue 331
     * contributed by Sven Obser https://github.com/brudaswen/
+ * Fixed configuration of NDK path from system property or pom.xml allowing to override default
+    * see https://github.com/jayway/maven-android-plugin/pull/162
+    * contributed by https://github.com/tptak
 
 Your improvements could be here!
 
