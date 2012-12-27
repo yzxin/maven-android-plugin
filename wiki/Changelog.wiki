@@ -18,6 +18,11 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Added existence check for res folder when expanding apklib files to make it more robust against that problem
     * see https://github.com/jayway/maven-android-plugin/pull/165
     * contributed by Tom Bollwitt https://github.com/tlbollwitt
+  * Support for multiple proguard configuration files
+    * usage see pull request or project documentation site after release or local site build
+    * see https://github.com/jayway/maven-android-plugin/pull/163
+    * fixes issue 331
+    * contributed by Sven Obser https://github.com/brudaswen/
 
 Your improvements could be here!
 
