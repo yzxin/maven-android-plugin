@@ -29,6 +29,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * readme update
     * see https://github.com/jayway/maven-android-plugin/pull/166
     * contributed by Ikram http://about.me/iontech
+ * support for pre dexed libraries
+    * see https://github.com/jayway/maven-android-plugin/pull/161
+    * contributed by  Srinivasan http://srini-ragu.blogspot.com/
 
 Your improvements could be here!
 
