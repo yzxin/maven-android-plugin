@@ -26,6 +26,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Allow configuration of NDK path from system property or pom.xml allowing to override default of using ANDROID_NDK_HOME
     * see https://github.com/jayway/maven-android-plugin/pull/162
     * contributed by https://github.com/tptak
+ * readme update
+    * see https://github.com/jayway/maven-android-plugin/pull/166
+    * contributed by Ikram http://about.me/iontech
 
 Your improvements could be here!
 
