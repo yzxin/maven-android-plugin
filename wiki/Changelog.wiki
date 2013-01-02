@@ -36,6 +36,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/164
     * fixes issue 342
     * contributed by Sven Obser https://github.com/brudaswen/
+ * Null checks in ManifestUpdate mojo so it works for merging manifests from apklibs
+    * see https://github.com/jayway/maven-android-plugin/pull/167
+    * contributed by Tom Bollwitt https://github.com/tlbollwitt
 
 Your improvements could be here!
 
