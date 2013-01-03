@@ -39,6 +39,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Null checks in ManifestUpdate mojo so it works for merging manifests from apklibs
     * see https://github.com/jayway/maven-android-plugin/pull/167
     * contributed by Tom Bollwitt https://github.com/tlbollwitt
+ * Support for Android Lint 
+    * see https://github.com/jayway/maven-android-plugin/pull/168 and a whole number of commits around https://github.com/jayway/maven-android-plugin/commit/59c4bbf39229320e803c396e784b09284f2228fd
+    * fixes issue 224
+    * contributed by Stéphane Nicolas https://github.com/stephanenicolas and Manfred Moser http://www.simpligility.com
 
 Your improvements could be here!
 
