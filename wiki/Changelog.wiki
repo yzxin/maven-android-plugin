@@ -49,6 +49,40 @@ Technology http://www.octo.com/ and Manfred Moser http://www.simpligility.com
 
 Your improvements could be here!
 
+Minimal plugin configuration to enable lint is
+{{{
+<lint>
+  <skip>false</skip>
+</lint>
+}}}
+which will produce xml report in target/lint/lint.xml
+Full configuration options available are 
+{{{
+<lint>
+    <failOnError>true|false</failOnError>
+    <skip>true|false</skip>
+    <ignoreWarnings>true|false</ignoreWarnings>
+    <warnAll>true|false</warnAll>
+    <warningsAsErrors>true|false</warningsAsErrors>
+    <fullPath>true|false</fullPath>
+    <showAll>true|false</showAll>
+    <disableSourceLines>true|false</disableSourceLines>
+    <url>none|a=b</url>
+    <enableHtml>true|false</enableHtml>
+    <htmlOutputPath>${project.build.directory}/lint-html</htmlOutputPath>
+    <enableSimpleHtml>true|false</enableSimpleHtml>
+    <simpleHtmlOutputPath>${project.build.directory}/lint-simple-html</simpleHtmlOutputPath>
+    <enableXml>true|false</enableXml>
+    <xmlOutputPath>${project.build.directory}/lint.xml</xmlOutputPath>
+    <enableSources></enableSources>
+    <sources></sources>
+    <enableClasspath></enableClasspath>
+    <classpath></classpath>
+    <enableLibraries></enableLibraries>
+    <libraries></libraries>
+</lint>
+}}}
+
 === Android Maven Plugin 3.5.0 - released 2012-12-18 ===
 
  * Non-release builds will now automatically be debuggable
