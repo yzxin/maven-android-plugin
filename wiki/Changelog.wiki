@@ -64,6 +64,7 @@ Full configuration options available are
     <ignoreWarnings>true|false</ignoreWarnings>
     <warnAll>true|false</warnAll>
     <warningsAsErrors>true|false</warningsAsErrors>
+    <config></config>
     <fullPath>true|false</fullPath>
     <showAll>true|false</showAll>
     <disableSourceLines>true|false</disableSourceLines>
@@ -74,11 +75,11 @@ Full configuration options available are
     <simpleHtmlOutputPath>${project.build.directory}/lint-simple-html</simpleHtmlOutputPath>
     <enableXml>true|false</enableXml>
     <xmlOutputPath>${project.build.directory}/lint.xml</xmlOutputPath>
-    <enableSources></enableSources>
+    <enableSources>true|false</enableSources>
     <sources></sources>
-    <enableClasspath></enableClasspath>
+    <enableClasspath>true|false</enableClasspath>
     <classpath></classpath>
-    <enableLibraries></enableLibraries>
+    <enableLibraries>true|false</enableLibraries>
     <libraries></libraries>
 </lint>
 }}}
