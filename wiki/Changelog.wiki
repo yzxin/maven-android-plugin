@@ -56,6 +56,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/174
     * contributed by Luke Weber https://github.com/lukeweber
     * Attention! This change requires usage of Android NDK >= 8b
+ * Support for including/excluding packages in Emma coverage data
+    * see https://github.com/jayway/maven-android-plugin/pull/176
+    * contributed by Maximilian Wahler https://github.com/schlachtzeuger and Manfred Moser http://www.simpligility.com
 
 Your improvements could be here!
 
