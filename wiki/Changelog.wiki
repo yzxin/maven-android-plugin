@@ -47,6 +47,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * https://github.com/jayway/maven-android-plugin/pull/177
     * fixes issue 224
     * contributed by Stéphane Nicolas https://github.com/stephanenicolas sponsored by OCTO Technology http://www.octo.com/ and Manfred Moser http://www.simpligility.com and Stefano Dacchille https://github.com/stefanodacchille
+ * enhanced wait for emulator start
+    * fixes issue 270
+    * see https://github.com/jayway/maven-android-plugin/pull/173/
+    * contributed by https://github.com/ffriedrich
 
 Your improvements could be here!
 
