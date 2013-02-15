@@ -31,6 +31,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Ikram http://about.me/iontech
  * support for pre dexed libraries
     * see https://github.com/jayway/maven-android-plugin/pull/161
+    * see https://github.com/jayway/maven-android-plugin/pull/171
     * contributed by  Srinivasan http://srini-ragu.blogspot.com/
  * Auto generate proguard config file from AndroidManifest
     * see https://github.com/jayway/maven-android-plugin/pull/164
