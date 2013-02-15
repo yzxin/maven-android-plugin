@@ -43,8 +43,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/168 
     * see https://github.com/jayway/maven-android-plugin/pull/169
     * and see a whole number of commits around https://github.com/jayway/maven-android-plugin/commit/59c4bbf39229320e803c396e784b09284f2228fd
+    * https://github.com/jayway/maven-android-plugin/pull/177
     * fixes issue 224
-    * contributed by Stéphane Nicolas https://github.com/stephanenicolas sponsored by OCTO Technology http://www.octo.com/ and Manfred Moser http://www.simpligility.com
+    * contributed by Stéphane Nicolas https://github.com/stephanenicolas sponsored by OCTO Technology http://www.octo.com/ and Manfred Moser http://www.simpligility.com and Stefano Dacchille https://github.com/stefanodacchille
 
 Your improvements could be here!
 
