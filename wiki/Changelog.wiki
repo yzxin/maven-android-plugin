@@ -69,6 +69,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Eugen Martynov https://github.com/emartynov
  * Fixed problem of excessive logging in build output from expanding dependencies
     * contributed by Manfred Moser http://www.simpligility.com
+ * Parallel execution of all device interactions
+    * see https://github.com/jayway/maven-android-plugin/pull/159
+    * contributed by Jonas Alves http://jonasalves.wordpress.com/ 
+    * logging improvements by Manfred Moser http://www.simpligility.com
 
 
 Minimal plugin configuration to enable lint is
