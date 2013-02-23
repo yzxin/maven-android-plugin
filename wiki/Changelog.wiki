@@ -58,8 +58,14 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * Attention! This change requires usage of Android NDK >= 8b
  * Support for including/excluding packages in Emma coverage data
     * see https://github.com/jayway/maven-android-plugin/pull/176
-    * contributed by Maximilian Wahler https://github.com/schlachtzeuger and Manfred Moser http://www.simpligility.com
-
+    * contributed by Maximilian Wahler https://github.com/schlachtzeuger and Manfred Moser 
+http://www.simpligility.com
+ * Fixes to test cases to work on Windows
+    * see https://github.com/jayway/maven-android-plugin/pull/178
+    * contributed by Eugen Martynov https://github.com/emartynov
+ * Zipalign to same apk name rather than creating a new file
+    * see https://github.com/jayway/maven-android-plugin/pull/180
+    * contributed by Eugen Martynov https://github.com/emartynov
 Your improvements could be here!
 
 ATTENTION NDK USERS!
