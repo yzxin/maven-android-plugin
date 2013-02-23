@@ -67,7 +67,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Zipalign to same apk name rather than creating a new file
     * see https://github.com/jayway/maven-android-plugin/pull/180
     * contributed by Eugen Martynov https://github.com/emartynov
-Your improvements could be here!
+ * Fixed problem of excessive logging in build output from expanding dependencies
+    * contributed by Manfred Moser http://www.simpligility.com
 
 ATTENTION NDK USERS!
 
