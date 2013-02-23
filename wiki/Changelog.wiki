@@ -75,6 +75,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * logging improvements by Manfred Moser http://www.simpligility.com
 
 
+Release process, pull request merges and more contributed by Manfred Moser
+
 Minimal plugin configuration to enable lint is
 {{{
 <lint>
