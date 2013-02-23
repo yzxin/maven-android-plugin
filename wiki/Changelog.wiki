@@ -13,7 +13,7 @@ Requires Maven 3.0.3+
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.6.0 - upcoming===
+=== Android Maven Plugin 3.5.1 - 2013-02-23 ===
 
  * Added existence check for res folder when expanding apklib files to make it more robust against that problem
     * see https://github.com/jayway/maven-android-plugin/pull/165
@@ -70,9 +70,6 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fixed problem of excessive logging in build output from expanding dependencies
     * contributed by Manfred Moser http://www.simpligility.com
 
-ATTENTION NDK USERS!
-
-The Android Maven Plugin requires Android NDK >=8b now.
 
 Minimal plugin configuration to enable lint is
 {{{
