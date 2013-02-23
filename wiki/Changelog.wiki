@@ -829,8 +829,9 @@ API/Configuration Changes:
 
 === Maven Android Plugin 3.0.0-alpha-4 ===
  * new goal "help" that will display all goals and their help text or a specific goal and its parameters
+    * see https://github.com/jayway/maven-android-plugin/pull/53 
     * fixes Issue 191
-    * contributed by Hakan Tandogan
+    * contributed by Hakan Tandogan https://github.com/hakan42
  * fixed bug in deploy mojo that skipped installing apk when app already there
    * see https://github.com/jayway/maven-android-plugin/pull/54
    * fixes issue 193
