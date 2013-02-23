@@ -55,6 +55,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fix NDK gdbserver paths
     * see https://github.com/jayway/maven-android-plugin/pull/174
     * contributed by Luke Weber https://github.com/lukeweber
+    * see https://github.com/jayway/maven-android-plugin/pull/179
+    * improved by  Jonathan Reyes http://vaporwarecorp.com and Manfred Moser
     * Attention! This change requires usage of Android NDK >= 8b
  * Support for including/excluding packages in Emma coverage data
     * see https://github.com/jayway/maven-android-plugin/pull/176
