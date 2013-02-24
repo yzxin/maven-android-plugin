@@ -11,6 +11,42 @@ This deprecates ApkSourcesDependency.
 
 Note that the apklib will include content of the  `…/src/main/java` source directory, the `…/libs` native library directory and `…/res` resource directory. They will *not* contain and not the compiled *.class* files. Depending on your needs using a plain old jar package might be the simpler solution.
 
+= Creating an apklib to use in your project =
+
+An apklib is simply an Android library project, compressed as a zip file with a .apklib extension.
+
+It is important however, that the library contents are at the top level of the zip, i.e.
+
+{{{
++ AndroidGridViewCompatLib.apklib
+  + src
+  + res
+  + AndroidManifest.xml
+  + project.properties
+}}}
+
+Once you have created your apklib you can add it your local Maven repository:
+
+{{{
+mvn install:install-file \
+    -Dfile=libs/AndroidGridViewCompatLib-75fd1df.apklib \
+    -DgroupId=com.rokoder \
+    -DartifactId=gridviewcompat \
+    -Dversion=75fd1df \
+    -Dpackaging=apklib
+}}}
+
+And include it in your pom.xml as normal:
+
+{{{
+   <dependency> 
+       <groupId>com.rokoder</groupId> 
+       <artifactId>gridviewcompat</artifactId> 
+       <version>75fd1df</version> 
+       <type>apklib</type> 
+   </dependency>
+}}}
+
 = Help test this =
 
 Support for Android library projects in Android Maven Plugin was our number 1 most starred issue (Issue 96) for a long time. There is support for it from version 2.9.0-beta-1 and onwards.
