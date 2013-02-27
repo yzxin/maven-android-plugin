@@ -13,6 +13,11 @@ Requires Maven 3.0.3+
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
+=== Android Maven Plugin 3.5.2 - upcoming ===
+
+ * fixed documentation for apkMetaIncludes
+
+
 === Android Maven Plugin 3.5.1 - 2013-02-23 ===
 
  * Added existence check for res folder when expanding apklib files to make it more robust against that problem
