@@ -17,7 +17,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fix to get android:push of directories working on Windows clients
     * see https://github.com/jayway/maven-android-plugin/pull/181
     * contributed by Tobias Hochwallner https://github.com/tobster  and Manfred Moser
-  * Enable transitive native dependencies for apklib with example
+ * Enable transitive native dependencies for apklib with example
     * https://github.com/jayway/maven-android-plugin/pull/182
     * https://github.com/jayway/maven-android-plugin-samples/pull/31
     * contributed by Tim Hepner https://github.com/mithepner
