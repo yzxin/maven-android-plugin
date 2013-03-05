@@ -14,9 +14,15 @@ Requires Maven 3.0.3+
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
 === Android Maven Plugin 3.5.2 - upcoming ===
- * fix to get android:push of directories working on Windows clients
+ * Fix to get android:push of directories working on Windows clients
     * see https://github.com/jayway/maven-android-plugin/pull/181
     * contributed by Tobias Hochwallner https://github.com/tobster  and Manfred Moser
+  * Enable transitive native dependencies for apklib with example
+    * https://github.com/jayway/maven-android-plugin/pull/182
+    * https://github.com/jayway/maven-android-plugin-samples/pull/31
+    * contributed by Tim Hepner https://github.com/mithepner
+
+
 
 
 === Android Maven Plugin 3.5.1 - 2013-02-23 ===
