@@ -21,6 +21,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * https://github.com/jayway/maven-android-plugin/pull/182
     * https://github.com/jayway/maven-android-plugin-samples/pull/31
     * contributed by Tim Hepner https://github.com/mithepner
+ * Support for maven.test.failure.ignore
+    * see https://github.com/jayway/maven-android-plugin/pull/183
+    * fixes issue 274 and 172
 
 
 
