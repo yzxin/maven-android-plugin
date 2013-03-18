@@ -23,7 +23,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Tim Hepner https://github.com/mithepner
  * Support for maven.test.failure.ignore
     * see https://github.com/jayway/maven-android-plugin/pull/183
-    * fixes issue 274 and 172
+    * fixes issue 274 and  issue 172
+    * contributed by Olivier Gonthier https://github.com/OlivierGonthier
  * ApkLib R.class files must have non-final ints.
     * see https://github.com/jayway/maven-android-plugin/pull/184
     * contributed by Christian Williams https://github.com/xian and Square https://squareup.com/
