@@ -34,6 +34,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * UI Automator goal  - documentation coming
     * see https://github.com/jayway/maven-android-plugin/pull/185
     * contributed by Stéphane Nicolas https://github.com/stephanenicolas
+ * Adopted usage of the Android SDK Builder library as used by the Gradle based build
+    * see https://github.com/jayway/maven-android-plugin/commit/fc6f18cd96c756a120208ea25bf493af5716cced
+    * contributed by Manfred Moser http://www.simpligility.com
 
 
 === Android Maven Plugin 3.5.1 - 2013-02-23 ===
