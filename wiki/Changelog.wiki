@@ -27,6 +27,12 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * ApkLib R.class files must have non-final ints.
     * see https://github.com/jayway/maven-android-plugin/pull/184
     * contributed by Christian Williams https://github.com/xian and Square https://squareup.com/
+ * Add "classifier" support to apklib goal
+    * see https://github.com/jayway/maven-android-plugin/pull/186
+    * contributed by Mark Allison http://www.stylingandroid.com/
+ * UI Automator goal  - documentation coming
+    * see https://github.com/jayway/maven-android-plugin/pull/185
+    * contributed by Stéphane Nicolas https://github.com/stephanenicolas
 
 
 === Android Maven Plugin 3.5.1 - 2013-02-23 ===
