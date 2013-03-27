@@ -33,7 +33,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Mark Allison http://www.stylingandroid.com/
  * UI Automator goal  - documentation coming
     * see https://github.com/jayway/maven-android-plugin/pull/185
-    * contributed by Stéphane Nicolas https://github.com/stephanenicolas
+    * also see https://github.com/jayway/maven-android-plugin/pull/188
+    * contributed by Stéphane Nicolas https://github.com/stephanenicolas  sponsored by OCTO Technology http://www.octo.com/
  * Adopted usage of the Android SDK Builder library as used by the Gradle based build
     * see https://github.com/jayway/maven-android-plugin/commit/fc6f18cd96c756a120208ea25bf493af5716cced
     * contributed by Manfred Moser http://www.simpligility.com
