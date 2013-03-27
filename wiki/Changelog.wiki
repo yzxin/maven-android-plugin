@@ -40,6 +40,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Manfred Moser http://www.simpligility.com
  * Added support to install multiple platform specific native library versions
     * see https://github.com/jayway/maven-android-plugin/pull/187
+    * and https://github.com/jayway/maven-android-plugin/pull/189
     * contributed by Jonathan Reyes http://vaporwarecorp.com
 
 
