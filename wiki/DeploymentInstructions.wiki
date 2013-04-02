@@ -165,7 +165,7 @@ Check if there is anything you need to {{{svn add}}}:
 Go ahead and commit the updated site.
 
   {{{
-  svn ci -m 'Generated maven site for android-maven-plugin 3.0.0-alpha-11.'
+  svn ci -m 'Generated maven site for android-maven-plugin 3.5.2'
   }}}
 
 Mime-types should hopefully be correct. Check at http://maven-android-plugin-m2site.googlecode.com/svn/index.html
