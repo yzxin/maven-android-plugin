@@ -44,6 +44,26 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * and https://github.com/jayway/maven-android-plugin/pull/189
     * contributed by Jonathan Reyes http://vaporwarecorp.com
 
+Minimal plugin configuration to enable lint is
+{{{
+<uiautomator>
+  <skip>false</skip>
+</uiautomator>
+}}}
+
+Full configuration can use these parameters.
+{{{
+<uiautomator>
+  <skip>false</skip>
+  <testClassOrMethods>
+    <testClassOrMethod>com.foo.SampleTest</testClassOrMethod>
+    <testClassOrMethod>com.bar.CalculatorTest#testCalculatorApp</testClassOrMethod>
+  </testClassOrMethods>
+  <createReport>true</createReport>
+  <takeScreenshotOnFailure>true</takeScreenshotOnFailure>
+  <screenshotsPathOnDevice>/sdcard/uiautomator-screenshots/</screenshotsPathOnDevice>
+</uiautomator>
+}}}
 
 === Android Maven Plugin 3.5.1 - 2013-02-23 ===
 
