@@ -17,6 +17,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.5.2 - 2013-04-01  ===
 
+Attention - due to a bug this release requires you to have the NDK installed even for normal builds. 
+If that is a problem please wait for the next release. A fix exist in the current 3.5.3-SNAPSHOT version.
+
  * Fix to get android:push of directories working on Windows clients
     * see https://github.com/jayway/maven-android-plugin/pull/181
     * contributed by Tobias Hochwallner https://github.com/tobster  and Manfred Moser
