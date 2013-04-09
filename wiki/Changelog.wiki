@@ -30,7 +30,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 Release process, pull request merges and more contributed by Manfred Moser
 
-Minimal plugin configuration to enable lint is
+Minimal plugin configuration to enable monkey is
 {{{
 <monkey>
   <skip>false</skip>
