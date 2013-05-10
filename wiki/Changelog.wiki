@@ -21,6 +21,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Added the parameter reportSuffix to UIAutomator goal
     * see https://github.com/jayway/maven-android-plugin/pull/201
     * contributed by Johannes Elgh https://github.com/jelgh
+  * Added unlockEmulator to unlock the emulator during emulator-start
+    * see https://github.com/jayway/maven-android-plugin/pull/200
+    * contributed by Tom Bollwitt https://github.com/tlbollwitt
+
 
 
 === Android Maven Plugin 3.5.3 - 2013-04-09 ===
