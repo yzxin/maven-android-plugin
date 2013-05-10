@@ -18,6 +18,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fix forMac OS X Proguard usage bug    
     * see https://github.com/jayway/maven-android-plugin/pull/198
     * contributed by https://github.com/jckeatley
+ * Added the parameter reportSuffix to UIAutomator goal
+    * see https://github.com/jayway/maven-android-plugin/pull/201
+    * contributed by Johannes Elgh https://github.com/jelgh
 
 
 === Android Maven Plugin 3.5.3 - 2013-04-09 ===
