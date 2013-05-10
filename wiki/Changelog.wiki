@@ -13,6 +13,13 @@ Requires Maven 3.0.3+
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
+=== Android Maven Plugin 3.5.4 - upcoming ===
+
+ * Fix forMac OS X Proguard usage bug    
+    * see https://github.com/jayway/maven-android-plugin/pull/198
+    * contributed by https://github.com/jckeatley
+
+
 === Android Maven Plugin 3.5.3 - 2013-04-09 ===
 
  * Fix for NDK codebase so that NDK install is NOT required for normal builds
