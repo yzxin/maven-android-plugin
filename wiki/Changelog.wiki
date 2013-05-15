@@ -27,6 +27,14 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Added support for MonkeyRunner execution
     * see https://github.com/jayway/maven-android-plugin/pull/199
     * contributed by Stéphane Nicolas https://github.com/stephanenicolas
+ * Support for SDK 22 directory structure
+    * see https://github.com/jayway/maven-android-plugin/pull/205
+    * contributed by Benoit Billington https://github.com/Shusshu
+ * CI server build via Travis
+   * contributed Hugo Josefson http://about.me/hugojosefson
+ * --non-constant-id for generating R for APKLIBs
+    * https://github.com/jayway/maven-android-plugin/pull/202
+    * contributed by Patrick Armstrong https://github.com/slypat
 
 
 === Android Maven Plugin 3.5.3 - 2013-04-09 ===
