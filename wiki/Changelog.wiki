@@ -30,7 +30,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Support for SDK 22 directory structure
     * see https://github.com/jayway/maven-android-plugin/pull/205
     * contributed by Benoit Billington https://github.com/Shusshu
- * CI server build via Travis
+ * CI server build via Travis CI for plugin and samples
+   * see https://github.com/jayway/maven-android-plugin/pull/203
+   * samples see https://github.com/jayway/maven-android-plugin-samples/pull/33
    * contributed Hugo Josefson http://about.me/hugojosefson
  * --non-constant-id for generating R for APKLIBs
     * https://github.com/jayway/maven-android-plugin/pull/202
