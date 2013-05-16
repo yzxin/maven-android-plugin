@@ -29,6 +29,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Stéphane Nicolas https://github.com/stephanenicolas
  * Support for SDK 22 directory structure
     * see https://github.com/jayway/maven-android-plugin/pull/205
+    * see https://github.com/jayway/maven-android-plugin/pull/206
     * contributed by Benoit Billington https://github.com/Shusshu
  * Updated builder library version to 0.4
     * see https://github.com/jayway/maven-android-plugin/pull/204
