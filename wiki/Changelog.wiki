@@ -60,7 +60,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Support uses sdk tag in manifest updates
     * see https://github.com/jayway/maven-android-plugin/pull/209
     * contributed by https://github.com/fjfdeztoro
-
+ * Support for multiple source folders in APK Lib 
+    * see https://github.com/jayway/maven-android-plugin/pull/208
+    * contributed by Marek Kedzierski http://mark.kedzierski.googlepages.com/
 
 ATTENTION:
 
