@@ -65,6 +65,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/208
     * contributed by Marek Kedzierski http://mark.kedzierski.googlepages.com/
 
+All merges, CI server work, changelog editing and release process contributed by Manfred Moser
+
 ATTENTION:
 
 The configuration of the sdk platform is now required for SDK as well as NDK projects.
