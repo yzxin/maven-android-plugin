@@ -60,13 +60,13 @@ ATTENTION:
 The configuration of the sdk platform is now required for SDK as well as NDK projects.
 An example plugin configuration is
 
-{{
-                    <configuration>
-                    <sdk> 
-                        <platform>17</platform>
-                    </sdk>
-                    </configuration>
- }}
+{{{
+<configuration>
+  <sdk> 
+    <platform>17</platform>
+   </sdk>
+</configuration>
+}}}
 
 The plugin has been updated to work with the SDK release 22.0. It might or might not work for older versions. YMMV.
 
