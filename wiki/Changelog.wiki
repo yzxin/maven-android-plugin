@@ -57,6 +57,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Exclude all except jar dependcies from proguard -injar parameters
     * see https://github.com/jayway/maven-android-plugin/pull/191
     * contributed by https://github.com/tprochazka
+ * Support uses sdk tag in manifest updates
+    * see https://github.com/jayway/maven-android-plugin/pull/209
+    * contributed by https://github.com/fjfdeztoro
 
 
 ATTENTION:
