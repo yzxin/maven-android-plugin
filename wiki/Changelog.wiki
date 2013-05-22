@@ -78,7 +78,7 @@ An example plugin configuration is
 </configuration>
 }}}
 
-The plugin has been updated to work with the SDK release 22.0. It might or might not work for older versions. YMMV.
+The plugin has been updated to work with the SDK release 22.0. 21.1 works on the CI server. It might or might not work for older versions. YMMV.
 
 === Android Maven Plugin 3.5.3 - 2013-04-09 ===
 
