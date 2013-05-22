@@ -54,7 +54,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Nic Strong http://www.codepoets.co.nz
     * fixes and updates to work for all examples and more contributed by Manfred Moser http://www.simpligility.com
     * see https://github.com/jayway/maven-android-plugin/commit/b5b773e50f2f39be9e68bbf094759ae3a866831a
-
+ * Exclude all except jar dependcies from proguard -injar parameters
+    * see https://github.com/jayway/maven-android-plugin/pull/191
+    * contributed by https://github.com/tprochazka
 
 
 ATTENTION:
