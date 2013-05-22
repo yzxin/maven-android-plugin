@@ -64,6 +64,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Support for multiple source folders in APK Lib 
     * see https://github.com/jayway/maven-android-plugin/pull/208
     * contributed by Marek Kedzierski http://mark.kedzierski.googlepages.com/
+ * Upgraded screenshot library to 1.9 to use keep ddmlib version in sync
+    * contributed by Manfred Moser http://www.simpligility.com
+
 
 All merges, CI server work, changelog editing and release process contributed by Manfred Moser
 
