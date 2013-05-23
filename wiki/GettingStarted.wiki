@@ -25,45 +25,6 @@ The easiest way to create you own Android application project for Maven, is to u
 
 https://github.com/akquinet/android-archetypes/wiki
 
-== Why can't I build against API 17? ==
-
-Unfortunately, the latest version of android.jar that Google have currently uploaded to Maven Central is API 16.
-
-If you want to build against the latest Android you need to add your own copy to a local repository:
-
-{{{
-mvn install:install-file \
-    -Dfile=$ANDROID_HOME/platforms/android-17/android.jar \
-    -DgroupId=com.google.android \
-    -DartifactId=android \
-    -Dversion=17 \
-    -Dpackaging=jar
-}}}
-
-You can use the same type of command to add any other jars or apklibs that may be missing from Maven Central.
-
-Then add the following to your pom.xml:
-
-{{{
-    <repositories> 
-        <repository> 
-            <id>my-internal-site</id> 
-            <url>file:///${env.HOME}/.m2/repository</url> 
-        </repository> 
-    </repositories> 
- 
-    <dependencies> 
-        <dependency> 
-            <groupId>com.google.android</groupId> 
-            <artifactId>android</artifactId> 
-            <!--<version>${platform.version}</version>--> 
-            <version>17</version> 
-            <scope>provided</scope> 
-        </dependency>
-
-    ...
-}}}
-
 == Create your own Android application (apk) manually ==
 
 Alternatively, these are the steps to create an Android project manually:
