@@ -45,9 +45,6 @@ your changes could be here!
  * --non-constant-id for generating R for APKLIBs
     * https://github.com/jayway/maven-android-plugin/pull/202
     * contributed by Patrick Armstrong https://github.com/slypat
- * removed --debug-mode flag for aapt since it is no longer available in SDK 22
-    * see https://github.com/jayway/maven-android-plugin/commit/6c03410fdd213ff556927ee6f474f229a7a79ecc
-    * contributed by Manfred Moser http://www.simpligility.com
  * Support manifest merger with Android SDK R22
      * see https://github.com/jayway/maven-android-plugin/pull/210
      * contributed by James Wald https://github.com/jameswald
