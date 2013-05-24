@@ -15,7 +15,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.6.1 - upcoming ===
 
-your changes could be here!
+ * Updated builder library version to 0.4.1, which pulls in Android SDK 22.0.1 components
+      * contributed by Manfred Moser http://www.simpligility.com
+
 
 === Android Maven Plugin 3.6.0 - 2013-05-22 ===
 
