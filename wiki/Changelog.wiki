@@ -20,6 +20,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fix to avoid namespace collisions for components with identical artifactid 
     * see https://github.com/jayway/maven-android-plugin/pull/216
     * contributed by Jan Berkel http://zegoggl.es/
+ * Ability to pass user properties to UiAutomator goal
+    * see https://github.com/jayway/maven-android-plugin/pull/211
+    * contributed by Simon Sikström http://andrimon.com
+
 
 
 === Android Maven Plugin 3.6.0 - 2013-05-22 ===
