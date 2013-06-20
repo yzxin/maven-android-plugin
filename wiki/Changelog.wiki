@@ -24,6 +24,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/211
     * contributed by Simon Sikström http://andrimon.com
 
+ * Configurable BuildConfig generation
+    * see https://github.com/jayway/maven-android-plugin/pull/218
+    * contributed by Jonas Alves http://jonasalves.wordpress.com/ 
 
 
 === Android Maven Plugin 3.6.0 - 2013-05-22 ===
