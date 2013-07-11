@@ -15,7 +15,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.6.1 - upcoming ===
 
- * Updated builder library version to 0.4.1, which pulls in Android SDK 22.0.1 components
+ * Updated builder library version to 0.4.1 and 0.4.2, which pulls in Android SDK 22.0.1 components
       * contributed by Manfred Moser http://www.simpligility.com
  * Fix to avoid namespace collisions for components with identical artifactid 
     * see https://github.com/jayway/maven-android-plugin/pull/216
