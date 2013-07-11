@@ -26,6 +26,12 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Configurable BuildConfig generation
     * see https://github.com/jayway/maven-android-plugin/pull/218
     * contributed by Jonas Alves http://jonasalves.wordpress.com/ 
+  * Exclude jar files within a lib folder in an apklib
+    * see https://github.com/jayway/maven-android-plugin/pull/219
+    * fixes issue 402
+    * contributed by Matthias Käppler http://brainflush.wordpress.com
+    
+
 
 
 === Android Maven Plugin 3.6.0 - 2013-05-22 ===
