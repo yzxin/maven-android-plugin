@@ -30,6 +30,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/219
     * fixes issue 402
     * contributed by Matthias Käppler http://brainflush.wordpress.com
+ * Downgraded emma to stable release 
+    * fixes issue 301
+     * contributed by Manfred Moser http://www.simpligility.com
+
     
 
 
