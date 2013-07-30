@@ -33,6 +33,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Downgraded emma to stable release 
     * fixes issue 301
      * contributed by Manfred Moser http://www.simpligility.com
+ * Use artifactId as LOCAL_MODULE_FILENAME 
+    * fixes issue 410
+    * https://github.com/jayway/maven-android-plugin/pull/223
+    * contributed by Joonas Javanainen http://gekkio.fi
 
     
 
