@@ -42,10 +42,6 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/219
    * contributed by Matthias Käppler http://mttkay.github.io/
 
-    
-
-
-
 === Android Maven Plugin 3.6.0 - 2013-05-22 ===
 
  * Fix forMac OS X Proguard usage bug    
