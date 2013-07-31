@@ -37,6 +37,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * fixes issue 410
     * https://github.com/jayway/maven-android-plugin/pull/223
     * contributed by Joonas Javanainen http://gekkio.fi
+ * NDK mojo: ignore libs/ folder with just JARs for APKLIB dependencies
+   * fixes issue 402
+   * see https://github.com/jayway/maven-android-plugin/pull/219
+   * contributed by Matthias Käppler http://mttkay.github.io/
 
     
 
