@@ -19,6 +19,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see https://github.com/jayway/maven-android-plugin/pull/220
     * contributed by Benoit Billington https://github.com/Shusshu
     * related cleanups in AndroidSdk and tests by Manfred Moser
+ * Don't delete nativeArtifactFile if its the same as destFile
+    * see https://github.com/jayway/maven-android-plugin/pull/224
+    * contributed by Mark Riley http://markriley.net
 
 
 
