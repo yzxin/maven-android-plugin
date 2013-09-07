@@ -18,6 +18,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Updated builder library version to 0.5.6
     * see https://github.com/jayway/maven-android-plugin/pull/220
     * contributed by Benoit Billington https://github.com/Shusshu
+    * related cleanups in AndroidSdk and tests by Manfred Moser
+
 
 
 === Android Maven Plugin 3.6.1 - 2013-07-31 ===
