@@ -22,6 +22,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Don't delete nativeArtifactFile if its the same as destFile
     * see https://github.com/jayway/maven-android-plugin/pull/224
     * contributed by Mark Riley http://markriley.net
+ * Support for maven property maven.test.error.ignore
+    * see https://github.com/jayway/maven-android-plugin/pull/225
+    * contributed by Stéphane Nicolas https://github.com/stephanenicolas
+
 
 
 
