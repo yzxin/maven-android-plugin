@@ -32,6 +32,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/227
    * see https://github.com/jayway/maven-android-plugin/pull/228
    * contributed by Benoit Billington https://github.com/Shusshu and Manfred Moser
+ * SdkLib and ApkBuilder cleanup
+    * see https://github.com/jayway/maven-android-plugin/pull/232
+    * contributed by Manfred Moser
 
 
 ATTENTION: The sdk platform configuration parameter no longer support platform, only API level works from now on.
