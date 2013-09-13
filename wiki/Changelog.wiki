@@ -39,7 +39,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Manfred Moser
  * Support for multiarch so dependencies
     * see https://github.com/jayway/maven-android-plugin/pull/230
-    * contributed by 
+    * contributed by Joonas Javanainen http://gekkio.fi/
 
 ATTENTION: 
 
