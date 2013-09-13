@@ -35,7 +35,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * SdkLib and ApkBuilder cleanup
     * see https://github.com/jayway/maven-android-plugin/pull/232
     * contributed by Manfred Moser
-
+ * Upgraded to builder 0.5.7 and added all dependencies from SDK in version 22.2.0
+    * contributed by Manfred Moser
 
 ATTENTION: The sdk platform configuration parameter no longer support platform, only API level works from now on.
 
