@@ -37,14 +37,20 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Manfred Moser
  * Upgraded to builder 0.5.7 and added all dependencies from SDK in version 22.2.0
     * contributed by Manfred Moser
- * Support for multiarch so dependencies
+ * Support for multiarch so dependencies and Multiple native architecture support
     * see https://github.com/jayway/maven-android-plugin/pull/230
     * contributed by Joonas Javanainen http://gekkio.fi/
+    * see https://github.com/jayway/maven-android-plugin/pull/233
+    * contributed by Johan Lindquist https://github.com/johanlindquist
+  * Adding Native Libs in apk
+    * see https://github.com/jayway/maven-android-plugin/pull/233
+    * fixes issue 372
+    * contributed by Charles Harley and  Johan Lindquist https://github.com/johanlindquist
 
 ATTENTION: 
 
-* The sdk platform configuration parameter no longer support platform, only API level works from now on.
-* the keyword 'all' is no longer supported for ndk architectures, you have to explicitly list them
+ * The sdk platform configuration parameter no longer support platform, only API level works from now on.
+ * the keyword 'all' is no longer supported for ndk architectures, you have to explicitly list them
 
 
 === Android Maven Plugin 3.6.1 - 2013-07-31 ===
