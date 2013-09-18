@@ -42,10 +42,13 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Joonas Javanainen http://gekkio.fi/
     * see https://github.com/jayway/maven-android-plugin/pull/233
     * contributed by Johan Lindquist https://github.com/johanlindquist
-  * Adding Native Libs in apk
+ * Adding Native Libs in apk
     * see https://github.com/jayway/maven-android-plugin/pull/233
     * fixes issue 372
     * contributed by Charles Harley and  Johan Lindquist https://github.com/johanlindquist
+ * Make use of "aaptExtraArgs" in "generate-sources" goal
+   * see https://github.com/jayway/maven-android-plugin/pull/234
+   * contributed by Tadeas Kriz https://github.com/TadeasKriz
 
 ATTENTION: 
 
