@@ -30,7 +30,7 @@ https://github.com/akquinet/android-archetypes/wiki
 Alternatively, these are the steps to create an Android project manually:
 <ol>
   <li>Create a project using the {{{android}}} tool:</li>
-     * http://developer.android.com/guide/developing/other-ide.html#CreatingAProject
+     * http://developer.android.com/training/basics/firstapp/creating-project.html
   <li>Create a {{{pom.xml}}} in your project, using the sample {{{helloflashlight/pom.xml}}} as template. (See [Samples]`*`.)</li>
      * Make these changes:
      * Change {{{<groupId>}}}, {{{<artifactId>}}} and {{{<name>}}} to your own. (Some tips: [http://maven.apache.org/guides/mini/guide-naming-conventions.html Maven - Guide to Naming Conventions])
