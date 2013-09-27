@@ -31,7 +31,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Support for consuming and creating aar files
    * see https://github.com/jayway/maven-android-plugin/pull/227
    * see https://github.com/jayway/maven-android-plugin/pull/228
-   * contributed by Benoit Billington https://github.com/Shusshu and Manfred Moser
+   * https://github.com/jayway/maven-android-plugin/pull/235
+   * contributed by Benoit Billington https://github.com/Shusshu and Manfred Moser and Mark Riley https://github.com/markrileybot
  * SdkLib and ApkBuilder cleanup
     * see https://github.com/jayway/maven-android-plugin/pull/232
     * contributed by Manfred Moser
