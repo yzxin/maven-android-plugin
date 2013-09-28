@@ -15,6 +15,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.7.1 or higher - upcoming ===
 
+Planned so far 
+ * improved suport for aar format creation and consumption with example projects
+ * migration to Maven 3.1.1+ (once 3.1.1 is released, 3.1.0 will never work, <3.1.1 will be unsupported)
 
 === Android Maven Plugin 3.7.0 - 2013-09-27 ===
 
