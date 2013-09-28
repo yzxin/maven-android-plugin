@@ -53,6 +53,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Make use of "aaptExtraArgs" in "generate-sources" goal
    * see https://github.com/jayway/maven-android-plugin/pull/234
    * contributed by Tadeas Kriz https://github.com/TadeasKriz
+ * Release process changes to use nexus-staging-maven-plugin
+      * contributed by Manfred Moser http://www.simpligility.com
+ * Plugin site changed from Google SVN repo to Github pages
+      * contributed by Manfred Moser http://www.simpligility.com
 
 ATTENTION: 
 
