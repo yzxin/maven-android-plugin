@@ -13,7 +13,10 @@ Requires Maven 3.0.3+
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.6.2 - will be probably 3.7 or 4.0- upcoming ===
+=== Android Maven Plugin 3.7.1 or higher - upcoming ===
+
+
+=== Android Maven Plugin 3.7.0 - 2013-09-27 ===
 
  * Updated builder library version to 0.5.6
     * see https://github.com/jayway/maven-android-plugin/pull/220
@@ -28,7 +31,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Use of constant for apk and apklib instead of hardcoded string
     * see https://github.com/jayway/maven-android-plugin/pull/229
     * contributed by Benoit Billington https://github.com/Shusshu
- * Support for consuming and creating aar files
+ * *Experimental* support for consuming and creating aar files
    * see https://github.com/jayway/maven-android-plugin/pull/227
    * see https://github.com/jayway/maven-android-plugin/pull/228
    * https://github.com/jayway/maven-android-plugin/pull/235
