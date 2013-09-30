@@ -19,8 +19,8 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
  * [QuickStartForEclipseProject]
 
 == Reference ==
- * [http://maven-android-plugin-m2site.googlecode.com/svn/index.html Maven Site] - Auto-generated documentation from the plugin's Maven build.
-  * [http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html Plugin goals reference] - All {{{mvn android:...}}} goals and their configuration parameters.
+ * [http://jayway.github.io/maven-android-plugin/ Maven Site] - Auto-generated documentation from the plugin's Maven build.
+  * [http://jayway.github.io/maven-android-plugin/plugin-info.html Plugin goals reference] - All {{{mvn android:...}}} goals and their configuration parameters.
  * See [AddOns] for Building for Android Add-Ons
  * See ApkLib for how to bring in other apk projects' sources, resources and assets as Maven {{{<dependencies>}}}.
  * *Signing*
