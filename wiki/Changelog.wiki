@@ -13,11 +13,19 @@ Requires Maven 3.0.3+
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.7.1 or higher - upcoming ===
+=== Android Maven Plugin 3.7.1 or higher (probably 3.8 or 4.0) - upcoming ===
 
-Planned so far 
+ * Migrated to require Apache Maven 3.1.1 or higher
+    * contributed by Manfred Moser http://www.simpligility.com
+    * see commit on Oct 1 and 7th 2013
+  * Updated to builder library 0.6.0
+    * contributed by Manfred Moser http://www.simpligility.com
+  * 
+
+Further planned so far 
  * improved suport for aar format creation and consumption with example projects
- * migration to Maven 3.1.1+ (once 3.1.1 is released, 3.1.0 will never work, <3.1.1 will be unsupported)
+
+ATTENTION: Maven 3.1.1+ is required to build the plugin itself as well as to use the plugin to build Android applications!
 
 === Android Maven Plugin 3.7.0 - 2013-09-27 ===
 
@@ -41,9 +49,9 @@ Planned so far
    * contributed by Benoit Billington https://github.com/Shusshu and Manfred Moser and Mark Riley https://github.com/markrileybot
  * SdkLib and ApkBuilder cleanup
     * see https://github.com/jayway/maven-android-plugin/pull/232
-    * contributed by Manfred Moser
+    * contributed by Manfred Moser http://www.simpligility.com
  * Upgraded to builder 0.5.7 and added all dependencies from SDK in version 22.2.0
-    * contributed by Manfred Moser
+    * contributed by Manfred Moser http://www.simpligility.com
  * Support for multiarch so dependencies and Multiple native architecture support
     * see https://github.com/jayway/maven-android-plugin/pull/230
     * contributed by Joonas Javanainen http://gekkio.fi/
