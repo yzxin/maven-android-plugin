@@ -18,9 +18,11 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Migrated to require Apache Maven 3.1.1 or higher
     * contributed by Manfred Moser http://www.simpligility.com
     * see commit on Oct 1 and 7th 2013
-  * Updated to builder library 0.6.0
+    * fixes issue 395
+ * Updated to builder library 0.6.0
     * contributed by Manfred Moser http://www.simpligility.com
-  * 
+ * Fix for har file access in MakefileHelper
+    * contributed by Manfred Moser http://www.simpligility.com and Johan Lindquist https://github.com/johanlindquist
 
 Further planned so far 
  * improved suport for aar format creation and consumption with example projects
