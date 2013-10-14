@@ -23,6 +23,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Manfred Moser http://www.simpligility.com
  * Fix for har file access in MakefileHelper
     * contributed by Manfred Moser http://www.simpligility.com and Johan Lindquist https://github.com/johanlindquist
+ * Maven 3.1.1 deployment as part of travis build
+   * see https://github.com/jayway/maven-android-plugin/pull/237
+    * contributed by Mykola Nikishov https://manandbytes.wordpress.com/
 
 Further planned so far 
  * improved suport for aar format creation and consumption with example projects
