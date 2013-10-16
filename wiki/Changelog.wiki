@@ -26,6 +26,16 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Maven 3.1.1 deployment as part of travis build
    * see https://github.com/jayway/maven-android-plugin/pull/237
     * contributed by Mykola Nikishov https://manandbytes.wordpress.com/
+ * Updated to builder library 0.6.1
+    * https://github.com/jayway/maven-android-plugin/pull/239
+    * contributed by Benoit Billington https://github.com/Shusshu
+ * Usage of SDK constants instead of hardcoding classes.jar
+    * https://github.com/jayway/maven-android-plugin/pull/238
+    * contributed by Benoit Billington https://github.com/Shusshu
+ * Create R file for AARs
+    * see https://github.com/jayway/maven-android-plugin/pull/240
+    * contributed by Benoit Billington https://github.com/Shusshu
+
 
 Further planned so far 
  * improved suport for aar format creation and consumption with example projects
