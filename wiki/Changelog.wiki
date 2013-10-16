@@ -35,6 +35,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Create R file for AARs
     * see https://github.com/jayway/maven-android-plugin/pull/240
     * contributed by Benoit Billington https://github.com/Shusshu
+ * Support --incremental on dex
+    * see https://github.com/jayway/maven-android-plugin/pull/236
+    * contributed by Jaime Soriano Pastor https://github.com/jsoriano
 
 
 Further planned so far 
