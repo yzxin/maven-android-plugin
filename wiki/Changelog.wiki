@@ -38,10 +38,13 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Support --incremental on dex
     * see https://github.com/jayway/maven-android-plugin/pull/236
     * contributed by Jaime Soriano Pastor https://github.com/jsoriano
+ * Support for aar consumption
+    * see https://github.com/jayway/maven-android-plugin/pull/242
+    * contributed by Benoit Billington https://github.com/Shusshu
 
 
 Further planned so far 
- * improved suport for aar format creation and consumption with example projects
+ * improved suport for aar consumption with example projects
 
 ATTENTION: Maven 3.1.1+ is required to build the plugin itself as well as to use the plugin to build Android applications!
 
