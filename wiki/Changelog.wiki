@@ -19,7 +19,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Manfred Moser http://www.simpligility.com
     * see commit on Oct 1 and 7th 2013
     * fixes issue 395
- * Updated to builder library 0.6.0
+ * Updated to builder library 0.6.0 and later to 0.6.3
     * contributed by Manfred Moser http://www.simpligility.com
  * Fix for har file access in MakefileHelper
     * contributed by Manfred Moser http://www.simpligility.com and Johan Lindquist https://github.com/johanlindquist
@@ -38,13 +38,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Support --incremental on dex
     * see https://github.com/jayway/maven-android-plugin/pull/236
     * contributed by Jaime Soriano Pastor https://github.com/jsoriano
- * Support for aar consumption
+ * Further improvements towards support for aar consumption (still not fully working) 
     * see https://github.com/jayway/maven-android-plugin/pull/242
     * contributed by Benoit Billington https://github.com/Shusshu
-
-
-Further planned so far 
- * improved suport for aar consumption with example projects
 
 ATTENTION: Maven 3.1.1+ is required to build the plugin itself as well as to use the plugin to build Android applications!
 
