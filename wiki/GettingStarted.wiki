@@ -11,7 +11,7 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
 
  # JDK 1.6+ installed as required for Android development
  # Android SDK ({{{r21.1}}} or later, latest is best supported) installed, preferably with all platforms, see http://developer.android.com/sdk/index.html
- # Maven 3.0.3+ installed, see http://maven.apache.org/download.html
+ # Maven 3.1.1+ installed, see http://maven.apache.org/download.html
   # Set environment variable ANDROID_HOME to the path of your installed Android SDK and add $ANDROID_HOME/tools as well as $ANDROID_HOME/platform-tools to your $PATH. (or on Windows %ANDROID_HOME%\tools and %ANDROID_HOME%\platform-tools). 
   # MacOS users: Note that for the path to work on the commandline and in IDE's started by launchd you have to set it in /etc/launchd.conf and NOT in .bashrc or something else
 
