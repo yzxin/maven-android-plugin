@@ -9,11 +9,13 @@ Any *text in bold* below describes changes, which may cause existing builds to b
 
 == Android Maven Plugin 3.x release series ==
 
-Requires Maven 3.0.3+
+Requires Maven 3.1.1+
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.7.1 or higher (probably 3.8 or 4.0) - upcoming ===
+=== Android Maven Plugin 3.8.1 or higher - upcoming  ===
+
+=== Android Maven Plugin 3.8.0 - 2013-11-08  ===
 
  * Migrated to require Apache Maven 3.1.1 or higher
     * contributed by Manfred Moser http://www.simpligility.com
