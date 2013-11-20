@@ -15,9 +15,14 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.8.1 or higher - upcoming  ===
  * Support for aar consumption
-   * https://github.com/jayway/maven-android-plugin/pull/244
-   * https://github.com/jayway/maven-android-plugin/pull/249
+   * see https://github.com/jayway/maven-android-plugin/pull/244
+   * see https://github.com/jayway/maven-android-plugin/pull/249
    * contributed by Benoit Billington https://github.com/Shusshu and https://github.com/ialbors
+ *  meta inf
+   * fixed issue 174
+   * see https://github.com/jayway/maven-android-plugin/pull/245
+   * contributed by Pappy Stanescu https://github.com/pa314159
+
 
 
 === Android Maven Plugin 3.8.0 - 2013-11-08  ===
