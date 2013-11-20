@@ -21,7 +21,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
  *  meta inf
    * fixed issue 174
    * see https://github.com/jayway/maven-android-plugin/pull/245
-   * contributed by Pappy Stanescu https://github.com/pa314159
+   * contributed by Pappy Stanescu https://github.com/pa314159 and Manfred Moser
 
 
 
