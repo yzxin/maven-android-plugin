@@ -26,6 +26,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Manifest update into a new file in target (optionally)
    * https://github.com/jayway/maven-android-plugin/pull/248
    * contributed by Pappy Stanescu https://github.com/pa314159
+ * Support for providing further options to proguard execution
+   * see https://github.com/jayway/maven-android-plugin/pull/247
+   * contributed by Pappy Stanescu https://github.com/pa314159
+
 
 
 
