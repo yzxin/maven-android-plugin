@@ -18,9 +18,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/244
    * see https://github.com/jayway/maven-android-plugin/pull/249
    * contributed by Benoit Billington https://github.com/Shusshu and https://github.com/ialbors
- *  meta inf
+ *  Support for files located in META-INF improved
    * fixed issue 174
    * see https://github.com/jayway/maven-android-plugin/pull/245
+   * https://github.com/jayway/maven-android-plugin/pull/250
    * contributed by Pappy Stanescu https://github.com/pa314159 and Manfred Moser
  * Manifest update into a new file in target (optionally)
    * https://github.com/jayway/maven-android-plugin/pull/248
