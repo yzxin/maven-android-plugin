@@ -32,7 +32,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Optionally attach proguard mapping.txt as artifact of type "map"
    * https://github.com/jayway/maven-android-plugin/pull/251
    * contributed by Pappy Stanescu https://github.com/pa314159
-
+ * Extended instrumentation goal to allow for additional user defined instrumentation arguments
+   * see https://github.com/jayway/maven-android-plugin/pull/243
+   * contributed by Sebastian Gröbler https://github.com/SierraGolf
 
 
 === Android Maven Plugin 3.8.0 - 2013-11-08  ===
