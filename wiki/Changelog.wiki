@@ -37,7 +37,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by Sebastian Gröbler https://github.com/SierraGolf
  * Fixed link to documentation in git readme
    * see https://github.com/jayway/maven-android-plugin/pull/252
-   * contributed by 
+   * contributed by Peter Janes http://peterjanes.ca/
 
 
 === Android Maven Plugin 3.8.0 - 2013-11-08  ===
