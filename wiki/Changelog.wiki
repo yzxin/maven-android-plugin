@@ -35,6 +35,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Extended instrumentation goal to allow for additional user defined instrumentation arguments
    * see https://github.com/jayway/maven-android-plugin/pull/243
    * contributed by Sebastian Gröbler https://github.com/SierraGolf
+ * Fixed link to documentation in git readme
+   * see https://github.com/jayway/maven-android-plugin/pull/252
+   * contributed by 
 
 
 === Android Maven Plugin 3.8.0 - 2013-11-08  ===
