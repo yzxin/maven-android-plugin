@@ -38,7 +38,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fixed link to documentation in git readme
    * see https://github.com/jayway/maven-android-plugin/pull/252
    * contributed by Peter Janes http://peterjanes.ca/
-
+ * GenerateSourceMojo fixes
+   * see https://github.com/jayway/maven-android-plugin/pull/253
+   * contributed by Pappy Stanescu https://github.com/pa314159
 
 === Android Maven Plugin 3.8.0 - 2013-11-08  ===
 
