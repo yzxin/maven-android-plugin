@@ -15,6 +15,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.8.2 or higher - upcoming  ===
 
+ * Moved to plugin-testing from ASF
+    * contributed by Manfred Moser http://www.simpligility.com
+
 === Android Maven Plugin 3.8.1 - 2013-12-05 ===
 
  * Support for aar consumption improved
