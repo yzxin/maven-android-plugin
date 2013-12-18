@@ -18,6 +18,12 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Moved to plugin-testing from ASF
     * fixes issue 423
     * contributed by Manfred Moser http://www.simpligility.com
+ * Upgraded powermock
+    * contributed by Manfred Moser http://www.simpligility.com
+ * Improvements for aar consumption with regards to R.txt and R file as well as multiple aar and apklib deps
+   * see https://github.com/jayway/maven-android-plugin/pull/254
+   * see https://github.com/jayway/maven-android-plugin/pull/255
+   * contributed by William Ferguson https://github.com/william-ferguson-au and Benoit Billington https://github.com/Shusshu
 
 === Android Maven Plugin 3.8.1 - 2013-12-05 ===
 
