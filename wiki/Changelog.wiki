@@ -31,8 +31,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by William Ferguson https://github.com/william-ferguson-au 
    * and Benoit Billington https://github.com/Shusshu
    * and Manfred Moser http://www.simpligility.com
-
-
+ * ConfigHandler improvements
+   * see https://github.com/jayway/maven-android-plugin/pull/259
+   * contributed by Pappy Stanescu https://github.com/pa314159
 
 === Android Maven Plugin 3.8.1 - 2013-12-05 ===
 
