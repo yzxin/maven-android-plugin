@@ -22,13 +22,14 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * contributed by Manfred Moser http://www.simpligility.com
  * Upgraded Android builder and sdk dependencies to 0.7.1 
     * contributed by Manfred Moser http://www.simpligility.com
- * Improvements for aar consumption with regards to R.txt and R file as well as multiple aar and apklib deps
+ * Improvements for aar consumption with regards to R.txt and R file as well as multiple aar and apklib deps and a whole lot of cleanup and examples stuff
    * see https://github.com/jayway/maven-android-plugin/pull/254
    * see https://github.com/jayway/maven-android-plugin/pull/255
    * see https://github.com/jayway/maven-android-plugin/pull/257
    * see https://github.com/jayway/maven-android-plugin/pull/260
    * see https://github.com/jayway/maven-android-plugin-samples/pull/40
    * see https://github.com/jayway/maven-android-plugin-samples/pull/41
+   * see https://github.com/jayway/maven-android-plugin-samples/pull/42
    * whole bunch of changes to the examples project
    * contributed by William Ferguson https://github.com/william-ferguson-au 
    * and Benoit Billington https://github.com/Shusshu
