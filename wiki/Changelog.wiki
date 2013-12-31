@@ -33,6 +33,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin-samples/pull/41
    * see https://github.com/jayway/maven-android-plugin-samples/pull/42
    * see https://github.com/jayway/maven-android-plugin-samples/pull/43
+   * fixes issue 436
    * whole bunch of changes to the examples project
    * contributed by William Ferguson https://github.com/william-ferguson-au 
    * and Benoit Billington https://github.com/Shusshu
