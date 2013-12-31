@@ -15,6 +15,13 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 3.8.2 or higher - upcoming  ===
 
+ * Deploy/Undeploy and Redeploy goals working for multi module builds
+    * currently in progress
+    * contributed by Manfred Moser http://www.simpligility.com
+ * New goals deploy-apk, undeploy-apk and redeploy-apk
+    * currently in progress
+    * contributed by Manfred Moser http://www.simpligility.com
+
 === Android Maven Plugin 3.8.2 - 2013-12-30  ===
 
  * Moved to plugin-testing from ASF
