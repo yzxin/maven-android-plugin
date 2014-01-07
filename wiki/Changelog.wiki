@@ -13,7 +13,7 @@ Requires Maven 3.1.1+
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.8.2 or higher - upcoming  ===
+=== Android Maven Plugin 3.8.3 or higher - upcoming  ===
 
  * Deploy/Undeploy and Redeploy goals working for multi module builds
     * currently in progress
@@ -21,6 +21,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * New goals deploy-apk, undeploy-apk and redeploy-apk
     * currently in progress
     * contributed by Manfred Moser http://www.simpligility.com
+ * Improved error message for duplicate files
+   * see https://github.com/jayway/maven-android-plugin/pull/261
+   * contributed by Jérémie https://github.com/kops
 
 === Android Maven Plugin 3.8.2 - 2013-12-30  ===
 
