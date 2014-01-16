@@ -22,8 +22,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * currently in progress
     * contributed by Manfred Moser http://www.simpligility.com
  * Improved error message for duplicate files
-   * see https://github.com/jayway/maven-android-plugin/pull/261
-   * contributed by Jérémie https://github.com/kops
+   * see https://github.com/jayway/maven-android-plugin/pull/261 and https://github.com/jayway/maven-android-plugin/pull/263
+   * contributed by Jérémie https://github.com/kops and https://github.com/arichiardi
  * Fix to classifier usage for native projects
    * see https://github.com/jayway/maven-android-plugin/pull/262
    * contributed by Johan Lindquist https://github.com/johanlindquist
