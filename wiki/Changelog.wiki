@@ -17,6 +17,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
  * A whole lot of pom and other clean ups to the sample projects
     * contributed by Manfred Moser http://www.simpligility.com
+ * Travis build to execute clean goal
+    * contributed by Manfred Moser http://www.simpligility.com
  * Deploy/Undeploy and Redeploy goals working for multi module builds
     * currently in progress
     * contributed by Manfred Moser http://www.simpligility.com
