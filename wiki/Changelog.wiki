@@ -20,10 +20,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Travis build to execute clean goal
     * contributed by Manfred Moser http://www.simpligility.com
  * Deploy/Undeploy and Redeploy goals working for multi module builds
-    * currently in progress
+    * https://github.com/jayway/maven-android-plugin/pull/272
     * contributed by Manfred Moser http://www.simpligility.com
  * New goals deploy-apk, undeploy-apk and redeploy-apk
-    * currently in progress
+    * https://github.com/jayway/maven-android-plugin/pull/272
     * contributed by Manfred Moser http://www.simpligility.com
  * Improved error message for duplicate files
    * see https://github.com/jayway/maven-android-plugin/pull/261 and https://github.com/jayway/maven-android-plugin/pull/263
