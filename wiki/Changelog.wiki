@@ -52,6 +52,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * fixes issue 444
    * see https://github.com/jayway/maven-android-plugin/pull/277
    * contributed by https://github.com/eedzjee
+ * Prevent OOM issues when capturing stdout 
+   * see https://github.com/jayway/maven-android-plugin/pull/278
+   * contributed by Johan Lindquist https://github.com/johanlindquist
 
 === Android Maven Plugin 3.8.2 - 2013-12-30  ===
 
