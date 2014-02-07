@@ -39,6 +39,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by Stéphane Nicolas https://github.com/stephanenicolas
  * Support for specifying a list of devices to interact with for tests, deployment...
    * see https://github.com/jayway/maven-android-plugin/pull/268
+   * see https://github.com/jayway/maven-android-plugin/pull/274
    * contributed by Emmanuel DEMEY https://github.com/Gillespie59
 
 === Android Maven Plugin 3.8.2 - 2013-12-30  ===
