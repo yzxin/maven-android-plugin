@@ -48,6 +48,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Allow copying the manifest during the generate source phase
    * see https://github.com/jayway/maven-android-plugin/pull/275
    * contributed by Malachi de AElfweald https://github.com/malachid
+ * Correction on how libs are pulled in from apklibs with regards to native artifacts
+   * fixes issue 444
+   * see https://github.com/jayway/maven-android-plugin/pull/277
+   * contributed by https://github.com/eedzjee
 
 === Android Maven Plugin 3.8.2 - 2013-12-30  ===
 
