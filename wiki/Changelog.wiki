@@ -41,6 +41,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/268
    * see https://github.com/jayway/maven-android-plugin/pull/274
    * contributed by Emmanuel DEMEY https://github.com/Gillespie59
+ * Fix paths for proguard invocation with filename containing "-"
+   * see https://github.com/jayway/maven-android-plugin/pull/273
+   * see https://github.com/jayway/maven-android-plugin/pull/269
+   * contributed by https://github.com/mmadev and Manfred Moser
 
 === Android Maven Plugin 3.8.2 - 2013-12-30  ===
 
