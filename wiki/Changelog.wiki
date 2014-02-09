@@ -55,6 +55,15 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Prevent OOM issues when capturing stdout 
    * see https://github.com/jayway/maven-android-plugin/pull/278
    * contributed by Johan Lindquist https://github.com/johanlindquist
+ * AAR consumption and related fixes and changes to plugin and samples
+   * see https://github.com/jayway/maven-android-plugin/pull/270   
+   * see https://github.com/jayway/maven-android-plugin/pull/279
+   * see https://github.com/jayway/maven-android-plugin-samples/pull/44
+   * see https://github.com/jayway/maven-android-plugin-samples/pull/45
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
+   * and Benoit Billington https://github.com/Shusshu
+   * and Manfred Moser http://www.simpligility.com
+   * and with help from Igor Fedorenko https://github.com/ifedorenko/
 
 === Android Maven Plugin 3.8.2 - 2013-12-30  ===
 
