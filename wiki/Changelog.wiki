@@ -31,6 +31,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fix to classifier usage for native projects
    * see https://github.com/jayway/maven-android-plugin/pull/262
    * contributed by Johan Lindquist https://github.com/johanlindquist
+ * Fix the HAR resolution with apklib's
+   * see https://github.com/jayway/maven-android-plugin/pull/280
+   * contributed by Johan Lindquist https://github.com/johanlindquist
  * Improved version update support for AndroidManifest changes to work with longer version numbers
    * see https://github.com/jayway/maven-android-plugin/pull/264
    * contributed by https://github.com/Zlate87
