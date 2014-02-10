@@ -44,6 +44,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fix paths for proguard invocation with filename containing "-"
    * see https://github.com/jayway/maven-android-plugin/pull/273
    * see https://github.com/jayway/maven-android-plugin/pull/269
+   * https://github.com/jayway/maven-android-plugin/pull/281
    * contributed by https://github.com/mmadev and Manfred Moser
  * Allow copying the manifest during the generate source phase
    * see https://github.com/jayway/maven-android-plugin/pull/275
