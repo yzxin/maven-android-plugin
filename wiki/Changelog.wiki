@@ -74,6 +74,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * and Benoit Billington https://github.com/Shusshu
    * and Manfred Moser http://www.simpligility.com
    * and with help from Igor Fedorenko https://github.com/ifedorenko/
+ * Attach a jar build output for apklib projects (optionally)
+   * see https://github.com/jayway/maven-android-plugin/pull/285
+   * contributed by Leonid https://github.com/greek1979
 
 === Android Maven Plugin 3.8.2 - 2013-12-30  ===
 
