@@ -77,6 +77,11 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Attach a jar build output for apklib projects (optionally)
    * see https://github.com/jayway/maven-android-plugin/pull/285
    * contributed by Leonid https://github.com/greek1979
+   * fixes issue 139 
+ * Correct identifier in R file from apklib
+   * see https://github.com/jayway/maven-android-plugin/pull/286
+   * contributed by Oleg https://github.com/marchelo
+   * fixes issue 441
 
 === Android Maven Plugin 3.8.2 - 2013-12-30  ===
 
