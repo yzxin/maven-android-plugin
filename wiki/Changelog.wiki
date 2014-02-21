@@ -83,6 +83,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by Oleg https://github.com/marchelo
    * fixes issue 441
    * fixes issue 443
+ * Removed unused executor
+   * https://github.com/jayway/maven-android-plugin/pull/291
+   * contributed by Oleg https://github.com/marchelo
 
 === Android Maven Plugin 3.8.2 - 2013-12-30  ===
 
