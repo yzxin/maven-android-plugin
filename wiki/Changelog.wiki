@@ -91,6 +91,11 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Removed unused executor
    * https://github.com/jayway/maven-android-plugin/pull/291
    * contributed by Oleg https://github.com/marchelo
+ * Support setups with no apilevel
+    * https://github.com/jayway/maven-android-plugin/pull/290
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
+   * and Manfred Moser http://www.simpligility.com
+
  
 
 === Android Maven Plugin 3.8.2 - 2013-12-30  ===
