@@ -71,9 +71,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin-samples/pull/45
    * see https://github.com/jayway/maven-android-plugin/pull/283
    * see https://github.com/jayway/maven-android-plugin-samples/pull/46
-   * https://github.com/jayway/maven-android-plugin/pull/287
+   * see https://github.com/jayway/maven-android-plugin/pull/287
    * fixes issue 446
-   * https://github.com/jayway/maven-android-plugin/pull/289
+   * see https://github.com/jayway/maven-android-plugin/pull/289
+   * see https://github.com/jayway/maven-android-plugin-samples/pull/47
    * contributed by William Ferguson https://github.com/william-ferguson-au 
    * and Benoit Billington https://github.com/Shusshu
    * and Manfred Moser http://www.simpligility.com
