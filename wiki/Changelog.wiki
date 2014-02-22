@@ -95,6 +95,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * https://github.com/jayway/maven-android-plugin/pull/290
    * contributed by William Ferguson https://github.com/william-ferguson-au 
    * and Manfred Moser http://www.simpligility.com
+ * Quieter, more readable logging during build
+   * see https://github.com/jayway/maven-android-plugin/pull/292
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
+
 
  
 
