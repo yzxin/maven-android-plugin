@@ -18,9 +18,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Path issues fix for proguard mojo usage on Windows
     * see https://github.com/jayway/maven-android-plugin/pull/296
     * contributed by https://github.com/mmadev
-  * Removed duplicate dependencies in native sample projects
+ * Removed duplicate dependencies in native sample projects
    * https://github.com/jayway/maven-android-plugin-samples/pull/52
    * contributed by William Ferguson https://github.com/william-ferguson-au 
+
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
  * A whole lot of pom and other clean ups to the sample projects
