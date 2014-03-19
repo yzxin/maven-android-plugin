@@ -27,6 +27,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Allow to specify the number of threads used in device operations to avoid issues with lots of attached devices
    * https://github.com/jayway/maven-android-plugin/pull/304 
    * contributed by Roy Clarkson https://github.com/royclarkson from Pivotal http://www.gopivotal.com/
+ * New goals to connect and disconnect devices specified by IP number for all device interactions
+   * https://github.com/jayway/maven-android-plugin/pull/306
+   * contributed by Emmanuel Demey https://github.com/Gillespie59
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
