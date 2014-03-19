@@ -21,6 +21,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Removed duplicate dependencies in native sample projects
    * https://github.com/jayway/maven-android-plugin-samples/pull/52
    * contributed by William Ferguson https://github.com/william-ferguson-au 
+ * Changed from direct Aether usage to Dependency Tree usage allowing compatibility with Maven 3.0.x and therefore with IDE's and other tools that have old Maven version like this embedded
+   * https://github.com/jayway/maven-android-plugin/pull/305
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
