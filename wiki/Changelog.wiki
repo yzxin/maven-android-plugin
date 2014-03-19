@@ -30,6 +30,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * New goals to connect and disconnect devices specified by IP number for all device interactions
    * https://github.com/jayway/maven-android-plugin/pull/306
    * contributed by Emmanuel Demey https://github.com/Gillespie59
+ * Log message fix
+   * https://github.com/jayway/maven-android-plugin/pull/307/
+   * contributed by Clément Plantier
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
