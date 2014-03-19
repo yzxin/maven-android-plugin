@@ -39,7 +39,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by William Ferguson https://github.com/william-ferguson-au 
  * Remove META-INF from AAR
    * see https://github.com/jayway/maven-android-plugin/pull/310
-   * contributed byBenoit Billington https://github.com/Shusshu
+   * contributed by Benoit Billington https://github.com/Shusshu
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
