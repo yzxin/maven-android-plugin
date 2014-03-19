@@ -35,8 +35,11 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by Clément Plantier
  * Avoid attempt to include R.txt in AAR if it doesnt exist
    * fixes issue 452
-   * https://github.com/jayway/maven-android-plugin/pull/308
+   * see https://github.com/jayway/maven-android-plugin/pull/308
    * contributed by William Ferguson https://github.com/william-ferguson-au 
+ * Remove META-INF from AAR
+   * see https://github.com/jayway/maven-android-plugin/pull/310
+   * contributed byBenoit Billington https://github.com/Shusshu
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
