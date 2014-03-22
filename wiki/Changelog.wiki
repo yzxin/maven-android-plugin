@@ -23,6 +23,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by William Ferguson https://github.com/william-ferguson-au 
  * Changed from direct Aether usage to Dependency Tree usage allowing compatibility with Maven 3.0.x and therefore with IDE's and other tools that have old Maven version like this embedded
    * https://github.com/jayway/maven-android-plugin/pull/305
+   * https://github.com/jayway/maven-android-plugin/pull/311
+   * https://github.com/jayway/maven-android-plugin/pull/312
    * contributed by William Ferguson https://github.com/william-ferguson-au 
  * Allow to specify the number of threads used in device operations to avoid issues with lots of attached devices
    * https://github.com/jayway/maven-android-plugin/pull/304 
@@ -40,6 +42,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Remove META-INF from AAR
    * see https://github.com/jayway/maven-android-plugin/pull/310
    * contributed by Benoit Billington https://github.com/Shusshu
+
+
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
