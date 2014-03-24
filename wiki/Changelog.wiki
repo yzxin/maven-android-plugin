@@ -46,6 +46,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * fixes issue 444
    * https://github.com/jayway/maven-android-plugin/pull/313
    * contributed by Malachi de AElfweald https://github.com/malachid
+ * transitive dependencies not dependent on existence of local natives dir
+   * fixes issue 429
+   * https://github.com/jayway/maven-android-plugin/pull/314
+   * contributed by Malachi de AElfweald https://github.com/malachid
 
 
 
