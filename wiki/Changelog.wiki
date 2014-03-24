@@ -42,6 +42,11 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Remove META-INF from AAR
    * see https://github.com/jayway/maven-android-plugin/pull/310
    * contributed by Benoit Billington https://github.com/Shusshu
+ * include groupId in native artifact resolution
+   * fixes issue 444
+   * https://github.com/jayway/maven-android-plugin/pull/313
+   * contributed by Malachi de AElfweald https://github.com/malachid
+
 
 
 
