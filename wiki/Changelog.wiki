@@ -50,7 +50,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * fixes issue 429
    * https://github.com/jayway/maven-android-plugin/pull/314
    * contributed by Malachi de AElfweald https://github.com/malachid
-
+ * Check for duplicate package name in android artifacts and produce warnings
+   * https://github.com/jayway/maven-android-plugin/pull/321
+   * contributed by Oleg Green https://github.com/marchelo
 
 
 
@@ -124,7 +126,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by William Ferguson https://github.com/william-ferguson-au 
    * and Benoit Billington https://github.com/Shusshu
    * and Manfred Moser http://www.simpligility.com
-   * and Oleg https://github.com/marchelo
+   * and Oleg Green https://github.com/marchelo
    * and with help from Igor Fedorenko https://github.com/ifedorenko/
  * Attach a jar build output for apklib projects (optionally)
    * see https://github.com/jayway/maven-android-plugin/pull/285
