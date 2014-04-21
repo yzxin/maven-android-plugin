@@ -56,7 +56,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * Fixed logging level for AIDL files in GenerateSourcesMojo
    * https://github.com/jayway/maven-android-plugin/pull/323
    * contributed by Oleg Green https://github.com/marchelo
-
+  * Improved handling of transitive native dependencies
+   * fixes issue 424
+   * https://github.com/jayway/maven-android-plugin/pull/319
+   * contributed by Malachi de AElfweald https://github.com/malachid
 
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
