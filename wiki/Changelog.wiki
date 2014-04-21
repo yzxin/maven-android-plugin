@@ -53,10 +53,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Check for duplicate package name in android artifacts and produce warnings
    * https://github.com/jayway/maven-android-plugin/pull/321
    * contributed by Oleg Green https://github.com/marchelo
-  * Fixed logging level for AIDL files in GenerateSourcesMojo
+ * Fixed logging level for AIDL files in GenerateSourcesMojo
    * https://github.com/jayway/maven-android-plugin/pull/323
    * contributed by Oleg Green https://github.com/marchelo
-  * Improved handling of transitive native dependencies
+ * Improved handling of transitive native dependencies
    * fixes issue 424
    * https://github.com/jayway/maven-android-plugin/pull/319
    * contributed by Malachi de AElfweald https://github.com/malachid
