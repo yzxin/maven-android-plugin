@@ -69,6 +69,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Added support for configuring adb connection timeout
    * https://github.com/jayway/maven-android-plugin/pull/324/
    * contributed by Sebastian Gröbler https://github.com/SierraGolf
+ * Improve AndroidManifest update to work with non-ascii characters
+   * see https://github.com/jayway/maven-android-plugin/pull/322
+   * contributed by xiaojian cai https://github.com/mccxj
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
