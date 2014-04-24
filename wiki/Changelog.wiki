@@ -72,6 +72,14 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Improve AndroidManifest update to work with non-ascii characters
    * see https://github.com/jayway/maven-android-plugin/pull/322
    * contributed by xiaojian cai https://github.com/mccxj
+ * Include BuildConfig class in aar 
+   * https://github.com/jayway/maven-android-plugin/pull/328
+   * https://github.com/jayway/maven-android-plugin/pull/329
+   * contributed by Benoit Billington https://github.com/Shusshu
+ * Preserve order of dependencies for native dependency resolution
+   * see https://github.com/jayway/maven-android-plugin/pull/330
+   * contributed by Johan Lindquist https://github.com/johanlindquist
+
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
