@@ -79,6 +79,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Preserve order of dependencies for native dependency resolution
    * see https://github.com/jayway/maven-android-plugin/pull/330
    * contributed by Johan Lindquist https://github.com/johanlindquist
+ * Adapted Travis build config to new SDK setup/distribution
+   * see https://github.com/jayway/maven-android-plugin/pull/332
+   * contributed by Malachi de AElfweald https://github.com/malachid
 
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
