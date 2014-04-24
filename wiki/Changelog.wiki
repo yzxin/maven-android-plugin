@@ -83,6 +83,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/332
    * see https://github.com/jayway/maven-android-plugin/pull/333
    * see https://github.com/jayway/maven-android-plugin/pull/335
+   * see https://github.com/jayway/maven-android-plugin-samples/pull/54
    * contributed by Malachi de AElfweald https://github.com/malachid
 
 
