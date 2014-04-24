@@ -60,6 +60,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * fixes issue 424
    * https://github.com/jayway/maven-android-plugin/pull/319
    * contributed by Malachi de AElfweald https://github.com/malachid
+ * Refactored usage of maven-plugin-plugin annotations to remove usage of deprecated expression
+   * see https://github.com/jayway/maven-android-plugin/pull/331
+   * contributed by Manfred Moser http://www.simpligility.com
 
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
