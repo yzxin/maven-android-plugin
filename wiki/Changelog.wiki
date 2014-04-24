@@ -81,6 +81,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by Johan Lindquist https://github.com/johanlindquist
  * Adapted Travis build config to new SDK setup/distribution
    * see https://github.com/jayway/maven-android-plugin/pull/332
+   * see https://github.com/jayway/maven-android-plugin/pull/333
    * contributed by Malachi de AElfweald https://github.com/malachid
 
 
