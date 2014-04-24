@@ -63,6 +63,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Refactored usage of maven-plugin-plugin annotations to remove usage of deprecated expression
    * see https://github.com/jayway/maven-android-plugin/pull/331
    * contributed by Manfred Moser http://www.simpligility.com
+ * Verbose output from aapt tool when Maven plugin config set to debug logging
+   * see https://github.com/jayway/maven-android-plugin/pull/320
+   * contributed by Oleg Green https://github.com/marchelo
+
 
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
