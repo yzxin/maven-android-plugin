@@ -66,8 +66,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Verbose output from aapt tool when Maven plugin config set to debug logging
    * see https://github.com/jayway/maven-android-plugin/pull/320
    * contributed by Oleg Green https://github.com/marchelo
-
-
+ * Added support for configuring adb connection timeout
+   * https://github.com/jayway/maven-android-plugin/pull/324/
+   * contributed by Sebastian Gröbler https://github.com/SierraGolf
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
