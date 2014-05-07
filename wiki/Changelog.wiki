@@ -85,7 +85,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/335
    * see https://github.com/jayway/maven-android-plugin/pull/346
    * see https://github.com/jayway/maven-android-plugin-samples/pull/54
+   * see https://github.com/jayway/maven-android-plugin-samples/commit/ec856a5f18274b7de2cb036ce6fb1de167a88ac4
    * contributed by Malachi de AElfweald https://github.com/malachid
+   * and Manfred Moser
  * Removed hardcoded debuggable setting from examples
    * see https://github.com/jayway/maven-android-plugin-samples/pull/53
    * contributed by Raphael Ackermann https://github.com/rtack
