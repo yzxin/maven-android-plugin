@@ -92,6 +92,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Removed hardcoded debuggable setting from examples
    * see https://github.com/jayway/maven-android-plugin-samples/pull/53
    * contributed by Raphael Ackermann https://github.com/rtack
+ * Changed a couple of log levels
+   * see https://github.com/jayway/maven-android-plugin/pull/338
+   * contributed by Oleg Green https://github.com/marchelo
+
 
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
