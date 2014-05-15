@@ -105,6 +105,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Allow android:run to proceed through a multi module build just like other device interaction goals
   * see https://github.com/jayway/maven-android-plugin/pull/344
   * contributed by Oleg Green https://github.com/marchelo
+ * Taking reactor projects into account for resolving dependency tree of aar packages
+   * https://github.com/jayway/maven-android-plugin/pull/347
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
 
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
