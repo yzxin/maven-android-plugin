@@ -95,7 +95,13 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Changed a couple of log levels
    * see https://github.com/jayway/maven-android-plugin/pull/338
    * contributed by Oleg Green https://github.com/marchelo
-
+ * Consolidated aapt command invocations in one builder style class
+   * see https://github.com/jayway/maven-android-plugin/pull/341
+   * contributed by Oleg Green https://github.com/marchelo
+ * New property for android.aidlSourceDirectory to allow aidl source in different folder from rest of source
+   * see https://github.com/jayway/maven-android-plugin/pull/343
+   * fixes issue 173
+   * contributed by Oleg Green https://github.com/marchelo
 
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
