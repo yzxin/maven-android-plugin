@@ -113,7 +113,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fixed the construction of R.java files for the dependencies of an APK
    * see https://github.com/jayway/maven-android-plugin/pull/349
    * contributed by William Ferguson https://github.com/william-ferguson-au 
- * Fails build if project + dependencies have more than one layout file of the same name
+ * Fail build if project + dependencies have more than one layout file of the same name
    * see https://github.com/jayway/maven-android-plugin/pull/352
    * see https://github.com/jayway/maven-android-plugin-samples/pull/56
    * contributed by William Ferguson https://github.com/william-ferguson-au 
