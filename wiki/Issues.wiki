@@ -10,6 +10,6 @@ If you find any problems or would like to suggest improvements, please
 
 All issues are filed on Github at
 
-https://github.com/jayway/maven-android-plugin/issues
+*https://github.com/jayway/maven-android-plugin/issues*
 
 We used to track issues here on Google code, but have closed all issues as wont fix and migrated to github. For reference you can still access them at https://code.google.com/p/maven-android-plugin/issues/
