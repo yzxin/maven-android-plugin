@@ -4,13 +4,12 @@
 
 If you find any problems or would like to suggest improvements, please 
 
-* verify that the issue still exists with the latest release
-* create a sample project that shows the problem or otherwise provide a way to replicate the problem
-* ideally fix the issue and send pull requests
+ * verify that the issue still exists with the latest release 
+ * create a sample project that shows the problem or otherwise provide a way to replicate the problem
+ * ideally fix the issue and send pull requests
 
 All issues are filed on Github at
 
 https://github.com/jayway/maven-android-plugin/issues
 
 We used to track issues here on Google code, but have closed all issues as wont fix and migrated to github.
-
