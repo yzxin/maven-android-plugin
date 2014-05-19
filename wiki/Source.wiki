@@ -8,22 +8,6 @@ Go to --> [Samples] page instead :)
 
 <br/>
 ==Source code of the plugin itself...==
-...is further down on this page. Continue scrolling...
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 
 =What is this not?=
 
@@ -40,8 +24,6 @@ Plugin developers, continue reading...
 
 ==This source code==
 
-We use Git instead of Subversion for managing the source code, [http://whygitisbetterthanx.com/ for several reasons].
-
 The code on this page (Source) refers to the latest unreleased version. So if you are looking to use the samples' configuration as an example of how to set up an Android Maven application, don't use the version which you will get by clicking the links here. Instead, see the [Samples] page.
 
 ==Get the code!==
@@ -53,11 +35,10 @@ See this project's github pages:
 
 You can browse the source code there, and even download a zip with the source code! As you can see, the plugin itself is split up from the samples. They are in separate git repositories for technical release reasons.
 
-To learn more about Git, see for example http://github.com/.
-
 If you think you will want to edit something, fork the project on Github, and clone your own fork to your development machine, instead of cloning directly from the readonly jayway/maven-android-plugin repo.
 
 ==Configure your git correctly for contributions==
+
 We accept only code contributions with LF as line-endings.
 
 You can set up git to convert CRLF/LF automatically. According to the book [http://progit.org/book/ch7-1.html#coreautocrlf Pro Git chapter 7], set it up like this:
