@@ -1,0 +1,9 @@
+#summary File issues on Github
+
+= Introduction =
+
+We used to track issues here on Google code, but have migrated it all to 
+
+https://github.com/jayway/maven-android-plugin/issues
+
+Please file new issues there.
