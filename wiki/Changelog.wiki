@@ -109,6 +109,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * contributed by Oleg Green https://github.com/marchelo
  * Taking reactor projects into account for resolving dependency tree of aar packages
    * see https://github.com/jayway/maven-android-plugin/pull/347
+   * see https://github.com/jayway/maven-android-plugin/pull/355
    * contributed by William Ferguson https://github.com/william-ferguson-au 
  * Fixed the construction of R.java files for the dependencies of an APK
    * see https://github.com/jayway/maven-android-plugin/pull/349
