@@ -118,6 +118,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/352
    * see https://github.com/jayway/maven-android-plugin-samples/pull/56
    * contributed by William Ferguson https://github.com/william-ferguson-au 
+ * Fail build if duplicate packages in AndroidManifest files for project and dependencies are detected
+  * this would otherwise cause downstream compile or runtime problems that are much harder to detect
+  * see https://github.com/jayway/maven-android-plugin/pull/353
+  * contributed by Oleg Green https://github.com/marchelo
 
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
