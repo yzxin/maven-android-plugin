@@ -124,7 +124,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * this would otherwise cause downstream compile or runtime problems that are much harder to detect
   * see https://github.com/jayway/maven-android-plugin/pull/353
   * contributed by Oleg Green https://github.com/marchelo
-
+ * Provided scope dependencies get unpacked, improves instrumentation test runs
+   * see https://github.com/jayway/maven-android-plugin/pull/362
+   * contributed by Malachi de AElfweald https://github.com/malachid
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
