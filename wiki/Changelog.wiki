@@ -128,14 +128,28 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/362
    * contributed by Malachi de AElfweald https://github.com/malachid
  * use build extensions classloader if exists https://github.com/jayway/maven-android-plugin/pull/366
+   * see https://github.com/jayway/maven-android-plugin/pull/366
    * fixes 364 https://github.com/jayway/maven-android-plugin/issues/364
    * fixes 350 https://github.com/jayway/maven-android-plugin/issues/350 
    * contributed by William Ferguson https://github.com/william-ferguson-au 
  * Samples libraryprojects/libraryprojects-tests failure fixed
+  * see  https://github.com/jayway/maven-android-plugin/pull/370
   * fixes 369 https://github.com/jayway/maven-android-plugin/issues/369
   * fixes 358 https://github.com/jayway/maven-android-plugin/issues/358
   * contributed by William Ferguson https://github.com/william-ferguson-au 
-
+ * POM cleanup
+  * see https://github.com/jayway/maven-android-plugin/pull/371
+  * see https://github.com/jayway/maven-android-plugin-samples/pull/57
+  * contributed by William Ferguson https://github.com/william-ferguson-au 
+ * Improved error message for missing dependencies
+  * see https://github.com/jayway/maven-android-plugin/pull/372
+  * contributed by William Ferguson https://github.com/william-ferguson-au 
+ * Added the now required scope "provided" for the apk under instrumentation test
+  * see https://github.com/jayway/maven-android-plugin-samples/pull/58
+  * contributed by William Ferguson https://github.com/william-ferguson-au 
+ * Fix up samples to work with the now stricter check on duplicate package usage
+  * see https://github.com/jayway/maven-android-plugin-samples/pull/59
+  * contributed by William Ferguson https://github.com/william-ferguson-au 
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
