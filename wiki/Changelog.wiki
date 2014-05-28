@@ -13,8 +13,11 @@ Requires Maven 3.1.1+
 
 A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
 
-=== Android Maven Plugin 3.9.0 - upcoming  ===
+=== Android Maven Plugin 4.0.0 - upcoming  ===
 
+
+=== Android Maven Plugin 3.9.0-rc.2 - released 2014-05-27  ===
+ 
  * Path issues fix for proguard mojo usage on Windows
     * see https://github.com/jayway/maven-android-plugin/pull/296
     * contributed by https://github.com/mmadev
@@ -153,6 +156,12 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Fix up samples to work with the now stricter check on duplicate package usage
   * see https://github.com/jayway/maven-android-plugin-samples/pull/59
   * contributed by William Ferguson https://github.com/william-ferguson-au 
+
+ATTENTION: 
+
+ * Maven versions 3.0.4+ are now supported again
+ * instrumentation tested apk's have to use provided scope in the test project
+ * further new parameters and their usage are documented on the site http://jayway.github.io/maven-android-plugin/
 
 === Android Maven Plugin 3.9.0-rc.1 - 2014-02-24  ===
 
