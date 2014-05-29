@@ -15,6 +15,11 @@ A bunch of configuration parameters have changed and some have be removed, compa
 
 === Android Maven Plugin 4.0.0 - upcoming  ===
 
+ * Improved error message when build tools of SDK are missing
+   * see https://github.com/jayway/maven-android-plugin/pull/381
+   * fixes https://code.google.com/p/maven-android-plugin/issues/detail?id=397
+   * fixes https://code.google.com/p/maven-android-plugin/issues/detail?id=432
+   * contributed by Lorenzo Dematté https://github.com/ldematte
 
 === Android Maven Plugin 3.9.0-rc.2 - released 2014-05-27  ===
  
