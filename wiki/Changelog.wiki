@@ -20,6 +20,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * fixes https://code.google.com/p/maven-android-plugin/issues/detail?id=397
    * fixes https://code.google.com/p/maven-android-plugin/issues/detail?id=432
    * contributed by Lorenzo Dematté https://github.com/ldematte
+ * Cleaned up NDK support behaviour and implementation
+   * see https://github.com/jayway/maven-android-plugin/pull/385
+   * fixes https://github.com/jayway/maven-android-plugin/issues/360
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
 
 === Android Maven Plugin 3.9.0-rc.2 - released 2014-05-27  ===
  
