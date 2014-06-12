@@ -3,6 +3,8 @@
 
 = Introduction =
 
+*DEPRECATED* - please use AAR libraries now that Android supports them
+
 An Android Library Project is a project intended for inclusion in other Android applications, rather than being run on its own. It is documented more in detail in the official Android developers guide:
  * [http://developer.android.com/guide/developing/projects/projects-cmdline.html#SettingUpLibraryProject Android Library Projects on command line]
  * [http://developer.android.com/guide/developing/projects/projects-eclipse.html#SettingUpLibraryProject Android Library Projects in Eclipse]
