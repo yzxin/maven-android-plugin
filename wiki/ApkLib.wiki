@@ -1,9 +1,9 @@
 #summary Android Library Project with apklib packaging type
 #labels HowTo,APKLIB
 
-= Introduction =
+*apklib DEPRECATED* - please use AAR libraries now that Android supports them
 
-*DEPRECATED* - please use AAR libraries now that Android supports them
+= Introduction =
 
 An Android Library Project is a project intended for inclusion in other Android applications, rather than being run on its own. It is documented more in detail in the official Android developers guide:
  * [http://developer.android.com/guide/developing/projects/projects-cmdline.html#SettingUpLibraryProject Android Library Projects on command line]
