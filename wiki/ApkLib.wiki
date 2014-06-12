@@ -1,12 +1,14 @@
 #summary Android Library Project with apklib packaging type
 #labels HowTo,APKLIB
 
+= _Deprecation_ =
+
+_You should use Android Archive Resource (AAR) instead._
+
+_apklib was introduced as a stop gap measure to allow a limited ability to bundle and share Android library resources. Now that the Android team have released the AAR format containing compiled code you should use that instead.
+
+
 = Introduction =
-
-
-*apklib is DEPRECATED* - please use AAR libraries now that Android supports them.
-
-
 
 An Android Library Project is a project intended for inclusion in other Android applications, rather than being run on its own. It is documented more in detail in the official Android developers guide:
  * [http://developer.android.com/guide/developing/projects/projects-cmdline.html#SettingUpLibraryProject Android Library Projects on command line]
