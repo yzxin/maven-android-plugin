@@ -117,7 +117,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/343
    * see https://github.com/jayway/maven-android-plugin-samples/pull/55
    * fixes issue 173
-   * contributed by Oleg Green https://github.com/marchelo
+   * contributed by Csaba Kozák https://github.com/WonderCsabo
    * and William Ferguson https://github.com/william-ferguson-au
  * Allow android:run to proceed through a multi module build just like other device interaction goals
   * see https://github.com/jayway/maven-android-plugin/pull/344
