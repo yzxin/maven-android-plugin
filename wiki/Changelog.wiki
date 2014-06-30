@@ -32,7 +32,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
     * see  https://github.com/jayway/maven-android-plugin/pull/393
     * fixes https://github.com/jayway/maven-android-plugin/issues/356
     * contributed by Kevin Griffin https://github.com/m00sey
-
+ * support waiting for full boot of devices and adaptations for travis setup
+    * see https://github.com/jayway/maven-android-plugin/pull/396
+    * contributed by Samuel Oggier https://github.com/soggier
+  
 === Android Maven Plugin 3.9.0-rc.2 - released 2014-05-27  ===
  
  * Path issues fix for proguard mojo usage on Windows
