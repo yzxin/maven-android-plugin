@@ -24,6 +24,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/384
    * fixes https://github.com/jayway/maven-android-plugin/issues/360
    * contributed by William Ferguson https://github.com/william-ferguson-au 
+ * Fixed support for genDirectory config with aar artifacts
+   * https://github.com/jayway/maven-android-plugin/pull/390
+   * fixes https://github.com/jayway/maven-android-plugin/issues/389
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
 
 === Android Maven Plugin 3.9.0-rc.2 - released 2014-05-27  ===
  
