@@ -28,7 +28,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * https://github.com/jayway/maven-android-plugin/pull/390
    * fixes https://github.com/jayway/maven-android-plugin/issues/389
    * contributed by William Ferguson https://github.com/william-ferguson-au 
-
+ * Adding support for multi dex
+    * see  https://github.com/jayway/maven-android-plugin/pull/393
+    * fixes https://github.com/jayway/maven-android-plugin/issues/356
+    * contributed by Christopher Kocel https://github.com/kkocel
 === Android Maven Plugin 3.9.0-rc.2 - released 2014-05-27  ===
  
  * Path issues fix for proguard mojo usage on Windows
