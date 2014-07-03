@@ -1,4 +1,4 @@
-#summary Consuming and producing AAR libs
+#summary Consuming and Producing an AAR library
 #labels Phase-Implementation
 
 = Introduction =
@@ -6,7 +6,7 @@
 Android Maven Plugin can be used to both consume and produce AAR libs.
 
 
-= Consume AARs =
+= Consume an AAR =
 
 Very simply just add the AAR as a dependency to your projects dependencies and set it's type as AAR (and add the android-maven-plugin to build/plugins section of your maven project). Eg
 
