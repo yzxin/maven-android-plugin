@@ -17,16 +17,6 @@ Very simply just add the AAR as a dependency to your projects dependencies and s
     <version>4.4.52</version>
     <type>aar</type>
   </dependency>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-        <artifactId>android-maven-plugin</artifactId>
-        <version>3.9.0-rc.2</version>
-      </plugin>
-    </plugins>
-  </build>
 }}}
 
 
@@ -46,16 +36,6 @@ Just add configure your project to have packaging AAR (and add the android-maven
   <artifactId>general-lib</artifactId>
   <version>1.2.3-SNAPSHOT</version>
   <packaging>aar</packaging>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-        <artifactId>android-maven-plugin</artifactId>
-        <version>3.9.0-rc.2</version>
-      </plugin>
-    </plugins>
-  </build>
 
   ...
 </project>
