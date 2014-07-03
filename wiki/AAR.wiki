@@ -1,0 +1,62 @@
+#summary Consuming and producing AAR libs
+#labels Phase-Implementation
+
+= Introduction =
+
+Android Maven Plugin can be used to both consume and produce AAR libs.
+
+
+= Consume AARs =
+
+Very simply just add the AAR as a dependency to your projects dependencies and set it's type as AAR (and add the android-maven-plugin to build/plugins section of your maven project). Eg
+
+{{{
+  <dependency>
+    <groupId>com.google.android.gms</groupId>
+    <artifactId>play-services</artifactId>
+    <version>4.4.52</version>
+    <type>aar</type>
+  </dependency>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+        <artifactId>android-maven-plugin</artifactId>
+        <version>3.9.0-rc.2</version>
+      </plugin>
+    </plugins>
+  </build>
+}}}
+
+
+= Produce an AAR =
+
+If you have a bunch of Java code that you want to share then the best solution is to create a Java project and publish as a plain Java archive (ie jar).
+
+But if you have code plus Android resources that you want to share then you really want to share that as an Android archive (ie AAR). Fortunately this is easy.
+
+Just add configure your project to have packaging AAR (and add the android-maven-plugin to build/plugins section of your maven project). Eg
+{{{
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.mycoolcompany</groupId>
+  <artifactId>general-lib</artifactId>
+  <version>1.2.3-SNAPSHOT</version>
+  <packaging>aar</packaging>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+        <artifactId>android-maven-plugin</artifactId>
+        <version>3.9.0-rc.2</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  ...
+</project>
+}}}
