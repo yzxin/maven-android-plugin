@@ -17,7 +17,7 @@
   * [AutomateAndroidTestProject Automated Android Tests]
   * [CombiningApplicationAndTestProjectToOne]
   * [AAR Android Archive (AAR)]
-  * [ApkLib Android Library Projects (apklib) - deprecated ]
+  * [ApkLib Android Library (apklib) - deprecated ]
   * [ApkSourcesDependency]
   * [SynchronisingVersionWithGmaven]
   * [NativeDevelopmentKit Native Development]
