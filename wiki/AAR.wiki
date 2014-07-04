@@ -8,7 +8,7 @@ Android Maven Plugin can be used to both consume and produce AAR libs.
 
 = Consume an AAR =
 
-Very simply just add the AAR as a dependency to your projects dependencies and set its type as `aar` (and add the android-maven-plugin to build/plugins section of your maven project). Eg
+Very simply just add the AAR as a dependency to your projects dependencies and set its type as *`aar`* (and add the android-maven-plugin to build/plugins section of your maven project). Eg
 
 {{{
   <dependency>
@@ -26,7 +26,7 @@ If you have a bunch of Java code that you want to share then the best solution i
 
 But if you have code plus Android resources that you want to share then you really want to share that as an Android archive (ie AAR). Fortunately this is easy.
 
-Just add configure your project to have packaging `aar` (and add the android-maven-plugin to build/plugins section of your maven project). Eg
+Just add configure your project to have packaging *`aar`* (and add the android-maven-plugin to build/plugins section of your maven project). Eg
 {{{
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
