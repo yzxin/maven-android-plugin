@@ -47,6 +47,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Improved handling and creation of BuildConfig in scenarios with transitive dependencies
    * see https://github.com/jayway/maven-android-plugin/pull/403
    * contributed by Lenoid https://github.com/greek1979
+ * support for Jar files in libs folder in aar or apklib
+   * see https://github.com/jayway/maven-android-plugin/pull/392
+   * contributed by Shouqun https://github.com/Shouqun
 
 
 
