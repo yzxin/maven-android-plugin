@@ -51,8 +51,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * support for Jar files in libs folder in aar or apklib
    * see https://github.com/jayway/maven-android-plugin/pull/392
    * contributed by Shouqun https://github.com/Shouqun
-
-
+ * Avoid compression of already compressed assets (e.g. mp3 files)
+   * see https://github.com/jayway/maven-android-plugin/pull/409
+   * contributed by Jaroslav Tulach https://github.com/jtulach
 
 === Android Maven Plugin 3.9.0-rc.2 - released 2014-05-27  ===
  
