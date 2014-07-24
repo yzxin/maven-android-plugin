@@ -43,7 +43,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by William Ferguson https://github.com/william-ferguson-au 
  * Migration to Maven plugin annotations rather than javadoc 
    * see https://github.com/jayway/maven-android-plugin/pull/391
+   * see https://github.com/jayway/maven-android-plugin/pull/412
    * contributed by William Ferguson https://github.com/william-ferguson-au 
+   * and Manfred Moser
  * Support for "jni" folder for AAR with native components
    * see https://github.com/jayway/maven-android-plugin/pull/404
    * contributed by Lenoid https://github.com/greek1979
@@ -59,6 +61,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Avoid modifying classpath for non-Android projects
    * see https://github.com/jayway/maven-android-plugin/pull/413
    * contributed by Lenoid https://github.com/greek1979
+ *
 
 === Android Maven Plugin 3.9.0-rc.2 - released 2014-05-27  ===
  
