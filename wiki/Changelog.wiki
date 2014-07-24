@@ -54,6 +54,9 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Avoid compression of already compressed assets (e.g. mp3 files)
    * see https://github.com/jayway/maven-android-plugin/pull/409
    * contributed by Jaroslav Tulach https://github.com/jtulach
+ * Avoid modifying classpath for non-Android projects
+   * see https://github.com/jayway/maven-android-plugin/pull/413
+   * contributed by Lenoid https://github.com/greek1979
 
 === Android Maven Plugin 3.9.0-rc.2 - released 2014-05-27  ===
  
