@@ -18,7 +18,7 @@
   * [CombiningApplicationAndTestProjectToOne]
   * [AAR Android Archive (AAR)]
   * [ApkLib ApkLib - deprecated ]
-  * [ApkDependencySources ApkSources - deprecated ]
+  * [ApkSourcesDependency ApkSources - deprecated ]
   * [SynchronisingVersionWithGmaven]
   * [NativeDevelopmentKit Native Development]
   * [NativeLibsAsDependencies Native Libraries as Dependencies]
