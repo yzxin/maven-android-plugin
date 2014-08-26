@@ -16,9 +16,14 @@ A bunch of configuration parameters have changed and some have be removed, compa
 === Android Maven Plugin 4.0.0 - upcoming  ===
 
   * Removed redundant, duplicate apk undeployment
-   * https://github.com/jayway/maven-android-plugin/pull/414/
+   * see https://github.com/jayway/maven-android-plugin/pull/414/
    * contributed by Sebastian Gröbler https://github.com/SierraGolf
-
+ * Display warning when pulling in jars from a libs folder in AAR or APKLIB
+   * see https://github.com/jayway/maven-android-plugin/pull/422/
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
+ * Include jars in libs folder of AAR package, if found
+   * see https://github.com/jayway/maven-android-plugin/pull/426/
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
 
 === Android Maven Plugin 3.9.0-rc.3 - released 2014-07-24  ===
 
