@@ -24,6 +24,14 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Include jars in libs folder of AAR package, if found
    * see https://github.com/jayway/maven-android-plugin/pull/426/
    * contributed by William Ferguson https://github.com/william-ferguson-au 
+ * Removing duplicate aar jars for Proguard
+   * see https://github.com/jayway/maven-android-plugin/pull/435
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
+ * Avoid adding aar dependency resources to Maven resources path 
+   * see https://github.com/jayway/maven-android-plugin/pull/436
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
+
+
 
 === Android Maven Plugin 3.9.0-rc.3 - released 2014-07-24  ===
 
