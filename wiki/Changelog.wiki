@@ -30,6 +30,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Avoid adding aar dependency resources to Maven resources path 
    * see https://github.com/jayway/maven-android-plugin/pull/436
    * contributed by William Ferguson https://github.com/william-ferguson-au 
+ * Resolve missing BuildConfig from APKLIB->APKLIB dependency
+   * see https://github.com/jayway/maven-android-plugin/pull/438
+   * fixes https://github.com/jayway/maven-android-plugin/issues/434
+   * contributed by Marting M Reed https://github.com/MartinMReed
 
 
 
