@@ -44,7 +44,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by Thierry Carels https://github.com/carthx
  * Multi dex support
    * see https://github.com/jayway/maven-android-plugin/pull/425
-   * contributed by 
+   * contributed by Łukasz Suski https://github.com/lsuski
  
 
 === Android Maven Plugin 3.9.0-rc.3 - released 2014-07-24  ===
