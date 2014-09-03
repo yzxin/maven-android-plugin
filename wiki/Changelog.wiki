@@ -42,7 +42,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/440
    * fixes https://github.com/jayway/maven-android-plugin/issues/439
    * contributed by Thierry Carels https://github.com/carthx
- * Multi dex support
+ * Multi dex support fixes
    * see https://github.com/jayway/maven-android-plugin/pull/425
    * contributed by Łukasz Suski https://github.com/lsuski
  
