@@ -34,8 +34,15 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/438
    * fixes https://github.com/jayway/maven-android-plugin/issues/434
    * contributed by Marting M Reed https://github.com/MartinMReed
+ * Change default project structure to Gradle structure since it is much more like a real Maven project anyway
+  * see https://github.com/jayway/maven-android-plugin/pull/416
+   * contributed by William Ferguson https://github.com/william-ferguson-au 
+   * and Manfred Moser http://www.simpligility.com
+ * Fix for using build output directory when needed (for unpack libraries in this case)
+   * see https://github.com/jayway/maven-android-plugin/pull/440
+   * contributed by https://github.com/carthx
 
-
+ 
 
 === Android Maven Plugin 3.9.0-rc.3 - released 2014-07-24  ===
 
