@@ -45,6 +45,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Multi dex support fixes
    * see https://github.com/jayway/maven-android-plugin/pull/425
    * contributed by Łukasz Suski https://github.com/lsuski
+ * Produce a warning for aar projects with apklib dependencies
+   * see https://github.com/jayway/maven-android-plugin/pull/429   
+   * contributed by Leonid https://github.com/greek1979
+
  
 
 === Android Maven Plugin 3.9.0-rc.3 - released 2014-07-24  ===
