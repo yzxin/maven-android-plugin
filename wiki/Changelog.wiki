@@ -53,8 +53,8 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by Leonid https://github.com/greek1979
  * Usage of animalsniffer plugin to ensure Java 6 support
   * see https://github.com/jayway/maven-android-plugin/pull/446
-   * contributed by William Ferguson https://github.com/william-ferguson-au 
-   * and Manfred Moser http://www.simpligility.com 
+  * contributed by William Ferguson https://github.com/william-ferguson-au 
+  * and Manfred Moser http://www.simpligility.com 
 
 === Android Maven Plugin 3.9.0-rc.3 - released 2014-07-24  ===
 
