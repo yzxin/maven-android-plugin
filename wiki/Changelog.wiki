@@ -38,7 +38,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * see https://github.com/jayway/maven-android-plugin/pull/416
    * see https://github.com/jayway/maven-android-plugin/pull/441
    * contributed by William Ferguson https://github.com/william-ferguson-au 
-   * and Manfred Moser http://www.simpligility.com
+   * all sample updates contributed by Manfred Moser http://www.simpligility.com
  * Fix for using build output directory when needed (for unpack libraries in this case)
    * see https://github.com/jayway/maven-android-plugin/pull/440
    * fixes https://github.com/jayway/maven-android-plugin/issues/439
