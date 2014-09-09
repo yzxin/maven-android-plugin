@@ -26,6 +26,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
    * contributed by William Ferguson https://github.com/william-ferguson-au 
  * Removing duplicate aar jars for Proguard
    * see https://github.com/jayway/maven-android-plugin/pull/435
+   * see https://github.com/jayway/maven-android-plugin-samples/pull/62
    * contributed by William Ferguson https://github.com/william-ferguson-au 
  * Avoid adding aar dependency resources to Maven resources path 
    * see https://github.com/jayway/maven-android-plugin/pull/436
