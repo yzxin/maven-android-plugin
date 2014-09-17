@@ -68,7 +68,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * see
   * contributed Manfred Moser http://www.simpligility.com 
  * Introduced integration test using Takari plugin testing
-  * see 
+  * see https://github.com/jayway/maven-android-plugin/issues/452
   * contributed Manfred Moser http://www.simpligility.com 
  * Fix path to zipalign
   * see https://github.com/jayway/maven-android-plugin/pull/453
