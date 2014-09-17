@@ -70,6 +70,10 @@ A bunch of configuration parameters have changed and some have be removed, compa
  * Introduced integration test using Takari plugin testing
   * see 
   * contributed Manfred Moser http://www.simpligility.com 
+ * Fix path to zipalign
+  * see https://github.com/jayway/maven-android-plugin/pull/453
+  * fixes https://github.com/jayway/maven-android-plugin/issues/399
+  * contributed by Benoit Billington https://github.com/Shusshu
 
 === Android Maven Plugin 3.9.0-rc.3 - released 2014-07-24  ===
 
