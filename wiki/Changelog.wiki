@@ -67,7 +67,7 @@ A bunch of configuration parameters have changed and some have be removed, compa
   * see https://github.com/jayway/maven-android-plugin/pull/450
   * contributed by Łukasz Suski https://github.com/lsuski
  * updated Android SDK libraries
-  * see
+  * see https://github.com/jayway/maven-android-plugin/commit/3b498899a14c98df6bf2ddb4a49cb47daf160a59
   * contributed Manfred Moser http://www.simpligility.com 
  * Introduced integration test using Takari plugin testing
   * see https://github.com/jayway/maven-android-plugin/issues/452
