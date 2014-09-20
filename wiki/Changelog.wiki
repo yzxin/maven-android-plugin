@@ -81,6 +81,7 @@ The rc.1 is version close. We want to limit the changes to
  * Introduced integration test using Takari plugin testing
   * see https://github.com/jayway/maven-android-plugin/issues/452
   * contributed Manfred Moser http://www.simpligility.com 
+  * see also https://www.youtube.com/watch?v=PkLUgUyx8Kc
  * Fix path to zipalign
   * see https://github.com/jayway/maven-android-plugin/pull/453
   * fixes https://github.com/jayway/maven-android-plugin/issues/399
