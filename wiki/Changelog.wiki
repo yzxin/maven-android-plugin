@@ -29,8 +29,10 @@ Changes:
    * contributed by Benoit Billington https://github.com/Shusshu
  * Updated NDK support to r10
    * see https://github.com/jayway/maven-android-plugin/pull/455
+  * fixed https://github.com/jayway/maven-android-plugin/issues/431
    * contributed by Malachi de AElfweald https://github.com/malachid
    * and Manfred Moser http://www.simpligility.com
+
 
 === Android Maven Plugin 4.0.0-rc.1 - released 2014-09-18  ===
 
