@@ -22,6 +22,12 @@ The rc.1 is version close. We want to limit the changes to
  * confirm all applications from samples work
  * anything else that comes up as urgent
 
+Changes:
+
+ * Lint integration tests
+   * see https://github.com/jayway/maven-android-plugin/pull/456
+   * contributed by Benoit Billington https://github.com/Shusshu
+
 === Android Maven Plugin 4.0.0-rc.1 - released 2014-09-18  ===
 
  * Removed redundant, duplicate apk undeployment
