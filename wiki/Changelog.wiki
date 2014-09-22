@@ -27,6 +27,7 @@ Changes:
  * Lint integration tests
    * see https://github.com/jayway/maven-android-plugin/pull/456
    * contributed by Benoit Billington https://github.com/Shusshu
+  * and Manfred Moser http://www.simpligility.com
  * Updated NDK support to r10
   * see https://github.com/jayway/maven-android-plugin/pull/455
   * see https://github.com/jayway/maven-android-plugin-samples/pull/63
