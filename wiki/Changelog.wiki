@@ -47,6 +47,7 @@ Changes:
   * https://github.com/jayway/maven-android-plugin/pull/466
  * Ported scala example to IT test
   * https://github.com/jayway/maven-android-plugin/pull/467
+  * https://github.com/jayway/maven-android-plugin-samples/commit/116e96534123246d6bdbfb564b9ed8b3c9b3b9e3
   * contributed by Manfred Moser http://www.simpligility.com
 
 
