@@ -49,6 +49,8 @@ Changes:
   * https://github.com/jayway/maven-android-plugin/pull/467
   * https://github.com/jayway/maven-android-plugin-samples/commit/116e96534123246d6bdbfb564b9ed8b3c9b3b9e3
   * contributed by Manfred Moser http://www.simpligility.com
+ * Ported support4demos, apidemos and tictactoe examples to IT test
+  * https://github.com/jayway/maven-android-plugin/pull/469
 
 
 === Android Maven Plugin 4.0.0-rc.1 - released 2014-09-18  ===
