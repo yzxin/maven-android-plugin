@@ -55,7 +55,12 @@ Changes:
   * https://github.com/jayway/maven-android-plugin-samples/commit/2fd2aab3bc9458ce7126edde01634e7c9a03c83f
   * contributed by Manfred Moser http://www.simpligility.com
 
- * https://github.com/jayway/maven-android-plugin/pull/468
+ * Updates to the Travis CI setup
+  * https://github.com/jayway/maven-android-plugin/pull/468
+  * https://github.com/jayway/maven-android-plugin/commit/16b10af8ec00c8fe58aec9f5612bce1630a5844b
+  * contributed by Malachi de AElfweald https://github.com/malachid
+  * and Manfred Moser http://www.simpligility.com
+
 
 
 === Android Maven Plugin 4.0.0-rc.1 - released 2014-09-18  ===
