@@ -32,6 +32,7 @@ Changes:
   * see https://github.com/jayway/maven-android-plugin/pull/455
   * see https://github.com/jayway/maven-android-plugin-samples/pull/63
   * fixed https://github.com/jayway/maven-android-plugin/issues/431
+  * see https://github.com/jayway/maven-android-plugin/pull/471
   * contributed by Malachi de AElfweald https://github.com/malachid
   * and Manfred Moser http://www.simpligility.com
 
@@ -53,6 +54,8 @@ Changes:
   * https://github.com/jayway/maven-android-plugin/pull/469
   * https://github.com/jayway/maven-android-plugin-samples/commit/2fd2aab3bc9458ce7126edde01634e7c9a03c83f
   * contributed by Manfred Moser http://www.simpligility.com
+
+ * https://github.com/jayway/maven-android-plugin/pull/468
 
 
 === Android Maven Plugin 4.0.0-rc.1 - released 2014-09-18  ===
