@@ -62,6 +62,8 @@ Changes:
   * contributed by Malachi de AElfweald https://github.com/malachid
   * and Manfred Moser http://www.simpligility.com
 
+ * seehttps://github.com/jayway/maven-android-plugin/pull/473
+
 
 
 === Android Maven Plugin 4.0.0-rc.1 - released 2014-09-18  ===
