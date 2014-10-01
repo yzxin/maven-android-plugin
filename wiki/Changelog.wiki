@@ -56,13 +56,14 @@ Changes:
   * contributed by Manfred Moser http://www.simpligility.com
 
  * Updates to the Travis CI setup
-  * https://github.com/jayway/maven-android-plugin/pull/468
-  * https://github.com/jayway/maven-android-plugin/commit/16b10af8ec00c8fe58aec9f5612bce1630a5844b
-  * https://github.com/jayway/maven-android-plugin/pull/472
+  * see https://github.com/jayway/maven-android-plugin/pull/468
+  * see https://github.com/jayway/maven-android-plugin/commit/16b10af8ec00c8fe58aec9f5612bce1630a5844b
+  * see https://github.com/jayway/maven-android-plugin/pull/472
+  * see https://github.com/jayway/maven-android-plugin/commit/ac617bb3c537a3145b96b75221ac396399c9c4cc
   * contributed by Malachi de AElfweald https://github.com/malachid
   * and Manfred Moser http://www.simpligility.com
 
- * seehttps://github.com/jayway/maven-android-plugin/pull/473
+ * see https://github.com/jayway/maven-android-plugin/pull/473
 
 
 
