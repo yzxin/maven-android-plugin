@@ -66,6 +66,10 @@ Changes:
    * see https://github.com/jayway/maven-android-plugin/pull/466
    * see https://github.com/jayway/maven-android-plugin/pull/473
    * contributed by Csaba Kozák https://github.com/WonderCsabo
+ * Various NDK related fixes
+   * contributed by Johan Lindquist https://github.com/johanlindquist
+
+
 
 
 === Android Maven Plugin 4.0.0-rc.1 - released 2014-09-18  ===
