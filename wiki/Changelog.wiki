@@ -35,9 +35,9 @@ Changes:
   * see https://github.com/jayway/maven-android-plugin/pull/471
   * contributed by Malachi de AElfweald https://github.com/malachid
   * and Manfred Moser http://www.simpligility.com
-
+ * Migrated samples project to IT tests within the plugin itself.
   * https://github.com/jayway/maven-android-plugin/pull/461
-
+  * contributed Manfred Moser http://www.simpligility.com
 
   * https://github.com/jayway/maven-android-plugin/pull/457
 
