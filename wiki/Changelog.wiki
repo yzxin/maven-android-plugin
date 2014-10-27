@@ -38,14 +38,13 @@ Changes:
  * Migrated samples project to IT tests within the plugin itself.
   * https://github.com/jayway/maven-android-plugin/pull/461
   * contributed Manfred Moser http://www.simpligility.com
-
-  * https://github.com/jayway/maven-android-plugin/pull/457
-
-  * https://github.com/jayway/maven-android-plugin/pull/460
-
+ * Fixes to AndroidManifest update
+   * see https://github.com/jayway/maven-android-plugin/pull/457
+   * fixes https://github.com/jayway/maven-android-plugin/issues/449
+   * contributed by Benoit Billington https://github.com/Shusshu
+ * Fixed error message typo
   * https://github.com/jayway/maven-android-plugin/pull/465
-
-  * https://github.com/jayway/maven-android-plugin/pull/466
+  * contributed by Lukasz Gawin https://github.com/lgawin
  * Ported scala example to IT test
   * https://github.com/jayway/maven-android-plugin/pull/467
   * https://github.com/jayway/maven-android-plugin-samples/commit/116e96534123246d6bdbfb564b9ed8b3c9b3b9e3
@@ -54,7 +53,6 @@ Changes:
   * https://github.com/jayway/maven-android-plugin/pull/469
   * https://github.com/jayway/maven-android-plugin-samples/commit/2fd2aab3bc9458ce7126edde01634e7c9a03c83f
   * contributed by Manfred Moser http://www.simpligility.com
-
  * Updates to the Travis CI setup
   * see https://github.com/jayway/maven-android-plugin/pull/468
   * see https://github.com/jayway/maven-android-plugin/commit/16b10af8ec00c8fe58aec9f5612bce1630a5844b
@@ -62,8 +60,10 @@ Changes:
   * see https://github.com/jayway/maven-android-plugin/commit/ac617bb3c537a3145b96b75221ac396399c9c4cc
   * contributed by Malachi de AElfweald https://github.com/malachid
   * and Manfred Moser http://www.simpligility.com
-
- * Change some properties to be injected
+ * Change some properties to be injected to ensure that final versions are used (evaluated) and not mere pom file values
+   * https://github.com/jayway/maven-android-plugin/pull/460
+   * fixes https://github.com/jayway/maven-android-plugin/issues/458
+   * see https://github.com/jayway/maven-android-plugin/pull/466
    * see https://github.com/jayway/maven-android-plugin/pull/473
    * contributed by Csaba Kozák https://github.com/WonderCsabo
 
