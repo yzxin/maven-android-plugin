@@ -7,12 +7,6 @@ _Tip: In order to see correct documentation for your plugin version you can buil
 
 Any *text in bold* below describes changes, which may cause existing builds to break. You may need to *update / clean up your project configuration*. This should only happen during alphas, and between major versions. From time to time, upgrading Google's Android SDK and NDK may also be necessary.
 
-== Android Maven Plugin 3.x release series ==
-
-Requires Maven 3.0.4+ for latest (and 3.1.1+ for some older releases)
-
-A bunch of configuration parameters have changed and some have be removed, compared to the 2.x release series. This means you will need to look at the changelog for API changes, specifically *text in bold*, before upgrading from 2.x to 3.x.
-
 === Android Maven Plugin 4.0.0-rc.3 and newer - 2014-10-28 and onwards  ===
 
 *Please check out the new changelog document at https://github.com/simpligility/android-maven-plugin/blob/master/src/site/asciidoc/changelog.adoc for the latest releases.*
