@@ -1,27 +1,2 @@
-#summary Building the plugin
 #labels Phase-Implementation
-
-For normal use, when you develop Android applications using android-maven-plugin, you never have to do the things detailed here. Only those who develop android-maven-plugin do.
-
-
-= How to build android-maven-plugin =
-
- * Install Android SDK
- * Check out the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 source code] for android-maven-plugin.
- * mvn clean install
-
-= How to use a custom build of the plugin =
-
- * If you use the plugin within a project, just update the version to  
-the version of the codebase you just built.
- * If you invoke the plugin outside a Maven project specify the version like so e.g.
-
-{{{mvn com.jayway.maven.plugins.android.generation2:android-maven-plugin:3.0.0-SNAPSHOT:undeploy -Dandroid.package=com.simplgility.android.helloflashlight}}}
-
-= How to build Samples for android-maven-plugin =
-
- * Install Android SDK 
-
- * Check out the [http://code.google.com/p/maven-android-plugin/wiki/Source?tm=4 source code] for maven-android-plugin-samples.
- * attach a emulator or devices optionally
- * mvn clean install
+Content moved to https://github.com/simpligility/android-maven-plugin
