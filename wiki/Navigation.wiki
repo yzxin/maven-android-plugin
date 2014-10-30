@@ -6,7 +6,6 @@
   * [Debug Debugging] 
   * [EclipseIntegration Eclipse Integration]
   * [QuickStartForEclipseProject]
-  * [Glossary]
 
 *Advanced*
   * [AddOns Google Add Ons (Maps)]
