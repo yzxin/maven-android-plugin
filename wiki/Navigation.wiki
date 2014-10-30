@@ -26,7 +26,6 @@
 *Reference*
 
   * [Documentation]
-  * [PluginRenamed]
   * [Repositories]
   * [LinksBlogsAndMore Links, blogs and more]
   * [Presentations]
