@@ -9,6 +9,18 @@ Any *text in bold* below describes changes, which may cause existing builds to b
 
 *Please check out the new changelog document at https://github.com/simpligility/android-maven-plugin/blob/master/src/site/asciidoc/changelog.adoc for the latest releases.*
 
+
+
+
+
+
+
+
+
+
+
+
+
 === Android Maven Plugin 4.0.0-rc.2 - 2014-10-25  ===
 
 The rc.1 is version close. We want to limit the changes to 
