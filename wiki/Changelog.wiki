@@ -3,7 +3,7 @@
 
 = Changelog =
 
-The update to date changelog is now located at 
+The up to date changelog is now located at 
 ----
 https://github.com/simpligility/android-maven-plugin/blob/master/src/site/asciidoc/changelog.adoc
 ----
