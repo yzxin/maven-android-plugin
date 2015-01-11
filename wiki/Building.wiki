@@ -1,2 +1,0 @@
-#labels Phase-Implementation
-Content moved to https://github.com/simpligility/android-maven-plugin
