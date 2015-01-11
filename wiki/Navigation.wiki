@@ -36,5 +36,3 @@
   * [Building Building the plugin from source]
   * [Source More about source and contributing]
   * [SnapshotRepo]
-  * [DeploymentInstructions]
-  * [OtherProjects]
