@@ -26,9 +26,6 @@
 *Reference*
 
   * [Documentation]
-  * [LinksBlogsAndMore Links, blogs and more]
-  * [Presentations]
-  * [PeopleUsingThis People Using This]
   * [Changelog]
 
 *Contributors, Developers..*
