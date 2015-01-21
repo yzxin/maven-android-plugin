@@ -29,7 +29,5 @@
   * [Changelog]
 
 *Contributors, Developers..*
-  
-  * [Building Building the plugin from source]
-  * [Source More about source and contributing]
+
   * [SnapshotRepo]
