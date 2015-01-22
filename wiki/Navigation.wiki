@@ -1,7 +1,6 @@
 *Beginner*
 
   * [GettingStarted Getting Started]
-  * [TipsAndTricks Tips and Tricks]
   * [Debug Debugging] 
   * [QuickStartForEclipseProject]
 
