@@ -1,7 +1,6 @@
 *Beginner*
 
   * [GettingStarted Getting Started]
-  * [Samples]
   * [TipsAndTricks Tips and Tricks]
   * [Debug Debugging] 
   * [EclipseIntegration Eclipse Integration]
@@ -27,7 +26,3 @@
 
   * [Documentation]
   * [Changelog]
-
-*Contributors, Developers..*
-
-  * [SnapshotRepo]
