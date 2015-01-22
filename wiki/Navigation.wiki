@@ -12,7 +12,6 @@
   * [SigningAPKWithMavenJarsigner Signing the APK]
   * [ZipalignAPKBuiltByMAven Zipalign the APK]
   * [AutomateAndroidTestProject Automated Android Tests]
-  * [CombiningApplicationAndTestProjectToOne]
   * [AAR Android Archive (AAR)]
   * [ApkLib ApkLib - deprecated ]
   * [ApkSourcesDependency ApkSources - deprecated ]
