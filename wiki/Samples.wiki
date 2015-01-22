@@ -1,4 +1,0 @@
-#summary About the sample code.
-#labels Featured
-
-Content moved to http://simpligility.github.io/android-maven-plugin/examples.html
