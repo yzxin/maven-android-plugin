@@ -8,7 +8,6 @@
   * [AutomatedScreenshots]
   * [ProGuard Shrink, Obfuscate and Optimize with Proguard]
   * [SigningAPKWithMavenJarsigner Signing the APK]
-  * [ZipalignAPKBuiltByMAven Zipalign the APK]
   * [AutomateAndroidTestProject Automated Android Tests]
   * [AAR Android Archive (AAR)]
   * [ApkLib ApkLib - deprecated ]
