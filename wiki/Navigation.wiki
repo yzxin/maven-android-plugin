@@ -3,7 +3,6 @@
   * [GettingStarted Getting Started]
   * [TipsAndTricks Tips and Tricks]
   * [Debug Debugging] 
-  * [EclipseIntegration Eclipse Integration]
   * [QuickStartForEclipseProject]
 
 *Advanced*
