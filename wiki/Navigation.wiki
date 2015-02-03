@@ -2,7 +2,6 @@
 
   * [GettingStarted Getting Started]
   * [Debug Debugging] 
-  * [QuickStartForEclipseProject]
 
 *Advanced*
   * [AutomatedScreenshots]
