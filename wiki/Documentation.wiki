@@ -1,28 +1,17 @@
 #summary Documentation collection for Android Maven Plugin
 #labels Featured
 
-= Maven: The Complete Reference - Android chapter =
-
-Documentation in book form is available with the Android chapter of the free book
-Maven: The complete Reference in HTML and PDF format:
-http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
-
 = Wiki Documentation =
 
 == Start here ==
  * [GettingStarted] quickly!
 
-== Eclipse ==
- * [QuickStartForEclipseProject]
+
 
 == Reference ==
- * [http://jayway.github.io/maven-android-plugin/ Maven Site] - Auto-generated documentation from the plugin's Maven build.
-  * [http://jayway.github.io/maven-android-plugin/plugin-info.html Plugin goals reference] - All {{{mvn android:...}}} goals and their configuration parameters.
+
  * See [AddOns] for Building for Android Add-Ons
  * See ApkLib for how to bring in other apk projects' sources, resources and assets as Maven {{{<dependencies>}}}.
  * *Signing*
   * See [SigningAPKWithMavenJarsigner] for how to sign the APK
   * See [ZipalignAPKBuiltByMAven] for how to !ZipAlign the APK (required after signing)
-
-== See also ==
- * Take part in the mailing list [http://groups.google.com/group/maven-android-developers Maven Android Developers], for everyone!
