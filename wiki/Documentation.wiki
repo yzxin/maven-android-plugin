@@ -11,8 +11,6 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
 
 == Start here ==
  * [GettingStarted] quickly!
- * See some [Samples] of how to use Android Maven Plugin
- * [TipsAndTricks Tips and tricks] for using the plugin even easier!
 
 == Eclipse ==
  * [EclipseIntegration] - help collecting experiences around what works, and doesn't, with Eclipse, Maven and Android.
