@@ -10,7 +10,6 @@
 
 == Reference ==
 
- * See [AddOns] for Building for Android Add-Ons
  * See ApkLib for how to bring in other apk projects' sources, resources and assets as Maven {{{<dependencies>}}}.
  * *Signing*
   * See [SigningAPKWithMavenJarsigner] for how to sign the APK
