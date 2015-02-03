@@ -8,7 +8,6 @@
   * [ProGuard Shrink, Obfuscate and Optimize with Proguard]
   * [SigningAPKWithMavenJarsigner Signing the APK]
   * [AutomateAndroidTestProject Automated Android Tests]
-  * [ApkLib ApkLib - deprecated ]
   * [ApkSourcesDependency ApkSources - deprecated ]
   * [NativeDevelopmentKit Native Development]
   * [NativeLibsAsDependencies Native Libraries as Dependencies]
