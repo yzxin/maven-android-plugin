@@ -77,14 +77,3 @@ Check out the {{{apidemos-15-instrumentationtest}}} project in [Samples]`*`.
 You can create a project like that, by moving your "test" folder out and renaming it to for example "myproject-instrumentationtest". Then rearrange the folders within it like above, and use the {{{pom.xml}}} from {{{apidemos-15-instrumentationtest}}} as template.
 
 For a sample project with more feature features like jarsigning, zipaligin, release profile and proguard look at the morseflash example.
-
-== More documentation ==
-
-There is some more documentation on the [Documentation] page.
-<br/>
-=== (`*`) Samples===
-Always use the version of samples linked from the [Samples] page, so that you get a usable version of its configuration.
-<br/>
-<br/>
-----
-_Please feel free to update this page with more details / corrections! (Just ask hugo@josefson.org for edit permissions, and you will get it.)_
