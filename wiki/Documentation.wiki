@@ -13,7 +13,6 @@ http://www.sonatype.com/books/mvnref-book/reference/android-dev.html
  * [GettingStarted] quickly!
 
 == Eclipse ==
- * [EclipseIntegration] - help collecting experiences around what works, and doesn't, with Eclipse, Maven and Android.
  * [QuickStartForEclipseProject]
 
 == Reference ==
