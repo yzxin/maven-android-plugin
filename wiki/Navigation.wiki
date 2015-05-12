@@ -12,7 +12,3 @@
   * [NativeDevelopmentKit Native Development]
   * [NativeLibsAsDependencies Native Libraries as Dependencies]
   * [Scala]
-
-*Reference*
-
-  * [Changelog]
